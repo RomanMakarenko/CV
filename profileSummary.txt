@@ -1,0 +1,18 @@
+Good theoretical and practical knowledge of Software Testing.
+10+ years experience in quality assurance: web, mobile and backend.
+Developed, wrote and maintained autotests:
+- Java, Selenium, TestNG (End-to-end);
+- Java, Appium (End-to-end);
+- Java/Spring, Gradle, Spock (Integration);
+- Node.js, mocha, chai, wdio (End-to-end, API).
+- Agentic AI, Claude code
+Skills Database Management: MySQL
+DevOps, Cloud & Infrastructure: Docker, Jenkins
+Professional / General Skills: B2B, B2C, Elasticsearch, Kafka, Kanban, Mobile,
+Mockito, Redis, Scrum, TeamCity, Web / Desktop, mocha
+Software Development: Java, Node.js, Spring
+Testing & QA: End-to-end testing, Mobile Testing, Performance Testing,
+Selenium, Test Design, Test Planning, Test Reporting, Test strategy, TestNG,
+Web Testing
+Foreign language levels: • English- Upper-intermediate
+• Ukrainian- Fluent

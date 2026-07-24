@@ -1,0 +1,81 @@
+Name of Employer: Ciklum, Project 1
+Job Title: QA Lead
+Date of Employment: 09.06.2017- 09.04.2018
+Project Description and
+Responsibilities:
+Project Description
+NZZ Mediengruppe is a media company which deals with activities related to
+newspaper, magazine, book publishing and television broadcasting in Zurich,
+Switzerland.
+Responsibilities
+- Led a small team composed of 5 members;
+- Was responsible for the scheduling and management of resources to fulfil the
+demand for the effective delivery of testing for new and existing systems;
+- Motivated and inspired QA Team members to deliver to the best of their ability
+within the project and test timescales;
+- Managed software defects tracking, reporting, and follow-up, using a bug
+tracking system;
+- Supported releases into all environments including production;
+- Maintained and contributed to already existing test automation framework;
+- Tested web and mobile apps.
+Tools and Technologies: Achievements
+- Ensured effective testing of new and existing systems;
+- Brought to market the company's first high-quality mobile applications;
+- Wrote documentation and formalised the testing processes.
+Test strategy, Test Reporting, Test Planning, End-to-end testing, API testing,
+Web Testing, Test Design, Mobile Testing
+
+Name of Employer: Ciklum, Project 2
+Job Title: QA Automation
+Date of Employment: 10.05.2018- 10.01.2023
+Project Description and
+Responsibilities:
+Project Description
+The Client is a media company which deals with activities related to
+newspaper, magazine, book publishing and television broadcasting in Zurich,
+Switzerland.
+Responsibilities
+- Rewrote QA Automation Framework (Web)(wdio);
+- Wrote mobile Automation Framework (deprecated) (Java+Appium);
+- Managed software defects tracking, reporting, and follow-up, using a bug
+tracking system;
+- Supported releases into all environments including production;
+- Maintained and contributed to already existing test automation framework;
+- Part of QA Lead responsibilities: scheduled and managed resources to fulfil
+the demand for the effective delivery of testing for new and existing systems;
+- Provided feedback about the current state of products to the team;
+- Tested web APP.
+Tools and Technologies: Achievements
+- Supported deep redesign: NZZ, NZZaS (MAGAZIN);
+- Supported full development cycle from idea to prod for CHM (9 tenants),
+TheMarket;
+- Fully covered CMS with E2E autotests for projects: NZZ, NZZaS, Bellevue,
+CHM, TheMarket.
+Node.js, mocha, Chai.js, Web Testing, Test Planning, Test strategy, Test
+Reporting, Test Design, System Testing, Mobile Testing, End-to-end testing,
+API testing
+
+Name of Employer: Ciklum, Project 3
+Job Title: Automation QA
+Date of Employment: 01.01.2023 - 31.12.2026
+Project Description and
+Responsibilities:
+Project description
+The Client is a media company which deals with activities related to
+newspaper, magazine, book publishing and television broadcasting in Zurich,
+Switzerland.
+Responsibilities
+- Wrote and maintained QA Automation Framework (Web);
+- Managed software defects tracking, reporting, and follow-up, using a bug
+tracking system;
+- Supported releases into all environments including production;
+- Maintained and contributed to already existing test automation framework;
+- Tested web APP.
+Tools and Technologies: Achievements
+- Wrote and maintained QA Automation Framework (Web);
+- Wrote more than 3000 test cases;
+- Supported prod deployments;
+- Provided help and mentoring to coworkers;
+- Supported CMS releases.
+API testing, Chai.js, End-to-end testing, mocha, Node.js, Test Design, Test
+Planning, Test Reporting, Test strategy, Web Testing
