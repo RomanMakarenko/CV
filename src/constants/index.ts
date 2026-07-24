@@ -11,7 +11,12 @@ export { EDUCATION_LIST } from "./education";
 export type { Education } from "./education";
 
 export { CERTIFICATIONS } from "./certifications";
-export type { Certification } from "./certifications";
+export type {
+  Certification,
+  GitHubProject,
+  CurriculumModule,
+  CurriculumLevel,
+} from "./certifications";
 
 export const ABOUT_ME = {
   name: "Roman Makarenko",
