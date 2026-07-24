@@ -33,6 +33,219 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Udemy",
     date: "May 2026",
     image: "/certificates/genai-qa.jpg",
+    description:
+      "A comprehensive course covering Generative AI, prompt engineering, GitHub Copilot, Claude Code, MCP servers, and building AI agents for QA automation — from fundamentals to real-world CI/CD integration.",
+    modules: [
+      {
+        name: "Section 1: Introduction to AI Testing Terminologies",
+        levels: [
+          {
+            title: "3 lectures · 21 min",
+            topics: [
+              "Introduction to AI Terminologies & Course Agenda — Part 1 (12 min)",
+              "Course Agenda Continued — Part 2 (4 min)",
+              "Privacy & Security of AI Applications — How companies are evolving to adapt (5 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 2: Prompt Engineering — Understand the 3 C's: Context, Constraints, Clarity",
+        levels: [
+          {
+            title: "6 lectures · 29 min · Includes 1 role play",
+            topics: [
+              "Important Note (1 min)",
+              "Why Prompt Engineering matters? — Mastering it is an Art (6 min)",
+              "Adding Constraints to leverage Zero-shot prompting for better AI results (9 min)",
+              "Practice scenarios for crafting prompts & Few-shot prompting technique (6 min)",
+              "Role Play 1: Improving AI Responses with Context and Constraints",
+              "Chain of Thought prompting — Let AI detail how it is thinking (6 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 3: Tokens & Generating Test Plans, Test Cases, Test Strategy using AI",
+        levels: [
+          {
+            title: "7 lectures · 58 min · Includes 1 role play",
+            topics: [
+              "What are tokens? Why it matters when interacting with AI Models (7 min)",
+              "Understand how Context Window Limit works — Tips to save tokens (7 min)",
+              "Role Play 2: Optimizing AI Test Generation — A Talk with Your Project Manager",
+              "Generating Test Plan for Project business requirements using AI (14 min)",
+              "Generating Test Cases for the requirements using AI (10 min)",
+              "Generating Test Strategy (Shift Left Testing) with given Test cases using AI (9 min)",
+              "Generate Test Data combinations for the given tests using AI (10 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 4: GitHub Copilot Fundamentals — Ask, Agent, Planning Modes & IDE Installs",
+        levels: [
+          {
+            title: "6 lectures · 1h 9 min",
+            topics: [
+              "Introduction to GitHub Copilot and its features for AI Integration inside editors (9 min)",
+              "Demonstration of Ask & Agent modes in Copilot within VS Code with demo examples (10 min)",
+              "Understanding how Planning mode helps for research and design solutions (8 min)",
+              "GitHub Copilot install on IntelliJ & PyCharm Editors for Java & Python Projects (5 min)",
+              "GitHub Copilot install steps with overview on Eclipse Editors for Java project (6 min)",
+              "GenAI GitHub Copilot plugin for Selenium Java Frameworks within IntelliJ Editor (31 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 5: Intro to Model Context Protocol (MCP) Servers & Build Agents with MCP Tooling",
+        levels: [
+          {
+            title: "13 lectures · 2h 13 min · Includes 1 role play",
+            topics: [
+              "What is MCP? How MCP helps an LLM to be super powerful (28 min)",
+              "Resources to download (1 min)",
+              "Build Agent which automates web browser using Playwright/Selenium MCP Servers (15 min)",
+              "Debugging steps when there are failures in configuring MCP servers (1 min)",
+              "Role Play 3: Justifying the Use of MCP to Your Project Manager",
+              "Resource (1 min)",
+              "Build Agent which can extract data from SQL database by framing complex queries (24 min)",
+              "Hands-On Practice Resources for Testing Skills (1 min)",
+              "Build Agent which can perform API Testing & talk to local File systems for data (18 min)",
+              "Build Agent which can read/write to Excel file for any given scenario (13 min)",
+              "Setting up Playwright MCP configuration within VS Code (14 min)",
+              "GitHub MCP Server — Magic of committing files and Code push to Git with Prompts (10 min)",
+              "On a single Prompt, create Test Automation Project and build test with locators (10 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 6: Building Agentic AI for Quality Engineering using Claude Code",
+        levels: [
+          {
+            title: "14 lectures · 2h 3 min",
+            topics: [
+              "Introduction to Agentic AI — What problems we are solving? — Action Plan (8 min)",
+              "Introduction to Claude Code Skill System — Problem statement (7 min)",
+              "Download the code base used in this section (1 min)",
+              "Install Claude Code & Claude for Chrome and get started with /init file (8 min)",
+              "Tip — Good to know (1 min)",
+              "Understand Knowledge Skills & Agent Skills — When to use with demo example (10 min)",
+              "Create Skill docs for EventHub Application & Understand how they are designed (12 min)",
+              "Avoid Context Bloat: Use Smart References for Accurate AI Responses (6 min)",
+              "The Magic of Agent creating Test Scenarios by reading the Project domain doc (16 min)",
+              "The Magic of Agent Creating Test Strategy to push tests into different layers (14 min)",
+              "Create Skills for Playwright best Practices and then build Agent to write Tests (17 min)",
+              "Demo: Agent Running Tests and Fixing Failed Tests by Referring to Domain Docs (19 min)",
+              "Tip — Good to know (1 min)",
+              "Demo: Goal-oriented Agentic Solution for Test coverage analysis with report (10 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 7: Design GitHub Copilot Custom Agents & Cloud Agents for Automation Repositories",
+        levels: [
+          {
+            title: "3 lectures · 25 min",
+            topics: [
+              "Important Note (1 min)",
+              "What Are GitHub Copilot Custom Agents? Build Your First Custom Agent (12 min)",
+              "GitHub Copilot Cloud Agents in Action: Running AI Agents on Demand (12 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 8: Build QA DevOps Solutions (CI/CD, Docker, GitHub Actions) with AI Agents",
+        levels: [
+          {
+            title: "4 lectures · 35 min",
+            topics: [
+              "With AI Agents Implement CI/CD using GitHub Actions & push code to Remote GIT (15 min)",
+              "Demo of CI/CD in Action with simple prompt solution using Claude Code AI Agent (8 min)",
+              "Implement Docker Solution to containerize the Tests locally with AI Agent (7 min)",
+              "Practical Conversations between Manager & QA Person on building DevOps solutions (5 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 9: Build AI Agents with n8n Automation Workflows — Demo Examples",
+        levels: [
+          {
+            title: "6 lectures · 50 min",
+            topics: [
+              "What is n8n? Overview of Business Process Automation workflows (6 min)",
+              "How n8n revolutionized with AI Agents encapsulation — Demo overview (8 min)",
+              "Create n8n AI Agent to read the Google Sheet and identify bugs in New Status (12 min)",
+              "Setting up Jira Cloud and Create a Project for AI Agent setup (8 min)",
+              "Plugin Jira tool to AI Agent and create end-to-end n8n Workflow for business use case (10 min)",
+              "Building a Public Chat Interface to Interact with n8n AI Workflow via Webhook (6 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 10: Effortlessly Generate Test Automation Code for API Testing",
+        levels: [
+          {
+            title: "5 lectures · 41 min · Includes 1 quiz",
+            topics: [
+              "Using Generative AI for API Testing — parsing JSON responses (10 min)",
+              "Generating POJO classes for complex JSON and generate Java methods using AI (12 min)",
+              "Generating API tests in Cypress & Playwright with the given API contract (9 min)",
+              "Generating complex SQL Queries for Database tables using AI (10 min)",
+              "Quiz 1: Check your knowledge on MCP, LLM and AI Agents",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 11: Introduction to AI-Powered Testing Tools — Low Code Automation",
+        levels: [
+          {
+            title: "4 lectures · 56 min",
+            topics: [
+              "Understanding the capabilities of AI-powered Testing tools (12 min)",
+              "Introduction to TestRigor AI tool and its features on creating Tests using AI (18 min)",
+              "Understanding Scripting language of TestRigor with a demo test (14 min)",
+              "Self Healing capabilities to fix tests using AI-powered testing tools (12 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 12: Privacy-First, Offline LLM Models to Handle Your Project Domain",
+        levels: [
+          {
+            title: "2 lectures · 23 min",
+            topics: [
+              "Setup Custom LLM with local project documents to get Domain related answers (13 min)",
+              "Generating Automatic Test cases on the fly with English requirements (10 min)",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 13: Final Words — Interview Questions & Future of AI in QA Space",
+        levels: [
+          {
+            title: "6 lectures · 52 min",
+            topics: [
+              "Interview Questions to crack your next Job — Recap the topics (15 min)",
+              "Introduction to GPT4All — how it works offline to generate results (8 min)",
+              "How AI can be your best buddy for coding practice and implementation (10 min)",
+              "Future-proof your QA-AI Skills — What next? (8 min)",
+              "Thank You Note with future updates Plan (5 min)",
+              "Bonus Lecture (6 min)",
+            ],
+          },
+        ],
+      },
+    ],
   },
   {
     id: "cert-2",
