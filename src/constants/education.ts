@@ -16,4 +16,12 @@ export const EDUCATION_LIST: Education[] = [
     content1: "Major: Computer Science",
     content2: "Full-time education",
   },
+  {
+    id: "education-2",
+    title: "Specialized School № 269",
+    degree: "Programmer Technologist",
+    duration: "1995 – 2006",
+    content1: "Specialized in programming & computer technologies",
+    content2: "Secondary education",
+  },
 ];

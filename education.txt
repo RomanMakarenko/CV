@@ -1,3 +1,7 @@
 University: Igor Sikorsky Kyiv Polytechnic Institute
 Degree: Master Computer science
 Graduation date: 01.03.2012
+
+School: Specialized School № 269
+Specialty: Programmer Technologist
+Period: 1995 – 2006
