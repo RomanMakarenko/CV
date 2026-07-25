@@ -31,7 +31,11 @@ export const ABOUT_ME = {
   location: "Ukraine",
 };
 
+export { COURSES_IN_PROGRESS } from "./courseInProgress";
+export type { CourseInProgress, CourseLevel, ProjectLink } from "./courseInProgress";
+
 export const NAV_LINKS = [
+  { link: "#in-progress", title: "In Progress" },
   { link: "#experience", title: "Experience" },
   { link: "#skills", title: "Skills" },
   { link: "#education", title: "Education" },

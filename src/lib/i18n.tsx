@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { TRANSLATIONS, EXPERIENCE_TRANSLATIONS } from "@/constants/translations";
 import { CERT_CONTENT } from "@/constants/certTranslations";
+import { COURSE_CONTENT } from "@/constants/courseTranslations";
 import type { Lang } from "@/constants/translations";
 
 interface LanguageContextType {
@@ -9,6 +10,7 @@ interface LanguageContextType {
   t: (key: string) => string;
   et: (key: string) => string;
   ct: (key: string, fallback?: string) => string;
+  cct: (key: string, fallback?: string) => string;
   tDate: (date: string) => string;
 }
 
@@ -92,8 +94,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     return entry[lang];
   };
 
+  const cct = (key: string, fallback?: string): string => {
+    const entry = COURSE_CONTENT[key];
+    if (!entry) return fallback ?? key;
+    return entry[lang];
+  };
+
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t, et, ct, tDate }}>
+    <LanguageContext.Provider value={{ lang, setLang, t, et, ct, cct, tDate }}>
       {children}
     </LanguageContext.Provider>
   );

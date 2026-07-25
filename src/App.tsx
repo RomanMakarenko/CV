@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MarqueeStrip from "@/components/MarqueeStrip";
 import Experience from "@/components/Experience";
+import CourseInProgress from "@/components/CourseInProgress";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
@@ -47,6 +48,7 @@ export default function App() {
           <main>
             <Hero />
             <MarqueeStrip />
+            <CourseInProgress />
             <Experience />
             <Skills />
             <Education />

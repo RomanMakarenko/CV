@@ -55,6 +55,22 @@ export const TRANSLATIONS: TranslationMap = {
   "education.secondary": { en: "Secondary education", uk: "Середня освіта" },
   "education.location": { en: "Kyiv, Ukraine", uk: "Київ, Україна" },
 
+  // In Progress
+  "nav.in-progress": { en: "In Progress", uk: "В процесі" },
+  "inProgress.title": { en: "In Progress", uk: "Наразі в процесі" },
+  "inProgress.subtitle": {
+    en: "Courses and certifications I'm currently working on",
+    uk: "Курси та сертифікації, які зараз опановую",
+  },
+  "inProgress.started": { en: "Started", uk: "Початок" },
+  "inProgress.estimatedEnd": { en: "Estimated end", uk: "Орієнтовно" },
+  "inProgress.levels": { en: "levels", uk: "рівнів" },
+  "inProgress.complete": { en: "complete", uk: "виконано" },
+  "inProgress.progress": { en: "Progress", uk: "Прогрес" },
+  "inProgress.viewCurriculum": { en: "View curriculum", uk: "Програма" },
+  "inProgress.curriculum": { en: "Curriculum", uk: "Програма навчання" },
+  "inProgress.level": { en: "Level", uk: "Рівень" },
+
   // Certifications
   "certifications.title": { en: "Certifications", uk: "Сертифікації" },
   "certifications.subtitle": {
