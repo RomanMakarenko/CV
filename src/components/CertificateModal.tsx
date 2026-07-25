@@ -144,6 +144,7 @@ const CERT_DESC_KEYS: Record<string, string> = {
   "cert-3": "cert.desc.ciklumQaAi",
   "cert-4": "cert.desc.javarush",
   "cert-5": "cert.desc.selenium",
+  "cert-11": "cert.desc.seleniumCucumber",
 };
 
 export default function CertificateModal({ cert, onClose }: CertificateModalProps) {

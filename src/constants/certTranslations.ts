@@ -417,11 +417,11 @@ export const CERT_CONTENT: Record<string, { en: string; uk: string }> = {
   // ======== cert-2: Ciklum AI Fundamentals ========
   "cc.cert-2.m0.name": { en: "Course Modules", uk: "Модулі курсу" },
   "cc.cert-2.m0.l0.title": { en: "5 modules", uk: "5 модулів" },
-  "cc.cert-2.m0.l0.t0": { en: "[Recording] Intro to AI world (45 min)", uk: "[Запис] Вступ у світ AI (45 хв)" },
-  "cc.cert-2.m0.l0.t1": { en: "[Recording] AI Tools & Productivity (35 min)", uk: "[Запис] AI інструменти та продуктивність (35 хв)" },
-  "cc.cert-2.m0.l0.t2": { en: "[Recording] Vibe coding platforms (45 min)", uk: "[Запис] Vibe coding платформи (45 хв)" },
-  "cc.cert-2.m0.l0.t3": { en: "[Recording] GenAI in the SDLC (47 min)", uk: "[Запис] GenAI в SDLC (47 хв)" },
-  "cc.cert-2.m0.l0.t4": { en: "[E-learning] AI-Skilled. Future-Ready (60 min)", uk: "[E-learning] AI-Skilled. Future-Ready (60 хв)" },
+  "cc.cert-2.m0.l0.t0": { en: "Intro to AI world", uk: "Вступ у світ AI" },
+  "cc.cert-2.m0.l0.t1": { en: "AI Tools & Productivity", uk: "AI інструменти та продуктивність" },
+  "cc.cert-2.m0.l0.t2": { en: "Vibe coding platforms", uk: "Vibe coding платформи" },
+  "cc.cert-2.m0.l0.t3": { en: "GenAI in the SDLC", uk: "GenAI в SDLC" },
+  "cc.cert-2.m0.l0.t4": { en: "AI-Skilled. Future-Ready", uk: "AI-Skilled. Future-Ready" },
 
   // ======== cert-3: QA-Specific AI ========
   "cc.cert-3.m0.name": { en: "Course Modules", uk: "Модулі курсу" },
@@ -1703,6 +1703,135 @@ export const CERT_CONTENT: Record<string, { en: string; uk: string }> = {
   "cc.cert-4.m4.l7.t2": { en: "Embedded Tomcat", uk: "Вбудований Tomcat" },
   "cc.cert-4.m4.l7.t3": { en: "Configuration annotations", uk: "Анотації конфігурації" },
   "cc.cert-4.m4.l7.t4": { en: "Demo: Spring Data JPA (query generation by method name at runtime)", uk: "Демо: Spring Data JPA (генерація запитів за ім'ям методу)" },
+
+  // ======== cert-11: Learn Selenium with Java, Cucumber & Frameworks ========
+  "cc.cert-11.m0.name": {
+    en: "Section 1: Overview on Software Testing & Automation",
+    uk: "Розділ 1: Огляд тестування ПЗ та автоматизації",
+  },
+  "cc.cert-11.m0.l0.title": { en: "1 lecture · 1hr 33min", uk: "1 лекція · 1 год 33 хв" },
+  "cc.cert-11.m0.l0.t0": { en: "Introduction on Automation & Selenium", uk: "Вступ до автоматизації та Selenium" },
+
+  "cc.cert-11.m1.name": {
+    en: "Section 2: Java Programming",
+    uk: "Розділ 2: Програмування на Java",
+  },
+  "cc.cert-11.m1.l0.title": { en: "20 lectures · 31hr 52min", uk: "20 лекцій · 31 год 52 хв" },
+  "cc.cert-11.m1.l0.t0": { en: "Environment Setup for Java & Eclipse", uk: "Налаштування середовища для Java та Eclipse" },
+  "cc.cert-11.m1.l0.t1": { en: "Variables, Data Types, Operators & Conditional Statements", uk: "Змінні, типи даних, оператори та умовні конструкції" },
+  "cc.cert-11.m1.l0.t2": { en: "Java Loops, Arrays (single & multi-dimensional)", uk: "Цикли Java, масиви (одновимірні та багатовимірні)" },
+  "cc.cert-11.m1.l0.t3": { en: "Working with Strings in Java", uk: "Робота з рядками в Java" },
+  "cc.cert-11.m1.l0.t4": { en: "OOP Concepts: Classes, Objects, Methods & Constructors", uk: "Концепції ООП: класи, об'єкти, методи та конструктори" },
+  "cc.cert-11.m1.l0.t5": { en: "Polymorphism, Encapsulation, Inheritance", uk: "Поліморфізм, інкапсуляція, успадкування" },
+  "cc.cert-11.m1.l0.t6": { en: "Method Overriding, super & final keywords", uk: "Перевизначення методів, ключові слова super та final" },
+  "cc.cert-11.m1.l0.t7": { en: "Data Abstraction — Interfaces & Abstract Classes", uk: "Абстракція даних — інтерфейси та абстрактні класи" },
+  "cc.cert-11.m1.l0.t8": { en: "Data Conversion, Wrapper Classes & Packages", uk: "Конвертація даних, класи-обгортки та пакети" },
+  "cc.cert-11.m1.l0.t9": { en: "Type Casting — Up Casting & Down Casting", uk: "Приведення типів — Up Casting та Down Casting" },
+  "cc.cert-11.m1.l0.t10": { en: "Exception Handling in Java", uk: "Обробка винятків у Java" },
+  "cc.cert-11.m1.l0.t11": { en: "Java Collections Framework", uk: "Колекції Java" },
+
+  "cc.cert-11.m2.name": {
+    en: "Section 3: Selenium WebDriver",
+    uk: "Розділ 3: Selenium WebDriver",
+  },
+  "cc.cert-11.m2.l0.title": { en: "19 lectures · 29hr 16min", uk: "19 лекцій · 29 год 16 хв" },
+  "cc.cert-11.m2.l0.t0": { en: "WebDriver Setup & Environment Configuration", uk: "Налаштування WebDriver та конфігурація середовища" },
+  "cc.cert-11.m2.l0.t1": { en: "Selenium Locators: ID, Name, CSS, XPath, XPath Axes", uk: "Локатори Selenium: ID, Name, CSS, XPath, XPath Axes" },
+  "cc.cert-11.m2.l0.t2": { en: "WebDriver Methods: Get, Conditional, Browser & Navigation", uk: "Методи WebDriver: Get, умовні, браузерні та навігаційні" },
+  "cc.cert-11.m2.l0.t3": { en: "Waits: Implicit, Explicit & Fluent Waits", uk: "Очікування: неявні, явні та Fluent Waits" },
+  "cc.cert-11.m2.l0.t4": { en: "Handling Checkboxes, Radio Buttons, Alerts & Frames", uk: "Робота з чекбоксами, радіокнопками, алертами та фреймами" },
+  "cc.cert-11.m2.l0.t5": { en: "Handling Static, Dynamic & Pagination Web Tables", uk: "Робота зі статичними, динамічними та пагінованими таблицями" },
+  "cc.cert-11.m2.l0.t6": { en: "Date Pickers, Mouse & Keyboard Events", uk: "Вибір дат, події миші та клавіатури" },
+  "cc.cert-11.m2.l0.t7": { en: "File Upload, Scrolling, JavaScriptExecutor", uk: "Завантаження файлів, прокрутка, JavaScriptExecutor" },
+  "cc.cert-11.m2.l0.t8": { en: "Screenshots, SSL Certificates, Headless Browser & Chrome Extensions", uk: "Скріншоти, SSL сертифікати, Headless браузер та розширення Chrome" },
+  "cc.cert-11.m2.l0.t9": { en: "Broken Links, SVG Elements & Shadow DOM", uk: "Биті посилання, SVG елементи та Shadow DOM" },
+
+  "cc.cert-11.m3.name": {
+    en: "Section 4: Apache POI — Data Driven Testing using MS Excel",
+    uk: "Розділ 4: Apache POI — Data Driven тестування з MS Excel",
+  },
+  "cc.cert-11.m3.l0.title": { en: "2 lectures · 3hr 31min", uk: "2 лекції · 3 год 31 хв" },
+  "cc.cert-11.m3.l0.t0": { en: "Reading & Writing Data into Excel with Apache POI", uk: "Читання та запис даних у Excel за допомогою Apache POI" },
+  "cc.cert-11.m3.l0.t1": { en: "Data Driven Testing using Microsoft Excel", uk: "Data Driven тестування з Microsoft Excel" },
+
+  "cc.cert-11.m4.name": {
+    en: "Section 5: TestNG Framework for Selenium",
+    uk: "Розділ 5: Фреймворк TestNG для Selenium",
+  },
+  "cc.cert-11.m4.l0.title": { en: "5 lectures · 7hr 38min", uk: "5 лекцій · 7 год 38 хв" },
+  "cc.cert-11.m4.l0.t0": { en: "Introduction to TestNG & Installation", uk: "Вступ до TestNG та встановлення" },
+  "cc.cert-11.m4.l0.t1": { en: "TestNG Annotations & Types of Assertions", uk: "Анотації TestNG та типи тверджень" },
+  "cc.cert-11.m4.l0.t2": { en: "Dependency Methods & Grouping", uk: "Методи залежностей та групування" },
+  "cc.cert-11.m4.l0.t3": { en: "Data Providers and Parallel Testing", uk: "Data Providers та паралельне тестування" },
+  "cc.cert-11.m4.l0.t4": { en: "TestNG Listeners & Extent Reports", uk: "Слухачі TestNG та Extent Reports" },
+
+  "cc.cert-11.m5.name": {
+    en: "Section 6: Page Object Model",
+    uk: "Розділ 6: Page Object Model",
+  },
+  "cc.cert-11.m5.l0.title": { en: "1 lecture · 1hr 29min", uk: "1 лекція · 1 год 29 хв" },
+  "cc.cert-11.m5.l0.t0": { en: "Page Object Model Pattern & Page Factory Implementation", uk: "Паттерн Page Object Model та реалізація Page Factory" },
+
+  "cc.cert-11.m6.name": {
+    en: "Section 7: Hybrid Driven Framework Development with Project",
+    uk: "Розділ 7: Розробка гібридного фреймворку з проєктом",
+  },
+  "cc.cert-11.m6.l0.title": { en: "7 lectures · 10hr 43min", uk: "7 лекцій · 10 год 43 хв" },
+  "cc.cert-11.m6.l0.t0": { en: "Framework Architecture & Project Setup", uk: "Архітектура фреймворку та налаштування проєкту" },
+  "cc.cert-11.m6.l0.t1": { en: "Logs Generation, Cross-browser Tests & Properties File", uk: "Генерація логів, кросбраузерні тести та файли властивостей" },
+  "cc.cert-11.m6.l0.t2": { en: "Login Test & Data Driven Testing Integration", uk: "Тест входу та інтеграція Data Driven тестування" },
+  "cc.cert-11.m6.l0.t3": { en: "Grouping, Extent Reports & Failure Test Rerun", uk: "Групування, Extent Reports та повторний запуск невдалих тестів" },
+  "cc.cert-11.m6.l0.t4": { en: "Selenium Grid Integration", uk: "Інтеграція Selenium Grid" },
+  "cc.cert-11.m6.l0.t5": { en: "Docker Integration with Selenium Grid", uk: "Інтеграція Docker з Selenium Grid" },
+
+  "cc.cert-11.m7.name": {
+    en: "Section 8: CI/CD — Maven, Git, GitHub & Jenkins",
+    uk: "Розділ 8: CI/CD — Maven, Git, GitHub та Jenkins",
+  },
+  "cc.cert-11.m7.l0.title": { en: "2 lectures · 2hr 56min", uk: "2 лекції · 2 год 56 хв" },
+  "cc.cert-11.m7.l0.t0": { en: "Continuous Integration with Maven, Git & GitHub", uk: "Безперервна інтеграція з Maven, Git та GitHub" },
+  "cc.cert-11.m7.l0.t1": { en: "Jenkins Setup & Job Configuration", uk: "Налаштування Jenkins та конфігурація завдань" },
+
+  "cc.cert-11.m8.name": {
+    en: "Section 9: Cucumber BDD Framework",
+    uk: "Розділ 9: Cucumber BDD фреймворк",
+  },
+  "cc.cert-11.m8.l0.title": { en: "3 lectures · 4hr 46min", uk: "3 лекції · 4 год 46 хв" },
+  "cc.cert-11.m8.l0.t0": { en: "Cucumber & BDD Concepts", uk: "Концепції Cucumber та BDD" },
+  "cc.cert-11.m8.l0.t1": { en: "Cucumber Framework Setup: Feature Files, Step Definitions & Runner", uk: "Налаштування Cucumber: Feature файли, Step Definitions та Runner" },
+  "cc.cert-11.m8.l0.t2": { en: "Advanced Cucumber: Tags, Background & Reports", uk: "Просунутий Cucumber: Tags, Background та звіти" },
+
+  "cc.cert-11.m9.name": {
+    en: "Section 10: Bonus Topics",
+    uk: "Розділ 10: Бонусні теми",
+  },
+  "cc.cert-11.m9.l0.title": { en: "2 lectures · 2hr 51min", uk: "2 лекції · 2 год 51 хв" },
+  "cc.cert-11.m9.l0.t0": { en: "Git Options in Eclipse & IntelliJ IDEA", uk: "Опції Git в Eclipse та IntelliJ IDEA" },
+  "cc.cert-11.m9.l0.t1": { en: "Using ChatGPT in Software Testing & Automation", uk: "Використання ChatGPT в тестуванні ПЗ та автоматизації" },
+
+  "cc.cert-11.m10.name": {
+    en: "Section 11: SelectorsHub",
+    uk: "Розділ 11: SelectorsHub",
+  },
+  "cc.cert-11.m10.l0.title": { en: "1 lecture · 45min", uk: "1 лекція · 45 хв" },
+  "cc.cert-11.m10.l0.t0": { en: "SelectorsHub — Browser Plugin for Element Identification & Validation", uk: "SelectorsHub — плагін браузера для ідентифікації та валідації елементів" },
+
+  "cc.cert-11.m11.name": {
+    en: "Section 12: Wind Up Session — Interview Preparation",
+    uk: "Розділ 12: Завершальна сесія — підготовка до співбесіди",
+  },
+  "cc.cert-11.m11.l0.title": { en: "1 lecture · 1hr 41min", uk: "1 лекція · 1 год 41 хв" },
+  "cc.cert-11.m11.l0.t0": { en: "Interview Preparation Tips, Practice Plan & Learning Roadmap", uk: "Поради до співбесіди, план практики та дорожня карта навчання" },
+
+  "cc.cert-11.m12.name": {
+    en: "Section 13: Docker — Bonus Topics",
+    uk: "Розділ 13: Docker — бонусні теми",
+  },
+  "cc.cert-11.m12.l0.title": { en: "8 lectures · 3hr 28min", uk: "8 лекцій · 3 год 28 хв" },
+  "cc.cert-11.m12.l0.t0": { en: "Docker Introduction, Installation & Terminology", uk: "Вступ до Docker, встановлення та термінологія" },
+  "cc.cert-11.m12.l0.t1": { en: "Docker Commands & Running Selenium Tests on Docker Containers", uk: "Команди Docker та запуск Selenium тестів у Docker контейнерах" },
+  "cc.cert-11.m12.l0.t2": { en: "Selenium Grid Setup with Docker Compose", uk: "Налаштування Selenium Grid з Docker Compose" },
+  "cc.cert-11.m12.l0.t3": { en: "Docker Grid Integration with Jenkins", uk: "Інтеграція Docker Grid з Jenkins" },
 
   // ======== cert-6: English INTERMEDIATE / B1 (no modules, just name translated above) ========
   // ======== cert-7: Node.js (no detailed modules) ========

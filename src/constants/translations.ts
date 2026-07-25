@@ -106,6 +106,10 @@ export const TRANSLATIONS: TranslationMap = {
     en: "A comprehensive Selenium WebDriver course — best-seller in the Selenium category. Covers automation testing from fundamentals to advanced frameworks, CI/CD integration, Selenium Grid, and AI-powered code generation.",
     uk: "Комплексний курс Selenium WebDriver — бестселер у категорії Selenium. Охоплює автоматизацію тестування від основ до просунутих фреймворків, інтеграцію CI/CD, Selenium Grid та генерацію коду з AI.",
   },
+  "cert.desc.seleniumCucumber": {
+    en: "A comprehensive end-to-end course covering Selenium WebDriver, Java programming, TestNG, Cucumber BDD, Apache POI, Page Object Model, Hybrid Driven Framework development, CI/CD with Jenkins & Docker, and Selenium Grid — from fundamentals to real-world framework architecture.",
+    uk: "Комплексний наскрізний курс, що охоплює Selenium WebDriver, програмування на Java, TestNG, Cucumber BDD, Apache POI, Page Object Model, розробку гібридного фреймворку, CI/CD з Jenkins та Docker, а також Selenium Grid — від основ до архітектури реальних фреймворків.",
+  },
 
   // Certificate names
   "cert.name.genai": {
@@ -147,6 +151,10 @@ export const TRANSLATIONS: TranslationMap = {
   "cert.name.sql": {
     en: "SQL Essential",
     uk: "SQL Essential",
+  },
+  "cert.name.seleniumCucumber": {
+    en: "Learn Selenium with Java, Cucumber & Frameworks",
+    uk: "Вивчайте Selenium з Java, Cucumber та фреймворками",
   },
 
   // Month translations for dates

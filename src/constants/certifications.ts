@@ -28,6 +28,197 @@ export interface Certification {
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    id: "cert-11",
+    name: "Learn Selenium with Java, Cucumber & Frameworks",
+    issuer: "Udemy",
+    date: "Jul 2026",
+    image: "/certificates/selenium-cucumber.jpg",
+    description:
+      "A comprehensive end-to-end course covering Selenium WebDriver, Java programming, TestNG, Cucumber BDD, Apache POI, Page Object Model, Hybrid Driven Framework development, CI/CD with Jenkins & Docker, and Selenium Grid — from fundamentals to real-world framework architecture.",
+    modules: [
+      {
+        name: "Section 1: Overview on Software Testing & Automation",
+        levels: [
+          {
+            title: "1 lecture · 1hr 33min",
+            topics: [
+              "Introduction on Automation & Selenium",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 2: Java Programming",
+        levels: [
+          {
+            title: "20 lectures · 31hr 52min",
+            topics: [
+              "Environment Setup for Java & Eclipse",
+              "Variables, Data Types, Operators & Conditional Statements",
+              "Java Loops, Arrays (single & multi-dimensional)",
+              "Working with Strings in Java",
+              "OOP Concepts: Classes, Objects, Methods & Constructors",
+              "Polymorphism, Encapsulation, Inheritance",
+              "Method Overriding, super & final keywords",
+              "Data Abstraction — Interfaces & Abstract Classes",
+              "Data Conversion, Wrapper Classes & Packages",
+              "Type Casting — Up Casting & Down Casting",
+              "Exception Handling in Java",
+              "Java Collections Framework",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 3: Selenium WebDriver",
+        levels: [
+          {
+            title: "19 lectures · 29hr 16min",
+            topics: [
+              "WebDriver Setup & Environment Configuration",
+              "Selenium Locators: ID, Name, CSS, XPath, XPath Axes",
+              "WebDriver Methods: Get, Conditional, Browser & Navigation",
+              "Waits: Implicit, Explicit & Fluent Waits",
+              "Handling Checkboxes, Radio Buttons, Alerts & Frames",
+              "Handling Static, Dynamic & Pagination Web Tables",
+              "Date Pickers, Mouse & Keyboard Events",
+              "File Upload, Scrolling, JavaScriptExecutor",
+              "Screenshots, SSL Certificates, Headless Browser & Chrome Extensions",
+              "Broken Links, SVG Elements & Shadow DOM",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 4: Apache POI — Data Driven Testing using MS Excel",
+        levels: [
+          {
+            title: "2 lectures · 3hr 31min",
+            topics: [
+              "Reading & Writing Data into Excel with Apache POI",
+              "Data Driven Testing using Microsoft Excel",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 5: TestNG Framework for Selenium",
+        levels: [
+          {
+            title: "5 lectures · 7hr 38min",
+            topics: [
+              "Introduction to TestNG & Installation",
+              "TestNG Annotations & Types of Assertions",
+              "Dependency Methods & Grouping",
+              "Data Providers and Parallel Testing",
+              "TestNG Listeners & Extent Reports",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 6: Page Object Model",
+        levels: [
+          {
+            title: "1 lecture · 1hr 29min",
+            topics: [
+              "Page Object Model Pattern & Page Factory Implementation",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 7: Hybrid Driven Framework Development with Project",
+        levels: [
+          {
+            title: "7 lectures · 10hr 43min",
+            topics: [
+              "Framework Architecture & Project Setup",
+              "Logs Generation, Cross-browser Tests & Properties File",
+              "Login Test & Data Driven Testing Integration",
+              "Grouping, Extent Reports & Failure Test Rerun",
+              "Selenium Grid Integration",
+              "Docker Integration with Selenium Grid",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 8: CI/CD — Maven, Git, GitHub & Jenkins",
+        levels: [
+          {
+            title: "2 lectures · 2hr 56min",
+            topics: [
+              "Continuous Integration with Maven, Git & GitHub",
+              "Jenkins Setup & Job Configuration",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 9: Cucumber BDD Framework",
+        levels: [
+          {
+            title: "3 lectures · 4hr 46min",
+            topics: [
+              "Cucumber & BDD Concepts",
+              "Cucumber Framework Setup: Feature Files, Step Definitions & Runner",
+              "Advanced Cucumber: Tags, Background & Reports",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 10: Bonus Topics",
+        levels: [
+          {
+            title: "2 lectures · 2hr 51min",
+            topics: [
+              "Git Options in Eclipse & IntelliJ IDEA",
+              "Using ChatGPT in Software Testing & Automation",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 11: SelectorsHub",
+        levels: [
+          {
+            title: "1 lecture · 45min",
+            topics: [
+              "SelectorsHub — Browser Plugin for Element Identification & Validation",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 12: Wind Up Session — Interview Preparation",
+        levels: [
+          {
+            title: "1 lecture · 1hr 41min",
+            topics: [
+              "Interview Preparation Tips, Practice Plan & Learning Roadmap",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 13: Docker — Bonus Topics",
+        levels: [
+          {
+            title: "8 lectures · 3hr 28min",
+            topics: [
+              "Docker Introduction, Installation & Terminology",
+              "Docker Commands & Running Selenium Tests on Docker Containers",
+              "Selenium Grid Setup with Docker Compose",
+              "Docker Grid Integration with Jenkins",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: "cert-1",
     name: "GenAI & AI Agents for QA Automation | Copilot & Claude Code",
     issuer: "Udemy",
