@@ -54,8 +54,17 @@ export default function Education() {
 
             <div className="relative p-6 md:p-10">
               <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10">
-                  <GraduationCap className="h-6 w-6 text-accent" />
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-accent/10">
+                  {edu.logo ? (
+                    <img
+                      src={edu.logo}
+                      alt={`${edu.title} logo`}
+                      className="h-full w-full object-contain p-1"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <GraduationCap className="h-6 w-6 text-accent" />
+                  )}
                 </div>
                 <div>
                   <h3 className="text-lg font-bold leading-tight md:text-xl">

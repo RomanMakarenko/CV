@@ -5,6 +5,7 @@ export interface Education {
   duration: string;
   content1: string;
   content2: string;
+  logo?: string;
 }
 
 export const EDUCATION_LIST: Education[] = [
@@ -15,6 +16,7 @@ export const EDUCATION_LIST: Education[] = [
     duration: "Graduated: March 2012",
     content1: "Major: Computer Science",
     content2: "Full-time education",
+    logo: "/logos/kpi.jpg",
   },
   {
     id: "education-2",
