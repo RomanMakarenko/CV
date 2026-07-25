@@ -16,6 +16,8 @@ export const TRANSLATIONS: TranslationMap = {
   "hero.openToOpportunities": { en: "Open to opportunities", uk: "Відкритий до пропозицій" },
   "hero.qatitle": { en: "QA Automation Engineer", uk: "QA Automation Engineer" },
   "hero.hi": { en: "Hi, I'm", uk: "Привіт, я" },
+  "hero.firstName": { en: "Roman", uk: "Роман" },
+  "hero.lastName": { en: "Makarenko", uk: "Макаренко" },
   "hero.tagLine": {
     en: "QA Automation Engineer · 10+ Years in Quality Assurance · Web, Mobile & Backend",
     uk: "QA Automation Engineer · 10+ років у забезпеченні якості · Web, Mobile & Backend",

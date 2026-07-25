@@ -40,9 +40,9 @@ export default function Hero() {
               className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
             >
               {t("hero.hi")}{" "}
-              <span className="gradient-text">{ABOUT_ME.firstName}</span>
+              <span className="gradient-text">{t("hero.firstName")}</span>
               <br />
-              <span className="gradient-text">{ABOUT_ME.lastName}</span>
+              <span className="gradient-text">{t("hero.lastName")}</span>
             </motion.h1>
 
             <motion.p
