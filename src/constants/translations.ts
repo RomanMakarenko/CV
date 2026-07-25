@@ -107,6 +107,62 @@ export const TRANSLATIONS: TranslationMap = {
     uk: "Комплексний курс Selenium WebDriver — бестселер у категорії Selenium. Охоплює автоматизацію тестування від основ до просунутих фреймворків, інтеграцію CI/CD, Selenium Grid та генерацію коду з AI.",
   },
 
+  // Certificate names
+  "cert.name.genai": {
+    en: "GenAI & AI Agents for QA Automation | Copilot & Claude Code",
+    uk: "GenAI та AI-агенти для автоматизації QA | Copilot та Claude Code",
+  },
+  "cert.name.ciklumAi": {
+    en: "Ciklum AI Fundamentals Course (Level 1)",
+    uk: "Ciklum: Основи AI (Рівень 1)",
+  },
+  "cert.name.ciklumQaAi": {
+    en: "QA-Specific AI Learning and Certification (Level 2)",
+    uk: "Спеціалізований AI для QA (Рівень 2)",
+  },
+  "cert.name.javarush": {
+    en: "Java Developer Professional",
+    uk: "Професійний Java Developer",
+  },
+  "cert.name.selenium": {
+    en: "Selenium WebDriver with Java — Basics to Advanced",
+    uk: "Selenium WebDriver з Java — від основ до просунутого",
+  },
+  "cert.name.english": {
+    en: "English INTERMEDIATE / B1",
+    uk: "Англійська СЕРЕДНІЙ / B1",
+  },
+  "cert.name.nodejs": {
+    en: "Node.js",
+    uk: "Node.js",
+  },
+  "cert.name.javascript": {
+    en: "JavaScript",
+    uk: "JavaScript",
+  },
+  "cert.name.qaautomation": {
+    en: "QA Automation",
+    uk: "QA Automation",
+  },
+  "cert.name.sql": {
+    en: "SQL Essential",
+    uk: "SQL Essential",
+  },
+
+  // Month translations for dates
+  "month.Jan": { en: "Jan", uk: "Січ" },
+  "month.Feb": { en: "Feb", uk: "Лют" },
+  "month.Mar": { en: "Mar", uk: "Бер" },
+  "month.Apr": { en: "Apr", uk: "Кві" },
+  "month.May": { en: "May", uk: "Тра" },
+  "month.Jun": { en: "Jun", uk: "Чер" },
+  "month.Jul": { en: "Jul", uk: "Лип" },
+  "month.Aug": { en: "Aug", uk: "Сер" },
+  "month.Sep": { en: "Sep", uk: "Вер" },
+  "month.Oct": { en: "Oct", uk: "Жов" },
+  "month.Nov": { en: "Nov", uk: "Лис" },
+  "month.Dec": { en: "Dec", uk: "Гру" },
+
   // Certificate modal UI
   "modal.certificate": { en: "Certificate", uk: "Сертифікат" },
   "modal.studyProgram": { en: "Study Program", uk: "Програма навчання" },

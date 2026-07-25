@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Award, ExternalLink, BookOpen, Github, ChevronDown, FolderGit2 } from "lucide-react";
-import { useLanguage } from "@/lib/i18n";
+import { useLanguage, getCertNameKey } from "@/lib/i18n";
 import type { Certification, CurriculumModule } from "@/constants/certifications";
 
 interface CertificateModalProps {
@@ -9,10 +9,12 @@ interface CertificateModalProps {
   onClose: () => void;
 }
 
-function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number }) {
+function ModuleAccordion({ mod, index, certId }: { mod: CurriculumModule; index: number; certId: string }) {
   const [open, setOpen] = useState(index === 0);
-  const { t } = useLanguage();
+  const { t, ct } = useLanguage();
   const hasProjects = mod.projects && mod.projects.length > 0;
+
+  const moduleNameKey = `cc.${certId}.m${index}.name`;
 
   return (
     <div className="rounded-xl border border-border/30 bg-muted/20 overflow-hidden">
@@ -25,7 +27,7 @@ function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number 
           <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-xs font-bold text-accent">
             {index + 1}
           </span>
-          <h3 className="text-sm font-semibold leading-snug">{mod.name}</h3>
+          <h3 className="text-sm font-semibold leading-snug">{ct(moduleNameKey, mod.name)}</h3>
           {hasProjects && (
             <span className="inline-flex items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-medium text-accent">
               <FolderGit2 className="h-3 w-3" />
@@ -53,7 +55,9 @@ function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number 
             <div className="border-t border-border/20 px-5 pb-5 pt-3">
               {/* Levels grid */}
               <div className="grid gap-3 sm:grid-cols-2">
-                {mod.levels.map((level, lIdx) => (
+                {mod.levels.map((level, lIdx) => {
+                  const levelTitleKey = `cc.${certId}.m${index}.l${lIdx}.title`;
+                  return (
                   <div
                     key={lIdx}
                     className={`rounded-lg border p-3 ${
@@ -67,24 +71,28 @@ function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number 
                         <FolderGit2 className="h-3.5 w-3.5 shrink-0 text-accent" />
                       )}
                       <h4 className="text-xs font-semibold leading-snug text-foreground/90">
-                        {level.title}
+                        {ct(levelTitleKey, level.title)}
                       </h4>
                     </div>
                     {level.topics.length > 0 && (
                       <ul className="mt-2 space-y-0.5">
-                        {level.topics.map((topic, tIdx) => (
+                        {level.topics.map((topic, tIdx) => {
+                          const topicKey = `cc.${certId}.m${index}.l${lIdx}.t${tIdx}`;
+                          return (
                           <li
                             key={tIdx}
                             className="flex gap-1.5 text-[11px] text-muted-foreground leading-relaxed"
                           >
                             <span className="mt-[5px] h-1 w-1 shrink-0 rounded-full bg-accent/40" />
-                            {topic}
+                            {ct(topicKey, topic)}
                           </li>
-                        ))}
+                          );
+                        })}
                       </ul>
                     )}
                   </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* GitHub projects for this module */}
@@ -95,7 +103,10 @@ function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number 
                     {t("modal.projects")}
                   </p>
                   <div className="grid gap-2 sm:grid-cols-2">
-                    {mod.projects!.map((proj) => (
+                    {mod.projects!.map((proj, pIdx) => {
+                      const projNameKey = `cc.${certId}.m${index}.p${pIdx}.name`;
+                      const projDescKey = `cc.${certId}.m${index}.p${pIdx}.desc`;
+                      return (
                       <a
                         key={proj.url}
                         href={proj.url}
@@ -107,14 +118,15 @@ function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number 
                       >
                         <Github className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" />
                         <div className="min-w-0">
-                          <p className="text-sm font-medium">{proj.name}</p>
+                          <p className="text-sm font-medium">{ct(projNameKey, proj.name)}</p>
                           <p className="mt-0.5 text-xs text-muted-foreground">
-                            {proj.description}
+                            {ct(projDescKey, proj.description)}
                           </p>
                         </div>
                         <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground" />
                       </a>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               )}
@@ -135,7 +147,10 @@ const CERT_DESC_KEYS: Record<string, string> = {
 };
 
 export default function CertificateModal({ cert, onClose }: CertificateModalProps) {
-  const { t } = useLanguage();
+  const { t, tDate } = useLanguage();
+  const certNameKey = getCertNameKey(cert.id);
+  const issuerKey = `cert.issuer.${cert.issuer}`;
+  const hasIssuerTr = t(issuerKey) !== issuerKey;
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -191,11 +206,11 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
               <Award className="h-6 w-6 text-accent" />
             </div>
             <div>
-              <h2 className="text-xl font-bold">{cert.name}</h2>
+              <h2 className="text-xl font-bold">{certNameKey ? t(certNameKey) : cert.name}</h2>
               <div className="mt-1.5 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-                <span className="font-medium text-accent">{cert.issuer}</span>
+                <span className="font-medium text-accent">{hasIssuerTr ? t(issuerKey) : cert.issuer}</span>
                 <span className="text-border">·</span>
-                <span>{cert.date}</span>
+                <span>{tDate(cert.date)}</span>
               </div>
               {(cert.description || CERT_DESC_KEYS[cert.id]) && (
                 <p className="mt-2 max-w-2xl text-sm text-muted-foreground/80 leading-relaxed">
@@ -218,7 +233,7 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
               <div className="overflow-hidden rounded-xl border border-border/30 bg-muted/20">
                 <img
                   src={cert.image}
-                  alt={cert.name}
+                  alt={certNameKey ? t(certNameKey) : cert.name}
                   className="w-full object-contain"
                   loading="lazy"
                 />
@@ -239,7 +254,7 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
 
               <div className="space-y-3">
                 {cert.modules!.map((mod, mIdx) => (
-                  <ModuleAccordion key={mIdx} mod={mod} index={mIdx} />
+                  <ModuleAccordion key={mIdx} mod={mod} index={mIdx} certId={cert.id} />
                 ))}
               </div>
             </div>

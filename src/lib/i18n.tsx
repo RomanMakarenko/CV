@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { TRANSLATIONS, EXPERIENCE_TRANSLATIONS } from "@/constants/translations";
+import { CERT_CONTENT } from "@/constants/certTranslations";
 import type { Lang } from "@/constants/translations";
 
 interface LanguageContextType {
@@ -7,6 +8,25 @@ interface LanguageContextType {
   setLang: (lang: Lang) => void;
   t: (key: string) => string;
   et: (key: string) => string;
+  ct: (key: string, fallback?: string) => string;
+  tDate: (date: string) => string;
+}
+
+const CERT_NAME_KEYS: Record<string, string> = {
+  "cert-1": "cert.name.genai",
+  "cert-2": "cert.name.ciklumAi",
+  "cert-3": "cert.name.ciklumQaAi",
+  "cert-4": "cert.name.javarush",
+  "cert-5": "cert.name.selenium",
+  "cert-6": "cert.name.english",
+  "cert-7": "cert.name.nodejs",
+  "cert-8": "cert.name.javascript",
+  "cert-9": "cert.name.qaautomation",
+  "cert-10": "cert.name.sql",
+};
+
+export function getCertNameKey(certId: string): string | undefined {
+  return CERT_NAME_KEYS[certId];
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -50,8 +70,29 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     return entry[lang];
   };
 
+  const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+  const tDate = (date: string): string => {
+    if (lang === "en") return date;
+    // Replace English month abbreviations with Ukrainian ones
+    let result = date;
+    for (const m of MONTHS) {
+      const tr = TRANSLATIONS[`month.${m}`];
+      if (tr) {
+        result = result.replace(new RegExp(m, "g"), tr[lang]);
+      }
+    }
+    return result;
+  };
+
+  const ct = (key: string, fallback?: string): string => {
+    const entry = CERT_CONTENT[key];
+    if (!entry) return fallback ?? key;
+    return entry[lang];
+  };
+
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t, et }}>
+    <LanguageContext.Provider value={{ lang, setLang, t, et, ct, tDate }}>
       {children}
     </LanguageContext.Provider>
   );

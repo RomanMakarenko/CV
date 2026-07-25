@@ -1,0 +1,1717 @@
+import type { Lang } from "./translations";
+
+export const CERT_CONTENT: Record<string, { en: string; uk: string }> = {
+  // ======== cert-1: GenAI & AI Agents for QA Automation ========
+  "cc.cert-1.m0.name": {
+    en: "Section 1: Introduction to AI Testing Terminologies",
+    uk: "Розділ 1: Вступ до термінології AI-тестування",
+  },
+  "cc.cert-1.m0.l0.title": {
+    en: "3 lectures · 21 min",
+    uk: "3 лекції · 21 хв",
+  },
+  "cc.cert-1.m0.l0.t0": {
+    en: "Introduction to AI Terminologies & Course Agenda — Part 1 (12 min)",
+    uk: "Вступ до термінології AI та програми курсу — Частина 1 (12 хв)",
+  },
+  "cc.cert-1.m0.l0.t1": {
+    en: "Course Agenda Continued — Part 2 (4 min)",
+    uk: "Продовження програми курсу — Частина 2 (4 хв)",
+  },
+  "cc.cert-1.m0.l0.t2": {
+    en: "Privacy & Security of AI Applications — How companies are evolving to adapt (5 min)",
+    uk: "Приватність та безпека AI-додатків — Як компанії адаптуються (5 хв)",
+  },
+
+  "cc.cert-1.m1.name": {
+    en: "Section 2: Prompt Engineering — Understand the 3 C's: Context, Constraints, Clarity",
+    uk: "Розділ 2: Prompt Engineering — 3 складові: Контекст, Обмеження, Чіткість",
+  },
+  "cc.cert-1.m1.l0.title": {
+    en: "6 lectures · 29 min · Includes 1 role play",
+    uk: "6 лекцій · 29 хв · Включає 1 рольову гру",
+  },
+  "cc.cert-1.m1.l0.t0": { en: "Important Note (1 min)", uk: "Важлива примітка (1 хв)" },
+  "cc.cert-1.m1.l0.t1": {
+    en: "Why Prompt Engineering matters? — Mastering it is an Art (6 min)",
+    uk: "Чому Prompt Engineering важливий? — Це мистецтво (6 хв)",
+  },
+  "cc.cert-1.m1.l0.t2": {
+    en: "Adding Constraints to leverage Zero-shot prompting for better AI results (9 min)",
+    uk: "Додавання обмежень для Zero-shot промптів (9 хв)",
+  },
+  "cc.cert-1.m1.l0.t3": {
+    en: "Practice scenarios for crafting prompts & Few-shot prompting technique (6 min)",
+    uk: "Практичні сценарії створення промптів та Few-shot техніка (6 хв)",
+  },
+  "cc.cert-1.m1.l0.t4": {
+    en: "Role Play 1: Improving AI Responses with Context and Constraints",
+    uk: "Рольова гра 1: Покращення AI-відповідей за допомогою контексту та обмежень",
+  },
+  "cc.cert-1.m1.l0.t5": {
+    en: "Chain of Thought prompting — Let AI detail how it is thinking (6 min)",
+    uk: "Chain of Thought — Дозвольте AI деталізувати своє мислення (6 хв)",
+  },
+
+  "cc.cert-1.m2.name": {
+    en: "Section 3: Tokens & Generating Test Plans, Test Cases, Test Strategy using AI",
+    uk: "Розділ 3: Токени та генерація тест-планів, тест-кейсів, стратегій за допомогою AI",
+  },
+  "cc.cert-1.m2.l0.title": {
+    en: "7 lectures · 58 min · Includes 1 role play",
+    uk: "7 лекцій · 58 хв · Включає 1 рольову гру",
+  },
+  "cc.cert-1.m2.l0.t0": {
+    en: "What are tokens? Why it matters when interacting with AI Models (7 min)",
+    uk: "Що таке токени? Чому це важливо при взаємодії з AI (7 хв)",
+  },
+  "cc.cert-1.m2.l0.t1": {
+    en: "Understand how Context Window Limit works — Tips to save tokens (7 min)",
+    uk: "Як працює Context Window — Поради щодо економії токенів (7 хв)",
+  },
+  "cc.cert-1.m2.l0.t2": {
+    en: "Role Play 2: Optimizing AI Test Generation — A Talk with Your Project Manager",
+    uk: "Рольова гра 2: Оптимізація AI-генерації тестів — Розмова з менеджером",
+  },
+  "cc.cert-1.m2.l0.t3": {
+    en: "Generating Test Plan for Project business requirements using AI (14 min)",
+    uk: "Генерація тест-плану для бізнес-вимог за допомогою AI (14 хв)",
+  },
+  "cc.cert-1.m2.l0.t4": {
+    en: "Generating Test Cases for the requirements using AI (10 min)",
+    uk: "Генерація тест-кейсів для вимог за допомогою AI (10 хв)",
+  },
+  "cc.cert-1.m2.l0.t5": {
+    en: "Generating Test Strategy (Shift Left Testing) with given Test cases using AI (9 min)",
+    uk: "Генерація тестової стратегії (Shift Left) за допомогою AI (9 хв)",
+  },
+  "cc.cert-1.m2.l0.t6": {
+    en: "Generate Test Data combinations for the given tests using AI (10 min)",
+    uk: "Генерація комбінацій тестових даних за допомогою AI (10 хв)",
+  },
+
+  "cc.cert-1.m3.name": {
+    en: "Section 4: GitHub Copilot Fundamentals — Ask, Agent, Planning Modes & IDE Installs",
+    uk: "Розділ 4: Основи GitHub Copilot — Ask, Agent, Planning режими та встановлення в IDE",
+  },
+  "cc.cert-1.m3.l0.title": {
+    en: "6 lectures · 1h 9 min",
+    uk: "6 лекцій · 1 год 9 хв",
+  },
+  "cc.cert-1.m3.l0.t0": {
+    en: "Introduction to GitHub Copilot and its features for AI Integration inside editors (9 min)",
+    uk: "Вступ до GitHub Copilot та його можливостей інтеграції AI в редакторах (9 хв)",
+  },
+  "cc.cert-1.m3.l0.t1": {
+    en: "Demonstration of Ask & Agent modes in Copilot within VS Code with demo examples (10 min)",
+    uk: "Демонстрація Ask та Agent режимів у VS Code з прикладами (10 хв)",
+  },
+  "cc.cert-1.m3.l0.t2": {
+    en: "Understanding how Planning mode helps for research and design solutions (8 min)",
+    uk: "Як Planning режим допомагає в дослідженні та проєктуванні рішень (8 хв)",
+  },
+  "cc.cert-1.m3.l0.t3": {
+    en: "GitHub Copilot install on IntelliJ & PyCharm Editors for Java & Python Projects (5 min)",
+    uk: "Встановлення GitHub Copilot в IntelliJ та PyCharm (5 хв)",
+  },
+  "cc.cert-1.m3.l0.t4": {
+    en: "GitHub Copilot install steps with overview on Eclipse Editors for Java project (6 min)",
+    uk: "Встановлення GitHub Copilot в Eclipse для Java проєкту (6 хв)",
+  },
+  "cc.cert-1.m3.l0.t5": {
+    en: "GenAI GitHub Copilot plugin for Selenium Java Frameworks within IntelliJ Editor (31 min)",
+    uk: "GenAI GitHub Copilot плагін для Selenium Java фреймворків в IntelliJ (31 хв)",
+  },
+
+  "cc.cert-1.m4.name": {
+    en: "Section 5: Intro to Model Context Protocol (MCP) Servers & Build Agents with MCP Tooling",
+    uk: "Розділ 5: Вступ до MCP серверів та створення агентів з MPC інструментами",
+  },
+  "cc.cert-1.m4.l0.title": {
+    en: "13 lectures · 2h 13 min · Includes 1 role play",
+    uk: "13 лекцій · 2 год 13 хв · Включає 1 рольову гру",
+  },
+  "cc.cert-1.m4.l0.t0": {
+    en: "What is MCP? How MCP helps an LLM to be super powerful (28 min)",
+    uk: "Що таке MCP? Як MCP робить LLM надпотужним (28 хв)",
+  },
+  "cc.cert-1.m4.l0.t1": { en: "Resources to download (1 min)", uk: "Ресурси для завантаження (1 хв)" },
+  "cc.cert-1.m4.l0.t2": {
+    en: "Build Agent which automates web browser using Playwright/Selenium MCP Servers (15 min)",
+    uk: "Створення агента для автоматизації браузера через Playwright/Selenium MCP (15 хв)",
+  },
+  "cc.cert-1.m4.l0.t3": {
+    en: "Debugging steps when there are failures in configuring MCP servers (1 min)",
+    uk: "Кроки налагодження при помилках конфігурації MCP серверів (1 хв)",
+  },
+  "cc.cert-1.m4.l0.t4": {
+    en: "Role Play 3: Justifying the Use of MCP to Your Project Manager",
+    uk: "Рольова гра 3: Обґрунтування використання MCP для менеджера",
+  },
+  "cc.cert-1.m4.l0.t5": { en: "Resource (1 min)", uk: "Ресурси (1 хв)" },
+  "cc.cert-1.m4.l0.t6": {
+    en: "Build Agent which can extract data from SQL database by framing complex queries (24 min)",
+    uk: "Створення агента для вилучення даних з SQL через складні запити (24 хв)",
+  },
+  "cc.cert-1.m4.l0.t7": {
+    en: "Hands-On Practice Resources for Testing Skills (1 min)",
+    uk: "Практичні ресурси для навичок тестування (1 хв)",
+  },
+  "cc.cert-1.m4.l0.t8": {
+    en: "Build Agent which can perform API Testing & talk to local File systems for data (18 min)",
+    uk: "Створення агента для API тестування та роботи з локальними файлами (18 хв)",
+  },
+  "cc.cert-1.m4.l0.t9": {
+    en: "Build Agent which can read/write to Excel file for any given scenario (13 min)",
+    uk: "Створення агента для читання/запису Excel файлів (13 хв)",
+  },
+  "cc.cert-1.m4.l0.t10": {
+    en: "Setting up Playwright MCP configuration within VS Code (14 min)",
+    uk: "Налаштування Playwright MCP у VS Code (14 хв)",
+  },
+  "cc.cert-1.m4.l0.t11": {
+    en: "GitHub MCP Server — Magic of committing files and Code push to Git with Prompts (10 min)",
+    uk: "GitHub MCP Server — коміти та push коду через промпти (10 хв)",
+  },
+  "cc.cert-1.m4.l0.t12": {
+    en: "On a single Prompt, create Test Automation Project and build test with locators (10 min)",
+    uk: "За одним промптом — створити проєкт автоматизації тестування (10 хв)",
+  },
+
+  "cc.cert-1.m5.name": {
+    en: "Section 6: Building Agentic AI for Quality Engineering using Claude Code",
+    uk: "Розділ 6: Створення Agentic AI для Quality Engineering за допомогою Claude Code",
+  },
+  "cc.cert-1.m5.l0.title": {
+    en: "14 lectures · 2h 3 min",
+    uk: "14 лекцій · 2 год 3 хв",
+  },
+  "cc.cert-1.m5.l0.t0": {
+    en: "Introduction to Agentic AI — What problems we are solving? — Action Plan (8 min)",
+    uk: "Вступ до Agentic AI — Які проблеми вирішуємо? — План дій (8 хв)",
+  },
+  "cc.cert-1.m5.l0.t1": {
+    en: "Introduction to Claude Code Skill System — Problem statement (7 min)",
+    uk: "Вступ до системи скілів Claude Code — Постановка задачі (7 хв)",
+  },
+  "cc.cert-1.m5.l0.t2": {
+    en: "Download the code base used in this section (1 min)",
+    uk: "Завантаження кодової бази (1 хв)",
+  },
+  "cc.cert-1.m5.l0.t3": {
+    en: "Install Claude Code & Claude for Chrome and get started with /init file (8 min)",
+    uk: "Встановлення Claude Code та Claude for Chrome, /init файл (8 хв)",
+  },
+  "cc.cert-1.m5.l0.t4": { en: "Tip — Good to know (1 min)", uk: "Порада — Корисно знати (1 хв)" },
+  "cc.cert-1.m5.l0.t5": {
+    en: "Understand Knowledge Skills & Agent Skills — When to use with demo example (10 min)",
+    uk: "Knowledge Skills та Agent Skills — Коли використовувати (10 хв)",
+  },
+  "cc.cert-1.m5.l0.t6": {
+    en: "Create Skill docs for EventHub Application & Understand how they are designed (12 min)",
+    uk: "Створення Skill документації для EventHub (12 хв)",
+  },
+  "cc.cert-1.m5.l0.t7": {
+    en: "Avoid Context Bloat: Use Smart References for Accurate AI Responses (6 min)",
+    uk: "Уникайте розбухання контексту: Smart References (6 хв)",
+  },
+  "cc.cert-1.m5.l0.t8": {
+    en: "The Magic of Agent creating Test Scenarios by reading the Project domain doc (16 min)",
+    uk: "Магія агента: створення тест-сценаріїв з domain документації (16 хв)",
+  },
+  "cc.cert-1.m5.l0.t9": {
+    en: "The Magic of Agent Creating Test Strategy to push tests into different layers (14 min)",
+    uk: "Магія агента: створення тестової стратегії для різних рівнів (14 хв)",
+  },
+  "cc.cert-1.m5.l0.t10": {
+    en: "Create Skills for Playwright best Practices and then build Agent to write Tests (17 min)",
+    uk: "Створення скілів для Playwright та агента для написання тестів (17 хв)",
+  },
+  "cc.cert-1.m5.l0.t11": {
+    en: "Demo: Agent Running Tests and Fixing Failed Tests by Referring to Domain Docs (19 min)",
+    uk: "Демо: Агент запускає та виправляє тести за допомогою domain документації (19 хв)",
+  },
+  "cc.cert-1.m5.l0.t12": { en: "Tip — Good to know (1 min)", uk: "Порада — Корисно знати (1 хв)" },
+  "cc.cert-1.m5.l0.t13": {
+    en: "Demo: Goal-oriented Agentic Solution for Test coverage analysis with report (10 min)",
+    uk: "Демо: Цілеорієнтоване Agentic рішення для аналізу покриття тестами (10 хв)",
+  },
+
+  "cc.cert-1.m6.name": {
+    en: "Section 7: Design GitHub Copilot Custom Agents & Cloud Agents for Automation Repositories",
+    uk: "Розділ 7: Дизайн GitHub Copilot Custom Agents та Cloud Agents",
+  },
+  "cc.cert-1.m6.l0.title": {
+    en: "3 lectures · 25 min",
+    uk: "3 лекції · 25 хв",
+  },
+  "cc.cert-1.m6.l0.t0": { en: "Important Note (1 min)", uk: "Важлива примітка (1 хв)" },
+  "cc.cert-1.m6.l0.t1": {
+    en: "What Are GitHub Copilot Custom Agents? Build Your First Custom Agent (12 min)",
+    uk: "Що таке GitHub Copilot Custom Agents? Створення першого агента (12 хв)",
+  },
+  "cc.cert-1.m6.l0.t2": {
+    en: "GitHub Copilot Cloud Agents in Action: Running AI Agents on Demand (12 min)",
+    uk: "GitHub Copilot Cloud Agents: запуск AI агентів на вимогу (12 хв)",
+  },
+
+  "cc.cert-1.m7.name": {
+    en: "Section 8: Build QA DevOps Solutions (CI/CD, Docker, GitHub Actions) with AI Agents",
+    uk: "Розділ 8: Створення QA DevOps рішень (CI/CD, Docker, GitHub Actions) з AI",
+  },
+  "cc.cert-1.m7.l0.title": {
+    en: "4 lectures · 35 min",
+    uk: "4 лекції · 35 хв",
+  },
+  "cc.cert-1.m7.l0.t0": {
+    en: "With AI Agents Implement CI/CD using GitHub Actions & push code to Remote GIT (15 min)",
+    uk: "Реалізація CI/CD через GitHub Actions з AI агентами (15 хв)",
+  },
+  "cc.cert-1.m7.l0.t1": {
+    en: "Demo of CI/CD in Action with simple prompt solution using Claude Code AI Agent (8 min)",
+    uk: "Демо CI/CD з простим промптом через Claude Code AI Agent (8 хв)",
+  },
+  "cc.cert-1.m7.l0.t2": {
+    en: "Implement Docker Solution to containerize the Tests locally with AI Agent (7 min)",
+    uk: "Реалізація Docker рішення для контейнеризації тестів з AI (7 хв)",
+  },
+  "cc.cert-1.m7.l0.t3": {
+    en: "Practical Conversations between Manager & QA Person on building DevOps solutions (5 min)",
+    uk: "Практичні розмови менеджера та QA про DevOps рішення (5 хв)",
+  },
+
+  "cc.cert-1.m8.name": {
+    en: "Section 9: Build AI Agents with n8n Automation Workflows — Demo Examples",
+    uk: "Розділ 9: Створення AI агентів з n8n — Приклади",
+  },
+  "cc.cert-1.m8.l0.title": {
+    en: "6 lectures · 50 min",
+    uk: "6 лекцій · 50 хв",
+  },
+  "cc.cert-1.m8.l0.t0": {
+    en: "What is n8n? Overview of Business Process Automation workflows (6 min)",
+    uk: "Що таке n8n? Огляд автоматизації бізнес-процесів (6 хв)",
+  },
+  "cc.cert-1.m8.l0.t1": {
+    en: "How n8n revolutionized with AI Agents encapsulation — Demo overview (8 min)",
+    uk: "Як n8n революціонізував AI агентів — огляд демо (8 хв)",
+  },
+  "cc.cert-1.m8.l0.t2": {
+    en: "Create n8n AI Agent to read the Google Sheet and identify bugs in New Status (12 min)",
+    uk: "Створення n8n AI агента для читання Google Sheets (12 хв)",
+  },
+  "cc.cert-1.m8.l0.t3": {
+    en: "Setting up Jira Cloud and Create a Project for AI Agent setup (8 min)",
+    uk: "Налаштування Jira Cloud для AI агента (8 хв)",
+  },
+  "cc.cert-1.m8.l0.t4": {
+    en: "Plugin Jira tool to AI Agent and create end-to-end n8n Workflow for business use case (10 min)",
+    uk: "Підключення Jira до AI агента та створення n8n workflow (10 хв)",
+  },
+  "cc.cert-1.m8.l0.t5": {
+    en: "Building a Public Chat Interface to Interact with n8n AI Workflow via Webhook (6 min)",
+    uk: "Створення публічного чат-інтерфейсу для n8n AI через Webhook (6 хв)",
+  },
+
+  "cc.cert-1.m9.name": {
+    en: "Section 10: Effortlessly Generate Test Automation Code for API Testing",
+    uk: "Розділ 10: Генерація коду автоматизації для API тестування",
+  },
+  "cc.cert-1.m9.l0.title": {
+    en: "5 lectures · 41 min · Includes 1 quiz",
+    uk: "5 лекцій · 41 хв · Включає 1 тест",
+  },
+  "cc.cert-1.m9.l0.t0": {
+    en: "Using Generative AI for API Testing — parsing JSON responses (10 min)",
+    uk: "Використання GenAI для API тестування — парсинг JSON (10 хв)",
+  },
+  "cc.cert-1.m9.l0.t1": {
+    en: "Generating POJO classes for complex JSON and generate Java methods using AI (12 min)",
+    uk: "Генерація POJO класів для складного JSON через AI (12 хв)",
+  },
+  "cc.cert-1.m9.l0.t2": {
+    en: "Generating API tests in Cypress & Playwright with the given API contract (9 min)",
+    uk: "Генерація API тестів у Cypress та Playwright (9 хв)",
+  },
+  "cc.cert-1.m9.l0.t3": {
+    en: "Generating complex SQL Queries for Database tables using AI (10 min)",
+    uk: "Генерація складних SQL запитів за допомогою AI (10 хв)",
+  },
+  "cc.cert-1.m9.l0.t4": {
+    en: "Quiz 1: Check your knowledge on MCP, LLM and AI Agents",
+    uk: "Тест 1: Перевірте знання MCP, LLM та AI агентів",
+  },
+
+  "cc.cert-1.m10.name": {
+    en: "Section 11: Introduction to AI-Powered Testing Tools — Low Code Automation",
+    uk: "Розділ 11: Інструменти тестування з AI — Low Code автоматизація",
+  },
+  "cc.cert-1.m10.l0.title": {
+    en: "4 lectures · 56 min",
+    uk: "4 лекції · 56 хв",
+  },
+  "cc.cert-1.m10.l0.t0": {
+    en: "Understanding the capabilities of AI-powered Testing tools (12 min)",
+    uk: "Можливості інструментів тестування на основі AI (12 хв)",
+  },
+  "cc.cert-1.m10.l0.t1": {
+    en: "Introduction to TestRigor AI tool and its features on creating Tests using AI (18 min)",
+    uk: "Вступ до TestRigor: створення тестів за допомогою AI (18 хв)",
+  },
+  "cc.cert-1.m10.l0.t2": {
+    en: "Understanding Scripting language of TestRigor with a demo test (14 min)",
+    uk: "Мова сценаріїв TestRigor з демо-тестом (14 хв)",
+  },
+  "cc.cert-1.m10.l0.t3": {
+    en: "Self Healing capabilities to fix tests using AI-powered testing tools (12 min)",
+    uk: "Self Healing: автоматичне виправлення тестів за допомогою AI (12 хв)",
+  },
+
+  "cc.cert-1.m11.name": {
+    en: "Section 12: Privacy-First, Offline LLM Models to Handle Your Project Domain",
+    uk: "Розділ 12: Офлайн LLM моделі для вашого проєкту",
+  },
+  "cc.cert-1.m11.l0.title": {
+    en: "2 lectures · 23 min",
+    uk: "2 лекції · 23 хв",
+  },
+  "cc.cert-1.m11.l0.t0": {
+    en: "Setup Custom LLM with local project documents to get Domain related answers (13 min)",
+    uk: "Налаштування Custom LLM з локальними документами (13 хв)",
+  },
+  "cc.cert-1.m11.l0.t1": {
+    en: "Generating Automatic Test cases on the fly with English requirements (10 min)",
+    uk: "Генерація тест-кейсів на льоту з вимог (10 хв)",
+  },
+
+  "cc.cert-1.m12.name": {
+    en: "Section 13: Final Words — Interview Questions & Future of AI in QA Space",
+    uk: "Розділ 13: Підсумки — Питання для співбесіди та майбутнє AI в QA",
+  },
+  "cc.cert-1.m12.l0.title": {
+    en: "6 lectures · 52 min",
+    uk: "6 лекцій · 52 хв",
+  },
+  "cc.cert-1.m12.l0.t0": {
+    en: "Interview Questions to crack your next Job — Recap the topics (15 min)",
+    uk: "Питання для співбесіди — огляд тем (15 хв)",
+  },
+  "cc.cert-1.m12.l0.t1": {
+    en: "Introduction to GPT4All — how it works offline to generate results (8 min)",
+    uk: "Вступ до GPT4All — робота офлайн (8 хв)",
+  },
+  "cc.cert-1.m12.l0.t2": {
+    en: "How AI can be your best buddy for coding practice and implementation (10 min)",
+    uk: "Як AI може стати найкращим помічником у кодінгу (10 хв)",
+  },
+  "cc.cert-1.m12.l0.t3": {
+    en: "Future-proof your QA-AI Skills — What next? (8 min)",
+    uk: "Майбутнє ваших QA-AI навичок — Що далі? (8 хв)",
+  },
+  "cc.cert-1.m12.l0.t4": {
+    en: "Thank You Note with future updates Plan (5 min)",
+    uk: "Подяка та план майбутніх оновлень (5 хв)",
+  },
+  "cc.cert-1.m12.l0.t5": { en: "Bonus Lecture (6 min)", uk: "Бонусна лекція (6 хв)" },
+
+  // ======== cert-2: Ciklum AI Fundamentals ========
+  "cc.cert-2.m0.name": { en: "Course Modules", uk: "Модулі курсу" },
+  "cc.cert-2.m0.l0.title": { en: "5 modules", uk: "5 модулів" },
+  "cc.cert-2.m0.l0.t0": { en: "[Recording] Intro to AI world (45 min)", uk: "[Запис] Вступ у світ AI (45 хв)" },
+  "cc.cert-2.m0.l0.t1": { en: "[Recording] AI Tools & Productivity (35 min)", uk: "[Запис] AI інструменти та продуктивність (35 хв)" },
+  "cc.cert-2.m0.l0.t2": { en: "[Recording] Vibe coding platforms (45 min)", uk: "[Запис] Vibe coding платформи (45 хв)" },
+  "cc.cert-2.m0.l0.t3": { en: "[Recording] GenAI in the SDLC (47 min)", uk: "[Запис] GenAI в SDLC (47 хв)" },
+  "cc.cert-2.m0.l0.t4": { en: "[E-learning] AI-Skilled. Future-Ready (60 min)", uk: "[E-learning] AI-Skilled. Future-Ready (60 хв)" },
+
+  // ======== cert-3: QA-Specific AI ========
+  "cc.cert-3.m0.name": { en: "Course Modules", uk: "Модулі курсу" },
+  "cc.cert-3.m0.l0.title": { en: "5 modules", uk: "5 модулів" },
+  "cc.cert-3.m0.l0.t0": { en: "Introduction: AI for QA – Readiness Guide", uk: "Вступ: AI для QA – Посібник готовності" },
+  "cc.cert-3.m0.l0.t1": { en: "Module 1: The art of context & requirements analysis", uk: "Модуль 1: Мистецтво аналізу контексту та вимог" },
+  "cc.cert-3.m0.l0.t2": { en: "Module 2: Intelligent test case generation", uk: "Модуль 2: Інтелектуальна генерація тест-кейсів" },
+  "cc.cert-3.m0.l0.t3": { en: "Module 3: Automated defect reporting", uk: "Модуль 3: Автоматизоване звітування про дефекти" },
+  "cc.cert-3.m0.l0.t4": { en: "Module 4: Console scripts", uk: "Модуль 4: Консольні скрипти" },
+  "cc.cert-3.m0.l0.t5": { en: "Module 5: Specialized testing", uk: "Модуль 5: Спеціалізоване тестування" },
+
+  // ======== cert-4: Java Developer Professional (JavaRush) — module names only ========
+  "cc.cert-4.m0.name": { en: "Module 1. Java Syntax", uk: "Модуль 1. Java Syntax" },
+  "cc.cert-4.m1.name": { en: "Module 2. Java Core", uk: "Модуль 2. Java Core" },
+  "cc.cert-4.m2.name": { en: "Module 3. Java Professional", uk: "Модуль 3. Java Professional" },
+  "cc.cert-4.m3.name": { en: "Module 4. Working with Databases. Hibernate", uk: "Модуль 4. Робота з базами даних. Hibernate" },
+  "cc.cert-4.m4.name": { en: "Module 5. Spring + Spring Boot", uk: "Модуль 5. Spring + Spring Boot" },
+
+  // cert-4 project descriptions
+  "cc.cert-4.m0.p0.name": { en: "Java Projects", uk: "Java проєкти" },
+  "cc.cert-4.m0.p0.desc": {
+    en: "A collection of foundational Java projects covering collections, algorithms, and OOP principles.",
+    uk: "Колекція базових Java проєктів: колекції, алгоритми та принципи ООП.",
+  },
+  "cc.cert-4.m1.p0.name": { en: "Island 2", uk: "Island 2" },
+  "cc.cert-4.m1.p0.desc": {
+    en: "Ecosystem simulation: multi-threading, complex OOP, and algorithms modeling animal-plant interactions on an island.",
+    uk: "Симуляція екосистеми: багатопотоковість, складне ООП, моделювання взаємодій тварин та рослин.",
+  },
+  "cc.cert-4.m2.p0.name": { en: "Quest Game", uk: "Quest Game" },
+  "cc.cert-4.m2.p0.desc": {
+    en: "A text-based step-by-step quest game built with Java Servlets and JSP.",
+    uk: "Текстова покрокова квест-гра на Java Servlets та JSP.",
+  },
+  "cc.cert-4.m2.p1.name": { en: "Project Servlet", uk: "Project Servlet" },
+  "cc.cert-4.m2.p1.desc": {
+    en: "A web application on Java Servlets: server-side HTTP request handling, sessions, and filters.",
+    uk: "Веб-додаток на Java Servlets: обробка HTTP запитів, сесії та фільтри.",
+  },
+  "cc.cert-4.m2.p2.name": { en: "Project Frontend", uk: "Project Frontend" },
+  "cc.cert-4.m2.p2.desc": {
+    en: "Frontend for a web application: HTML, CSS, JS integration with Java servlets.",
+    uk: "Фронтенд для веб-додатку: HTML, CSS, JS інтеграція з Java сервлетами.",
+  },
+  "cc.cert-4.m3.p0.name": { en: "Project Hibernate 1", uk: "Project Hibernate 1" },
+  "cc.cert-4.m3.p0.desc": {
+    en: "Working with Hibernate ORM: entity mapping, CRUD operations, and table relationships.",
+    uk: "Робота з Hibernate ORM: мапінг сутностей, CRUD операції, зв'язки таблиць.",
+  },
+  "cc.cert-4.m3.p1.name": { en: "Hibernate 2", uk: "Hibernate 2" },
+  "cc.cert-4.m3.p1.desc": {
+    en: "Advanced Hibernate: entity inheritance, cascade operations, and caching strategies.",
+    uk: "Просунутий Hibernate: спадкування сутностей, каскадні операції, кешування.",
+  },
+  "cc.cert-4.m3.p2.name": { en: "Hibernate Final", uk: "Hibernate Final" },
+  "cc.cert-4.m3.p2.desc": {
+    en: "Final Hibernate project: complex data model with optimized queries and transaction management.",
+    uk: "Фінальний Hibernate проєкт: складна модель даних з оптимізованими запитами.",
+  },
+  "cc.cert-4.m4.p0.name": { en: "Spring MVC 1", uk: "Spring MVC 1" },
+  "cc.cert-4.m4.p0.desc": {
+    en: "A web application on Spring MVC: controllers, validation, form handling, and view resolution.",
+    uk: "Веб-додаток на Spring MVC: контролери, валідація, робота з формами.",
+  },
+  "cc.cert-4.m4.p1.name": { en: "Project Final", uk: "Project Final" },
+  "cc.cert-4.m4.p1.desc": {
+    en: "Final group project: a full-stack web application with Spring Boot, Spring Data JPA, and Spring Security.",
+    uk: "Фінальний груповий проєкт: full-stack додаток з Spring Boot, Spring Data JPA та Spring Security.",
+  },
+
+  // ======== cert-5: Selenium WebDriver with Java — section names only ========
+  "cc.cert-5.m0.name": { en: "Section 1: Selenium Introduction", uk: "Розділ 1: Вступ до Selenium" },
+  "cc.cert-5.m1.name": {
+    en: "Section 2: Install Java & Selenium - Get Started",
+    uk: "Розділ 2: Встановлення Java та Selenium",
+  },
+  "cc.cert-5.m2.name": {
+    en: "Section 3: Brush up Java Concepts for Selenium Automation",
+    uk: "Розділ 3: Основи Java для Selenium автоматизації",
+  },
+  "cc.cert-5.m3.name": {
+    en: "Section 4: CORE JAVA In depth for Manual testers and Beginners",
+    uk: "Розділ 4: Java для тестувальників-мануальників та початківців",
+  },
+  "cc.cert-5.m4.name": {
+    en: "Section 5: Locator Techniques & Tools used to identify Objects",
+    uk: "Розділ 5: Техніки локаторів та інструменти",
+  },
+  "cc.cert-5.m5.name": {
+    en: "Section 6: Advanced Locators Identification & Interview Questions",
+    uk: "Розділ 6: Просунуті локатори та питання для співбесіди",
+  },
+  "cc.cert-5.m6.name": {
+    en: "Section 7: Selenium Webdriver Techniques to automate Web elements",
+    uk: "Розділ 7: Техніки автоматизації веб-елементів",
+  },
+  "cc.cert-5.m7.name": {
+    en: "Section 8: Deep Dive into Functional testing with Selenium",
+    uk: "Розділ 8: Поглиблене функціональне тестування",
+  },
+  "cc.cert-5.m8.name": {
+    en: "Section 9: Synchronization usage in Selenium webdriver",
+    uk: "Розділ 9: Синхронізація в Selenium WebDriver",
+  },
+  "cc.cert-5.m9.name": {
+    en: "Section 10: Techniques to automate Ajax calls, Child Windows and IFrames",
+    uk: "Розділ 10: Ajax, дочірні вікна та IFrames",
+  },
+  "cc.cert-5.m10.name": {
+    en: "Section 11: Real Time Exercises (end to end Programming)",
+    uk: "Розділ 11: Практичні вправи (наскрізне програмування)",
+  },
+  "cc.cert-5.m11.name": {
+    en: "Section 12: Practical problems and Methods to Handle them with Selenium",
+    uk: "Розділ 12: Практичні проблеми та їх вирішення",
+  },
+  "cc.cert-5.m12.name": {
+    en: "Section 13: Miscellaneous topics in Selenium WebDriver",
+    uk: "Розділ 13: Різноманітні теми Selenium WebDriver",
+  },
+  "cc.cert-5.m13.name": {
+    en: "Section 14: Selenium Java Streams - Automate Sort, Pagination, Filtering",
+    uk: "Розділ 14: Selenium Java Streams",
+  },
+  "cc.cert-5.m14.name": {
+    en: "Section 15: Selenium 4.0 - Latest Features",
+    uk: "Розділ 15: Selenium 4.0 — нові можливості",
+  },
+  "cc.cert-5.m15.name": { en: "Section 16: Framework Part 1 - TestNG", uk: "Розділ 16: Фреймворк Частина 1 — TestNG" },
+  "cc.cert-5.m16.name": {
+    en: "Section 17: Learn Java Object Oriented Principles needed for Framework development",
+    uk: "Розділ 17: Принципи ООП для розробки фреймворків",
+  },
+  "cc.cert-5.m17.name": {
+    en: "Section 18: Framework Part 1 - Create Maven Project and Prepare Functional End to end Test",
+    uk: "Розділ 18: Фреймворк Частина 1 — Maven та E2E тест",
+  },
+  "cc.cert-5.m18.name": {
+    en: "Section 19: Framework Part 2 - Design Pattern - Page Object & factory Implementation",
+    uk: "Розділ 19: Фреймворк Частина 2 — Page Object",
+  },
+  "cc.cert-5.m19.name": {
+    en: "Section 20: Framework Part 3 - Test Configuration & Global Properties & Parallel Runs",
+    uk: "Розділ 20: Фреймворк Частина 3 — Конфігурація та паралельний запуск",
+  },
+  "cc.cert-5.m20.name": {
+    en: "Section 21: Framework Part 4 - Test Strategy & Parallel Tests",
+    uk: "Розділ 21: Фреймворк Частина 4 — Тестова стратегія",
+  },
+  "cc.cert-5.m21.name": {
+    en: "Section 22: Framework Part 5 - Extent HTML reports & TestNG Listeners",
+    uk: "Розділ 22: Фреймворк Частина 5 — Звіти Extent HTML",
+  },
+  "cc.cert-5.m22.name": {
+    en: "Section 23: Framework Part 6 - Test Execution from Maven & Jenkins CI/CD",
+    uk: "Розділ 23: Фреймворк Частина 6 — Maven та Jenkins CI/CD",
+  },
+  "cc.cert-5.m23.name": {
+    en: "Section 24: Framework Part 7 - Common Selenium Framework OOPS Interview Questions",
+    uk: "Розділ 24: Фреймворк Частина 7 — Питання для співбесіди",
+  },
+  "cc.cert-5.m24.name": {
+    en: "Section 25: Framework Part 8 - Integrating Cucumber Wrapper into Selenium Framework",
+    uk: "Розділ 25: Фреймворк Частина 8 — Інтеграція Cucumber",
+  },
+  "cc.cert-5.m25.name": {
+    en: "Section 26: High five! You're amazing, and you've got this.",
+    uk: "Розділ 26: Ви — неймовірні!",
+  },
+  "cc.cert-5.m26.name": {
+    en: "Section 27: GIT- Version Control Tutorial",
+    uk: "Розділ 27: GIT — система контролю версій",
+  },
+  "cc.cert-5.m27.name": {
+    en: "Section 28: CI/CD Integration of Selenium Framework with Jenkins & GitHub",
+    uk: "Розділ 28: CI/CD інтеграція з Jenkins та GitHub",
+  },
+  "cc.cert-5.m28.name": {
+    en: "Section 29: Cross Browser Testing with Selenium Grid",
+    uk: "Розділ 29: Крос-браузерне тестування з Selenium Grid",
+  },
+  "cc.cert-5.m29.name": {
+    en: "Section 30: Understand Excel Data Driven Testing Functions with examples",
+    uk: "Розділ 30: Data Driven тестування з Excel",
+  },
+  "cc.cert-5.m30.name": {
+    en: "Section 31: Upload Download functionalities with Selenium using external excel files",
+    uk: "Розділ 31: Завантаження та вивантаження файлів",
+  },
+  "cc.cert-5.m31.name": {
+    en: "Section 32: Selenium 4 Chrome Dev tools Protocol (CDP) Integration Concepts",
+    uk: "Розділ 32: Selenium 4 Chrome DevTools Protocol (CDP)",
+  },
+  "cc.cert-5.m32.name": {
+    en: "Section 33: DataBase connection to Selenium Testcases",
+    uk: "Розділ 33: Підключення бази даних до Selenium",
+  },
+  "cc.cert-5.m33.name": {
+    en: "Section 34: GenAI Github copilot plugin for Selenium Java Framework",
+    uk: "Розділ 34: GenAI GitHub Copilot для Selenium Java",
+  },
+  "cc.cert-5.m34.name": {
+    en: "Section 35: File Uploading (AUTO IT) & Downloading with Selenium",
+    uk: "Розділ 35: Завантаження файлів (AUTO IT)",
+  },
+  "cc.cert-5.m35.name": {
+    en: "Section 36: (OPTIONAL) Maven- Build Management tool InDepth Information",
+    uk: "Розділ 36: (ОПЦІОНАЛЬНО) Maven — поглиблено",
+  },
+  "cc.cert-5.m36.name": {
+    en: "Section 37: Java OOPS Basics for Selenium Part -1",
+    uk: "Розділ 37: Основи ООП Java для Selenium Частина 1",
+  },
+  "cc.cert-5.m37.name": {
+    en: "Section 38: Core Java Tutorial - Part 2",
+    uk: "Розділ 38: Java — Частина 2",
+  },
+  "cc.cert-5.m38.name": {
+    en: "Section 39: Core Java Tutorial - Part 3- Collections API",
+    uk: "Розділ 39: Java — Частина 3. Collections API",
+  },
+  "cc.cert-5.m39.name": { en: "Section 40: BONUS LECTURE", uk: "Розділ 40: БОНУСНА ЛЕКЦІЯ" },
+
+  // ======== cert-5: Selenium — Level titles & topics ========
+  // --- m0: Section 1 ---
+  "cc.cert-5.m0.l0.title": { en: "7 lectures", uk: "7 лекцій" },
+  "cc.cert-5.m0.l0.t0": { en: "1. ***Course FAQ's-*** (Must Watch Lecture)", uk: "1. ***Поширені запитання*** (Обов'язково до перегляду)" },
+  "cc.cert-5.m0.l0.t1": { en: "2. Social proof for  BEST SELLER in Selenium Category?**(Must Watch)**", uk: "2. Чому БЕСТСЕЛЕР у категорії Selenium? (Обов'язково)" },
+  "cc.cert-5.m0.l0.t2": { en: "3. Selenium syllabus & How to reach Trainer for Queries?", uk: "3. Програма Selenium та як зв'язатися з тренером" },
+  "cc.cert-5.m0.l0.t3": { en: "4. Selenium Features- What you need to know", uk: "4. Можливості Selenium — що потрібно знати" },
+  "cc.cert-5.m0.l0.t4": { en: "5. Selenium WebDriver Architecture Simplified", uk: "5. Архітектура Selenium WebDriver спрощено" },
+  "cc.cert-5.m0.l0.t5": { en: "6. Selenium Introductory Notes download", uk: "6. Завантаження вступних матеріалів Selenium" },
+  "cc.cert-5.m0.l0.t6": { en: "7. Video Player Setting tips for Best Experience in viewing course", uk: "7. Налаштування плеєра для найкращого перегляду курсу" },
+
+  // --- m1: Section 2 ---
+  "cc.cert-5.m1.l0.title": { en: "12 lectures", uk: "12 лекцій" },
+  "cc.cert-5.m1.l0.t0": { en: "8. Install Java & Eclipse - Setup Maven Project from Scratch", uk: "8. Встановлення Java та Eclipse — створення Maven проєкту з нуля" },
+  "cc.cert-5.m1.l0.t1": { en: "9. Setting up Eclipse Maven Project with Selenium dependencies from Scratch", uk: "9. Налаштування Maven проєкту з залежностями Selenium з нуля" },
+  "cc.cert-5.m1.l0.t2": { en: "10. Understanding the core concept of Browser driver classes and Webdriver Interface", uk: "10. Розуміння концепції Browser driver класів та Webdriver Interface" },
+  "cc.cert-5.m1.l0.t3": { en: "11. How to run tests in Google Chrome & Importance of Chromedriver.exe file", uk: "11. Як запускати тести в Google Chrome та важливість Chromedriver.exe" },
+  "cc.cert-5.m1.l0.t4": { en: "12. Troubleshooting steps if you fail to invoke chrome browser with Selenium", uk: "12. Усунення несправностей при запуску Chrome з Selenium" },
+  "cc.cert-5.m1.l0.t5": { en: "13. Getting Started with basic Selenium WebDriver methods", uk: "13. Початок роботи з базовими методами Selenium WebDriver" },
+  "cc.cert-5.m1.l0.t6": { en: "14. How to run tests in Firefox and Edge browser with Gecko and edge drivers", uk: "14. Як запускати тести в Firefox та Edge з Gecko та Edge драйверами" },
+  "cc.cert-5.m1.l0.t7": { en: "15. Running the tests in Microsoft Edge browser- Importance of edge driver", uk: "15. Запуск тестів у Microsoft Edge — важливість Edge driver" },
+  "cc.cert-5.m1.l0.t8": { en: "16. Code Download", uk: "16. Завантаження коду" },
+  "cc.cert-5.m1.l0.t9": { en: "17. Important Note about next section", uk: "17. Важлива примітка про наступний розділ" },
+  "cc.cert-5.m1.l0.t10": { en: "18. Important Note on OS compatibility", uk: "18. Важлива примітка про сумісність ОС" },
+  "cc.cert-5.m1.l0.t11": { en: "Quiz 1: Quiz - Check Your Knowledge", uk: "Тест 1: Перевірте свої знання" },
+
+  // --- m2: Section 3 ---
+  "cc.cert-5.m2.l0.title": { en: "12 lectures", uk: "12 лекцій" },
+  "cc.cert-5.m2.l0.t0": { en: "19. Course Strategy to learn Java basics for Selenium Automation", uk: "19. Стратегія вивчення основ Java для Selenium автоматизації" },
+  "cc.cert-5.m2.l0.t1": { en: "20. Introduction to Java variables and Data types with examples", uk: "20. Вступ до змінних Java та типів даних з прикладами" },
+  "cc.cert-5.m2.l0.t2": { en: "21. What are Arrays in Java? How to initialize and retrieve the values of array", uk: "21. Що таке масиви в Java? Ініціалізація та отримання значень" },
+  "cc.cert-5.m2.l0.t3": { en: "22. Introduction to For loop to iterate over array of Strings and Integers", uk: "22. Вступ до циклу For для ітерації по масивах String та Integer" },
+  "cc.cert-5.m2.l0.t4": { en: "23. Enhanced for loop declaration & using Conditional statements inside the loops", uk: "23. Розширений for та умовні оператори всередині циклів" },
+  "cc.cert-5.m2.l0.t5": { en: "24. Code download", uk: "24. Завантаження коду" },
+  "cc.cert-5.m2.l0.t6": { en: "Coding Exercise 1: Array Exploration", uk: "Вправа 1: Дослідження масивів" },
+  "cc.cert-5.m2.l0.t7": { en: "25. What is Arraylist and differences between Arraylist and Arrays", uk: "25. Що таке ArrayList та відмінності між Arraylist і Arrays" },
+  "cc.cert-5.m2.l0.t8": { en: "26. Iterating over Arrays and Arraylists and its related methods", uk: "26. Ітерація по Arrays та Arraylists та пов'язані методи" },
+  "cc.cert-5.m2.l0.t9": { en: "27. Strings in Java - How to declare Strings & Important String methods", uk: "27. Рядки в Java — оголошення та важливі методи String" },
+  "cc.cert-5.m2.l0.t10": { en: "28. How to create methods and access methods using Java class objects", uk: "28. Створення та виклик методів через об'єкти Java класів" },
+  "cc.cert-5.m2.l0.t11": { en: "29. Code download", uk: "29. Завантаження коду" },
+
+  // --- m3: Section 4 ---
+  "cc.cert-5.m3.l0.title": { en: "1 lectures", uk: "1 лекція" },
+  "cc.cert-5.m3.l0.t0": { en: "30. 7 hours Indepth Java learning with Interview Ques", uk: "30. 7 годин поглибленого вивчення Java з питаннями для співбесіди" },
+
+  // --- m4: Section 5 ---
+  "cc.cert-5.m4.l0.title": { en: "10 lectures", uk: "10 лекцій" },
+  "cc.cert-5.m4.l0.t0": { en: "31. Important Notes", uk: "31. Важливі примітки" },
+  "cc.cert-5.m4.l0.t1": { en: "32. Importance of locators in Selenium WebDriver to identify the elements", uk: "32. Важливість локаторів у Selenium WebDriver для ідентифікації елементів" },
+  "cc.cert-5.m4.l0.t2": { en: "33. Consolidated place to find Practice Websites & API's used in this tutorial", uk: "33. Ресурси: практичні сайти та API, використані в курсі" },
+  "cc.cert-5.m4.l0.t3": { en: "34. Identifying the Web elements with id and name locators with example", uk: "34. Ідентифікація елементів з id та name локаторами — приклад" },
+  "cc.cert-5.m4.l0.t4": { en: "35. Introducing Class name and Css Selector locators to identify elements", uk: "35. Знайомство з Class name та Css Selector локаторами" },
+  "cc.cert-5.m4.l0.t5": { en: "36. Hands-On Practice Resources for Testing Skills", uk: "36. Практичні ресурси для навичок тестування" },
+  "cc.cert-5.m4.l0.t6": { en: "37. Browser plugins- Selectorshub to identify and validate the elements on the page", uk: "37. Плагіни браузера — Selectorshub для ідентифікації елементів" },
+  "cc.cert-5.m4.l0.t7": { en: "38. Working with Xpath and linktext locators and different ways of writing xpaths", uk: "38. Робота з Xpath та linktext локаторами, різні способи написання xpath" },
+  "cc.cert-5.m4.l0.t8": { en: "39. Building Customized Xpath and Css Selector locators based on html attributes", uk: "39. Створення кастомних Xpath та Css Selector на основі HTML атрибутів" },
+  "cc.cert-5.m4.l0.t9": { en: "40. Generating xpaths with parent to child tags traverse techniques", uk: "40. Генерація xpath з техніками навігації від батьків до дочірніх тегів" },
+
+  // --- m5: Section 6 ---
+  "cc.cert-5.m5.l0.title": { en: "12 lectures", uk: "12 лекцій" },
+  "cc.cert-5.m5.l0.t0": { en: "41. Generating Css selectors based on regular expressions - Example", uk: "41. Генерація CSS селекторів на основі регулярних виразів" },
+  "cc.cert-5.m5.l0.t1": { en: "42. Code download", uk: "42. Завантаження коду" },
+  "cc.cert-5.m5.l0.t2": { en: "43. Identifying web elements based on unique Tag name locators - example", uk: "43. Ідентифікація елементів за унікальним Tag name — приклад" },
+  "cc.cert-5.m5.l0.t3": { en: "44. Generating xpaths based on the button texts on the page with the example", uk: "44. Генерація xpath на основі текстів кнопок — приклад" },
+  "cc.cert-5.m5.l0.t4": { en: "45. Parse the String with Java methods to get the password dynamically from the page", uk: "45. Парсинг рядка методами Java для динамічного отримання пароля" },
+  "cc.cert-5.m5.l0.t5": { en: "46. Code Download", uk: "46. Завантаження коду" },
+  "cc.cert-5.m5.l0.t6": { en: "47. Running the tests in cross browser and how to inspect objects in Edge & Firefox", uk: "47. Запуск тестів у різних браузерах та інспекція об'єктів у Edge та Firefox" },
+  "cc.cert-5.m5.l0.t7": { en: "48. Identify locators using Siblings with Xpath traverse - example", uk: "48. Ідентифікація локаторів через Siblings з Xpath — приклад" },
+  "cc.cert-5.m5.l0.t8": { en: "49. How to Traverse from child element to parent element with xpath - Example", uk: "49. Навігація від дочірнього до батьківського елемента через xpath" },
+  "cc.cert-5.m5.l0.t9": { en: "50. Automate Browser navigations and window properties with Selenium Webdriver", uk: "50. Автоматизація навігації браузера та властивостей вікна" },
+  "cc.cert-5.m5.l0.t10": { en: "51. Code download", uk: "51. Завантаження коду" },
+  "cc.cert-5.m5.l0.t11": { en: "Quiz 2: Quiz - Check Your Knowledge", uk: "Тест 2: Перевірте свої знання" },
+
+  // --- m6: Section 7 (2 levels) ---
+  "cc.cert-5.m6.l0.title": { en: "23 lectures", uk: "23 лекції" },
+  "cc.cert-5.m6.l0.t0": { en: "52. Important Note", uk: "52. Важлива примітка" },
+  "cc.cert-5.m6.l0.t1": { en: "53. Update with latest Selenium Version - Selenium Manager (Beta)", uk: "53. Оновлення до останньої версії Selenium — Selenium Manager (Beta)" },
+  "cc.cert-5.m6.l0.t2": { en: "54. Handling Static dropdowns with Select webdriver API", uk: "54. Робота зі статичними випадаючими списками через Select API" },
+  "cc.cert-5.m6.l0.t3": { en: "55. Updated lecture on latest Dropdown looping UI", uk: "55. Оновлена лекція про інтерфейс перебору випадаючих списків" },
+  "cc.cert-5.m6.l0.t4": { en: "56. Code download", uk: "56. Завантаження коду" },
+  "cc.cert-5.m6.l0.t5": { en: "57. Handle Dynamic dropdowns with Webdriver API", uk: "57. Робота з динамічними випадаючими списками" },
+  "cc.cert-5.m6.l0.t6": { en: "58. Parent-Child relationship locator to Identify the objects Uniquely", uk: "58. Локатор зв'язку батько-дитина для унікальної ідентифікації" },
+  "cc.cert-5.m6.l0.t7": { en: "59. Code Snippet download", uk: "59. Завантаження фрагментів коду" },
+  "cc.cert-5.m6.l0.t8": { en: "60. Handling AutoSuggestive dropdowns using Selenium", uk: "60. Робота з автопідказками випадаючих списків" },
+  "cc.cert-5.m6.l0.t9": { en: "61. AutoSuggestive code download", uk: "61. Завантаження коду автопідказок" },
+  "cc.cert-5.m6.l0.t10": { en: "62. Handling Checkbox and getting the size of them with Selenium", uk: "62. Робота з чекбоксами та визначення їх кількості" },
+  "cc.cert-5.m6.l0.t11": { en: "63. Importance of Assertions in Automation testing and how to use them", uk: "63. Важливість Assertions в автоматизації тестування" },
+  "cc.cert-5.m6.l1.title": { en: "continued", uk: "продовження" },
+  "cc.cert-5.m6.l1.t0": { en: "64. Code Snippet download", uk: "64. Завантаження фрагментів коду" },
+  "cc.cert-5.m6.l1.t1": { en: "Assignment 1: Checkboxes exercise", uk: "Завдання 1: Вправа з чекбоксами" },
+  "cc.cert-5.m6.l1.t2": { en: "65. Handling Calendar UI in travel websites using Selenium", uk: "65. Робота з календарем на туристичних сайтах" },
+  "cc.cert-5.m6.l1.t3": { en: "66. Validating if UI Elements are disabled or enabled with Attributes", uk: "66. Перевірка активності UI елементів через атрибути" },
+  "cc.cert-5.m6.l1.t4": { en: "Assignment 2: UI(Dropdowns,EditBoxes,Error Valdiation) Assignment", uk: "Завдання 2: UI (списки, поля вводу, валідація помилок)" },
+  "cc.cert-5.m6.l1.t5": { en: "67. Code Snippet download", uk: "67. Завантаження фрагментів коду" },
+  "cc.cert-5.m6.l1.t6": { en: "68. End to End Automation using all UI Elements with selenium", uk: "68. Наскрізна автоматизація з усіма UI елементами" },
+  "cc.cert-5.m6.l1.t7": { en: "69. Exercise code download", uk: "69. Завантаження коду вправи" },
+  "cc.cert-5.m6.l1.t8": { en: "70. Handling Java Alerts using Selenium Webdriver", uk: "70. Робота з Java Alert-ами в Selenium WebDriver" },
+  "cc.cert-5.m6.l1.t9": { en: "71. Alerts code download", uk: "71. Завантаження коду Alert-ів" },
+  "cc.cert-5.m6.l1.t10": { en: "Quiz 3: Quiz - Check Your Knowledge", uk: "Тест 3: Перевірте свої знання" },
+
+  // --- m7: Section 8 ---
+  "cc.cert-5.m7.l0.title": { en: "7 lectures", uk: "7 лекцій" },
+  "cc.cert-5.m7.l0.t0": { en: "72. Code formatting and Debugging", uk: "72. Форматування коду та налагодження" },
+  "cc.cert-5.m7.l0.t1": { en: "73. Problem - Adding Items into Cart for Ecommerce App", uk: "73. Задача — додавання товарів у кошик інтернет-магазину" },
+  "cc.cert-5.m7.l0.t2": { en: "74. Sending  Array of Products to Cart for checkout", uk: "74. Відправка масиву продуктів у кошик" },
+  "cc.cert-5.m7.l0.t3": { en: "75. Building Programming Logic to process items in array for Cart", uk: "75. Логіка обробки товарів у масиві для кошика" },
+  "cc.cert-5.m7.l0.t4": { en: "76. Debugging the code to understand how flow is being built", uk: "76. Налагодження коду для розуміння потоку" },
+  "cc.cert-5.m7.l0.t5": { en: "77. Fixing the problem of inconsistent locators and making tests clean", uk: "77. Виправлення неконсистентних локаторів та очищення тестів" },
+  "cc.cert-5.m7.l0.t6": { en: "78. code download", uk: "78. Завантаження коду" },
+
+  // --- m8: Section 9 ---
+  "cc.cert-5.m8.l0.title": { en: "11 lectures", uk: "11 лекцій" },
+  "cc.cert-5.m8.l0.t0": { en: "79. What is Implicit wait? Explain with real time scenario", uk: "79. Що таке Implicit wait? Пояснення з реальним сценарієм" },
+  "cc.cert-5.m8.l0.t1": { en: "80. What is explicit wait? Explain with real time scenario", uk: "80. Що таке explicit wait? Пояснення з реальним сценарієм" },
+  "cc.cert-5.m8.l0.t2": { en: "81. Scenario to automate and necessity of waits in the example", uk: "81. Сценарій автоматизації та необхідність очікувань" },
+  "cc.cert-5.m8.l0.t3": { en: "82. Practical examples on Implicit wait", uk: "82. Практичні приклади Implicit wait" },
+  "cc.cert-5.m8.l0.t4": { en: "83. Practical examples on explicit waits", uk: "83. Практичні приклади explicit waits" },
+  "cc.cert-5.m8.l0.t5": { en: "84. code download", uk: "84. Завантаження коду" },
+  "cc.cert-5.m8.l0.t6": { en: "Assignment 3: Synchronization with Explicit wait - Assignment", uk: "Завдання 3: Синхронізація з Explicit wait" },
+  "cc.cert-5.m8.l0.t7": { en: "85. What is Fluent wait?  Its advantages", uk: "85. Що таке Fluent wait? Його переваги" },
+  "cc.cert-5.m8.l0.t8": { en: "86. Building Customized methods using FLuent wait", uk: "86. Створення кастомних методів з Fluent wait" },
+  "cc.cert-5.m8.l0.t9": { en: "87. code download", uk: "87. Завантаження коду" },
+  "cc.cert-5.m8.l0.t10": { en: "88. Practise example on Fluent wait", uk: "88. Практичний приклад Fluent wait" },
+
+  // --- m9: Section 10 ---
+  "cc.cert-5.m9.l0.title": { en: "10 lectures", uk: "10 лекцій" },
+  "cc.cert-5.m9.l0.t0": { en: "89. Handling Ajax/Mouse Interactions", uk: "89. Робота з Ajax/мишею" },
+  "cc.cert-5.m9.l0.t1": { en: "90. Actions class-real time example", uk: "90. Клас Actions — реальний приклад" },
+  "cc.cert-5.m9.l0.t2": { en: "91. Window Handle concepts-real time example", uk: "91. Концепції Window Handle — реальний приклад" },
+  "cc.cert-5.m9.l0.t3": { en: "92. Live Example on working with Child windows", uk: "92. Живий приклад роботи з дочірніми вікнами" },
+  "cc.cert-5.m9.l0.t4": { en: "93. Code download", uk: "93. Завантаження коду" },
+  "cc.cert-5.m9.l0.t5": { en: "Assignment 4: Window Handling Assignment", uk: "Завдання 4: Робота з вікнами" },
+  "cc.cert-5.m9.l0.t6": { en: "94. How to handle Frames?", uk: "94. Як працювати з фреймами?" },
+  "cc.cert-5.m9.l0.t7": { en: "95. Frames Techniques-real time example", uk: "95. Техніки роботи з фреймами — реальний приклад" },
+  "cc.cert-5.m9.l0.t8": { en: "Assignment 5: Frames Assignment", uk: "Завдання 5: Фрейми" },
+  "cc.cert-5.m9.l0.t9": { en: "Quiz 4: Quiz - Check Your Knowledge", uk: "Тест 4: Перевірте свої знання" },
+
+  // --- m10: Section 11 ---
+  "cc.cert-5.m10.l0.title": { en: "11 lectures", uk: "11 лекцій" },
+  "cc.cert-5.m10.l0.t0": { en: "96. Important Note", uk: "96. Важлива примітка" },
+  "cc.cert-5.m10.l0.t1": { en: "97. Practise Exercise- print the links count in the Page", uk: "97. Практична вправа — підрахунок посилань на сторінці" },
+  "cc.cert-5.m10.l0.t2": { en: "98. Exercise 1.1-Limiting Webdriver scope", uk: "98. Вправа 1.1 — Обмеження області WebDriver" },
+  "cc.cert-5.m10.l0.t3": { en: "99. How to open the links in Separate Tabs - Optimized solution", uk: "99. Відкриття посилань в окремих вкладках — оптимізоване рішення" },
+  "cc.cert-5.m10.l0.t4": { en: "100. Getting the Titles of child tabs with optimized while loop", uk: "100. Отримання заголовків дочірніх вкладок з оптимізованим while" },
+  "cc.cert-5.m10.l0.t5": { en: "101. Code for Exercises", uk: "101. Код для вправ" },
+  "cc.cert-5.m10.l0.t6": { en: "Assignment 6: Practice Exercise- Assignment", uk: "Завдання 6: Практична вправа" },
+  "cc.cert-5.m10.l0.t7": { en: "102. Handling calendar UI in Ecommerce/ Travel websites", uk: "102. Робота з календарем на Ecommerce/туристичних сайтах" },
+  "cc.cert-5.m10.l0.t8": { en: "103. Generic method to handle calendar with month and date", uk: "103. Універсальний метод для роботи з календарем" },
+  "cc.cert-5.m10.l0.t9": { en: "104. code download", uk: "104. Завантаження коду" },
+  "cc.cert-5.m10.l0.t10": { en: "Quiz 5: Quiz - Check Your Knowledge", uk: "Тест 5: Перевірте свої знання" },
+
+  // --- m11: Section 12 ---
+  "cc.cert-5.m11.l0.title": { en: "6 lectures", uk: "6 лекцій" },
+  "cc.cert-5.m11.l0.t0": { en: "105. How to Perform Scrolling with in table and Window level using JavaScriptExecutor", uk: "105. Прокрутка всередині таблиці та вікна через JavaScriptExecutor" },
+  "cc.cert-5.m11.l0.t1": { en: "106. How to handle table Grids in webpage", uk: "106. Робота з табличними сітками на веб-сторінці" },
+  "cc.cert-5.m11.l0.t2": { en: "107. Parsing String and comparing with Generated Sum value -Exercise", uk: "107. Парсинг рядка та порівняння з обчисленою сумою — вправа" },
+  "cc.cert-5.m11.l0.t3": { en: "Assignment 7: Web Tables Assignment", uk: "Завдання 7: Веб-таблиці" },
+  "cc.cert-5.m11.l0.t4": { en: "Assignment 8: Autocomplete Dropdown Assignment", uk: "Завдання 8: Автозаповнення списків" },
+  "cc.cert-5.m11.l0.t5": { en: "Quiz 6: Quiz - Check Your Knowledge", uk: "Тест 6: Перевірте свої знання" },
+
+  // --- m12: Section 13 ---
+  "cc.cert-5.m12.l0.title": { en: "11 lectures", uk: "11 лекцій" },
+  "cc.cert-5.m12.l0.t0": { en: "108. Handling HTTPS certifications in Automated browsers", uk: "108. Робота з HTTPS сертифікатами в автоматизованих браузерах" },
+  "cc.cert-5.m12.l0.t1": { en: "109. Explore Chrome options to set proxies,plugins & paths on Chrome browser", uk: "109. Налаштування Chrome options: проксі, плагіни та шляхи" },
+  "cc.cert-5.m12.l0.t2": { en: "110. Code download", uk: "110. Завантаження коду" },
+  "cc.cert-5.m12.l0.t3": { en: "111. Maximizing window and deleting cookies", uk: "111. Розгортання вікна та видалення cookie" },
+  "cc.cert-5.m12.l0.t4": { en: "112. How to take Screenshots in Selenium", uk: "112. Як робити скріншоти в Selenium" },
+  "cc.cert-5.m12.l0.t5": { en: "113. Strategy to automate the broken Links with Selenium", uk: "113. Стратегія автоматизації перевірки битих посилань" },
+  "cc.cert-5.m12.l0.t6": { en: "114. Open Connection method to identify status codes of the links", uk: "114. Open Connection для визначення статус-кодів посилань" },
+  "cc.cert-5.m12.l0.t7": { en: "115. Iterate over all links in the page to validate broken Links mechanism", uk: "115. Ітерація по всіх посиланнях для перевірки битих посилань" },
+  "cc.cert-5.m12.l0.t8": { en: "116. Importance of Soft Assertions in Selenium WebDriver", uk: "116. Важливість Soft Assertions у Selenium WebDriver" },
+  "cc.cert-5.m12.l0.t9": { en: "117. Code download", uk: "117. Завантаження коду" },
+  "cc.cert-5.m12.l0.t10": { en: "Quiz 7: Quiz - Check Your Knowledge", uk: "Тест 7: Перевірте свої знання" },
+
+  // --- m13: Section 14 ---
+  "cc.cert-5.m13.l0.title": { en: "8 lectures", uk: "8 лекцій" },
+  "cc.cert-5.m13.l0.t0": { en: "118. Important Note - Plan of learning this Section", uk: "118. Важлива примітка — план вивчення цього розділу" },
+  "cc.cert-5.m13.l0.t1": { en: "119. Learn everything about Java Streams", uk: "119. Вивчення Java Streams" },
+  "cc.cert-5.m13.l0.t2": { en: "120. Perform Web Table Sorting using Selenium Java Streams", uk: "120. Сортування веб-таблиць через Selenium Java Streams" },
+  "cc.cert-5.m13.l0.t3": { en: "121. Build Custom Selenium  methods using Streams Mapper", uk: "121. Створення кастомних Selenium методів через Streams Mapper" },
+  "cc.cert-5.m13.l0.t4": { en: "122. Automating Pagination Scenarios to search the data using do while loop", uk: "122. Автоматизація пагінації для пошуку даних через do while" },
+  "cc.cert-5.m13.l0.t5": { en: "123. Code Download", uk: "123. Завантаження коду" },
+  "cc.cert-5.m13.l0.t6": { en: "124. Filter the web table using Selenium Java streams", uk: "124. Фільтрація веб-таблиць через Selenium Java streams" },
+  "cc.cert-5.m13.l0.t7": { en: "125. Code download", uk: "125. Завантаження коду" },
+
+  // --- m14: Section 15 ---
+  "cc.cert-5.m14.l0.title": { en: "7 lectures", uk: "7 лекцій" },
+  "cc.cert-5.m14.l0.t0": { en: "126. Introduction to Relative Locators - Part 1", uk: "126. Вступ до Relative Locators — Частина 1" },
+  "cc.cert-5.m14.l0.t1": { en: "127. Relative locators with real time examples", uk: "127. Relative locators з реальними прикладами" },
+  "cc.cert-5.m14.l0.t2": { en: "128. Code Download", uk: "128. Завантаження коду" },
+  "cc.cert-5.m14.l0.t3": { en: "129. Invoking Multiple Windows/Tabs from Selenium", uk: "129. Відкриття кількох вікон/вкладок з Selenium" },
+  "cc.cert-5.m14.l0.t4": { en: "130. Taking WebElement Partial Screenshot with Selenium", uk: "130. Частковий скріншот WebElement у Selenium" },
+  "cc.cert-5.m14.l0.t5": { en: "131. -Capturing Height and Width of WebElement for UX validation", uk: "131. Визначення висоти та ширини WebElement для UX валідації" },
+  "cc.cert-5.m14.l0.t6": { en: "132. Code Download", uk: "132. Завантаження коду" },
+
+  // --- m15: Section 16 (2 levels) ---
+  "cc.cert-5.m15.l0.title": { en: "17 lectures", uk: "17 лекцій" },
+  "cc.cert-5.m15.l0.t0": { en: "133. Why TestNG and Its Advantages", uk: "133. Чому TestNG та його переваги" },
+  "cc.cert-5.m15.l0.t1": { en: "134. Running testcases in TestNG with out Java compiler", uk: "134. Запуск тестів у TestNG без компілятора Java" },
+  "cc.cert-5.m15.l0.t2": { en: "135. Importance of xml file in Testng configuration", uk: "135. Важливість xml файлу в конфігурації TestNG" },
+  "cc.cert-5.m15.l0.t3": { en: "136. Prioritizing the Testcases with TestNG", uk: "136. Пріоритезація тестів у TestNG" },
+  "cc.cert-5.m15.l0.t4": { en: "137. Include and  Exclude Mechanism to control testcases", uk: "137. Механізм Include та Exclude для керування тестами" },
+  "cc.cert-5.m15.l0.t5": { en: "138. Executing the Testcases at Package level with regex", uk: "138. Запуск тестів на рівні пакета з regex" },
+  "cc.cert-5.m15.l0.t6": { en: "139. TestNg Annotations part - 1", uk: "139. Анотації TestNG — Частина 1" },
+  "cc.cert-5.m15.l0.t7": { en: "140. TestNG Annotations part - 2", uk: "140. Анотації TestNG — Частина 2" },
+  "cc.cert-5.m15.l0.t8": { en: "141. Usage of Groups functionality in TestNG", uk: "141. Використання груп у TestNG" },
+  "cc.cert-5.m15.l0.t9": { en: "142. Annotations helper attributes with examples", uk: "142. Допоміжні атрибути анотацій з прикладами" },
+  "cc.cert-5.m15.l0.t10": { en: "143. Parameterising from TestNG xml file", uk: "143. Параметризація з TestNG xml файлу" },
+  "cc.cert-5.m15.l0.t11": { en: "144. DataProvider Annotation -Parameterizing Testcases - 1", uk: "144. DataProvider — параметризація тестів, частина 1" },
+  "cc.cert-5.m15.l1.title": { en: "continued", uk: "продовження" },
+  "cc.cert-5.m15.l1.t0": { en: "145. DataProvider Annotation -Parameterizing Testcases-2", uk: "145. DataProvider — параметризація тестів, частина 2" },
+  "cc.cert-5.m15.l1.t1": { en: "146. Listeners Interface in TestNG framework", uk: "146. Інтерфейс Listeners у TestNG" },
+  "cc.cert-5.m15.l1.t2": { en: "147. Running Tests in parallel and generating Reports", uk: "147. Паралельний запуск тестів та генерація звітів" },
+  "cc.cert-5.m15.l1.t3": { en: "148. TestNg code download", uk: "148. Завантаження коду TestNG" },
+  "cc.cert-5.m15.l1.t4": { en: "Quiz 8: Quiz - Check Your Knowledge", uk: "Тест 8: Перевірте свої знання" },
+
+  // --- m16: Section 17 ---
+  "cc.cert-5.m16.l0.title": { en: "3 lectures", uk: "3 лекції" },
+  "cc.cert-5.m16.l0.t0": { en: "149. How TestNG Annotations help with Inheritance to remove boilerPlate code in Test", uk: "149. Як анотації TestNG допомагають прибрати шаблонний код" },
+  "cc.cert-5.m16.l0.t1": { en: "150. How to pass values from test through Parameterized Constructor & this keyword", uk: "150. Передача значень через параметризований конструктор та this" },
+  "cc.cert-5.m16.l0.t2": { en: "151. Usage of Super keyword in the Constructor to pass values to Parent Class", uk: "151. Використання super в конструкторі для передачі значень батьківському класу" },
+
+  // --- m17: Section 18 ---
+  "cc.cert-5.m17.l0.title": { en: "9 lectures", uk: "9 лекцій" },
+  "cc.cert-5.m17.l0.t0": { en: "152. FAQs about Framework design - (MUST WATCH)", uk: "152. Поширені запитання про дизайн фреймворку (ОБОВ'ЯЗКОВО)" },
+  "cc.cert-5.m17.l0.t1": { en: "153. Complete Framework Code download", uk: "153. Завантаження повного коду фреймворку" },
+  "cc.cert-5.m17.l0.t2": { en: "154. Create new Maven Project and all Framework dependencies", uk: "154. Створення Maven проєкту та всіх залежностей фреймворку" },
+  "cc.cert-5.m17.l0.t3": { en: "155. Ecommerce Application Demo which will be used in the Framework", uk: "155. Демо Ecommerce додатку для фреймворку" },
+  "cc.cert-5.m17.l0.t4": { en: "156. Selenium Program on  WebDriverManager - Login-  Get Products List", uk: "156. Selenium програма: WebDriverManager — вхід — список товарів" },
+  "cc.cert-5.m17.l0.t5": { en: "157. Selenium Program to retrieve product and Add to Cart based on Java Streams", uk: "157. Отримання товару та додавання в кошик через Java Streams" },
+  "cc.cert-5.m17.l0.t6": { en: "158. Implementation of explicit wait to handle  application synchronously  on loading", uk: "158. Реалізація explicit wait для синхронізації завантаження" },
+  "cc.cert-5.m17.l0.t7": { en: "159. Logic to verify items in the cart with Streams and Checkout", uk: "159. Логіка перевірки товарів у кошику через Streams та оформлення" },
+  "cc.cert-5.m17.l0.t8": { en: "160. Wrapping up end to end automation Script on Purchasing Order in Ecommerce App", uk: "160. Завершення E2E скрипту замовлення в Ecommerce додатку" },
+
+  // --- m18: Section 19 ---
+  "cc.cert-5.m18.l0.title": { en: "8 lectures", uk: "8 лекцій" },
+  "cc.cert-5.m18.l0.t0": { en: "161. What is Page object model? Advantages of its implementation", uk: "161. Що таке Page Object Model? Переваги впровадження" },
+  "cc.cert-5.m18.l0.t1": { en: "162. Creating Page object Classes for Login Screen and migrate the test", uk: "162. Створення Page Object класів для екрану входу" },
+  "cc.cert-5.m18.l0.t2": { en: "163. Implementing Action methods for Page factory web elements to implement logic", uk: "163. Реалізація Action методів для Page Factory елементів" },
+  "cc.cert-5.m18.l0.t3": { en: "164. Creating Abstract Components to reuse the common methods/code in framework", uk: "164. Створення абстрактних компонентів для перевикористання коду" },
+  "cc.cert-5.m18.l0.t4": { en: "165. Page object Class implementation for Product catalogue page and update test", uk: "165. Page Object для сторінки каталогу продуктів" },
+  "cc.cert-5.m18.l0.t5": { en: "166. Speed up your test execution - Fix for Application slowness in the backend", uk: "166. Прискорення виконання тестів — виправлення повільності" },
+  "cc.cert-5.m18.l0.t6": { en: "167. Creating common methods to Abstract component and extending it in Page classes", uk: "167. Загальні методи в абстрактному компоненті для Page класів" },
+  "cc.cert-5.m18.l0.t7": { en: "168. Wrapping up the whole test with complete refactor into Page object model", uk: "168. Завершення тесту з повним рефакторингом у Page Object Model" },
+
+  // --- m19: Section 20 ---
+  "cc.cert-5.m19.l0.title": { en: "6 lectures", uk: "6 лекцій" },
+  "cc.cert-5.m19.l0.t0": { en: "169. Creating Base Test which holds Common Test configuration methods", uk: "169. Створення Base Test із загальними методами конфігурації" },
+  "cc.cert-5.m19.l0.t1": { en: "170. Initialize Driver and create utility to launch App with BeforeMethod annotation", uk: "170. Ініціалізація Driver та утиліта запуску додатку" },
+  "cc.cert-5.m19.l0.t2": { en: "171. Create new Error Validation Test as per framework Standards developed until now", uk: "171. Створення тесту перевірки помилок за стандартами фреймворку" },
+  "cc.cert-5.m19.l0.t3": { en: "172. Implement Test Strategy for Framework on how tests are divided based on modules", uk: "172. Тестова стратегія: розподіл тестів за модулями" },
+  "cc.cert-5.m19.l0.t4": { en: "173. Create new Test methods with Dependency attribute based on Test Strategy design", uk: "173. Нові тестові методи з Dependency атрибутом" },
+  "cc.cert-5.m19.l0.t5": { en: "174. How to run tests/classes in Parallel & apply Groups using TestNG.xml", uk: "174. Паралельний запуск тестів/класів та групи в TestNG.xml" },
+
+  // --- m20: Section 21 ---
+  "cc.cert-5.m20.l0.title": { en: "4 lectures", uk: "4 лекції" },
+  "cc.cert-5.m20.l0.t0": { en: "175. Agenda of implementing  Parameterization into tests with TestNG Data provider", uk: "175. План впровадження параметризації через TestNG DataProvider" },
+  "cc.cert-5.m20.l0.t1": { en: "176. Integration of Hashmap to Data provider to send the data as one Hash object", uk: "176. Інтеграція Hashmap у DataProvider для передачі даних" },
+  "cc.cert-5.m20.l0.t2": { en: "177. How to read the data from Json files and create the list of Hashmaps for testing", uk: "177. Читання даних з JSON файлів та створення списку Hashmaps" },
+  "cc.cert-5.m20.l0.t3": { en: "178. How to Create Screenshot Utility in Base Test class for catching Failed tests", uk: "178. Створення утиліти скріншотів для невдалих тестів" },
+
+  // --- m21: Section 22 ---
+  "cc.cert-5.m21.l0.title": { en: "5 lectures", uk: "5 лекцій" },
+  "cc.cert-5.m21.l0.t0": { en: "179. What are Extent reports? Quick 30 minutes Tutorial", uk: "179. Що таке Extent reports? Швидкий 30-хвилинний туторіал" },
+  "cc.cert-5.m21.l0.t1": { en: "180. Integrating Extent reports to existing framework with help of TestNG listeners", uk: "180. Інтеграція Extent reports у фреймворк через TestNG listeners" },
+  "cc.cert-5.m21.l0.t2": { en: "181. Attaching Screenshot to reports from Listeners on automatic Test failures", uk: "181. Додавання скріншотів до звітів при автоматичних падіннях тестів" },
+  "cc.cert-5.m21.l0.t3": { en: "182. concurrency problem -Implement ThreadLocal class to avoid sync issues in Tests", uk: "182. Проблема конкурентності — ThreadLocal для синхронізації" },
+  "cc.cert-5.m21.l0.t4": { en: "183. IRetry Analyzer to rerun the flaky failed Selenium tests in the framework", uk: "183. IRetry Analyzer для перезапуску нестабільних тестів" },
+
+  // --- m22: Section 23 ---
+  "cc.cert-5.m22.l0.title": { en: "6 lectures", uk: "6 лекцій" },
+  "cc.cert-5.m22.l0.t0": { en: "184. How to run tests in the framework  from terminal using Maven commands", uk: "184. Запуск тестів фреймворку з терміналу через Maven команди" },
+  "cc.cert-5.m22.l0.t1": { en: "185. Set Global Parameters using Maven commands and Update tests at run time", uk: "185. Глобальні параметри через Maven та оновлення тестів у runtime" },
+  "cc.cert-5.m22.l0.t2": { en: "186. Install Jenkins in the local System for CI/CD", uk: "186. Встановлення Jenkins локально для CI/CD" },
+  "cc.cert-5.m22.l0.t3": { en: "187. Integrate the Selenium framework with Jenkins and Parameterize jenkin job", uk: "187. Інтеграція Selenium фреймворку з Jenkins та параметризація" },
+  "cc.cert-5.m22.l0.t4": { en: "188. How to Run tests in headless mode and integrate the parameter in Jenkins", uk: "188. Запуск тестів у headless режимі та інтеграція параметра в Jenkins" },
+  "cc.cert-5.m22.l0.t5": { en: "189. Schedule Jenkin Jobs with regular expression and trigger nightly Automation jobs", uk: "189. Планування Jenkins завдань з регулярними виразами" },
+
+  // --- m23: Section 24 ---
+  "cc.cert-5.m23.l0.title": { en: "4 lectures", uk: "4 лекції" },
+  "cc.cert-5.m23.l0.t0": { en: "190. Selenium Framework Interview Questions - Part 1", uk: "190. Питання по Selenium Framework для співбесіди — Частина 1" },
+  "cc.cert-5.m23.l0.t1": { en: "191. Selenium Framework Interview Questions - Part 2", uk: "191. Питання по Selenium Framework для співбесіди — Частина 2" },
+  "cc.cert-5.m23.l0.t2": { en: "192. Selenium Framework Architecture Diagram - Explained", uk: "192. Діаграма архітектури Selenium Framework — пояснення" },
+  "cc.cert-5.m23.l0.t3": { en: "193. How to showcase Selenium experience to recruiters?", uk: "193. Як презентувати досвід Selenium рекрутерам?" },
+
+  // --- m24: Section 25 ---
+  "cc.cert-5.m24.l0.title": { en: "7 lectures", uk: "7 лекцій" },
+  "cc.cert-5.m24.l0.t0": { en: "194. Important Note - How much Cucumber does this course cover?", uk: "194. Важлива примітка — який обсяг Cucumber в курсі?" },
+  "cc.cert-5.m24.l0.t1": { en: "195. Introduction to cucumber and its terminologies with examples", uk: "195. Вступ до Cucumber та його термінологія з прикладами" },
+  "cc.cert-5.m24.l0.t2": { en: "196. Setting up cucumber dependencies into Framework and create feature files", uk: "196. Налаштування Cucumber залежностей та створення feature файлів" },
+  "cc.cert-5.m24.l0.t3": { en: "197. Implement Step definitions for features and understand regular expressions", uk: "197. Реалізація Step definitions та регулярні вирази" },
+  "cc.cert-5.m24.l0.t4": { en: "198. Inject Selenium code in Step definition and introduction to Tidy Gherkin Plugin", uk: "198. Інтеграція Selenium коду в Step definition та Tidy Gherkin" },
+  "cc.cert-5.m24.l0.t5": { en: "199. Introduction to TestNG Test Runner  to run Cucumber feature files", uk: "199. TestNG Test Runner для запуску Cucumber feature файлів" },
+  "cc.cert-5.m24.l0.t6": { en: "200. Control the Cucumber feature files execution with Tags and Background keywords", uk: "200. Керування виконанням Cucumber через Tags та Background" },
+
+  // --- m25: Section 26 ---
+  "cc.cert-5.m25.l0.title": { en: "1 lectures", uk: "1 лекція" },
+  "cc.cert-5.m25.l0.t0": { en: "201. Now go crush it!", uk: "201. Успіхів! Ти все зможеш!" },
+
+  // --- m26: Section 27 ---
+  "cc.cert-5.m26.l0.title": { en: "11 lectures", uk: "11 лекцій" },
+  "cc.cert-5.m26.l0.t0": { en: "202. Important Note", uk: "202. Важлива примітка" },
+  "cc.cert-5.m26.l0.t1": { en: "203. Introduction to GIT", uk: "203. Вступ до GIT" },
+  "cc.cert-5.m26.l0.t2": { en: "204. Importance of Github and its uses", uk: "204. Важливість GitHub та його використання" },
+  "cc.cert-5.m26.l0.t3": { en: "205. Creating Git config and repositories", uk: "205. Створення Git конфігурації та репозиторіїв" },
+  "cc.cert-5.m26.l0.t4": { en: "206. How to push code to remote repository", uk: "206. Як відправити код у віддалений репозиторій" },
+  "cc.cert-5.m26.l0.t5": { en: "207. Understanding Staging and commit in git", uk: "207. Розуміння Staging та commit у git" },
+  "cc.cert-5.m26.l0.t6": { en: "208. Add remote repository and push the committed code", uk: "208. Додавання віддаленого репозиторію та push" },
+  "cc.cert-5.m26.l0.t7": { en: "209. End to end working example on Git commands -1", uk: "209. Наскрізний приклад Git команд — частина 1" },
+  "cc.cert-5.m26.l0.t8": { en: "210. End to end working example on Git commands -2", uk: "210. Наскрізний приклад Git команд — частина 2" },
+  "cc.cert-5.m26.l0.t9": { en: "211. Importance of Branching in GIT", uk: "211. Важливість гілок у GIT" },
+  "cc.cert-5.m26.l0.t10": { en: "212. How to resolve Merge conflicts with GIT", uk: "212. Як вирішувати Merge конфлікти в GIT" },
+
+  // --- m27: Section 28 ---
+  "cc.cert-5.m27.l0.title": { en: "5 lectures", uk: "5 лекцій" },
+  "cc.cert-5.m27.l0.t0": { en: "213. Note  on prerequisite topics knowledge", uk: "213. Примітка про попередні знання" },
+  "cc.cert-5.m27.l0.t1": { en: "214. What is Continuous Integration & Delivery. Understand the flow", uk: "214. Що таке CI/CD? Розуміння потоку" },
+  "cc.cert-5.m27.l0.t2": { en: "215. Configure GitHub acc and push the Selenium Framework into repository", uk: "215. Налаштування GitHub акаунту та push фреймворку" },
+  "cc.cert-5.m27.l0.t3": { en: "216. Install Fresh Jenkins war & configure necessary plugins & create Selenium Job", uk: "216. Встановлення Jenkins та налаштування Selenium завдання" },
+  "cc.cert-5.m27.l0.t4": { en: "217. Understand Github webhook trigger & configure it to activate Selenium Jenkin job", uk: "217. GitHub webhook тригер для активації Jenkins завдання" },
+
+  // --- m28: Section 29 ---
+  "cc.cert-5.m28.l0.title": { en: "6 lectures", uk: "6 лекцій" },
+  "cc.cert-5.m28.l0.t0": { en: "218. Important Note & Code Download", uk: "218. Важлива примітка та завантаження коду" },
+  "cc.cert-5.m28.l0.t1": { en: "219. What is Selenium Grid? Its advantages on bringing down execution time", uk: "219. Що таке Selenium Grid? Переваги для часу виконання" },
+  "cc.cert-5.m28.l0.t2": { en: "220. Getting Started with Grid Infrastructure Setup - Create Components", uk: "220. Початок налаштування Grid інфраструктури" },
+  "cc.cert-5.m28.l0.t3": { en: "221. Create Node Physical machines and register with Grid-Check Grid health", uk: "221. Створення Node машин та реєстрація в Grid" },
+  "cc.cert-5.m28.l0.t4": { en: "222. Create Selenium TestNG tests with Desired capabilities & remote webdriver class", uk: "222. Selenium TestNG тести з Desired capabilities та remote WebDriver" },
+  "cc.cert-5.m28.l0.t5": { en: "223. Demo on executing the Selenium scripts in Node machines from Grid Hub", uk: "223. Демо виконання Selenium скриптів на Node через Grid Hub" },
+
+  // --- m29: Section 30 ---
+  "cc.cert-5.m29.l0.title": { en: "12 lectures", uk: "12 лекцій" },
+  "cc.cert-5.m29.l0.t0": { en: "224. what is Apache POI API & Download Instructions", uk: "224. Що таке Apache POI API та інструкції з завантаження" },
+  "cc.cert-5.m29.l0.t1": { en: "225. Strategy to Access Excel Data", uk: "225. Стратегія доступу до даних Excel" },
+  "cc.cert-5.m29.l0.t2": { en: "226. Getting rows and its cells from Sheet", uk: "226. Отримання рядків та комірок з аркуша" },
+  "cc.cert-5.m29.l0.t3": { en: "227. Retrieving Data from Excel based on condition", uk: "227. Отримання даних з Excel за умовою" },
+  "cc.cert-5.m29.l0.t4": { en: "228. Practise Exercise- Excel Driven testing -1", uk: "228. Практична вправа — Excel тестування, частина 1" },
+  "cc.cert-5.m29.l0.t5": { en: "229. Practise Exercise- Excel Driven testing -2", uk: "229. Практична вправа — Excel тестування, частина 2" },
+  "cc.cert-5.m29.l0.t6": { en: "230. Practise Exercise- Excel Driven testing -3", uk: "230. Практична вправа — Excel тестування, частина 3" },
+  "cc.cert-5.m29.l0.t7": { en: "231. Importance of Data Provider and Excel Integration for better Data driven", uk: "231. Важливість Data Provider та Excel інтеграції" },
+  "cc.cert-5.m29.l0.t8": { en: "232. Understand Dataprovider and how it sends data in Multidimensional array", uk: "232. Як DataProvider передає дані в багатовимірному масиві" },
+  "cc.cert-5.m29.l0.t9": { en: "233. Get Excel dependencies and connect from java code to excel", uk: "233. Отримання Excel залежностей та підключення з Java" },
+  "cc.cert-5.m29.l0.t10": { en: "234. Live demo on integrating Excel to Dataprovider to parameterize data", uk: "234. Жива демонстрація інтеграції Excel з DataProvider" },
+  "cc.cert-5.m29.l0.t11": { en: "235. Code download", uk: "235. Завантаження коду" },
+
+  // --- m30: Section 31 ---
+  "cc.cert-5.m30.l0.title": { en: "6 lectures", uk: "6 лекцій" },
+  "cc.cert-5.m30.l0.t0": { en: "236. Download and uploading file using file attribute sendKeys with Selenium", uk: "236. Завантаження та вивантаження файлів через sendKeys" },
+  "cc.cert-5.m30.l0.t1": { en: "237. Handle Synchronized toast messages with explicit wait for appear & disappear", uk: "237. Робота з toast повідомленнями через explicit wait" },
+  "cc.cert-5.m30.l0.t2": { en: "238. Write Smart xpath to find table row column cell based on the conditions", uk: "238. Написання Smart xpath для пошуку комірок таблиці" },
+  "cc.cert-5.m30.l0.t3": { en: "239. Assignment on building excel utilities - You need to solve it please", uk: "239. Завдання: створення Excel утиліт — спробуйте вирішити самостійно" },
+  "cc.cert-5.m30.l0.t4": { en: "240. End to end solution for updating excel and uploading the file with validations", uk: "240. Наскрізне рішення: оновлення Excel та вивантаження з валідацією" },
+  "cc.cert-5.m30.l0.t5": { en: "241. Code download", uk: "241. Завантаження коду" },
+
+  // --- m31: Section 32 ---
+  "cc.cert-5.m31.l0.title": { en: "12 lectures", uk: "12 лекцій" },
+  "cc.cert-5.m31.l0.t0": { en: "242. Important Note", uk: "242. Важлива примітка" },
+  "cc.cert-5.m31.l0.t1": { en: "243. What are Chrome Dev tools? Why do we need this for Selenium testing?", uk: "243. Що таке Chrome DevTools? Для чого це в Selenium?" },
+  "cc.cert-5.m31.l0.t2": { en: "244. Understand Device metrics override function to simulate browser as mobile", uk: "244. Device metrics override для симуляції мобільного браузера" },
+  "cc.cert-5.m31.l0.t3": { en: "245. Importance of executeCDP Command to construct the own  CDP functions", uk: "245. Важливість executeCDP для створення власних CDP функцій" },
+  "cc.cert-5.m31.l0.t4": { en: "246. Localization Testing with Selenium 4 using ChromeDevTools Protocols", uk: "246. Локалізаційне тестування з Selenium 4 через CDP" },
+  "cc.cert-5.m31.l0.t5": { en: "247. How to extract Network Responses and status codes with Selenium  CDP Listeners", uk: "247. Отримання мережевих відповідей та статус-кодів через CDP" },
+  "cc.cert-5.m31.l0.t6": { en: "248. Intercept Network /API Responses with Selenium Chrome dev tools", uk: "248. Перехоплення мережевих/API відповідей через Chrome DevTools" },
+  "cc.cert-5.m31.l0.t7": { en: "249. How to test failed Network request calls with Selenium CDP Commands", uk: "249. Тестування невдалих мережевих запитів через CDP" },
+  "cc.cert-5.m31.l0.t8": { en: "250. Blocking unwanted Network request calls to speed up the execution with Selenium", uk: "250. Блокування небажаних мережевих запитів для прискорення" },
+  "cc.cert-5.m31.l0.t9": { en: "251. How to emulate network speed with Selenium Chromedevtools Integration", uk: "251. Емуляція швидкості мережі через Chrome DevTools" },
+  "cc.cert-5.m31.l0.t10": { en: "252. Working with Basic Authentication using Selenium uriPredicate function", uk: "252. Базова аутентифікація через Selenium uriPredicate" },
+  "cc.cert-5.m31.l0.t11": { en: "253. How to log javascript errors from Selenium Script to console for debugging", uk: "253. Логування JavaScript помилок з Selenium для налагодження" },
+
+  // --- m32: Section 33 ---
+  "cc.cert-5.m32.l0.title": { en: "10 lectures", uk: "10 лекцій" },
+  "cc.cert-5.m32.l0.t0": { en: "254. Steps to connect Database to Selenium Testcases", uk: "254. Кроки підключення бази даних до Selenium тестів" },
+  "cc.cert-5.m32.l0.t1": { en: "255. mysql download instructions", uk: "255. Інструкції із завантаження MySQL" },
+  "cc.cert-5.m32.l0.t2": { en: "256. mySQL server connection procedure", uk: "256. Процедура підключення до MySQL сервера" },
+  "cc.cert-5.m32.l0.t3": { en: "257. Creating Database in mysql server", uk: "257. Створення бази даних у MySQL" },
+  "cc.cert-5.m32.l0.t4": { en: "258. Creating Tables in Databases", uk: "258. Створення таблиць у базах даних" },
+  "cc.cert-5.m32.l0.t5": { en: "259. Jdbc odbc connection overview", uk: "259. Огляд JDBC/ODBC з'єднання" },
+  "cc.cert-5.m32.l0.t6": { en: "260. Integration of Database with JDBC API", uk: "260. Інтеграція бази даних з JDBC API" },
+  "cc.cert-5.m32.l0.t7": { en: "261. Steps to conect Database info to Selenium - 1", uk: "261. Кроки підключення БД до Selenium — частина 1" },
+  "cc.cert-5.m32.l0.t8": { en: "262. Program code download", uk: "262. Завантаження коду програми" },
+  "cc.cert-5.m32.l0.t9": { en: "263. Steps to connect Database info to Selenium - 2", uk: "263. Кроки підключення БД до Selenium — частина 2" },
+
+  // --- m33: Section 34 ---
+  "cc.cert-5.m33.l0.title": { en: "1 lectures", uk: "1 лекція" },
+  "cc.cert-5.m33.l0.t0": { en: "264. Effortlessly generate Selenium Java code with in the editor using GenAI Plugins", uk: "264. Генерація Selenium Java коду в редакторі через GenAI плагіни" },
+
+  // --- m34: Section 35 ---
+  "cc.cert-5.m34.l0.title": { en: "9 lectures", uk: "9 лекцій" },
+  "cc.cert-5.m34.l0.t0": { en: "265. Handling Window Authentication pop ups with Selenium", uk: "265. Робота з вікнами аутентифікації в Selenium" },
+  "cc.cert-5.m34.l0.t1": { en: "266. Examples on handling pop ups with modified webdriver url", uk: "266. Приклади роботи з pop ups через модифікований URL драйвера" },
+  "cc.cert-5.m34.l0.t2": { en: "267. What is AutoIT? Installation details", uk: "267. Що таке AutoIT? Деталі встановлення" },
+  "cc.cert-5.m34.l0.t3": { en: "268. Inspecting the window objects and converting into AutoIT code", uk: "268. Інспекція об'єктів вікна та конвертація в AutoIT код" },
+  "cc.cert-5.m34.l0.t4": { en: "269. End to End example on uploading File with AutoIT Selenium", uk: "269. Наскрізний приклад вивантаження файлу з AutoIT + Selenium" },
+  "cc.cert-5.m34.l0.t5": { en: "270. Reference Material for AutoIT", uk: "270. Довідкові матеріали для AutoIT" },
+  "cc.cert-5.m34.l0.t6": { en: "271. Steps to complete the flow to download file from Application with Selenium", uk: "271. Кроки для завантаження файлу з додатку через Selenium" },
+  "cc.cert-5.m34.l0.t7": { en: "272. Chrome driver options to configure download path of browser", uk: "272. Chrome driver options для налаштування шляху завантаження" },
+  "cc.cert-5.m34.l0.t8": { en: "273. Full Code download", uk: "273. Завантаження повного коду" },
+
+  // --- m35: Section 36 ---
+  "cc.cert-5.m35.l0.title": { en: "10 lectures", uk: "10 лекцій" },
+  "cc.cert-5.m35.l0.t0": { en: "274. Important Note", uk: "274. Важлива примітка" },
+  "cc.cert-5.m35.l0.t1": { en: "275. Importance of Maven in Framework development", uk: "275. Важливість Maven у розробці фреймворків" },
+  "cc.cert-5.m35.l0.t2": { en: "276. Installing and configuring Maven", uk: "276. Встановлення та налаштування Maven" },
+  "cc.cert-5.m35.l0.t3": { en: "277. Creating Maven Project and Understanding its Terminologies", uk: "277. Створення Maven проєкту та його термінологія" },
+  "cc.cert-5.m35.l0.t4": { en: "278. Understanding POM.xml file and its dependencies", uk: "278. Розуміння POM.xml файлу та його залежностей" },
+  "cc.cert-5.m35.l0.t5": { en: "279. Importance of surefirePlugin in executing Tests", uk: "279. Важливість surefirePlugin у виконанні тестів" },
+  "cc.cert-5.m35.l0.t6": { en: "280. Integration of Testng with Maven", uk: "280. Інтеграція TestNG з Maven" },
+  "cc.cert-5.m35.l0.t7": { en: "281. Switching the Tests with Maven profiling", uk: "281. Перемикання тестів через Maven профілювання" },
+  "cc.cert-5.m35.l0.t8": { en: "282. code download", uk: "282. Завантаження коду" },
+  "cc.cert-5.m35.l0.t9": { en: "Quiz 9: Quiz - Check Your Knowledge", uk: "Тест 9: Перевірте свої знання" },
+
+  // --- m36: Section 37 (3 levels) ---
+  "cc.cert-5.m36.l0.title": { en: "25 lectures", uk: "25 лекцій" },
+  "cc.cert-5.m36.l0.t0": { en: "283. IMportant Note", uk: "283. Важлива примітка" },
+  "cc.cert-5.m36.l0.t1": { en: "284. When should I use While loop?", uk: "284. Коли використовувати цикл While?" },
+  "cc.cert-5.m36.l0.t2": { en: "285. How do while loop works?", uk: "285. Як працює цикл do-while?" },
+  "cc.cert-5.m36.l0.t3": { en: "286. loops,Conditions code download", uk: "286. Завантаження коду циклів та умов" },
+  "cc.cert-5.m36.l0.t4": { en: "287. Explanation on Nested for loops", uk: "287. Пояснення вкладених циклів for" },
+  "cc.cert-5.m36.l0.t5": { en: "288. Practise Exercise on loops -1 { printing pyramid triangle)", uk: "288. Практична вправа з циклів — друк трикутника" },
+  "cc.cert-5.m36.l0.t6": { en: "289. Practise Exercise - 2- Yahoo Ques : ( Inverted sequence pyramid logic program)", uk: "289. Практична вправа — перевернута піраміда (Yahoo питання)" },
+  "cc.cert-5.m36.l0.t7": { en: "290. Nested loops code download", uk: "290. Завантаження коду вкладених циклів" },
+  "cc.cert-5.m36.l0.t8": { en: "291. What is interface?", uk: "291. Що таке інтерфейс?" },
+  "cc.cert-5.m36.l0.t9": { en: "292. How java classes can take advantage of interfaces", uk: "292. Як Java класи використовують інтерфейси" },
+  "cc.cert-5.m36.l0.t10": { en: "293. Interface code download", uk: "293. Завантаження коду інтерфейсів" },
+  "cc.cert-5.m36.l0.t11": { en: "294. What are Abstract classes and how different they are from Interfaces", uk: "294. Абстрактні класи та їх відмінність від інтерфейсів" },
+  "cc.cert-5.m36.l1.title": { en: "continued", uk: "продовження" },
+  "cc.cert-5.m36.l1.t0": { en: "295. Usage of inheritance in java", uk: "295. Використання наслідування в Java" },
+  "cc.cert-5.m36.l1.t1": { en: "296. Practical examples on types of inheritances", uk: "296. Практичні приклади типів наслідування" },
+  "cc.cert-5.m36.l1.t2": { en: "297. Inheritance code download", uk: "297. Завантаження коду наслідування" },
+  "cc.cert-5.m36.l1.t3": { en: "298. Explaining function overloading in java with example", uk: "298. Пояснення перевантаження функцій у Java" },
+  "cc.cert-5.m36.l1.t4": { en: "299. How different function overriding from overloading?-Explain", uk: "299. Чим відрізняється overriding від overloading?" },
+  "cc.cert-5.m36.l1.t5": { en: "300. Demonstration code download", uk: "300. Завантаження демонстраційного коду" },
+  "cc.cert-5.m36.l1.t6": { en: "301. What are Arrays and their usage in Java programmes", uk: "301. Масиви та їх використання в Java" },
+  "cc.cert-5.m36.l1.t7": { en: "302. Ways of initializing arrays and assigning objects", uk: "302. Способи ініціалізації масивів та призначення об'єктів" },
+  "cc.cert-5.m36.l1.t8": { en: "303. Arrays code download", uk: "303. Завантаження коду масивів" },
+  "cc.cert-5.m36.l1.t9": { en: "304. Logic Program on Multi Dimensional arrays", uk: "304. Логічна програма на багатовимірних масивах" },
+  "cc.cert-5.m36.l1.t10": { en: "305. Practise exercise - Print smallest number in 3*3 matrix", uk: "305. Практична вправа — найменше число в матриці 3×3" },
+  "cc.cert-5.m36.l1.t11": { en: "306. Practise Exercise -  Cisco Interview question on Arrays", uk: "306. Практична вправа — Cisco питання про масиви" },
+  "cc.cert-5.m36.l2.title": { en: "continued", uk: "продовження" },
+  "cc.cert-5.m36.l2.t0": { en: "307. programming code download", uk: "307. Завантаження коду програми" },
+
+  // --- m37: Section 38 (2 levels) ---
+  "cc.cert-5.m37.l0.title": { en: "18 lectures", uk: "18 лекцій" },
+  "cc.cert-5.m37.l0.t0": { en: "308. Date class concepts", uk: "308. Концепції класу Date" },
+  "cc.cert-5.m37.l0.t1": { en: "309. working with calendar objects in java", uk: "309. Робота з об'єктами Calendar у Java" },
+  "cc.cert-5.m37.l0.t2": { en: "310. How constructor play a crucial role", uk: "310. Важлива роль конструкторів" },
+  "cc.cert-5.m37.l0.t3": { en: "311. Types of constructors and their usage", uk: "311. Типи конструкторів та їх використання" },
+  "cc.cert-5.m37.l0.t4": { en: "312. Constrructor code download", uk: "312. Завантаження коду конструкторів" },
+  "cc.cert-5.m37.l0.t5": { en: "313. What is super keyword ?", uk: "313. Що таке ключове слово super?" },
+  "cc.cert-5.m37.l0.t6": { en: "314. super keyword practical usage", uk: "314. Практичне використання super" },
+  "cc.cert-5.m37.l0.t7": { en: "315. importance of this keyword", uk: "315. Важливість ключового слова this" },
+  "cc.cert-5.m37.l0.t8": { en: "316. Static and Non Static Importance in Java", uk: "316. Static та non-static у Java" },
+  "cc.cert-5.m37.l0.t9": { en: "317. Final keyword in Java", uk: "317. Ключове слово Final у Java" },
+  "cc.cert-5.m37.l0.t10": { en: "318. Packages and their usage in OOPS", uk: "318. Пакети та їх використання в ООП" },
+  "cc.cert-5.m37.l0.t11": { en: "319. Types of packages and how they will help in real time", uk: "319. Типи пакетів та їх практична користь" },
+  "cc.cert-5.m37.l1.title": { en: "continued", uk: "продовження" },
+  "cc.cert-5.m37.l1.t0": { en: "320. Importance of access modifiers", uk: "320. Важливість модифікаторів доступу" },
+  "cc.cert-5.m37.l1.t1": { en: "321. Difference between public and private modifers-With Examples", uk: "321. Різниця між public та private — з прикладами" },
+  "cc.cert-5.m37.l1.t2": { en: "322. Different kind of exceptions", uk: "322. Різні типи винятків" },
+  "cc.cert-5.m37.l1.t3": { en: "323. Try catch Mechanism to handle exceptions", uk: "323. Механізм try-catch для обробки винятків" },
+  "cc.cert-5.m37.l1.t4": { en: "324. Importance of finally block in java", uk: "324. Важливість блоку finally у Java" },
+  "cc.cert-5.m37.l1.t5": { en: "325. Exception code download", uk: "325. Завантаження коду винятків" },
+
+  // --- m38: Section 39 ---
+  "cc.cert-5.m38.l0.title": { en: "14 lectures", uk: "14 лекцій" },
+  "cc.cert-5.m38.l0.t0": { en: "326. What are Java collections", uk: "326. Що таке Java Collections" },
+  "cc.cert-5.m38.l0.t1": { en: "327. Implementation of Arrays List", uk: "327. Реалізація ArrayList" },
+  "cc.cert-5.m38.l0.t2": { en: "328. Examples of ArrayList", uk: "328. Приклади ArrayList" },
+  "cc.cert-5.m38.l0.t3": { en: "329. Array List Code download", uk: "329. Завантаження коду ArrayList" },
+  "cc.cert-5.m38.l0.t4": { en: "Coding Exercise 2: Modifying and Analyzing an ArrayList", uk: "Вправа 2: Модифікація та аналіз ArrayList" },
+  "cc.cert-5.m38.l0.t5": { en: "330. Implementation of Set interface", uk: "330. Реалізація інтерфейсу Set" },
+  "cc.cert-5.m38.l0.t6": { en: "331. Examples of HashSet using Iterator", uk: "331. Приклади HashSet з Iterator" },
+  "cc.cert-5.m38.l0.t7": { en: "332. Implementation of Map interface", uk: "332. Реалізація інтерфейсу Map" },
+  "cc.cert-5.m38.l0.t8": { en: "333. Code explaining hashset and hashmap", uk: "333. Код, що пояснює HashSet та HashMap" },
+  "cc.cert-5.m38.l0.t9": { en: "334. Difference between HashMap and HashTable (Interview )", uk: "334. Різниця між HashMap та HashTable (питання на співбесіді)" },
+  "cc.cert-5.m38.l0.t10": { en: "335. Practise Exercise : Priniting unique number- Amazon interview ques", uk: "335. Практична вправа: унікальне число — Amazon питання" },
+  "cc.cert-5.m38.l0.t11": { en: "336. programming code download", uk: "336. Завантаження коду програми" },
+  "cc.cert-5.m38.l0.t12": { en: "337. OOPS Interview questions", uk: "337. Питання з ООП для співбесіди" },
+  "cc.cert-5.m38.l0.t13": { en: "338. Java interview questions", uk: "338. Питання з Java для співбесіди" },
+
+  // --- m39: Section 40 ---
+  "cc.cert-5.m39.l0.title": { en: "1 lectures", uk: "1 лекція" },
+  "cc.cert-5.m39.l0.t0": { en: "339. Bonus lecture", uk: "339. Бонусна лекція" },
+
+  // ======== cert-4: Java Developer Professional (JavaRush) — Module 0: Java Syntax ========
+  "cc.cert-4.m0.l0.title": { en: "Introduction. Commands & First Java Program", uk: "Вступ. Команди та перша Java програма" },
+  "cc.cert-4.m0.l0.t0": { en: "Advantages of Java and its application areas", uk: "Переваги Java та сфери застосування" },
+  "cc.cert-4.m0.l0.t1": { en: "About JavaRush and Java University", uk: "Про JavaRush та Java University" },
+  "cc.cert-4.m0.l0.t2": { en: "Program structure, the main method", uk: "Структура програми, метод main" },
+  "cc.cert-4.m0.l0.t3": { en: "System.out.println()", uk: "System.out.println()" },
+  "cc.cert-4.m0.l0.t4": { en: "Introduction to the website and WebIDE", uk: "Знайомство з сайтом та WebIDE" },
+
+  "cc.cert-4.m0.l1.title": { en: "Working with Variables, int and String Types", uk: "Робота зі змінними, типи int та String" },
+  "cc.cert-4.m0.l1.t0": { en: "Storing text in a variable, outputting to console", uk: "Збереження тексту в змінній, вивід у консоль" },
+  "cc.cert-4.m0.l1.t1": { en: "Declaring and initializing String variables", uk: "Оголошення та ініціалізація String змінних" },
+  "cc.cert-4.m0.l1.t2": { en: "Comments in code", uk: "Коментарі в коді" },
+  "cc.cert-4.m0.l1.t3": { en: "Basic math operations with int variables", uk: "Базові математичні операції з int" },
+  "cc.cert-4.m0.l1.t4": { en: "Increment, decrement", uk: "Інкремент, декремент" },
+  "cc.cert-4.m0.l1.t5": { en: "Concatenation", uk: "Конкатенація" },
+  "cc.cert-4.m0.l1.t6": { en: "Integer.parseInt(), String.valueOf()", uk: "Integer.parseInt(), String.valueOf()" },
+
+  "cc.cert-4.m0.l2.title": { en: "Data Types & Keyboard Input. Introduction to IntelliJ IDEA", uk: "Типи даних та введення з клавіатури. Знайомство з IntelliJ IDEA" },
+  "cc.cert-4.m0.l2.t0": { en: "How primitive variables are stored in memory", uk: "Як примітивні змінні зберігаються в пам'яті" },
+  "cc.cert-4.m0.l2.t1": { en: "How String variables are stored in memory", uk: "Як String змінні зберігаються в пам'яті" },
+  "cc.cert-4.m0.l2.t2": { en: "byte, short, char, long, float, double", uk: "byte, short, char, long, float, double" },
+  "cc.cert-4.m0.l2.t3": { en: "System.in, Scanner", uk: "System.in, Scanner" },
+  "cc.cert-4.m0.l2.t4": { en: "Scanner methods", uk: "Методи Scanner" },
+  "cc.cert-4.m0.l2.t5": { en: "Installing IDEA, loading a project, JDK 11 setup", uk: "Встановлення IDEA, завантаження проєкту, JDK 11" },
+  "cc.cert-4.m0.l2.t6": { en: "Installing the plugin, exploring its features", uk: "Встановлення плагіна, огляд можливостей" },
+
+  "cc.cert-4.m0.l3.title": { en: "Conditional Statements", uk: "Умовні оператори" },
+  "cc.cert-4.m0.l3.t0": { en: "if, if-else, if-else-if", uk: "if, if-else, if-else-if" },
+  "cc.cert-4.m0.l3.t1": { en: "Command blocks", uk: "Блоки команд" },
+  "cc.cert-4.m0.l3.t2": { en: "Nested command blocks (nested if's)", uk: "Вкладені блоки команд (вкладені if)" },
+  "cc.cert-4.m0.l3.t3": { en: "boolean type", uk: "Тип boolean" },
+  "cc.cert-4.m0.l3.t4": { en: "Comparison operators, including double", uk: "Оператори порівняння, включно з double" },
+  "cc.cert-4.m0.l3.t5": { en: "Logical AND, OR, NOT, XOR", uk: "Логічні AND, OR, NOT, XOR" },
+  "cc.cert-4.m0.l3.t6": { en: "Ternary operator", uk: "Тернарний оператор" },
+  "cc.cert-4.m0.l3.t7": { en: "Comparing primitives vs String", uk: "Порівняння примітивів та String" },
+
+  "cc.cert-4.m0.l4.title": { en: "Optional: Bytecode & IDE Tips", uk: "Опціонально: Байткод та поради по IDE" },
+  "cc.cert-4.m0.l4.t0": { en: "Bringing beginners up to speed", uk: "Введення початківців у курс справи" },
+  "cc.cert-4.m0.l4.t1": { en: "Advanced IDE tips for experienced students", uk: "Просунуті поради по IDE для досвідчених" },
+  "cc.cert-4.m0.l4.t2": { en: "Compiling a class to bytecode from the console, running the program", uk: "Компіляція класу в байткод з консолі" },
+
+  "cc.cert-4.m0.l5.title": { en: "Loops", uk: "Цикли" },
+  "cc.cert-4.m0.l5.t0": { en: "Problem statement: executing an action many times", uk: "Постановка задачі: виконання дії багато разів" },
+  "cc.cert-4.m0.l5.t1": { en: "while", uk: "while" },
+  "cc.cert-4.m0.l5.t2": { en: "break, continue", uk: "break, continue" },
+  "cc.cert-4.m0.l5.t3": { en: "for", uk: "for" },
+  "cc.cert-4.m0.l5.t4": { en: "do-while", uk: "do-while" },
+  "cc.cert-4.m0.l5.t5": { en: "Comparing loops — when to use which", uk: "Порівняння циклів — коли який використовувати" },
+
+  "cc.cert-4.m0.l6.title": { en: "Arrays", uk: "Масиви" },
+  "cc.cert-4.m0.l6.t0": { en: "Creating and populating arrays", uk: "Створення та заповнення масивів" },
+  "cc.cert-4.m0.l6.t1": { en: "Iterating over an array", uk: "Ітерація по масиву" },
+  "cc.cert-4.m0.l6.t2": { en: "How arrays are stored in memory", uk: "Як масиви зберігаються в пам'яті" },
+
+  "cc.cert-4.m0.l7.title": { en: "Multidimensional Arrays", uk: "Багатовимірні масиви" },
+  "cc.cert-4.m0.l7.t0": { en: "2D arrays", uk: "2D масиви" },
+  "cc.cert-4.m0.l7.t1": { en: "Jagged arrays", uk: "Зубчасті масиви" },
+  "cc.cert-4.m0.l7.t2": { en: "N-dimensional arrays", uk: "N-вимірні масиви" },
+
+  "cc.cert-4.m0.l8.title": { en: "Functions (Methods)", uk: "Функції (Методи)" },
+  "cc.cert-4.m0.l8.t0": { en: "Declaring and calling methods", uk: "Оголошення та виклик методів" },
+  "cc.cert-4.m0.l8.t1": { en: "Parameters", uk: "Параметри" },
+  "cc.cert-4.m0.l8.t2": { en: "Return values, void", uk: "Значення, що повертаються, void" },
+  "cc.cert-4.m0.l8.t3": { en: "Access modifiers", uk: "Модифікатори доступу" },
+  "cc.cert-4.m0.l8.t4": { en: "Local variables of a method", uk: "Локальні змінні методу" },
+  "cc.cert-4.m0.l8.t5": { en: "Method modifiers, the main method", uk: "Модифікатори методу, метод main" },
+
+  "cc.cert-4.m0.l9.title": { en: "Working with Strings", uk: "Робота з рядками" },
+  "cc.cert-4.m0.l9.t0": { en: "Constants", uk: "Константи" },
+  "cc.cert-4.m0.l9.t1": { en: "Variable shadowing", uk: "Затінення змінних" },
+  "cc.cert-4.m0.l9.t2": { en: "Character escaping", uk: "Екранування символів" },
+  "cc.cert-4.m0.l9.t3": { en: "Core methods of the String class", uk: "Основні методи класу String" },
+
+  "cc.cert-4.m0.l10.title": { en: "Optional: Literals, Encoding, StringBuilder", uk: "Опціонально: Літерали, кодування, StringBuilder" },
+  "cc.cert-4.m0.l10.t0": { en: "Literals", uk: "Літерали" },
+  "cc.cert-4.m0.l10.t1": { en: "Encoding", uk: "Кодування" },
+  "cc.cert-4.m0.l10.t2": { en: "Helper classes: StringBuilder, String.format", uk: "Допоміжні класи: StringBuilder, String.format" },
+  "cc.cert-4.m0.l10.t3": { en: "Utility class Arrays", uk: "Утилітний клас Arrays" },
+
+  "cc.cert-4.m0.l11.title": { en: "Data Types. Introduction to OOP", uk: "Типи даних. Вступ до ООП" },
+  "cc.cert-4.m0.l11.t0": { en: "Primitive types", uk: "Примітивні типи" },
+  "cc.cert-4.m0.l11.t1": { en: "Type casting", uk: "Перетворення типів" },
+  "cc.cert-4.m0.l11.t2": { en: "Reference types", uk: "Посилальні типи" },
+  "cc.cert-4.m0.l11.t3": { en: "Objects", uk: "Об'єкти" },
+  "cc.cert-4.m0.l11.t4": { en: "null", uk: "null" },
+  "cc.cert-4.m0.l11.t5": { en: "Introduction to OOP", uk: "Вступ до ООП" },
+  "cc.cert-4.m0.l11.t6": { en: "Inheritance", uk: "Наслідування" },
+
+  "cc.cert-4.m0.l12.title": { en: "Objects", uk: "Об'єкти" },
+  "cc.cert-4.m0.l12.t0": { en: "Creating objects (new)", uk: "Створення об'єктів (new)" },
+  "cc.cert-4.m0.l12.t1": { en: "Constructors, default constructor", uk: "Конструктори, конструктор за замовчуванням" },
+  "cc.cert-4.m0.l12.t2": { en: "Parameterized constructors", uk: "Параметризовані конструктори" },
+  "cc.cert-4.m0.l12.t3": { en: "Order of constructor calls during inheritance", uk: "Порядок виклику конструкторів при наслідуванні" },
+  "cc.cert-4.m0.l12.t4": { en: "Accessing object fields (getters, setters)", uk: "Доступ до полів об'єкта (геттери, сеттери)" },
+  "cc.cert-4.m0.l12.t5": { en: "hashCode, equals", uk: "hashCode, equals" },
+
+  "cc.cert-4.m0.l13.title": { en: "Classes & static", uk: "Класи та static" },
+  "cc.cert-4.m0.l13.t0": { en: "Static variables", uk: "Статичні змінні" },
+  "cc.cert-4.m0.l13.t1": { en: "Static vs non-static variables", uk: "Статичні та нестатичні змінні" },
+  "cc.cert-4.m0.l13.t2": { en: "Static methods", uk: "Статичні методи" },
+  "cc.cert-4.m0.l13.t3": { en: "Initialization order with constructors and static blocks", uk: "Порядок ініціалізації з конструкторами та static блоками" },
+  "cc.cert-4.m0.l13.t4": { en: "Inner classes", uk: "Внутрішні класи" },
+
+  "cc.cert-4.m0.l14.title": { en: "Optional: Object Lifecycle & Class Loading", uk: "Опціонально: Життєвий цикл об'єкта та завантаження класів" },
+  "cc.cert-4.m0.l14.t0": { en: "Object lifecycle", uk: "Життєвий цикл об'єкта" },
+  "cc.cert-4.m0.l14.t1": { en: "Class loading", uk: "Завантаження класів" },
+
+  "cc.cert-4.m0.l15.title": { en: "Lists & Generics", uk: "Списки та Generics" },
+  "cc.cert-4.m0.l15.t0": { en: "Wrapper classes", uk: "Класи-обгортки" },
+  "cc.cert-4.m0.l15.t1": { en: "ArrayList", uk: "ArrayList" },
+  "cc.cert-4.m0.l15.t2": { en: "Array vs ArrayList", uk: "Array vs ArrayList" },
+  "cc.cert-4.m0.l15.t3": { en: "Typing ArrayList (generics)", uk: "Типізація ArrayList (generics)" },
+
+  "cc.cert-4.m0.l16.title": { en: "Collections: Set & HashSet", uk: "Колекції: Set та HashSet" },
+  "cc.cert-4.m0.l16.t0": { en: "Collections hierarchy", uk: "Ієрархія колекцій" },
+  "cc.cert-4.m0.l16.t1": { en: "Set, HashSet", uk: "Set, HashSet" },
+  "cc.cert-4.m0.l16.t2": { en: "iterator, for-each", uk: "iterator, for-each" },
+
+  "cc.cert-4.m0.l17.title": { en: "Collections: Map & HashMap", uk: "Колекції: Map та HashMap" },
+  "cc.cert-4.m0.l17.t0": { en: "Map, HashMap", uk: "Map, HashMap" },
+  "cc.cert-4.m0.l17.t1": { en: "Choosing the right collection for the task", uk: "Вибір правильної колекції для задачі" },
+  "cc.cert-4.m0.l17.t2": { en: "Collections utility class", uk: "Утилітний клас Collections" },
+
+  "cc.cert-4.m0.l18.title": { en: "Optional: LinkedList, Queue, SortedMap", uk: "Опціонально: LinkedList, Queue, SortedMap" },
+  "cc.cert-4.m0.l18.t0": { en: "LinkedList", uk: "LinkedList" },
+  "cc.cert-4.m0.l18.t1": { en: "ArrayList vs LinkedList", uk: "ArrayList vs LinkedList" },
+  "cc.cert-4.m0.l18.t2": { en: "Queue", uk: "Queue" },
+  "cc.cert-4.m0.l18.t3": { en: "SortedMap, TreeMap", uk: "SortedMap, TreeMap" },
+
+  "cc.cert-4.m0.l19.title": { en: "Singleton, Enum, switch", uk: "Singleton, Enum, switch" },
+  "cc.cert-4.m0.l19.t0": { en: "Why enumerations are needed", uk: "Навіщо потрібні перелічення" },
+  "cc.cert-4.m0.l19.t1": { en: "Declaring Enum", uk: "Оголошення Enum" },
+  "cc.cert-4.m0.l19.t2": { en: "Enum — the best Singleton", uk: "Enum — найкращий Singleton" },
+  "cc.cert-4.m0.l19.t3": { en: "switch statement", uk: "Оператор switch" },
+
+  "cc.cert-4.m0.l20.title": { en: "Exceptions (Part 1)", uk: "Винятки (Частина 1)" },
+  "cc.cert-4.m0.l20.t0": { en: "Normal code execution vs runtime errors", uk: "Нормальне виконання коду vs помилки виконання" },
+  "cc.cert-4.m0.l20.t1": { en: "try-catch", uk: "try-catch" },
+  "cc.cert-4.m0.l20.t2": { en: "Exception hierarchy", uk: "Ієрархія винятків" },
+  "cc.cert-4.m0.l20.t3": { en: "multicatch", uk: "multicatch" },
+  "cc.cert-4.m0.l20.t4": { en: "throw", uk: "throw" },
+  "cc.cert-4.m0.l20.t5": { en: "checked vs unchecked exceptions", uk: "checked та unchecked винятки" },
+  "cc.cert-4.m0.l20.t6": { en: "throws", uk: "throws" },
+
+  "cc.cert-4.m0.l21.title": { en: "Exceptions (Part 2)", uk: "Винятки (Частина 2)" },
+  "cc.cert-4.m0.l21.t0": { en: "finally", uk: "finally" },
+  "cc.cert-4.m0.l21.t1": { en: "Creating custom exceptions", uk: "Створення власних винятків" },
+  "cc.cert-4.m0.l21.t2": { en: "Throwable", uk: "Throwable" },
+  "cc.cert-4.m0.l21.t3": { en: "Stack trace", uk: "Stack trace" },
+  "cc.cert-4.m0.l21.t4": { en: "try-with-resources", uk: "try-with-resources" },
+  "cc.cert-4.m0.l21.t5": { en: "AutoCloseable", uk: "AutoCloseable" },
+
+  "cc.cert-4.m0.l22.title": { en: "Optional: Exception Wrapping & Error", uk: "Опціонально: Обгортання винятків та Error" },
+  "cc.cert-4.m0.l22.t0": { en: "Exception wrapping", uk: "Обгортання винятків" },
+  "cc.cert-4.m0.l22.t1": { en: "Error class", uk: "Клас Error" },
+
+  "cc.cert-4.m0.l23.title": { en: "I/O Streams (Part 1)", uk: "Потоки I/O (Частина 1)" },
+  "cc.cert-4.m0.l23.t0": { en: "InputStream", uk: "InputStream" },
+  "cc.cert-4.m0.l23.t1": { en: "Reader", uk: "Reader" },
+  "cc.cert-4.m0.l23.t2": { en: "BufferedReader", uk: "BufferedReader" },
+  "cc.cert-4.m0.l23.t3": { en: "OutputStream", uk: "OutputStream" },
+  "cc.cert-4.m0.l23.t4": { en: "Writer", uk: "Writer" },
+  "cc.cert-4.m0.l23.t5": { en: "BufferedWriter", uk: "BufferedWriter" },
+
+  "cc.cert-4.m0.l24.title": { en: "I/O Streams. Decorator Pattern", uk: "Потоки I/O. Патерн Decorator" },
+  "cc.cert-4.m0.l24.t0": { en: "ByteArrayInputStream", uk: "ByteArrayInputStream" },
+  "cc.cert-4.m0.l24.t1": { en: "ByteArrayOutputStream", uk: "ByteArrayOutputStream" },
+  "cc.cert-4.m0.l24.t2": { en: "Combining streams", uk: "Комбінування потоків" },
+
+  "cc.cert-4.m0.l25.title": { en: "I/O Streams. java.nio", uk: "Потоки I/O. java.nio" },
+  "cc.cert-4.m0.l25.t0": { en: "io vs nio", uk: "io vs nio" },
+  "cc.cert-4.m0.l25.t1": { en: "FileChannel", uk: "FileChannel" },
+  "cc.cert-4.m0.l25.t2": { en: "Selector", uk: "Selector" },
+  "cc.cert-4.m0.l25.t3": { en: "Path", uk: "Path" },
+  "cc.cert-4.m0.l25.t4": { en: "Paths", uk: "Paths" },
+  "cc.cert-4.m0.l25.t5": { en: "Files", uk: "Files" },
+
+  "cc.cert-4.m0.l26.title": { en: "Working with Date & Time", uk: "Робота з датою та часом" },
+  "cc.cert-4.m0.l26.t0": { en: "Date", uk: "Date" },
+  "cc.cert-4.m0.l26.t1": { en: "DateFormat", uk: "DateFormat" },
+  "cc.cert-4.m0.l26.t2": { en: "Calendar", uk: "Calendar" },
+  "cc.cert-4.m0.l26.t3": { en: "LocalDate, LocalTime, LocalDateTime", uk: "LocalDate, LocalTime, LocalDateTime" },
+  "cc.cert-4.m0.l26.t4": { en: "Instant", uk: "Instant" },
+  "cc.cert-4.m0.l26.t5": { en: "ZonedDateTime", uk: "ZonedDateTime" },
+  "cc.cert-4.m0.l26.t6": { en: "DateTimeFormatter", uk: "DateTimeFormatter" },
+
+  "cc.cert-4.m0.l27.title": { en: "Git. Final Project: Cryptoanalyzer", uk: "Git. Фінальний проєкт: Cryptoanalyzer" },
+  "cc.cert-4.m0.l27.t0": { en: "Git basics", uk: "Основи Git" },
+  "cc.cert-4.m0.l27.t1": { en: "Building a console-based cryptoanalyzer application", uk: "Створення консольного криптоаналізатора" },
+  "cc.cert-4.m0.l27.t2": { en: "Brute-force and statistical text decryption", uk: "Brute-force та статистичне розшифрування тексту" },
+
+  // ======== cert-4: Java Developer Professional — Module 1: Java Core ========
+  "cc.cert-4.m1.l0.title": { en: "OOP: Encapsulation, Polymorphism. Interfaces", uk: "ООП: Інкапсуляція, Поліморфізм. Інтерфейси" },
+  "cc.cert-4.m1.l0.t0": { en: "Encapsulation", uk: "Інкапсуляція" },
+  "cc.cert-4.m1.l0.t1": { en: "Polymorphism", uk: "Поліморфізм" },
+  "cc.cert-4.m1.l0.t2": { en: "Type casting", uk: "Перетворення типів" },
+  "cc.cert-4.m1.l0.t3": { en: "this, super", uk: "this, super" },
+  "cc.cert-4.m1.l0.t4": { en: "Interfaces", uk: "Інтерфейси" },
+
+  "cc.cert-4.m1.l1.title": { en: "OOP: Overloading, Overriding, Abstract Classes", uk: "ООП: Перевантаження, Перевизначення, Абстрактні класи" },
+  "cc.cert-4.m1.l1.t0": { en: "Abstract classes", uk: "Абстрактні класи" },
+  "cc.cert-4.m1.l1.t1": { en: "Implementing abstract methods of the parent", uk: "Реалізація абстрактних методів батьківського класу" },
+  "cc.cert-4.m1.l1.t2": { en: "Method overloading — same names", uk: "Перевантаження методів" },
+  "cc.cert-4.m1.l1.t3": { en: "Method overriding", uk: "Перевизначення методів" },
+
+  "cc.cert-4.m1.l2.title": { en: "Stream API", uk: "Stream API" },
+  "cc.cert-4.m1.l2.t0": { en: "Anonymous inner classes", uk: "Анонімні внутрішні класи" },
+  "cc.cert-4.m1.l2.t1": { en: "Implementation of abstract methods of the parent", uk: "Реалізація абстрактних методів батька" },
+  "cc.cert-4.m1.l2.t2": { en: "Lambda expressions", uk: "Лямбда-вирази" },
+  "cc.cert-4.m1.l2.t3": { en: "Functional interfaces", uk: "Функціональні інтерфейси" },
+  "cc.cert-4.m1.l2.t4": { en: "Method references", uk: "Посилання на методи" },
+  "cc.cert-4.m1.l2.t5": { en: "Stream", uk: "Stream" },
+  "cc.cert-4.m1.l2.t6": { en: "Intermediate and terminal Stream methods", uk: "Проміжні та термінальні методи Stream" },
+  "cc.cert-4.m1.l2.t7": { en: "map-reduce", uk: "map-reduce" },
+
+  "cc.cert-4.m1.l3.title": { en: "OOP: Composition, Aggregation, Inheritance", uk: "ООП: Композиція, Агрегація, Наслідування" },
+  "cc.cert-4.m1.l3.t0": { en: "Association: composition and aggregation", uk: "Асоціація: композиція та агрегація" },
+  "cc.cert-4.m1.l3.t1": { en: "Inheritance", uk: "Наслідування" },
+
+  "cc.cert-4.m1.l4.title": { en: "Interfaces vs Abstract Classes. Multiple Inheritance", uk: "Інтерфейси vs Абстрактні класи. Множинне наслідування" },
+  "cc.cert-4.m1.l4.t0": { en: "Declaring behavior", uk: "Оголошення поведінки" },
+  "cc.cert-4.m1.l4.t1": { en: "Default methods", uk: "Методи за замовчуванням" },
+  "cc.cert-4.m1.l4.t2": { en: "Implementing multiple interfaces", uk: "Реалізація множинних інтерфейсів" },
+  "cc.cert-4.m1.l4.t3": { en: "The diamond problem", uk: "Проблема ромба" },
+  "cc.cert-4.m1.l4.t4": { en: "Comparing abstract classes and interfaces", uk: "Порівняння абстрактних класів та інтерфейсів" },
+
+  "cc.cert-4.m1.l5.title": { en: "Type Casting, instanceof, switch-expression", uk: "Перетворення типів, instanceof, switch-expression" },
+  "cc.cert-4.m1.l5.t0": { en: "instanceof", uk: "instanceof" },
+  "cc.cert-4.m1.l5.t1": { en: "Type casting (widening and narrowing)", uk: "Перетворення типів (розширення та звуження)" },
+  "cc.cert-4.m1.l5.t2": { en: "switch expression, Enum", uk: "switch expression, Enum" },
+
+  "cc.cert-4.m1.l6.title": { en: "Constructor Call Details. static Block", uk: "Деталі виклику конструктора. static блок" },
+  "cc.cert-4.m1.l6.t0": { en: "Object creation process", uk: "Процес створення об'єкта" },
+  "cc.cert-4.m1.l6.t1": { en: "Constructor call order", uk: "Порядок виклику конструкторів" },
+  "cc.cert-4.m1.l6.t2": { en: "Variable initialization order", uk: "Порядок ініціалізації змінних" },
+
+  "cc.cert-4.m1.l7.title": { en: "How Object Works: equals, hashCode, clone, toString. Immutable Objects", uk: "Як працює Object: equals, hashCode, clone, toString. Незмінні об'єкти" },
+  "cc.cert-4.m1.l7.t0": { en: "The Object class", uk: "Клас Object" },
+  "cc.cert-4.m1.l7.t1": { en: "Methods of the Object class", uk: "Методи класу Object" },
+  "cc.cert-4.m1.l7.t2": { en: "Mutable and immutable objects", uk: "Змінні та незмінні об'єкти" },
+
+  "cc.cert-4.m1.l8.title": { en: "Recursion", uk: "Рекурсія" },
+  "cc.cert-4.m1.l8.t0": { en: "Understanding recursion", uk: "Розуміння рекурсії" },
+  "cc.cert-4.m1.l8.t1": { en: "Recursive algorithms", uk: "Рекурсивні алгоритми" },
+
+  "cc.cert-4.m1.l9.title": { en: "Introduction to Threads: Thread, Runnable, start, sleep", uk: "Вступ до Threads: Thread, Runnable, start, sleep" },
+  "cc.cert-4.m1.l9.t0": { en: "Thread", uk: "Thread" },
+  "cc.cert-4.m1.l9.t1": { en: "Runnable", uk: "Runnable" },
+  "cc.cert-4.m1.l9.t2": { en: "start", uk: "start" },
+  "cc.cert-4.m1.l9.t3": { en: "sleep", uk: "sleep" },
+  "cc.cert-4.m1.l9.t4": { en: "interrupt", uk: "interrupt" },
+
+  "cc.cert-4.m1.l10.title": { en: "Threads: synchronized, volatile, wait, notify. DeadLock", uk: "Threads: synchronized, volatile, wait, notify. DeadLock" },
+  "cc.cert-4.m1.l10.t0": { en: "synchronized", uk: "synchronized" },
+  "cc.cert-4.m1.l10.t1": { en: "volatile", uk: "volatile" },
+  "cc.cert-4.m1.l10.t2": { en: "join", uk: "join" },
+  "cc.cert-4.m1.l10.t3": { en: "wait, notify", uk: "wait, notify" },
+  "cc.cert-4.m1.l10.t4": { en: "The DeadLock problem", uk: "Проблема DeadLock" },
+
+  "cc.cert-4.m1.l11.title": { en: "Executors", uk: "Executors" },
+  "cc.cert-4.m1.l11.t0": { en: "ExecutorService", uk: "ExecutorService" },
+  "cc.cert-4.m1.l11.t1": { en: "Factory method pattern", uk: "Патерн Factory Method" },
+  "cc.cert-4.m1.l11.t2": { en: "Submitting tasks to the service", uk: "Відправка завдань у сервіс" },
+  "cc.cert-4.m1.l11.t3": { en: "Callable", uk: "Callable" },
+  "cc.cert-4.m1.l11.t4": { en: "Getting results: Future", uk: "Отримання результатів: Future" },
+  "cc.cert-4.m1.l11.t5": { en: "Stopping an ExecutorService", uk: "Зупинка ExecutorService" },
+  "cc.cert-4.m1.l11.t6": { en: "FixedThreadPool", uk: "FixedThreadPool" },
+  "cc.cert-4.m1.l11.t7": { en: "CachedThreadPool", uk: "CachedThreadPool" },
+  "cc.cert-4.m1.l11.t8": { en: "ScheduledExecutorService", uk: "ScheduledExecutorService" },
+
+  "cc.cert-4.m1.l12.title": { en: "ThreadLocal, Callable, Future", uk: "ThreadLocal, Callable, Future" },
+  "cc.cert-4.m1.l12.t0": { en: "ThreadLocal context", uk: "Контекст ThreadLocal" },
+  "cc.cert-4.m1.l12.t1": { en: "ThreadLocalRandom", uk: "ThreadLocalRandom" },
+
+  "cc.cert-4.m1.l13.title": { en: "Inner/Nested Classes. Examples: Map.Entry", uk: "Внутрішні/Вкладені класи. Приклади: Map.Entry" },
+  "cc.cert-4.m1.l13.t0": { en: "Nested classes", uk: "Вкладені класи" },
+  "cc.cert-4.m1.l13.t1": { en: "Inner classes", uk: "Внутрішні класи" },
+  "cc.cert-4.m1.l13.t2": { en: "Static inner classes", uk: "Статичні внутрішні класи" },
+  "cc.cert-4.m1.l13.t3": { en: "Anonymous inner classes", uk: "Анонімні внутрішні класи" },
+  "cc.cert-4.m1.l13.t4": { en: "Examples of different class types from the JDK", uk: "Приклади різних типів класів з JDK" },
+
+  "cc.cert-4.m1.l14.title": { en: "Serialization: JSON/XML/YAML", uk: "Серіалізація: JSON/XML/YAML" },
+  "cc.cert-4.m1.l14.t0": { en: "Java serialization", uk: "Серіалізація Java" },
+  "cc.cert-4.m1.l14.t1": { en: "Data formats: XML, JSON, YAML", uk: "Формати даних: XML, JSON, YAML" },
+  "cc.cert-4.m1.l14.t2": { en: "Jackson ObjectMapper", uk: "Jackson ObjectMapper" },
+
+  "cc.cert-4.m1.l15.title": { en: "Reflection API", uk: "Reflection API" },
+  "cc.cert-4.m1.l15.t0": { en: "Why Reflection API is needed", uk: "Навіщо потрібен Reflection API" },
+  "cc.cert-4.m1.l15.t1": { en: "Getting data: class, method, constructor, field", uk: "Отримання даних: class, method, constructor, field" },
+  "cc.cert-4.m1.l15.t2": { en: "Creating an object", uk: "Створення об'єкта" },
+  "cc.cert-4.m1.l15.t3": { en: "Changing the internal state of an object", uk: "Зміна внутрішнього стану об'єкта" },
+  "cc.cert-4.m1.l15.t4": { en: "Proxies", uk: "Проксі" },
+  "cc.cert-4.m1.l15.t5": { en: "RMI", uk: "RMI" },
+
+  "cc.cert-4.m1.l16.title": { en: "Annotations in Java", uk: "Анотації в Java" },
+  "cc.cert-4.m1.l16.t0": { en: "Declarative vs imperative approach to coding", uk: "Декларативний vs імперативний підхід" },
+  "cc.cert-4.m1.l16.t1": { en: "Popular annotations: @Deprecated, @Override, @Nullable, …", uk: "Популярні анотації: @Deprecated, @Override, @Nullable, …" },
+  "cc.cert-4.m1.l16.t2": { en: "Creating annotations", uk: "Створення анотацій" },
+  "cc.cert-4.m1.l16.t3": { en: "Processing annotations at runtime", uk: "Обробка анотацій під час виконання" },
+
+  "cc.cert-4.m1.l17.title": { en: "Optional: Swing", uk: "Опціонально: Swing" },
+  "cc.cert-4.m1.l17.t0": { en: "Working with Swing GUI library", uk: "Робота з бібліотекою Swing GUI" },
+
+  "cc.cert-4.m1.l18.title": { en: "Sockets", uk: "Сокети" },
+  "cc.cert-4.m1.l18.t0": { en: "Socket", uk: "Socket" },
+  "cc.cert-4.m1.l18.t1": { en: "ServerSocket", uk: "ServerSocket" },
+  "cc.cert-4.m1.l18.t2": { en: "Live coding: writing a primitive group chat", uk: "Live coding: створення простого групового чату" },
+
+  "cc.cert-4.m1.l19.title": { en: "Final Project", uk: "Фінальний проєкт" },
+  "cc.cert-4.m1.l19.t0": { en: "Building a multi-threaded chat application using Sockets", uk: "Створення багатопотокового чату з використанням сокетів" },
+  "cc.cert-4.m1.l19.t1": { en: "Applying OOP, collections, and I/O in a real project", uk: "Застосування ООП, колекцій та I/O в реальному проєкті" },
+
+  // ======== cert-4: Java Developer Professional — Module 2: Java Professional ========
+  "cc.cert-4.m2.l0.title": { en: "Garbage Collection & Reference Types in Java", uk: "Збирання сміття та типи посилань у Java" },
+  "cc.cert-4.m2.l0.t0": { en: "JVM memory: stack and heap", uk: "Пам'ять JVM: стек та купа" },
+  "cc.cert-4.m2.l0.t1": { en: "GC: Serial, Parallel, CMS, G1, Shenandoah, ZGC", uk: "GC: Serial, Parallel, CMS, G1, Shenandoah, ZGC" },
+  "cc.cert-4.m2.l0.t2": { en: "Caching", uk: "Кешування" },
+  "cc.cert-4.m2.l0.t3": { en: "WeakReference, SoftReference, PhantomReference", uk: "WeakReference, SoftReference, PhantomReference" },
+
+  "cc.cert-4.m2.l1.title": { en: "Design Patterns", uk: "Паттерни проєктування" },
+  "cc.cert-4.m2.l1.t0": { en: "Behavioral: Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Visitor, Template Method", uk: "Поведінкові: Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Visitor, Template Method" },
+  "cc.cert-4.m2.l1.t1": { en: "Creational: Prototype, Builder, Singleton, Abstract Factory, Factory Method", uk: "Породжувальні: Prototype, Builder, Singleton, Abstract Factory, Factory Method" },
+  "cc.cert-4.m2.l1.t2": { en: "Structural: Decorator, Composite, Facade, Adapter, Proxy", uk: "Структурні: Decorator, Composite, Facade, Adapter, Proxy" },
+
+  "cc.cert-4.m2.l2.title": { en: "Development Methodologies", uk: "Методології розробки" },
+  "cc.cert-4.m2.l2.t0": { en: "Waterfall", uk: "Waterfall" },
+  "cc.cert-4.m2.l2.t1": { en: "V-Model", uk: "V-Model" },
+  "cc.cert-4.m2.l2.t2": { en: "Incremental", uk: "Інкрементна" },
+  "cc.cert-4.m2.l2.t3": { en: "RAD Model", uk: "RAD Model" },
+  "cc.cert-4.m2.l2.t4": { en: "Agile", uk: "Agile" },
+  "cc.cert-4.m2.l2.t5": { en: "Iterative", uk: "Ітеративна" },
+  "cc.cert-4.m2.l2.t6": { en: "Spiral", uk: "Спіральна" },
+
+  "cc.cert-4.m2.l3.title": { en: "Maven Fundamentals: Setup, Dependencies, Repositories, Build", uk: "Основи Maven: налаштування, залежності, репозиторії, збірка" },
+  "cc.cert-4.m2.l3.t0": { en: "Downloading Maven, setting environment variables", uk: "Завантаження Maven, змінні середовища" },
+  "cc.cert-4.m2.l3.t1": { en: "Creating a Maven project", uk: "Створення Maven проєкту" },
+  "cc.cert-4.m2.l3.t2": { en: "Dependencies", uk: "Залежності" },
+  "cc.cert-4.m2.l3.t3": { en: "Plugins", uk: "Плагіни" },
+  "cc.cert-4.m2.l3.t4": { en: "Lifecycle phases", uk: "Фази життєвого циклу" },
+  "cc.cert-4.m2.l3.t5": { en: "Profiles", uk: "Профілі" },
+  "cc.cert-4.m2.l3.t6": { en: "Building artifacts", uk: "Створення артефактів" },
+
+  "cc.cert-4.m2.l4.title": { en: "Guava & Apache Commons Collections", uk: "Guava та Apache Commons Collections" },
+  "cc.cert-4.m2.l4.t0": { en: "Multimap, BiMap", uk: "Multimap, BiMap" },
+  "cc.cert-4.m2.l4.t1": { en: "Multiset", uk: "Multiset" },
+  "cc.cert-4.m2.l4.t2": { en: "Immutable collections", uk: "Незмінні колекції" },
+  "cc.cert-4.m2.l4.t3": { en: "Objects: hashCode, equals", uk: "Objects: hashCode, equals" },
+  "cc.cert-4.m2.l4.t4": { en: "Throwables", uk: "Throwables" },
+  "cc.cert-4.m2.l4.t5": { en: "CollectionUtils", uk: "CollectionUtils" },
+  "cc.cert-4.m2.l4.t6": { en: "StringUtils", uk: "StringUtils" },
+
+  "cc.cert-4.m2.l5.title": { en: "JUnit", uk: "JUnit" },
+  "cc.cert-4.m2.l5.t0": { en: "Why testing is needed", uk: "Навіщо потрібне тестування" },
+  "cc.cert-4.m2.l5.t1": { en: "Types of testing", uk: "Типи тестування" },
+  "cc.cert-4.m2.l5.t2": { en: "@Test", uk: "@Test" },
+  "cc.cert-4.m2.l5.t3": { en: "@Before, @After", uk: "@Before, @After" },
+  "cc.cert-4.m2.l5.t4": { en: "@BeforeClass, @AfterClass", uk: "@BeforeClass, @AfterClass" },
+  "cc.cert-4.m2.l5.t5": { en: "Parameterized tests", uk: "Параметризовані тести" },
+
+  "cc.cert-4.m2.l6.title": { en: "Mockito", uk: "Mockito" },
+  "cc.cert-4.m2.l6.t0": { en: "Mocks", uk: "Моки" },
+  "cc.cert-4.m2.l6.t1": { en: "mock and spy", uk: "mock та spy" },
+  "cc.cert-4.m2.l6.t2": { en: "when and thenReturn", uk: "when та thenReturn" },
+  "cc.cert-4.m2.l6.t3": { en: "verify", uk: "verify" },
+  "cc.cert-4.m2.l6.t4": { en: "any, once, times", uk: "any, once, times" },
+
+  "cc.cert-4.m2.l7.title": { en: "Logging", uk: "Логування" },
+  "cc.cert-4.m2.l7.t0": { en: "Why logs are needed", uk: "Навіщо потрібні логи" },
+  "cc.cert-4.m2.l7.t1": { en: "Logging levels", uk: "Рівні логування" },
+  "cc.cert-4.m2.l7.t2": { en: "SLF4J", uk: "SLF4J" },
+  "cc.cert-4.m2.l7.t3": { en: "Implementations: log4j, JUL, logback, commons-logging", uk: "Реалізації: log4j, JUL, logback, commons-logging" },
+  "cc.cert-4.m2.l7.t4": { en: "Appenders", uk: "Appenders" },
+
+  "cc.cert-4.m2.l8.title": { en: "How Networks Work. The OSI Model", uk: "Як працюють мережі. Модель OSI" },
+  "cc.cert-4.m2.l8.t0": { en: "Network topology", uk: "Топологія мережі" },
+  "cc.cert-4.m2.l8.t1": { en: "The OSI model", uk: "Модель OSI" },
+  "cc.cert-4.m2.l8.t2": { en: "DNS", uk: "DNS" },
+
+  "cc.cert-4.m2.l9.title": { en: "Software Architecture: Client-Server, Three-Tier, Architectural Patterns", uk: "Архітектура ПЗ: Client-Server, Three-Tier, архітектурні паттерни" },
+  "cc.cert-4.m2.l9.t0": { en: "Client-server architecture", uk: "Клієнт-серверна архітектура" },
+  "cc.cert-4.m2.l9.t1": { en: "Three-tier architecture (client-server-DB)", uk: "Трирівнева архітектура (клієнт-сервер-БД)" },
+  "cc.cert-4.m2.l9.t2": { en: "Criteria for good architecture: efficiency, flexibility, extensibility, scalability, testability, clean readable code", uk: "Критерії хорошої архітектури: ефективність, гнучкість, розширюваність, масштабованість, тестованість, чистий код" },
+  "cc.cert-4.m2.l9.t3": { en: "Modular architecture, decomposition", uk: "Модульна архітектура, декомпозиція" },
+
+  "cc.cert-4.m2.l10.title": { en: "HTTP/HTTPS Protocol: Requests, Responses, Cookies, Sessions", uk: "Протокол HTTP/HTTPS: Запити, Відповіді, Cookies, Сесії" },
+  "cc.cert-4.m2.l10.t0": { en: "Data transfer protocols on the network", uk: "Протоколи передачі даних у мережі" },
+  "cc.cert-4.m2.l10.t1": { en: "HTTP methods (GET, POST, PUT, …)", uk: "HTTP методи (GET, POST, PUT, …)" },
+  "cc.cert-4.m2.l10.t2": { en: "Request parameters", uk: "Параметри запиту" },
+  "cc.cert-4.m2.l10.t3": { en: "Request body", uk: "Тіло запиту" },
+  "cc.cert-4.m2.l10.t4": { en: "Headers", uk: "Заголовки" },
+  "cc.cert-4.m2.l10.t5": { en: "Response status codes", uk: "Коди статусів відповідей" },
+  "cc.cert-4.m2.l10.t6": { en: "HTTP vs HTTPS", uk: "HTTP vs HTTPS" },
+  "cc.cert-4.m2.l10.t7": { en: "HTTP sessions", uk: "HTTP сесії" },
+  "cc.cert-4.m2.l10.t8": { en: "Cookies", uk: "Куки" },
+  "cc.cert-4.m2.l10.t9": { en: "HTTP/2", uk: "HTTP/2" },
+
+  "cc.cert-4.m2.l11.title": { en: "HttpClient", uk: "HttpClient" },
+  "cc.cert-4.m2.l11.t0": { en: "AJAX", uk: "AJAX" },
+  "cc.cert-4.m2.l11.t1": { en: "Java HTTP Client", uk: "Java HTTP Client" },
+  "cc.cert-4.m2.l11.t2": { en: "Synchronous and asynchronous requests", uk: "Синхронні та асинхронні запити" },
+  "cc.cert-4.m2.l11.t3": { en: "Task: fetching data from the internet (e.g., weather forecast)", uk: "Завдання: отримання даних з інтернету (напр., прогноз погоди)" },
+
+  "cc.cert-4.m2.l12.title": { en: "Servlets, Java Servlet API. Building a Simple Web App", uk: "Сервлети, Java Servlet API. Створення простого веб-додатку" },
+  "cc.cert-4.m2.l12.t0": { en: "What is a servlet", uk: "Що таке сервлет" },
+  "cc.cert-4.m2.l12.t1": { en: "Servlet lifecycle", uk: "Життєвий цикл сервлета" },
+  "cc.cert-4.m2.l12.t2": { en: "Servlet container: Tomcat", uk: "Контейнер сервлетів: Tomcat" },
+  "cc.cert-4.m2.l12.t3": { en: "doGet, doPost", uk: "doGet, doPost" },
+  "cc.cert-4.m2.l12.t4": { en: "redirect vs forward", uk: "redirect vs forward" },
+  "cc.cert-4.m2.l12.t5": { en: "Filters", uk: "Фільтри" },
+
+  "cc.cert-4.m2.l13.title": { en: "Servlet Containers: Tomcat, Deployment, Server Configuration", uk: "Контейнери сервлетів: Tomcat, розгортання, конфігурація сервера" },
+  "cc.cert-4.m2.l13.t0": { en: "Hands-on practice from the previous lecture", uk: "Практика з попередньої лекції" },
+
+  "cc.cert-4.m2.l14.title": { en: "Introduction to MVC (Model-View-Controller). JSP", uk: "Вступ до MVC (Model-View-Controller). JSP" },
+  "cc.cert-4.m2.l14.t0": { en: "MVC architectural principles and ideas", uk: "Принципи та ідеї архітектури MVC" },
+  "cc.cert-4.m2.l14.t1": { en: "MVC patterns", uk: "Паттерни MVC" },
+  "cc.cert-4.m2.l14.t2": { en: "MVC on the web", uk: "MVC в вебі" },
+  "cc.cert-4.m2.l14.t3": { en: "Common mistake: business logic in the controller", uk: "Типова помилка: бізнес-логіка в контролері" },
+  "cc.cert-4.m2.l14.t4": { en: "MVC through a practical example", uk: "MVC на практичному прикладі" },
+  "cc.cert-4.m2.l14.t5": { en: "JSP", uk: "JSP" },
+
+  "cc.cert-4.m2.l15.title": { en: "Web Services", uk: "Веб-сервіси" },
+  "cc.cert-4.m2.l15.t0": { en: "What is a web service", uk: "Що таке веб-сервіс" },
+  "cc.cert-4.m2.l15.t1": { en: "Protocols: HTTP, JMS, FTP, …", uk: "Протоколи: HTTP, JMS, FTP, …" },
+  "cc.cert-4.m2.l15.t2": { en: "Synchronous and asynchronous requests", uk: "Синхронні та асинхронні запити" },
+  "cc.cert-4.m2.l15.t3": { en: "Cloud services: IaaS, PaaS, SaaS", uk: "Хмарні сервіси: IaaS, PaaS, SaaS" },
+
+  "cc.cert-4.m2.l16.title": { en: "HTML Elective", uk: "HTML — факультатив" },
+  "cc.cert-4.m2.l16.t0": { en: "What is HTML", uk: "Що таке HTML" },
+  "cc.cert-4.m2.l16.t1": { en: "Structure of an HTML document", uk: "Структура HTML документа" },
+  "cc.cert-4.m2.l16.t2": { en: "Tags and their attributes", uk: "Теги та їх атрибути" },
+  "cc.cert-4.m2.l16.t3": { en: "CSS — its syntax", uk: "CSS — синтаксис" },
+  "cc.cert-4.m2.l16.t4": { en: "Classes and identifiers", uk: "Класи та ідентифікатори" },
+  "cc.cert-4.m2.l16.t5": { en: "Selectors", uk: "Селектори" },
+
+  "cc.cert-4.m2.l17.title": { en: "Final Project: Servlet Quest Competition", uk: "Фінальний проєкт: Servlet Quest Competition" },
+  "cc.cert-4.m2.l17.t0": { en: "Build a text-based step-by-step quest game using Servlets", uk: "Створення текстової покрокової квест-гри з використанням сервлетів" },
+
+  // ======== cert-4: Java Developer Professional — Module 3: Working with Databases. Hibernate ========
+  "cc.cert-4.m3.l0.title": { en: "Introduction to Databases. MySQL Setup. DDL, DML", uk: "Вступ до баз даних. Налаштування MySQL. DDL, DML" },
+  "cc.cert-4.m3.l0.t0": { en: "Why databases are needed", uk: "Навіщо потрібні бази даних" },
+  "cc.cert-4.m3.l0.t1": { en: "Relational vs non-relational databases", uk: "Реляційні vs нереляційні бази даних" },
+  "cc.cert-4.m3.l0.t2": { en: "The relational model", uk: "Реляційна модель" },
+  "cc.cert-4.m3.l0.t3": { en: "CAP theorem", uk: "Теорема CAP" },
+  "cc.cert-4.m3.l0.t4": { en: "Installing MySQL Developer", uk: "Встановлення MySQL Developer" },
+  "cc.cert-4.m3.l0.t5": { en: "SQL groups: DDL, DML, DCL, TCL", uk: "Групи SQL: DDL, DML, DCL, TCL" },
+
+  "cc.cert-4.m3.l1.title": { en: "Data Types. Creating Tables. INSERT, SELECT, UPDATE, DELETE", uk: "Типи даних. Створення таблиць. INSERT, SELECT, UPDATE, DELETE" },
+  "cc.cert-4.m3.l1.t0": { en: "Creating a schema", uk: "Створення схеми" },
+  "cc.cert-4.m3.l1.t1": { en: "Creating tables", uk: "Створення таблиць" },
+  "cc.cert-4.m3.l1.t2": { en: "Modifying table structure", uk: "Модифікація структури таблиці" },
+  "cc.cert-4.m3.l1.t3": { en: "INSERT", uk: "INSERT" },
+  "cc.cert-4.m3.l1.t4": { en: "SELECT", uk: "SELECT" },
+  "cc.cert-4.m3.l1.t5": { en: "UPDATE", uk: "UPDATE" },
+  "cc.cert-4.m3.l1.t6": { en: "DELETE", uk: "DELETE" },
+
+  "cc.cert-4.m3.l2.title": { en: "Querying Data", uk: "Запити до даних" },
+  "cc.cert-4.m3.l2.t0": { en: "SELECT with conditions", uk: "SELECT з умовами" },
+  "cc.cert-4.m3.l2.t1": { en: "Selecting specific columns", uk: "Вибір конкретних колонок" },
+  "cc.cert-4.m3.l2.t2": { en: "Subselects", uk: "Підзапити" },
+  "cc.cert-4.m3.l2.t3": { en: "JOIN: LEFT, RIGHT, INNER, CROSS", uk: "JOIN: LEFT, RIGHT, INNER, CROSS" },
+  "cc.cert-4.m3.l2.t4": { en: "GROUP BY and aggregate functions", uk: "GROUP BY та агрегатні функції" },
+  "cc.cert-4.m3.l2.t5": { en: "Indexes", uk: "Індекси" },
+
+  "cc.cert-4.m3.l3.title": { en: "Database Transactions", uk: "Транзакції в базах даних" },
+  "cc.cert-4.m3.l3.t0": { en: "ACID concepts (Atomicity, Consistency, Isolation, Durability)", uk: "Концепції ACID (Атомарність, Узгодженість, Ізоляція, Довговічність)" },
+  "cc.cert-4.m3.l3.t1": { en: "Transaction management", uk: "Управління транзакціями" },
+  "cc.cert-4.m3.l3.t2": { en: "Isolation levels", uk: "Рівні ізоляції" },
+
+  "cc.cert-4.m3.l4.title": { en: "Database Design", uk: "Дизайн баз даних" },
+  "cc.cert-4.m3.l4.t0": { en: "First normal form (1NF)", uk: "Перша нормальна форма (1NF)" },
+  "cc.cert-4.m3.l4.t1": { en: "Second normal form (2NF)", uk: "Друга нормальна форма (2NF)" },
+  "cc.cert-4.m3.l4.t2": { en: "Third normal form (3NF)", uk: "Третя нормальна форма (3NF)" },
+  "cc.cert-4.m3.l4.t3": { en: "Keys (foreign key)", uk: "Ключі (зовнішній ключ)" },
+  "cc.cert-4.m3.l4.t4": { en: "Relationships: one-to-one, one-to-many, many-to-many", uk: "Зв'язки: один-до-одного, один-до-багатьох, багато-до-багатьох" },
+
+  "cc.cert-4.m3.l5.title": { en: "JDBC — Part 1", uk: "JDBC — Частина 1" },
+  "cc.cert-4.m3.l5.t0": { en: "Why JDBC is needed", uk: "Навіщо потрібен JDBC" },
+  "cc.cert-4.m3.l5.t1": { en: "Core interfaces", uk: "Основні інтерфейси" },
+  "cc.cert-4.m3.l5.t2": { en: "Reading data from the database in a Java app", uk: "Читання даних з БД у Java додатку" },
+  "cc.cert-4.m3.l5.t3": { en: "Updating and deleting data from the database", uk: "Оновлення та видалення даних з БД" },
+
+  "cc.cert-4.m3.l6.title": { en: "JDBC — Part 2", uk: "JDBC — Частина 2" },
+  "cc.cert-4.m3.l6.t0": { en: "Transactions", uk: "Транзакції" },
+  "cc.cert-4.m3.l6.t1": { en: "Isolation levels", uk: "Рівні ізоляції" },
+  "cc.cert-4.m3.l6.t2": { en: "Handling checked exceptions", uk: "Обробка перевірених винятків" },
+
+  "cc.cert-4.m3.l7.title": { en: "ORM. Hibernate", uk: "ORM. Hibernate" },
+  "cc.cert-4.m3.l7.t0": { en: "Mismatches between object and relational data models", uk: "Невідповідність об'єктної та реляційної моделей даних" },
+  "cc.cert-4.m3.l7.t1": { en: "ORM (Hibernate), JPA", uk: "ORM (Hibernate), JPA" },
+  "cc.cert-4.m3.l7.t2": { en: "Hibernate architecture", uk: "Архітектура Hibernate" },
+  "cc.cert-4.m3.l7.t3": { en: "Configuration, core annotations", uk: "Конфігурація, основні анотації" },
+  "cc.cert-4.m3.l7.t4": { en: "Reading data from the database", uk: "Читання даних з бази даних" },
+  "cc.cert-4.m3.l7.t5": { en: "Updating and deleting data from the database", uk: "Оновлення та видалення даних з бази" },
+  "cc.cert-4.m3.l7.t6": { en: "Hibernate vs JDBC", uk: "Hibernate vs JDBC" },
+
+  "cc.cert-4.m3.l8.title": { en: "Hibernate. OneToMany, ManyToMany", uk: "Hibernate. OneToMany, ManyToMany" },
+  "cc.cert-4.m3.l8.t0": { en: "Relationships (working with collections)", uk: "Зв'язки (робота з колекціями)" },
+
+  "cc.cert-4.m3.l9.title": { en: "Entity Inheritance for ORM", uk: "Спадкування сутностей для ORM" },
+  "cc.cert-4.m3.l9.t0": { en: "Single table per class", uk: "Одна таблиця на клас" },
+  "cc.cert-4.m3.l9.t1": { en: "Single table per class with ancestors", uk: "Одна таблиця на клас з предками" },
+  "cc.cert-4.m3.l9.t2": { en: "Single table for the entire class hierarchy", uk: "Одна таблиця для всієї ієрархії класів" },
+  "cc.cert-4.m3.l9.t3": { en: "One table per class using joins", uk: "Одна таблиця на клас з використанням JOIN" },
+
+  "cc.cert-4.m3.l10.title": { en: "Final Project", uk: "Фінальний проєкт" },
+  "cc.cert-4.m3.l10.t0": { en: "Hash for passwords", uk: "Хешування паролів" },
+  "cc.cert-4.m3.l10.t1": { en: "Building a database-driven application with Hibernate ORM", uk: "Створення додатку з використанням Hibernate ORM" },
+
+  // ======== cert-4: Java Developer Professional — Module 4: Spring + Spring Boot ========
+  "cc.cert-4.m4.l0.title": { en: "IoC, DI. Spring. Components. Beans", uk: "IoC, DI. Spring. Компоненти. Beans" },
+  "cc.cert-4.m4.l0.t0": { en: "Why Spring became the de facto industry standard (advantages)", uk: "Чому Spring став стандартом (переваги)" },
+  "cc.cert-4.m4.l0.t1": { en: "IoC and DI principles", uk: "Принципи IoC та DI" },
+  "cc.cert-4.m4.l0.t2": { en: "Beans", uk: "Beans" },
+  "cc.cert-4.m4.l0.t3": { en: "ApplicationContext", uk: "ApplicationContext" },
+  "cc.cert-4.m4.l0.t4": { en: "AOP", uk: "AOP" },
+
+  "cc.cert-4.m4.l1.title": { en: "Spring Modules Overview. Spring Web MVC", uk: "Огляд модулів Spring. Spring Web MVC" },
+  "cc.cert-4.m4.l1.t0": { en: "Core: beans, core, context, SpEL", uk: "Core: beans, core, context, SpEL" },
+  "cc.cert-4.m4.l1.t1": { en: "Data access", uk: "Доступ до даних" },
+  "cc.cert-4.m4.l1.t2": { en: "Testing", uk: "Тестування" },
+  "cc.cert-4.m4.l1.t3": { en: "Web", uk: "Web" },
+  "cc.cert-4.m4.l1.t4": { en: "Integration", uk: "Інтеграція" },
+  "cc.cert-4.m4.l1.t5": { en: "Web MVC", uk: "Web MVC" },
+
+  "cc.cert-4.m4.l2.title": { en: "Designing REST APIs", uk: "Проєктування REST API" },
+  "cc.cert-4.m4.l2.t0": { en: "Operating on resources, not methods", uk: "Робота з ресурсами, а не методами" },
+  "cc.cert-4.m4.l2.t1": { en: "HTTP methods", uk: "HTTP методи" },
+  "cc.cert-4.m4.l2.t2": { en: "HTTP response codes", uk: "Коди відповідей HTTP" },
+  "cc.cert-4.m4.l2.t3": { en: "Error handling", uk: "Обробка помилок" },
+  "cc.cert-4.m4.l2.t4": { en: "Querying collections", uk: "Запити до колекцій" },
+  "cc.cert-4.m4.l2.t5": { en: "Querying object count in a collection", uk: "Запит кількості об'єктів у колекції" },
+  "cc.cert-4.m4.l2.t6": { en: "Querying a single object from a collection", uk: "Запит одного об'єкта з колекції" },
+  "cc.cert-4.m4.l2.t7": { en: "Adding data to a collection", uk: "Додавання даних до колекції" },
+  "cc.cert-4.m4.l2.t8": { en: "Editing", uk: "Редагування" },
+  "cc.cert-4.m4.l2.t9": { en: "Deleting", uk: "Видалення" },
+  "cc.cert-4.m4.l2.t10": { en: "Homework: design a 2-level REST API", uk: "Домашнє завдання: спроєктувати 2-рівневий REST API" },
+
+  "cc.cert-4.m4.l3.title": { en: "Controller-Service-DAO Architecture", uk: "Архітектура Controller-Service-DAO" },
+  "cc.cert-4.m4.l3.t0": { en: "Context hierarchy", uk: "Ієрархія контексту" },
+  "cc.cert-4.m4.l3.t1": { en: "Servlet config", uk: "Конфігурація сервлета" },
+  "cc.cert-4.m4.l3.t2": { en: "Controller — receiving the request", uk: "Controller — отримання запиту" },
+  "cc.cert-4.m4.l3.t3": { en: "Service — business logic", uk: "Service — бізнес-логіка" },
+  "cc.cert-4.m4.l3.t4": { en: "DAO — state persistence", uk: "DAO — збереження стану" },
+
+  "cc.cert-4.m4.l4.title": { en: "Spring ORM. @Transactional", uk: "Spring ORM. @Transactional" },
+  "cc.cert-4.m4.l4.t0": { en: "Transaction abstraction", uk: "Абстракція транзакцій" },
+  "cc.cert-4.m4.l4.t1": { en: "Declarative transactions", uk: "Декларативні транзакції" },
+  "cc.cert-4.m4.l4.t2": { en: "Transaction propagation", uk: "Поширення транзакцій" },
+  "cc.cert-4.m4.l4.t3": { en: "Advantages of ORM + Spring", uk: "Переваги ORM + Spring" },
+  "cc.cert-4.m4.l4.t4": { en: "Configuring Hibernate SessionFactory", uk: "Налаштування Hibernate SessionFactory" },
+  "cc.cert-4.m4.l4.t5": { en: "Live coding example", uk: "Live coding приклад" },
+
+  "cc.cert-4.m4.l5.title": { en: "Spring Test. AOP (Logging)", uk: "Spring Test. AOP (Логування)" },
+  "cc.cert-4.m4.l5.t0": { en: "Unit testing", uk: "Модульне тестування" },
+  "cc.cert-4.m4.l5.t1": { en: "Integration testing", uk: "Інтеграційне тестування" },
+  "cc.cert-4.m4.l5.t2": { en: "Core annotations", uk: "Основні анотації" },
+  "cc.cert-4.m4.l5.t3": { en: "TestContext", uk: "TestContext" },
+  "cc.cert-4.m4.l5.t4": { en: "Live coding example (testing an API method)", uk: "Live coding: тестування API методу" },
+  "cc.cert-4.m4.l5.t5": { en: "Spring Commons Logging bridge", uk: "Spring Commons Logging міст" },
+
+  "cc.cert-4.m4.l6.title": { en: "Spring Security (in-memory, DB)", uk: "Spring Security (in-memory, DB)" },
+  "cc.cert-4.m4.l6.t0": { en: "Key Spring Security context objects: SecurityContextHolder, Authentication, UserDetails, GrantedAuthority", uk: "Ключові об'єкти Spring Security: SecurityContextHolder, Authentication, UserDetails, GrantedAuthority" },
+  "cc.cert-4.m4.l6.t1": { en: "Authorization and authentication", uk: "Авторизація та аутентифікація" },
+  "cc.cert-4.m4.l6.t2": { en: "OAuth2", uk: "OAuth2" },
+  "cc.cert-4.m4.l6.t3": { en: "In-memory sessions", uk: "Сесії in-memory" },
+  "cc.cert-4.m4.l6.t4": { en: "Database-backed sessions", uk: "Сесії в базі даних" },
+
+  "cc.cert-4.m4.l7.title": { en: "Spring Boot. Spring Data JPA", uk: "Spring Boot. Spring Data JPA" },
+  "cc.cert-4.m4.l7.t0": { en: "Starters", uk: "Стартери" },
+  "cc.cert-4.m4.l7.t1": { en: "Auto-configuration", uk: "Автоконфігурація" },
+  "cc.cert-4.m4.l7.t2": { en: "Embedded Tomcat", uk: "Вбудований Tomcat" },
+  "cc.cert-4.m4.l7.t3": { en: "Configuration annotations", uk: "Анотації конфігурації" },
+  "cc.cert-4.m4.l7.t4": { en: "Demo: Spring Data JPA (query generation by method name at runtime)", uk: "Демо: Spring Data JPA (генерація запитів за ім'ям методу)" },
+
+  // ======== cert-6: English INTERMEDIATE / B1 (no modules, just name translated above) ========
+  // ======== cert-7: Node.js (no detailed modules) ========
+  // ======== cert-8: JavaScript (no detailed modules) ========
+  // ======== cert-9: QA Automation (no detailed modules) ========
+  // ======== cert-10: SQL Essential (no detailed modules) ========
+};
+
+export function getCertContentKey(certId: string, field: string): string | undefined {
+  const key = `cc.${certId}.${field}`;
+  return CERT_CONTENT[key] ? key : undefined;
+}
