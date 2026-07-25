@@ -83,7 +83,6 @@ CV/
 │   │   └── socialMedia.ts
 │   └── lib/
 │       └── theme.tsx      # Логіка теми (dark/light)
-├── example/               # Довідковий приклад (Sudhanva Nadiger portfolio)
 ├── index.html
 ├── package.json
 ├── vite.config.ts
