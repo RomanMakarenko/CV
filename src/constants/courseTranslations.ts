@@ -63,10 +63,26 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Engineering task formulation: from prompt to task specification",
     uk: "Інженерна постановка задачі: від prompt до task specification",
   },
+  "cc.course-ai-university.l3.p0.name": {
+    en: "LocaleInfo",
+    uk: "LocaleInfo",
+  },
+  "cc.course-ai-university.l3.p0.desc": {
+    en: "A lightweight client-server web application that displays a reference table of all world locales — 197 entries with locale code, language, country, currency, TLD, flag emoji, timezone, and capital city. Instant search, dark mode, fast cold start.",
+    uk: "Легкий клієнт-серверний веб-застосунок, що відображає довідкову таблицю всіх світових локалей — 197 записів із кодом локалі, мовою, країною, валютою, TLD, прапорцем-емодзі, часовим поясом та столицею. Миттєвий пошук, темна тема, швидкий запуск.",
+  },
   // Level 4
   "cc.course-ai-university.l4.title": {
     en: "Acceptance criteria, verification plan, and anti-patterns of prompting",
     uk: "Критерії приймання, verification plan та анти-патерни prompting",
+  },
+  "cc.course-ai-university.l4.p0.name": {
+    en: "Haiku 50",
+    uk: "Haiku 50",
+  },
+  "cc.course-ai-university.l4.p0.desc": {
+    en: "A minimalist web application for generating Japanese three-line poems — haiku — via the OpenAI API. The user enters keywords, selects a language (12 languages), adjusts the spice level (50 Wasabi), and gets a unique haiku. Japanese aesthetics, history of the last 100 haiku, three-tier content protection.",
+    uk: "Мінімалістичний веб-застосунок для створення японських трирядкових віршів — хайку — через OpenAI API. Користувач вводить ключові слова, обирає мову (12 мов), регулює рівень «гостроти» (50 Васабі) та отримує унікальну хайку. Японська естетика, історія останніх 100 хайку, трирівневий захист контенту.",
   },
   // Level 5
   "cc.course-ai-university.l5.title": {
@@ -98,6 +114,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Plugins, plugin ecosystem, and team-ready plugins",
     uk: "Plugins, plugin ecosystem та team-ready plugins",
   },
+  "cc.course-ai-university.l10.p0.name": {
+    en: "team-tools",
+    uk: "team-tools",
+  },
+  "cc.course-ai-university.l10.p0.desc": {
+    en: "A marketplace plugin catalog for Claude Code with commands: team-kit:git-commit (Conventional Commit generation) and team-kit:prompt-improve (prompt enhancement). Installed via /plugin marketplace.",
+    uk: "Marketplace-каталог плагінів для Claude Code з командами: team-kit:git-commit (генерація Conventional Commits) та team-kit:prompt-improve (покращення промптів). Встановлюється через /plugin marketplace.",
+  },
   // Level 11
   "cc.course-ai-university.l11.title": {
     en: "Agents and subagents: roles, boundaries, and configuration",
@@ -113,10 +137,26 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "MCP: connecting Claude Code to external tools and data",
     uk: "MCP: підключення Claude Code до зовнішніх інструментів і даних",
   },
+  "cc.course-ai-university.l13.p0.name": {
+    en: "Secure MCP Orchestrator",
+    uk: "Secure MCP Orchestrator",
+  },
+  "cc.course-ai-university.l13.p0.desc": {
+    en: "A security-first agent for coordinating Firecrawl, Google Docs, and Playwright MCP servers. Explores the web, documents results in Google Docs, and verifies via browser — with zero trust to external content and protection against prompt injection. Least privilege principle, confirmation gates, audit logging.",
+    uk: "Security-first агент для координації Firecrawl, Google Docs та Playwright MCP-серверів. Досліджує веб, документує результати в Google Docs та верифікує через браузер — з нульовою довірою до зовнішнього контенту та захистом від prompt injection. Принцип найменших привілеїв, confirmation gates, audit logging.",
+  },
   // Level 14
   "cc.course-ai-university.l14.title": {
     en: "Hooks and tool integration workflows",
     uk: "Hooks та tool integration workflows",
+  },
+  "cc.course-ai-university.l14.p0.name": {
+    en: "HooksTest",
+    uk: "HooksTest",
+  },
+  "cc.course-ai-university.l14.p0.desc": {
+    en: "A test project for learning and demonstrating Claude Code hooks — automatic scripts for PreToolUse (blocking rm), PostToolUse, UserPromptSubmit, SessionStart, and Stop events. Configured in .claude/settings.json with various matcher rules.",
+    uk: "Тестовий проєкт для вивчення та демонстрації Claude Code hooks — автоматичних скриптів на події PreToolUse (блокування rm), PostToolUse, UserPromptSubmit, SessionStart та Stop. Налаштовано у .claude/settings.json з різними matcher-правилами.",
   },
   // Level 15
   "cc.course-ai-university.l15.title": {

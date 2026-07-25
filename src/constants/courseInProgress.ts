@@ -89,10 +89,30 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 3,
         title: "Інженерна постановка задачі: від prompt до task specification",
+        projects: [
+          {
+            name: "LocaleInfo",
+            description:
+              "Легкий клієнт-серверний веб-застосунок, що відображає довідкову таблицю всіх світових локалей — 197 записів із кодом локалі, мовою, країною, валютою, TLD, прапорцем-емодзі, часовим поясом та столицею. Миттєвий пошук, темна тема, швидкий запуск.",
+            image: "/certificates/localeinfo.png",
+            url: "https://localeinfo.onrender.com",
+            sourceUrl: "https://github.com/RomanMakarenko/LocaleInfo",
+          },
+        ],
       },
       {
         number: 4,
         title: "Критерії приймання, verification plan та анти-патерни prompting",
+        projects: [
+          {
+            name: "Haiku 50",
+            description:
+              "Мінімалістичний веб-застосунок для створення японських трирядкових віршів — хайку — через OpenAI API. Користувач вводить ключові слова, обирає мову (12 мов), регулює рівень «гостроти» (50 Васабі) та отримує унікальну хайку. Японська естетика, історія останніх 100 хайку, трирівневий захист контенту.",
+            image: "/certificates/haiku-50.png",
+            url: "https://haiku-50.onrender.com",
+            sourceUrl: "https://github.com/RomanMakarenko/haiku-50",
+          },
+        ],
       },
       {
         number: 5,
@@ -129,10 +149,28 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 13,
         title: "MCP: підключення Claude Code до зовнішніх інструментів і даних",
+        projects: [
+          {
+            name: "Secure MCP Orchestrator",
+            description:
+              "Security-first агент для координації Firecrawl, Google Docs та Playwright MCP-серверів. Досліджує веб, документує результати в Google Docs та верифікує через браузер — з нульовою довірою до зовнішнього контенту та захистом від prompt injection. Принцип найменших привілеїв, confirmation gates, audit logging.",
+            url: "#",
+            sourceUrl: "https://github.com/RomanMakarenko/MCPplayground",
+          },
+        ],
       },
       {
         number: 14,
         title: "Hooks та tool integration workflows",
+        projects: [
+          {
+            name: "HooksTest",
+            description:
+              "Тестовий проєкт для вивчення та демонстрації Claude Code hooks — автоматичних скриптів на події PreToolUse (блокування rm), PostToolUse, UserPromptSubmit, SessionStart та Stop. Налаштовано у .claude/settings.json з різними matcher-правилами.",
+            url: "#",
+            sourceUrl: "https://github.com/RomanMakarenko/HooksTest",
+          },
+        ],
       },
       {
         number: 15,
