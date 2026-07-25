@@ -196,3 +196,70 @@
 .dark .white__gradient {
   background: rgba(255, 255, 255, 0.03);
 }
+
+/* ─── @media print — for window.print() / Cmd+P fallback ─── */
+@media print {
+  @page {
+    margin: 0.5in;
+    size: A4 portrait;
+  }
+
+  body {
+    color-scheme: light;
+    background: #ffffff !important;
+    color: #334155 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide decorative and interactive elements */
+  nav,
+  #navbar,
+  .navbar,
+  .custom-cursor,
+  .gradient-orbs,
+  .cursor,
+  .scroll-to-top,
+  .theme-toggle,
+  .language-toggle,
+  button,
+  .bg-background,
+  [class*="gradient"],
+  [class*="orb"],
+  [class*="cursor"],
+  [class*="Gradient"],
+  [class*="Orb"] {
+    display: none !important;
+  }
+
+  /* Force light theme colors */
+  .dark,
+  .dark * {
+    color-scheme: light;
+    --background: 220 20% 96% !important;
+    --foreground: 220 20% 10% !important;
+    --card: 0 0% 100% !important;
+    --card-foreground: 220 20% 10% !important;
+    --muted: 220 15% 92% !important;
+    --muted-foreground: 220 10% 40% !important;
+    --border: 220 15% 85% !important;
+    --accent: 199 89% 38% !important;
+    --accent-foreground: 0 0% 100% !important;
+  }
+
+  /* Remove animations */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Page breaks */
+  section {
+    page-break-inside: avoid;
+  }
+
+  /* Override min-h-screen for print */
+  .min-h-screen {
+    min-height: auto !important;
+  }
+}

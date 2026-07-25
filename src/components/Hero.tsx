@@ -3,6 +3,7 @@ import { ArrowDown, Linkedin, Mail } from "lucide-react";
 import { ABOUT_ME, SOCIAL_MEDIA } from "@/constants";
 import { useLanguage } from "@/lib/i18n";
 import Magnetic from "./Magnetic";
+import ResumeExport from "./ResumeExport";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -84,6 +85,15 @@ export default function Hero() {
                   </a>
                 </Magnetic>
               ))}
+            </motion.div>
+
+            {/* Export buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.55 }}
+            >
+              <ResumeExport />
             </motion.div>
 
             <motion.div

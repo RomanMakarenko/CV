@@ -188,6 +188,15 @@ export const TRANSLATIONS: TranslationMap = {
   "month.Nov": { en: "Nov", uk: "Лис" },
   "month.Dec": { en: "Dec", uk: "Гру" },
 
+  // Export buttons
+  "export.downloadPdf": { en: "Download PDF", uk: "Завантажити PDF" },
+  "export.downloadDoc": { en: "Download DOC", uk: "Завантажити DOC" },
+  "export.generating": { en: "Generating...", uk: "Генерація..." },
+  "export.summary": {
+    en: "Good theoretical and practical knowledge of Software Testing. 10+ years of experience in quality assurance: web, mobile and backend. Developed, wrote and maintained automated tests using Java, Selenium, Appium, Node.js, and WebdriverIO. Skilled in Artificial Intelligence tools: Prompt Engineering, MCP, AI Agents, and LLM-assisted Development.",
+    uk: "Добрі теоретичні та практичні знання тестування програмного забезпечення. 10+ років досвіду в забезпеченні якості: web, mobile та backend. Розробляв, писав та підтримував автоматизовані тести з використанням Java, Selenium, Appium, Node.js та WebdriverIO. Володію інструментами штучного інтелекту: Prompt Engineering, MCP, AI Agents та LLM-assisted Development.",
+  },
+
   // Certificate modal UI
   "modal.certificate": { en: "Certificate", uk: "Сертифікат" },
   "modal.studyProgram": { en: "Study Program", uk: "Програма навчання" },
