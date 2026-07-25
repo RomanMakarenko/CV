@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
+import { LanguageProvider } from "@/lib/i18n";
 import Loading from "@/components/Loading";
 import GradientOrbs from "@/components/GradientOrbs";
 import CustomCursor from "@/components/CustomCursor";
@@ -32,7 +33,7 @@ export default function App() {
   }, [loading]);
 
   return (
-    <>
+    <LanguageProvider>
       <AnimatePresence mode="wait">
         {loading && <Loading key="loading" />}
       </AnimatePresence>
@@ -54,6 +55,6 @@ export default function App() {
           </main>
         </div>
       )}
-    </>
+    </LanguageProvider>
   );
 }

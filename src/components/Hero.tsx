@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Linkedin, Mail } from "lucide-react";
 import { ABOUT_ME, SOCIAL_MEDIA } from "@/constants";
+import { useLanguage } from "@/lib/i18n";
 import Magnetic from "./Magnetic";
 
 export default function Hero() {
+  const { t } = useLanguage();
   return (
     <section
       id="home"
@@ -27,7 +29,7 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
               </span>
-              Open to opportunities
+              {t("hero.openToOpportunities")}
             </motion.div>
 
             <motion.h1
@@ -36,7 +38,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
             >
-              Hi, I'm{" "}
+              {t("hero.hi")}{" "}
               <span className="gradient-text">{ABOUT_ME.firstName}</span>
               <br />
               <span className="gradient-text">{ABOUT_ME.lastName}</span>
@@ -48,7 +50,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="mt-4 max-w-lg text-base text-muted-foreground md:text-lg"
             >
-              {ABOUT_ME.tagLine}
+                            {t("hero.tagLine")}
             </motion.p>
 
             <motion.p
@@ -57,7 +59,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.45 }}
               className="mt-3 max-w-md text-sm text-muted-foreground/70"
             >
-              {ABOUT_ME.intro}
+              {t("hero.intro")}
             </motion.p>
 
             <motion.div
@@ -99,7 +101,7 @@ export default function Hero() {
                              text-sm font-medium text-accent-foreground transition-all
                              hover:opacity-90 hover:shadow-lg hover:shadow-accent/20"
                 >
-                  Let's Connect
+                  {t("hero.letsConnect")}
                   <Linkedin className="h-4 w-4" />
                 </a>
               </Magnetic>
@@ -111,7 +113,7 @@ export default function Hero() {
                              transition-all hover:bg-muted"
                 >
                   <Mail className="h-4 w-4" />
-                  Email Me
+                  {t("hero.emailMe")}
                 </a>
               </Magnetic>
             </motion.div>

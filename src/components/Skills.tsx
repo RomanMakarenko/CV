@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { SKILLS_LIST } from "@/constants";
+import { useLanguage } from "@/lib/i18n";
 import type { Skill } from "@/constants/skills";
 
 const containerVariants = {
@@ -39,6 +40,7 @@ function CategoryCard({
   skills: Skill[];
   index: number;
 }) {
+  const { t } = useLanguage();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -49,7 +51,7 @@ function CategoryCard({
     >
       <div className="border-b border-border/40 px-5 py-3">
         <h3 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/80">
-          {title}
+          {t(`skills.group.${title}`)}
         </h3>
       </div>
 
@@ -69,6 +71,7 @@ function CategoryCard({
 }
 
 export default function Skills() {
+  const { t } = useLanguage();
   return (
     <section id="skills" className="section-container">
       <motion.div
@@ -77,9 +80,9 @@ export default function Skills() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="section-title">Skills</h2>
+        <h2 className="section-title">{t("skills.title")}</h2>
         <p className="section-subtitle">
-          Technologies and tools I work with
+          {t("skills.subtitle")}
         </p>
       </motion.div>
 

@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 import { SOCIAL_MEDIA, ABOUT_ME } from "@/constants";
+import { useLanguage } from "@/lib/i18n";
 import Magnetic from "./Magnetic";
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <section id="contact" className="section-container">
       <motion.div
@@ -25,10 +27,9 @@ export default function Footer() {
           </span>
         </div>
 
-        <h2 className="section-title">Get In Touch</h2>
+        <h2 className="section-title">{t("footer.getInTouch")}</h2>
         <p className="section-subtitle mx-auto mt-3">
-          I'm currently open to new opportunities. Whether you have a question
-          or just want to say hi, my inbox is always open.
+          {t("footer.description")}
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -40,7 +41,7 @@ export default function Footer() {
                          hover:opacity-90 hover:shadow-lg hover:shadow-accent/20"
             >
               <Mail className="h-4 w-4" />
-              Say Hello
+              {t("footer.sayHello")}
             </a>
           </Magnetic>
           <Magnetic strength={0.2}>
@@ -75,8 +76,7 @@ export default function Footer() {
 
       <footer className="mt-16 border-t border-border/50 pt-8 text-center">
         <p className="text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} {ABOUT_ME.name}. Built with React +
-          Tailwind CSS.
+          &copy; {new Date().getFullYear()} {ABOUT_ME.name}. {t("footer.builtWith")}.
         </p>
       </footer>
     </section>

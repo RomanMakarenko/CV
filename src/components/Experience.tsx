@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { EXPERIENCES } from "@/constants";
+import { useLanguage } from "@/lib/i18n";
+
+const COMPANY_KEYS = ["ciklum", "playtika", "totalgame"];
+const posKey = (expIdx: number, posIdx: number) => `pos.${COMPANY_KEYS[expIdx]}-${posIdx}`;
 
 export default function Experience() {
+  const { t, et } = useLanguage();
   return (
     <section id="experience" className="section-container">
       <motion.div
@@ -11,9 +16,9 @@ export default function Experience() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="section-title">Experience</h2>
+        <h2 className="section-title">{t("experience.title")}</h2>
         <p className="section-subtitle">
-          10+ years in quality assurance — web, mobile, and backend
+          {t("experience.subtitle")}
         </p>
       </motion.div>
 
@@ -66,15 +71,15 @@ export default function Experience() {
                       }
                     >
                       <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                        <h3 className="text-sm font-medium">{pos.title}</h3>
+                        <h3 className="text-sm font-medium">{et(`${posKey(idx, posIdx)}.title`)}</h3>
                         <span className="text-xs text-muted-foreground">
-                          {pos.duration}
+                          {et(`${posKey(idx, posIdx)}.duration`)}
                         </span>
                       </div>
 
                       {pos.description && (
                         <p className="mt-1.5 text-xs text-muted-foreground/70">
-                          {pos.description}
+                          {et(`${posKey(idx, posIdx)}.desc`)}
                         </p>
                       )}
 
@@ -86,7 +91,7 @@ export default function Experience() {
                               className="flex gap-2 text-sm text-muted-foreground"
                             >
                               <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-muted-foreground/50" />
-                              <p>{item}</p>
+                              <p>{et(`${posKey(idx, posIdx)}.resp.${rIdx}`)}</p>
                             </div>
                           ))}
                         </div>
@@ -102,7 +107,7 @@ export default function Experience() {
                               <span className="mt-0.5 shrink-0">
                                 <Star className="h-3 w-3 fill-accent text-accent" />
                               </span>
-                              <p>{item}</p>
+                              <p>{et(`${posKey(idx, posIdx)}.ach.${aIdx}`)}</p>
                             </div>
                           ))}
                         </div>

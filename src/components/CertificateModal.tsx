@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Award, ExternalLink, BookOpen, Github, ChevronDown, FolderGit2 } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 import type { Certification, CurriculumModule } from "@/constants/certifications";
 
 interface CertificateModalProps {
@@ -10,6 +11,7 @@ interface CertificateModalProps {
 
 function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number }) {
   const [open, setOpen] = useState(index === 0);
+  const { t } = useLanguage();
   const hasProjects = mod.projects && mod.projects.length > 0;
 
   return (
@@ -90,7 +92,7 @@ function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number 
                 <div className="mt-4 border-t border-border/20 pt-4">
                   <p className="mb-2.5 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/60">
                     <Github className="h-3 w-3" />
-                    Projects
+                    {t("modal.projects")}
                   </p>
                   <div className="grid gap-2 sm:grid-cols-2">
                     {mod.projects!.map((proj) => (
@@ -124,7 +126,17 @@ function ModuleAccordion({ mod, index }: { mod: CurriculumModule; index: number 
   );
 }
 
+const CERT_DESC_KEYS: Record<string, string> = {
+  "cert-1": "cert.desc.genai",
+  "cert-2": "cert.desc.ciklumAi",
+  "cert-3": "cert.desc.ciklumQaAi",
+  "cert-4": "cert.desc.javarush",
+  "cert-5": "cert.desc.selenium",
+};
+
 export default function CertificateModal({ cert, onClose }: CertificateModalProps) {
+  const { t } = useLanguage();
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
     const onKeyDown = (e: KeyboardEvent) => {
@@ -167,7 +179,7 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
           className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center
                      rounded-full border border-border bg-card/80 text-muted-foreground
                      backdrop-blur-sm transition-colors hover:border-accent/50 hover:text-accent"
-          aria-label="Close"
+          aria-label={t("modal.close")}
         >
           <X className="h-4 w-4" />
         </button>
@@ -185,9 +197,9 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
                 <span className="text-border">·</span>
                 <span>{cert.date}</span>
               </div>
-              {cert.description && (
+              {(cert.description || CERT_DESC_KEYS[cert.id]) && (
                 <p className="mt-2 max-w-2xl text-sm text-muted-foreground/80 leading-relaxed">
-                  {cert.description}
+                  {CERT_DESC_KEYS[cert.id] ? t(CERT_DESC_KEYS[cert.id]) : cert.description}
                 </p>
               )}
             </div>
@@ -201,7 +213,7 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
             <div className="border-b border-border/30 px-6 py-5 sm:px-8">
               <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-muted-foreground/80">
                 <Award className="h-4 w-4" />
-                Certificate
+                {t("modal.certificate")}
               </h3>
               <div className="overflow-hidden rounded-xl border border-border/30 bg-muted/20">
                 <img
@@ -219,9 +231,9 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
             <div className="px-6 py-5 sm:px-8">
               <h3 className="mb-5 flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-muted-foreground/80">
                 <BookOpen className="h-4 w-4" />
-                Study Program
+                {t("modal.studyProgram")}
                 <span className="ml-auto text-xs font-normal normal-case tracking-normal text-muted-foreground/50">
-                  {cert.modules!.length} modules
+                  {cert.modules!.length} {t("modal.modules")}
                 </span>
               </h3>
 
@@ -237,9 +249,7 @@ export default function CertificateModal({ cert, onClose }: CertificateModalProp
         {/* Bottom bar */}
         <div className="border-t border-border/50 px-6 py-3 sm:px-8">
           <p className="text-center text-[10px] text-muted-foreground">
-            Press{" "}
-            <kbd className="rounded border border-border bg-muted px-1 py-0.5 text-[9px]">Esc</kbd>{" "}
-            or click outside to close
+            {t("modal.closeHint")}
           </p>
         </div>
       </motion.div>

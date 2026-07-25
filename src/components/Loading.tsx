@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/i18n";
 
 export default function Loading() {
+  const { t } = useLanguage();
   return (
     <motion.div
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background"
@@ -33,7 +35,7 @@ export default function Loading() {
         transition={{ delay: 0.8, duration: 0.5 }}
         className="mt-3 text-sm text-muted-foreground"
       >
-        QA Automation Engineer
+        {t("hero.qatitle")}
       </motion.p>
     </motion.div>
   );

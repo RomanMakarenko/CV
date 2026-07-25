@@ -2,13 +2,16 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/constants";
+import { useLanguage } from "@/lib/i18n";
 import ThemeToggle from "./ThemeToggle";
+import LanguageToggle from "./LanguageToggle";
 import Magnetic from "./Magnetic";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const { t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -85,7 +88,7 @@ export default function Navbar() {
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                {item.title}
+                {t(`nav.${item.link.replace("#", "")}`)}
                 {activeSection === item.link && (
                   <motion.span
                     layoutId="nav-indicator"
@@ -96,12 +99,18 @@ export default function Navbar() {
               </a>
             </Magnetic>
           ))}
-          <Magnetic strength={0.3}>
-            <ThemeToggle />
-          </Magnetic>
+          <div className="flex items-center gap-2">
+            <Magnetic strength={0.3}>
+              <LanguageToggle />
+            </Magnetic>
+            <Magnetic strength={0.3}>
+              <ThemeToggle />
+            </Magnetic>
+          </div>
         </div>
 
         <div className="flex items-center gap-3 md:hidden">
+          <LanguageToggle />
           <ThemeToggle />
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -139,7 +148,7 @@ export default function Navbar() {
                       : "text-muted-foreground hover:bg-muted hover:text-foreground"
                   }`}
                 >
-                  {item.title}
+                  {t(`nav.${item.link.replace("#", "")}`)}
                 </a>
               ))}
             </div>

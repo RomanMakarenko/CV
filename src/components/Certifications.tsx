@@ -2,11 +2,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Award, ChevronRight, BookOpen } from "lucide-react";
 import { CERTIFICATIONS } from "@/constants";
+import { useLanguage } from "@/lib/i18n";
 import type { Certification } from "@/constants/certifications";
 import CertificateModal from "./CertificateModal";
 
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState<Certification | null>(null);
+  const { t } = useLanguage();
 
   return (
     <section id="certifications" className="section-container">
@@ -16,9 +18,9 @@ export default function Certifications() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="section-title">Certifications</h2>
+        <h2 className="section-title">{t("certifications.title")}</h2>
         <p className="section-subtitle">
-          Continuous learning and professional development
+          {t("certifications.subtitle")}
         </p>
       </motion.div>
 
@@ -55,7 +57,7 @@ export default function Certifications() {
                       <span className="text-border">·</span>
                       <span className="inline-flex items-center gap-1 text-accent/60">
                         <BookOpen className="h-3 w-3" />
-                        View details
+                        {t("certifications.viewDetails")}
                       </span>
                     </>
                   )}

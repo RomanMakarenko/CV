@@ -1,8 +1,27 @@
 import { motion } from "framer-motion";
 import { GraduationCap, MapPin, BookOpen } from "lucide-react";
 import { EDUCATION_LIST } from "@/constants";
+import { useLanguage } from "@/lib/i18n";
+
+const EDU_KEYS: Record<string, { title: string; degree: string; duration: string; content1: string; content2: string }> = {
+  "education-1": {
+    title: "edu.kpi.title",
+    degree: "edu.kpi.degree",
+    duration: "edu.kpi.graduated",
+    content1: "education.major",
+    content2: "education.fulltime",
+  },
+  "education-2": {
+    title: "edu.school269.title",
+    degree: "edu.school269.degree",
+    duration: "edu.school269.duration",
+    content1: "education.schoolSpecialization",
+    content2: "education.secondary",
+  },
+};
 
 export default function Education() {
+  const { t, et } = useLanguage();
   return (
     <section id="education" className="section-container">
       <motion.div
@@ -11,12 +30,14 @@ export default function Education() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="section-title">Education</h2>
-        <p className="section-subtitle">Academic background</p>
+        <h2 className="section-title">{t("education.title")}</h2>
+        <p className="section-subtitle">{t("education.subtitle")}</p>
       </motion.div>
 
       <div className="mt-12 grid gap-6">
-        {EDUCATION_LIST.map((edu, index) => (
+        {EDUCATION_LIST.map((edu, index) => {
+          const keys = EDU_KEYS[edu.id];
+          return (
           <motion.div
             key={edu.id}
             initial={{ opacity: 0, y: 30 }}
@@ -38,38 +59,39 @@ export default function Education() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold leading-tight md:text-xl">
-                    {edu.title}
+                    {keys ? et(keys.title) : edu.title}
                   </h3>
                 </div>
               </div>
 
               <div className="mt-5 flex items-center gap-2.5">
                 <GraduationCap className="h-4 w-4 text-accent" />
-                <span className="font-medium text-accent">{edu.degree}</span>
+                <span className="font-medium text-accent">{keys ? et(keys.degree) : edu.degree}</span>
               </div>
 
               <div className="mt-4 grid gap-2 sm:grid-cols-2">
                 <div className="flex items-center gap-2.5 rounded-lg bg-muted/40 px-3 py-2.5">
                   <BookOpen className="h-4 w-4 shrink-0 text-muted-foreground" />
-                  <span className="text-sm">{edu.content1}</span>
+                  <span className="text-sm">{keys ? t(keys.content1) : edu.content1}</span>
                 </div>
                 <div className="flex items-center gap-2.5 rounded-lg bg-muted/40 px-3 py-2.5">
                   <BookOpen className="h-4 w-4 shrink-0 text-muted-foreground" />
-                  <span className="text-sm">{edu.content2}</span>
+                  <span className="text-sm">{keys ? t(keys.content2) : edu.content2}</span>
                 </div>
               </div>
 
               <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1.5">
                   <MapPin className="h-3.5 w-3.5" />
-                  <span>Kyiv, Ukraine</span>
+                  <span>{t("education.location")}</span>
                 </div>
                 <span className="text-border">|</span>
-                <span>{edu.duration}</span>
+                <span>{keys ? et(keys.duration) : edu.duration}</span>
               </div>
             </div>
           </motion.div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
