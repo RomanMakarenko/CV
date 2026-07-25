@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 import { EXPERIENCES } from "@/constants";
 import { useLanguage } from "@/lib/i18n";
 
-const COMPANY_KEYS = ["ciklum", "playtika", "totalgame"];
+const COMPANY_KEYS = ["ciklum", "playtika", "totalgame", "funtime"];
 const posKey = (expIdx: number, posIdx: number) => `pos.${COMPANY_KEYS[expIdx]}-${posIdx}`;
 
 export default function Experience() {

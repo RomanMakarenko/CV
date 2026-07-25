@@ -289,4 +289,33 @@ export const EXPERIENCES: Experience[] = [
       },
     ],
   },
+  {
+    organisation: "Funtime",
+    link: "https://funtime.com.ua/",
+    logo: "/logos/funtime.png",
+    positions: [
+      {
+        title: "Co-Founder, Product Owner, Project Manager",
+        duration: "2013 — Present",
+        description:
+          "Pet project — Ukrainian travel and leisure discovery platform. Curates and reviews places across Ukraine: architecture, culture & art, nature, entertainment, active leisure, relaxation & recreation.",
+        responsibilities: [
+          "Built and managed the platform from concept to launch",
+          "Defined product vision, roadmap, and feature priorities",
+          "Managed project timeline, tasks, and team coordination",
+          "Curated content and oversaw place listings database",
+        ],
+        achievements: [
+          "Launched and maintained a live travel platform serving users across Ukraine",
+          "Grew a database of curated places covering 6 major categories",
+        ],
+        tech: [
+          "Product Management",
+          "Project Management",
+          "Team Leadership",
+          "Content Management",
+        ],
+      },
+    ],
+  },
 ];

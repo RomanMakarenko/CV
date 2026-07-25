@@ -202,6 +202,20 @@ export const TRANSLATIONS: TranslationMap = {
 
 // Experience translations
 export const EXPERIENCE_TRANSLATIONS: Record<string, { en: string; uk: string }> = {
+  // Funtime — pet project
+  "pos.funtime-0.title": { en: "Co-Founder, Product Owner, Project Manager", uk: "Співзасновник, Product Owner, Project Manager" },
+  "pos.funtime-0.duration": { en: "2013 — Present", uk: "2013 — Тепер" },
+  "pos.funtime-0.desc": {
+    en: "Pet project — Ukrainian travel and leisure discovery platform. Curates and reviews places across Ukraine: architecture, culture & art, nature, entertainment, active leisure, relaxation & recreation.",
+    uk: "Пет-проект — українська платформа для відкриття місць та дозвілля. Курує та оглядає місця по всій Україні: архітектура, культура та мистецтво, природа, розваги, активний відпочинок, релакс.",
+  },
+  "pos.funtime-0.resp.0": { en: "Built and managed the platform from concept to launch", uk: "Побудував та керував платформою від концепції до запуску" },
+  "pos.funtime-0.resp.1": { en: "Defined product vision, roadmap, and feature priorities", uk: "Визначав продуктове бачення, roadmap та пріоритети функціоналу" },
+  "pos.funtime-0.resp.2": { en: "Managed project timeline, tasks, and team coordination", uk: "Керував таймлайном проекту, задачами та координацією команди" },
+  "pos.funtime-0.resp.3": { en: "Curated content and oversaw place listings database", uk: "Курував контент та базу даних місць" },
+  "pos.funtime-0.ach.0": { en: "Launched and maintained a live travel platform serving users across Ukraine", uk: "Запустив та підтримує живу туристичну платформу для користувачів по всій Україні" },
+  "pos.funtime-0.ach.1": { en: "Grew a database of curated places covering 6 major categories", uk: "Розвинув базу курованих місць за 6 основними категоріями" },
+
   // Ciklum / NZZ - Position titles
   "pos.ciklum-0.title": { en: "Automation QA", uk: "Automation QA" },
   "pos.ciklum-0.duration": { en: "Jan 2023 — Present", uk: "Січ 2023 — Тепер" },
