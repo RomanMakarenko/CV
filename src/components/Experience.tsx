@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Star } from "lucide-react";
 import { EXPERIENCES } from "@/constants";
 
 export default function Experience() {
@@ -98,8 +99,8 @@ export default function Experience() {
                               key={aIdx}
                               className="flex gap-2 text-sm text-accent/80"
                             >
-                              <span className="mt-1.5 shrink-0 text-xs">
-                                &#9733;
+                              <span className="mt-0.5 shrink-0">
+                                <Star className="h-3 w-3 fill-accent text-accent" />
                               </span>
                               <p>{item}</p>
                             </div>

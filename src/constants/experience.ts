@@ -249,7 +249,7 @@ export const EXPERIENCES: Experience[] = [
           "Tested mobile applications (Flash games for mobile devices)",
           "Prepared test documentation (Test Cases, Checklists)",
           "Reported defects",
-          "Led a small team of 4 QA engineers",
+          "Leading a small team of 4 QA engineers",
         ],
         achievements: [
           "Ensured high product quality, no comments from customers",

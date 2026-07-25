@@ -26,8 +26,8 @@ export const ABOUT_ME = {
     "QA Automation Engineer · 10+ Years in Quality Assurance · Web, Mobile & Backend",
   intro:
     "QA Automation Engineer based in Ukraine. Passionate about test automation, quality processes, and building reliable test frameworks.",
-  email: "roman.makarenko.qa@gmail.com",
-  phone: "+380",
+  email: "makarenkoroman1989@gmail.com",
+  phone: "+380939490721",
   location: "Ukraine",
 };
 
