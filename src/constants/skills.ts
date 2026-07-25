@@ -102,6 +102,18 @@ export const SKILLS_LIST: SkillGroup[] = [
     ],
   },
   {
+    title: "Artificial Intelligence",
+    items: [
+      { id: "ai-1", icon: PenTool, name: "Prompt Engineering" },
+      { id: "ai-2", icon: Network, name: "MCP" },
+      { id: "ai-3", icon: BrainCircuit, name: "AI Agents" },
+      { id: "ai-4", icon: Wrench, name: "Skills" },
+      { id: "ai-5", icon: Package, name: "Plugins" },
+      { id: "ai-6", icon: GitMerge, name: "Hooks" },
+      { id: "ai-7", icon: Sparkles, name: "LLM-assisted Development" },
+    ],
+  },
+  {
     title: "Methodologies",
     items: [
       { id: "m-1", icon: RefreshCcw, name: "Scrum" },

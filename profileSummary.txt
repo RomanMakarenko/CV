@@ -6,6 +6,7 @@ Developed, wrote and maintained autotests:
 - Java/Spring, Gradle, Spock (Integration);
 - Node.js, mocha, chai, wdio (End-to-end, API).
 - Agentic AI, Claude code
+Artificial Intelligence: Prompt Engineering, MCP, AI Agents, Skills, Plugins, Hooks, LLM-assisted Development
 Skills Database Management: MySQL
 DevOps, Cloud & Infrastructure: Docker, Jenkins
 Professional / General Skills: B2B, B2C, Elasticsearch, Kafka, Kanban, Mobile,

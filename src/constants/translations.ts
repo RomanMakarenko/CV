@@ -41,6 +41,7 @@ export const TRANSLATIONS: TranslationMap = {
   "skills.group.Automation Frameworks": { en: "Automation Frameworks", uk: "Фреймворки автоматизації" },
   "skills.group.Languages & Frameworks": { en: "Languages & Frameworks", uk: "Мови та фреймворки" },
   "skills.group.DevOps & Infrastructure": { en: "DevOps & Infrastructure", uk: "DevOps та інфраструктура" },
+  "skills.group.Artificial Intelligence": { en: "Artificial Intelligence", uk: "Штучний інтелект" },
   "skills.group.Methodologies": { en: "Methodologies", uk: "Методології" },
 
   // Education
