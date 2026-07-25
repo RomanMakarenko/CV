@@ -10,6 +10,7 @@ export interface Position {
 export interface Experience {
   organisation: string;
   link?: string;
+  logo?: string;
   positions: Position[];
 }
 
@@ -17,6 +18,7 @@ export const EXPERIENCES: Experience[] = [
   // Ciklum / NZZ — most recent first
   {
     organisation: "Ciklum (NZZ Mediengruppe)",
+    logo: "/logos/ciklum.png",
     positions: [
       {
         title: "Automation QA",
@@ -118,6 +120,7 @@ export const EXPERIENCES: Experience[] = [
   // Playtika
   {
     organisation: "Playtika",
+    logo: "/logos/playtika.png",
     positions: [
       {
         title: "Senior QA Automation Engineer / Senior QA Engineer",
@@ -232,6 +235,7 @@ export const EXPERIENCES: Experience[] = [
   // TotalGame
   {
     organisation: "TotalGame",
+    logo: "/logos/totalgame.svg",
     positions: [
       {
         title: "QA Lead",

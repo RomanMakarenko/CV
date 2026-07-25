@@ -36,8 +36,19 @@ export default function Experience() {
               <div className="glass-card p-5">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-sm font-bold text-accent">
-                      {exp.organisation.charAt(0)}
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-accent/10">
+                      {exp.logo ? (
+                        <img
+                          src={exp.logo}
+                          alt={`${exp.organisation} logo`}
+                          className="h-full w-full object-contain p-1"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <span className="text-sm font-bold text-accent">
+                          {exp.organisation.charAt(0)}
+                        </span>
+                      )}
                     </div>
                     <div>
                       <span className="font-semibold">{exp.organisation}</span>
