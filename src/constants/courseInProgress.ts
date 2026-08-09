@@ -32,7 +32,7 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
     startDate: "Jun 2026",
     endDate: "Sep 2026",
     totalLevels: 34,
-    completedLevels: 15,
+    completedLevels: 18,
     description:
       "Курс з Claude Code для розробників, які хочуть працювати швидше — без втрати контролю над кодом. Навчіться ставити завдання інженерно, керувати контекстом, будувати агентні пайплайни, підключати зовнішні інструменти через MCP і автоматизувати CI/CD. Жодної магії, лише інженерний підхід до розробки з AI-підтримкою.",
     levels: [
@@ -180,6 +180,15 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 16,
         title: "Паралельна робота, agent pipelines, checkpoints і метрики",
+        projects: [
+          {
+            name: "Content Factory",
+            description:
+              "Локальний агентний пайплайн для перетворення сирцевого матеріалу на соціальний допис із людським контролем якості: специфікація → генерація чернетки → ручна перевірка та публікація. Автоматично генерується лише draft.md, публікація відбувається за явним людським схваленням, з логуванням причин відхилення.",
+            url: "#",
+            sourceUrl: "https://github.com/RomanMakarenko/ContentFactory",
+          },
+        ],
       },
       {
         number: 17,
