@@ -7,3 +7,4 @@
 • License/Certificate: QA Automation. Issued By: Hillel. Issue Date: 12.06.2018
 • License/Certificate: SQL Essential. Issued By: CyberBionic Systematics . Issue Date: 18.11.2014
 • License/Certificate: Learn Selenium with Java, Cucumber & Frameworks. Issued By: udemy. Issue Date: 17.03.2025
+• License/Certificate: Rest API Testing (Automation) from Scratch - Rest Assured Java. Issued By: udemy. Issue Date: 10.08.2026

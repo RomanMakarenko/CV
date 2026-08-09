@@ -28,6 +28,398 @@ export interface Certification {
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    id: "cert-12",
+    name: "Rest API Testing (Automation) from Scratch — Rest Assured Java",
+    issuer: "Udemy",
+    date: "Aug 2026",
+    image: "/certificates/restassured.jpg",
+    description:
+      "A comprehensive end-to-end course on REST API testing and automation with Rest Assured in Java — from API fundamentals and Postman, through response validation with JsonPath, dynamic JSON payloads, OAuth 2.0, and POJO serialization/deserialization, to building a Cucumber BDD API framework from scratch, GraphQL testing, and CI/CD integration with Jenkins.",
+    modules: [
+      {
+        name: "Section 1: REST API Basics and Terminology",
+        levels: [
+          {
+            title: "7 lectures · 54min",
+            topics: [
+              "Course FAQ's/Syllabus (** Must Watch****)",
+              "Introduction to REST API and where it is used in Project Architecture",
+              "Real time Usage of API's in industry with Examples",
+              "Understanding GET, POST, PUT DELETE Http Crud operations of API",
+              "What are Path,Query Parameters  & Headers in Rest API",
+              "Notes Download",
+              "Quiz 1: Section-1 Quiz",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 2: 5 hours of Java Tutorials for Basics brushup",
+        levels: [
+          {
+            title: "1 lecture · 1min",
+            topics: [
+              "brush up on Java concepts",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 3: Getting started with API Testing using Postman",
+        levels: [
+          {
+            title: "9 lectures · 39min",
+            topics: [
+              "Video Player Setting tips for Best Experience in viewing course",
+              "Consolidated place to find Practice Websites & API's used in this tutorial",
+              "Introduction to POSTMAN  and Google Maps API's",
+              "Important Note",
+              "Understand Add Place API and execute it through Postman",
+              "Understand Get & Delete Place API using GET,Delete HTTp Methods using Postman",
+              "Practice Resources for Strengthening Your Testing Skills",
+              "Update Place API using PUT http method using Postman",
+              "Google Maps POSTMAN Code Download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 4: Rest Assured setup for API Automation Testing",
+        levels: [
+          {
+            title: "3 lectures · 49min",
+            topics: [
+              "Setting up Java with system variables in Windows and MAC",
+              "Setting up Rest Assured Maven Project with Eclipse installation",
+              "Build Rest API Automation Test to Add Place and validate Status codes",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 5: Validating the Rest API Responses",
+        levels: [
+          {
+            title: "7 lectures · 44min",
+            topics: [
+              "Code Download",
+              "Assertions on Json Response Body and Headers through Automated code",
+              "Parsing the Json Response body using JsonPath class",
+              "Integrating the Multiple API's with common Json response values",
+              "Building End to End Automation using GET, POST and PUT Http Methods",
+              "Importance of Junit/TestNG Assertions in validating the responses",
+              "Quiz 2: Quiz for Section-6",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 6: Diving in Depth-Automating REST API's",
+        levels: [
+          {
+            title: "7 lectures · 49min",
+            topics: [
+              "Understanding Structure of Complex Nested Json and its array notations",
+              "Json used in this Section with Queries to solve",
+              "Retrieving the Json Array Size and its elements using JsonPath",
+              "Iterating over every element of Json Array and accessing elements in it",
+              "Retrieving Json Nodes on Condition logic using JsonPath",
+              "Real Time example to solve Business logic through Json response",
+              "Code Download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 7: Handling Dynamic Json Payloads with Parameterization",
+        levels: [
+          {
+            title: "9 lectures · 55min",
+            topics: [
+              "Why Dynamic Json payloads are important to understand",
+              "Introduction to Library API",
+              "Rest Assured Test for Library API Add Book http method",
+              "Sending parameters to payload from Test",
+              "Understanding TestNg Data provider for parameterization",
+              "Example on Parameterization of API Tests with multiple data sets",
+              "code download",
+              "How to handle with static json payloads",
+              "code download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 8: Real world Example-Automating Jira API's",
+        levels: [
+          {
+            title: "6 lectures · 58min",
+            topics: [
+              "Setting up Jira Cloud Account for API Testing",
+              "Basic Authentication Mechanism to authenticate for Jira API's",
+              "Understanding Contract to create Bug in Jira using API in the Postman",
+              "How to send files as attachment to the Post API call for associated Jira Bug",
+              "Rest Assured Automation test to create Bug and send files as attachment for Jira",
+              "Code download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 9: Handling oauth 2.0 Authorization Grant type - Client Credentials",
+        levels: [
+          {
+            title: "6 lectures · 43min",
+            topics: [
+              "Introduction to OAuth 2.0 Client credentials Grant type",
+              "Practial example on OAuth 2.0 with its contract details for testing",
+              "API Contract download",
+              "Postman testing for the OAuth related API's and generating response",
+              "Code download",
+              "Rest Assured automation script for OAuth end to end API's test",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 10: Deserialization using POJO classes with Rest Assured",
+        levels: [
+          {
+            title: "9 lectures · 1hr 33min",
+            topics: [
+              "What is Serialization and Deserialization in Rest Assured",
+              "Libraries needed to support Serialization in Rest Assured",
+              "Strategies in Parsing Complex nested Json using POJO classes",
+              "Creating POJO classes for the real time Nested Array Json",
+              "End to end Automation examples using POJO Deserialization",
+              "Solving Complex Queries from Json with simple POJO methods -Part 1",
+              "Solving Complex Queries from Json with simple POJO methods-Part 2",
+              "How to showcase API Testing experience to recruiters?",
+              "Code download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 11: Serialization of Input Payload using Google Maps API Example",
+        levels: [
+          {
+            title: "3 lectures · 24min",
+            topics: [
+              "Build POJO classes for constructing Json Payload to API Rec 12-19-19 2",
+              "Complete End to end Test case with Serialization Implementation  Rec 12-19-19 34",
+              "Where to download Code",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 12: Understand Request and Response Spec Builders in Rest Assured",
+        levels: [
+          {
+            title: "3 lectures · 25min",
+            topics: [
+              "Significance of Spec Builders in Rest Assured    Rec 12-19-19 5(builderDoc)",
+              "Practical Example in implementing Spec Builders and optimize code  Rec 12-19-19",
+              "Code Download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 13: End to End ecommerce API example with Automation Concepts",
+        levels: [
+          {
+            title: "6 lectures · 1hr 28min",
+            topics: [
+              "Understand Ecommerce API Contract and build manual API's in Postman",
+              "Create Rest Assured automation for Login Call to generate Auth token",
+              "Automate Post calls which has form parameters and attachments using Rest Assured",
+              "Implement POJO Classes to build nested Json for Create Order for Product added",
+              "Script implementation with Delete Product using Path parameters & HTTPS relaxed",
+              "Code download",
+            ],
+            isProject: true,
+          },
+        ],
+        projects: [
+          {
+            name: "RestAssuredPlayground",
+            url: "https://github.com/RomanMakarenko/RestAssuredPlayground",
+            description: "Hands-on Rest Assured practice: end-to-end ecommerce API automation covering login, orders, and product validation flows.",
+          },
+        ],
+      },
+      {
+        name: "Section 14: Cucumber BDD API Framework Development from Scratch - 1",
+        levels: [
+          {
+            title: "22 lectures · 4hr 23min",
+            topics: [
+              "CheckPoint before starting Framework lectures",
+              "Cucumber BDD overview and its related terminologies",
+              "Creating Maven project with Cucumber Rest Assured Dependencies",
+              "Building Test Runner and Step Definition files for Add Place API Feature Test",
+              "Important Note about junit Test Runner versions compatibility",
+              "Implementing Real code in Step Definition files with reusable components",
+              "Running the Test in Cucumber Standards with necessary Configuration changes",
+              "Building Utility Files and Implement Logging feature in Framework",
+              "Implement Mechanism to drive Global property values from Properties file",
+              "Data Driven Testing Mechanism for API Tests using Cucumber example feature",
+              "Be a Mentor or get Guidance",
+              "Parameterize API  Test with multiple Data sets using Cucumber Framework features",
+              "What are Enum classes? How Framework can utilize the Enum concepts",
+              "Removing Hardcoded resource details with Enum class Methods",
+              "Build End to End Testcase with Add and Delete Place in Framework Standards -1",
+              "Build End to End Testcase in Framework Standards -2",
+              "Creating Additional Scenarios in Framework to reuse existing Step Definitions -4",
+              "Importance of Cucumber Hooks in setting up Preconditions for API Tests  -5",
+              "Optimizing the Framework Tests with all necessary validations  -6",
+              "Running the Complete Framework using Maven commands  23/1",
+              "Generate Excellent Cucumber HTML reporting with additional Plugins -23/2",
+              "Framework Code download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 15: Cucumber BDD API Framework Development from Scratch - 2",
+        levels: [
+          {
+            title: "4 lectures · 19min",
+            topics: [
+              "Introduction to Jenkins CI tool",
+              "Important Note",
+              "Integrating the API Framework into Jenkins and triggering with New job setup  24",
+              "Setting up Parameterized Jenkin Job for API Framework with multiple Tags",
+            ],
+            isProject: true,
+          },
+        ],
+        projects: [
+          {
+            name: "RestAssuredBDD",
+            url: "https://github.com/RomanMakarenko/RestAssuredBDD",
+            description: "Cucumber BDD API framework built from scratch: feature files, step definitions, TestNG runner, logging, data-driven tests and Jenkins CI/CD.",
+          },
+        ],
+      },
+      {
+        name: "Section 16: Learn GraphQL from Scratch and Testing with Rest Assured",
+        levels: [
+          {
+            title: "7 lectures · 1hr 53min",
+            topics: [
+              "What is GraphQL? How different it is from Rest API's ?",
+              "Understanding GraphQL Schema and its Query language",
+              "Learn how to write GraphQL Queries to Test GraphQL API's",
+              "Testing GraphQL Queries with Postman and Explorer",
+              "What are GraphQL Mutations? How to Test Mutations",
+              "Test Multiple GraphQL Mutations with Query variables in Postman",
+              "Automate GraphQL Queries & Mutations using Rest Assured automation",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 17: OAuth 2.0 for Google/facebook GrantType - Authorization code",
+        levels: [
+          {
+            title: "10 lectures · 1hr 45min",
+            topics: [
+              "Important Note before viewing this section",
+              "Introduction to OAuth 2.0 and different Grant types",
+              "Understand Grant Type Authorization flow with real time example",
+              "Flow procedure in achieving OAuth 2.0 Authentication mechanism",
+              "Details on Practise OAuth 2.0 project to retrieve Courses list",
+              "Postman Projects Download",
+              "Building up Rest Assured Automation Test for the OAuth Project",
+              "Integration Web UI Automation to generate Authorization code",
+              "Formatting URL String to retrieve code using java methods",
+              "Code download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 18: Understanding Version Control System GIT",
+        levels: [
+          {
+            title: "10 lectures · 1hr 50min",
+            topics: [
+              "Introduction to GIT",
+              "Importance of Github and its uses",
+              "Creating Git config and repositories",
+              "How to push code to remote repository",
+              "Understanding Staging and commit in git",
+              "Add remote repository and push the committed code",
+              "End to end working example on Git commands -1",
+              "End to end working example on Git commands -2",
+              "Importance of Branching in GIT",
+              "How to resolve Merge conflicts with GIT",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 19: Excel Integration with Rest Assured Test",
+        levels: [
+          {
+            title: "14 lectures · 2hr 11min",
+            topics: [
+              "what is Apace POI API & Download Instructions",
+              "Strategy to Access Excel Data",
+              "Getting rows and its cells from Sheet",
+              "Retrieving Data from Excel based on condition",
+              "Practise Exercise- Excel Driven testing -1",
+              "Practise Exercise- Excel Driven testing -2",
+              "Practise Exercise- Excel Driven testing -3",
+              "Code download",
+              "Please note",
+              "Introducion to Library API",
+              "Library APi Postman and Rest Assured examples",
+              "Conversion of HashMap into Json",
+              "Excel Integration with Rest Assured Test",
+              "Code download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 20: Core Java basics",
+        levels: [
+          {
+            title: "10 lectures · 1hr 53min",
+            topics: [
+              "Java program principles",
+              "Classes,objects in Java",
+              "Strings in Java",
+              "String Practise exercises",
+              "What is Interface?",
+              "How Java classes can take advantage of Interface?",
+              "Usage of Inheritance in Java",
+              "Practical examples on types of inheritances",
+              "Introduction to Arrays",
+              "Single dimensional and Multidimensional arrays usage",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 21: BONUS LECTURE",
+        levels: [
+          {
+            title: "1 lecture · 1min",
+            topics: [
+              "Bonus Lecture for Students",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
     id: "cert-11",
     name: "Learn Selenium with Java, Cucumber & Frameworks",
     issuer: "Udemy",

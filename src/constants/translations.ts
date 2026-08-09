@@ -129,6 +129,10 @@ export const TRANSLATIONS: TranslationMap = {
     en: "A comprehensive end-to-end course covering Selenium WebDriver, Java programming, TestNG, Cucumber BDD, Apache POI, Page Object Model, Hybrid Driven Framework development, CI/CD with Jenkins & Docker, and Selenium Grid — from fundamentals to real-world framework architecture.",
     uk: "Комплексний наскрізний курс, що охоплює Selenium WebDriver, програмування на Java, TestNG, Cucumber BDD, Apache POI, Page Object Model, розробку гібридного фреймворку, CI/CD з Jenkins та Docker, а також Selenium Grid — від основ до архітектури реальних фреймворків.",
   },
+  "cert.desc.restassured": {
+    en: "A comprehensive end-to-end course on REST API testing and automation with Rest Assured in Java — from API fundamentals and Postman, through response validation with JsonPath, dynamic JSON payloads, OAuth 2.0, and POJO serialization/deserialization, to building a Cucumber BDD API framework from scratch, GraphQL testing, and CI/CD integration with Jenkins.",
+    uk: "Комплексний наскрізний курс з тестування та автоматизації REST API за допомогою Rest Assured на Java — від основ API та Postman, через валідацію відповідей з JsonPath, динамічні JSON-дані, OAuth 2.0 та серіалізацію/десеріалізацію POJO, до створення Cucumber BDD API фреймворку з нуля, тестування GraphQL та інтеграції CI/CD з Jenkins.",
+  },
 
   // Certificate names
   "cert.name.genai": {
@@ -174,6 +178,10 @@ export const TRANSLATIONS: TranslationMap = {
   "cert.name.seleniumCucumber": {
     en: "Learn Selenium with Java, Cucumber & Frameworks",
     uk: "Вивчайте Selenium з Java, Cucumber та фреймворками",
+  },
+  "cert.name.restassured": {
+    en: "Rest API Testing (Automation) from Scratch — Rest Assured Java",
+    uk: "Тестування REST API (Автоматизація) з нуля — Rest Assured Java",
   },
 
   // Month translations for dates
