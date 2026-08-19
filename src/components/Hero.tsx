@@ -165,7 +165,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="mt-2 flex flex-wrap gap-1.5">
-                  {["Selenium", "Appium", "Node.js", "Java", "WDIO", "Docker"].map(
+                  {["Selenium", "Appium", "Node.js", "Java", "WDIO", "Playwright", "REST Assured", "Docker"].map(
                     (tag) => (
                       <span
                         key={tag}

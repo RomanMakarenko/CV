@@ -4,17 +4,13 @@ import {
   Smartphone,
   Server,
   Database,
-  Container,
   Wrench,
   Sparkles,
-  FlaskConical,
-  ListChecks,
   Workflow,
   Gauge,
   GitMerge,
   PenTool,
   BrainCircuit,
-  Hammer,
   Search,
   GitBranch,
   RefreshCcw,
@@ -26,20 +22,31 @@ import {
   Users,
   BookOpen,
   FileCheck,
-  Coffee,
-  Leaf,
   Music,
   FileJson,
   Package,
   Network,
-  Monitor,
   Beaker,
   type LucideIcon,
-} from "lucide-react";
+} from "lucide-react";import restAssuredLogo from "@/assets/rest-assured.png";
+import seleniumLogo from "@/assets/selenium-logo.png";
+import testngLogo from "@/assets/testng-logo.webp";
+import playwrightLogo from "@/assets/playwright-logo.svg";
+import javaLogo from "@/assets/java-logo.svg";
+import appiumLogo from "@/assets/appium-logo.png";
+import wdioLogo from "@/assets/wdio-logo.png";
+import dockerLogo from "@/assets/docker-logo.webp";
+import nodejsLogo from "@/assets/nodejs-logo.webp";
+import springLogo from "@/assets/spring-logo.png";
+import jenkinsLogo from "@/assets/jenkins-logo.svg";
+import teamcityLogo from "@/assets/teamcity-logo.webp";
+import cucumberLogo from "@/assets/cucumber-logo.png";
+import agenticAiLogo from "@/assets/agentic-ai-logo.webp";
 
 export interface Skill {
   id: string;
-  icon: LucideIcon;
+  icon?: LucideIcon;
+  image?: string;
   name: string;
 }
 
@@ -65,22 +72,23 @@ export const SKILLS_LIST: SkillGroup[] = [
   {
     title: "Automation Frameworks",
     items: [
-      { id: "af-1", icon: Monitor, name: "Selenium" },
-      { id: "af-2", icon: Smartphone, name: "Appium" },
-      { id: "af-3", icon: Globe, name: "WebdriverIO" },
-      { id: "af-4", icon: ListChecks, name: "TestNG" },
-      { id: "af-5", icon: FlaskConical, name: "Spock" },
-      { id: "af-6", icon: Beaker, name: "Mocha / Chai" },
-      { id: "af-7", icon: Server, name: "REST Assured" },
-      { id: "af-8", icon: Sparkles, name: "Agentic AI" },
+      { id: "af-1", image: seleniumLogo, name: "Selenium" },
+      { id: "af-2", image: appiumLogo, name: "Appium" },
+      { id: "af-3", image: wdioLogo, name: "WebdriverIO" },
+      { id: "af-4", image: testngLogo, name: "TestNG" },
+      { id: "af-5", icon: Beaker, name: "Mocha / Chai" },
+      { id: "af-7", image: restAssuredLogo, name: "REST Assured" },
+      { id: "af-8", image: agenticAiLogo, name: "Agentic AI" },
+      { id: "af-9", image: playwrightLogo, name: "Playwright" },
+      { id: "af-10", image: cucumberLogo, name: "Cucumber" },
     ],
   },
   {
     title: "Languages & Frameworks",
     items: [
-      { id: "lf-1", icon: Coffee, name: "Java" },
-      { id: "lf-2", icon: Server, name: "Node.js" },
-      { id: "lf-3", icon: Leaf, name: "Spring" },
+      { id: "lf-1", image: javaLogo, name: "Java" },
+      { id: "lf-2", image: nodejsLogo, name: "Node.js" },
+      { id: "lf-3", image: springLogo, name: "Spring" },
       { id: "lf-4", icon: Music, name: "Groovy" },
       { id: "lf-5", icon: FileJson, name: "JavaScript" },
       { id: "lf-6", icon: Package, name: "Gradle" },
@@ -91,9 +99,9 @@ export const SKILLS_LIST: SkillGroup[] = [
   {
     title: "DevOps & Infrastructure",
     items: [
-      { id: "do-1", icon: Container, name: "Docker" },
-      { id: "do-2", icon: Hammer, name: "Jenkins" },
-      { id: "do-3", icon: Hammer, name: "TeamCity" },
+      { id: "do-1", image: dockerLogo, name: "Docker" },
+      { id: "do-2", image: jenkinsLogo, name: "Jenkins" },
+      { id: "do-3", image: teamcityLogo, name: "TeamCity" },
       { id: "do-4", icon: Database, name: "MySQL" },
       { id: "do-5", icon: Database, name: "Redis" },
       { id: "do-6", icon: Search, name: "Elasticsearch" },

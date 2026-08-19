@@ -1,0 +1,2 @@
+додай в верхній блок Playwright про який блок йдеться вказано на скріншоті /Users/romanmakarenko/Documents/code/CV/Screenshot 2026-08-19 at 18.13.36.png
+додай Playwright в блок Фреймворки автоматизації /Users/romanmakarenko/Documents/code/CV/Screenshot 2026-08-19 at 18.19.34.pn

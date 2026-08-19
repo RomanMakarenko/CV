@@ -23,7 +23,17 @@ function SkillCard({ skill }: { skill: Skill }) {
       whileHover={{ y: -4, transition: { duration: 0.2 } }}
       className="skill-card group"
     >
-      <skill.icon className="h-7 w-7 text-accent transition-transform duration-300 group-hover:scale-110" />
+      {skill.image ? (
+        <img
+          src={skill.image}
+          alt={skill.name}
+          className="h-7 w-7 object-contain transition-transform duration-300 group-hover:scale-110"
+        />
+      ) : (
+        skill.icon && (
+          <skill.icon className="h-7 w-7 text-accent transition-transform duration-300 group-hover:scale-110" />
+        )
+      )}
       <span className="text-[11px] font-medium text-muted-foreground transition-colors group-hover:text-foreground">
         {skill.name}
       </span>

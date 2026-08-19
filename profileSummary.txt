@@ -5,6 +5,8 @@ Developed, wrote and maintained autotests:
 - Java, Appium (End-to-end);
 - Java/Spring, Gradle, Spock (Integration);
 - Node.js, mocha, chai, wdio (End-to-end, API).
+- TypeScript, Playwright (End-to-end);
+- Java, REST Assured (API);
 - Agentic AI, Claude code
 Artificial Intelligence: Prompt Engineering, MCP, AI Agents, Skills, Plugins, Hooks, LLM-assisted Development
 Skills Database Management: MySQL

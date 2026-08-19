@@ -50,6 +50,8 @@ export const KEYWORDS = [
   "Node.js",
   "Java",
   "WebdriverIO",
+  "Playwright",
+  "REST Assured",
   "API Testing",
   "Mobile Testing",
   "CI/CD",

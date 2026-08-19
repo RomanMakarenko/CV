@@ -2,3 +2,7 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# IntelliJ IDEA (project-local files, auto-generated)
+.idea/*
+CV.iml
