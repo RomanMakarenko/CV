@@ -2130,6 +2130,199 @@ export const CERT_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Cucumber BDD API framework built from scratch: feature files, step definitions, TestNG runner, logging, data-driven tests and Jenkins CI/CD.",
     uk: "Cucumber BDD API-фреймворк, створений з нуля: feature-файли, step definitions, TestNG runner, логування, data-driven тести та CI/CD з Jenkins.",
   },
+
+  // ======== cert-13: Playwright JAVA Automation Testing ========
+  "cc.cert-13.m0.name": {
+    en: "Section 1: Introduction to Playwright Java Tutorial",
+    uk: "Розділ 1: Вступ до Playwright Java",
+  },
+  "cc.cert-13.m0.l0.title": { en: "2 lectures · 20min", uk: "2 лекції · 20 хв" },
+  "cc.cert-13.m0.l0.t0": { en: "1. Introduction to the course - What this course covers?", uk: "1. Вступ до курсу - Що охоплює цей курс?" },
+  "cc.cert-13.m0.l0.t1": { en: "2. Download Java & set in System variables in both windows & MAC", uk: "2. Завантаження Java та налаштування системних змінних у Windows та MAC" },
+
+  "cc.cert-13.m1.name": {
+    en: "Section 2: Brush up Java fundamentals for Playwright Automation",
+    uk: "Розділ 2: Повторення основ Java для автоматизації з Playwright",
+  },
+  "cc.cert-13.m1.l0.title": { en: "9 lectures · 1hr 30min", uk: "9 лекцій · 1 год 30 хв" },
+  "cc.cert-13.m1.l0.t0": { en: "3. Course Strategy to learn Java basics for Selenium Automation", uk: "3. Стратегія вивчення основ Java для автоматизації з Selenium" },
+  "cc.cert-13.m1.l0.t1": { en: "4. Introduction to Java variables and Data types with examples", uk: "4. Вступ до змінних Java та типів даних з прикладами" },
+  "cc.cert-13.m1.l0.t2": { en: "5. What are Arrays in Java? How to initialize and retrieve the values of array", uk: "5. Що таке масиви в Java? Як ініціалізувати та отримувати значення масиву" },
+  "cc.cert-13.m1.l0.t3": { en: "6. Introduction to For loop to iterate over array of Strings and Integers", uk: "6. Вступ до циклу For для перебору масивів рядків та цілих чисел" },
+  "cc.cert-13.m1.l0.t4": { en: "7. Enhanced for loop declaration & using Conditional statements inside the loops", uk: "7. Розширений цикл for та умовні конструкції у циклах" },
+  "cc.cert-13.m1.l0.t5": { en: "8. What is Arraylist and differences between Arraylist and Arrays", uk: "8. Що таке ArrayList та відмінності між ArrayList і масивами" },
+  "cc.cert-13.m1.l0.t6": { en: "9. Iterating over Arrays and Arraylists and its related methods", uk: "9. Перебір масивів та ArrayList і пов'язані методи" },
+  "cc.cert-13.m1.l0.t7": { en: "10. Strings in Java - How to declare Strings & Important String methods", uk: "10. Рядки в Java - Оголошення рядків та важливі методи String" },
+  "cc.cert-13.m1.l0.t8": { en: "11. How to create methods and access methods using Java class object", uk: "11. Створення методів та звернення до них через об'єкт Java-класу" },
+
+  "cc.cert-13.m2.name": {
+    en: "Section 3: Getting Started with Playwright UI Automation & Browser Engines",
+    uk: "Розділ 3: Початок роботи з Playwright UI автоматизацією та браузерними движками",
+  },
+  "cc.cert-13.m2.l0.title": { en: "6 lectures · 55min", uk: "6 лекцій · 55 хв" },
+  "cc.cert-13.m2.l0.t0": { en: "12. Create Playwright Maven Project and understand the POM.xml dependencies", uk: "12. Створення Playwright Maven-проєкту та розуміння залежностей POM.xml" },
+  "cc.cert-13.m2.l0.t1": { en: "13. What is TestNG & Get this library Plugged to run Playwright tests", uk: "13. Що таке TestNG та підключення бібліотеки для запуску Playwright тестів" },
+  "cc.cert-13.m2.l0.t2": { en: "14. Invoking the Chromium Browser with Playwright & Browser Instance", uk: "14. Запуск браузера Chromium з Playwright та Browser Instance" },
+  "cc.cert-13.m2.l0.t3": { en: "15. Introduction to Playwright Assertions and verify page navigation with title", uk: "15. Вступ до Playwright Assertions та перевірка навігації сторінки за заголовком" },
+  "cc.cert-13.m2.l0.t4": { en: "16. What are Playwright Browsers and running tests in different browser engines", uk: "16. Playwright Browsers та запуск тестів у різних браузерних движках" },
+  "cc.cert-13.m2.l0.t5": { en: "17. Download complete Codebase discussed in this course", uk: "17. Завантаження повного коду, розглянутого в курсі" },
+
+  "cc.cert-13.m3.name": {
+    en: "Section 4: Deep dive into Playwright UI Automation with Assertions & Locator filters",
+    uk: "Розділ 4: Поглиблене вивчення Playwright UI автоматизації з assertions та фільтрами локаторів",
+  },
+  "cc.cert-13.m3.l0.title": { en: "6 lectures · 1hr 24min", uk: "6 лекцій · 1 год 24 хв" },
+  "cc.cert-13.m3.l0.t0": { en: "18. Understand the locators in Playwright and how they help in identifying elements", uk: "18. Розуміння локаторів у Playwright та їх роль у пошуку елементів" },
+  "cc.cert-13.m3.l0.t1": { en: "19. Automate the Login Forms using Playwright resilient Locators - Demo Example", uk: "19. Автоматизація форм входу надійними локаторами Playwright - приклад" },
+  "cc.cert-13.m3.l0.t2": { en: "20. Apply Playwright Assertions to validate & use CSS Locators to identify elements", uk: "20. Playwright Assertions та CSS локатори для пошуку елементів" },
+  "cc.cert-13.m3.l0.t3": { en: "21. Handling Dropdowns in a form using SelectOption method in Playwright", uk: "21. Випадаючі списки за допомогою методу SelectOption у Playwright" },
+  "cc.cert-13.m3.l0.t4": { en: "22. How visible Assertions work in Playwright & importance of getByTestID locator", uk: "22. Assertions видимості та важливість локатора getByTestID" },
+  "cc.cert-13.m3.l0.t5": { en: "23. Understand the concept of Filter and how to apply it on list of locators level", uk: "23. Концепція Filter та її застосування на рівні списків локаторів" },
+
+  "cc.cert-13.m4.name": {
+    en: "Section 5: Understand AutoWait Strategy - Setting Custom waits & complete E2E flows",
+    uk: "Розділ 5: Стратегія AutoWait - налаштування власних очікувань та наскрізні E2E сценарії",
+  },
+  "cc.cert-13.m4.l0.title": { en: "6 lectures · 58min", uk: "6 лекцій · 58 хв" },
+  "cc.cert-13.m4.l0.t0": { en: "24. Understand how Wait Mechanisms work in Playwright for Assertions level", uk: "24. Механізми очікування в Playwright на рівні assertions" },
+  "cc.cert-13.m4.l0.t1": { en: "25. Understand the concept of Auto Wait and how we can customize waits in Playwright", uk: "25. Концепція Auto Wait та кастомізація очікувань у Playwright" },
+  "cc.cert-13.m4.l0.t2": { en: "26. Ways to extract text from the browser using Playwright API Methods", uk: "26. Способи отримання тексту з браузера через Playwright API" },
+  "cc.cert-13.m4.l0.t3": { en: "27. End to end flow of completing Booking using all possible Playwright locators", uk: "27. Наскрізний сценарій бронювання з усіма можливими локаторами Playwright" },
+  "cc.cert-13.m4.l0.t4": { en: "28. Apply Filter on booking cards with smart Locator Strategy to find unique card", uk: "28. Filter на картках бронювання для пошуку унікальної картки" },
+  "cc.cert-13.m4.l0.t5": { en: "29. Wrapping up end to end flow with Assertions with demo of String to Int Parsing", uk: "29. Наскрізний сценарій з assertions та демо перетворення String у Int" },
+
+  "cc.cert-13.m5.name": {
+    en: "Section 6: Understand Browser Context, Child windows & Trace Viewer features of Playwright",
+    uk: "Розділ 6: Browser Context, дочірні вікна та Trace Viewer у Playwright",
+  },
+  "cc.cert-13.m5.l0.title": { en: "10 lectures · 1hr 38min", uk: "10 лекцій · 1 год 38 хв" },
+  "cc.cert-13.m5.l0.t0": { en: "30. Understand the difference between Browser & context & page in Playwright world", uk: "30. Різниця між Browser, context та page у Playwright" },
+  "cc.cert-13.m5.l0.t1": { en: "31. Have a design plan of handling child windows using Playwright in context level", uk: "31. План роботи з дочірніми вікнами на рівні контексту в Playwright" },
+  "cc.cert-13.m5.l0.t2": { en: "32. Switch to Child window to automate & flip back to Parent with Playwright methods", uk: "32. Перемикання на дочірнє вікно та повернення до батьківського методами Playwright" },
+  "cc.cert-13.m5.l0.t3": { en: "33. Understand the Trace viewer in Playwright & how it helps to debug the tests", uk: "33. Trace viewer у Playwright та налагодження тестів" },
+  "cc.cert-13.m5.l0.t4": { en: "34. Handling Radio Buttons, Checkboxes with assertions using Playwright Java - Demo", uk: "34. Радіокнопки та чекбокси з assertions на Playwright Java - демо" },
+  "cc.cert-13.m5.l0.t5": { en: "35. How to verify if element is visible or hidden with assertions in Playwright", uk: "35. Перевірка видимості елемента за допомогою assertions" },
+  "cc.cert-13.m5.l0.t6": { en: "36. Understand handling Popup & Alert boxes using Playwright - Example", uk: "36. Робота з Popup та Alert вікнами у Playwright - приклад" },
+  "cc.cert-13.m5.l0.t7": { en: "37. What are Frames? How to handle Frames using Playwright with context switch", uk: "37. Що таке Frames? Робота з фреймами та перемиканням контексту" },
+  "cc.cert-13.m5.l0.t8": { en: "38. How to take screenshots on page level & locator level in Playwright", uk: "38. Скріншоти на рівні сторінки та локатора в Playwright" },
+  "cc.cert-13.m5.l0.t9": { en: "Quiz 1: Check your Knowledge - Quiz Time", uk: "Тест 1: Перевірте свої знання" },
+
+  "cc.cert-13.m6.name": {
+    en: "Section 7: Learn API Automation Testing with Playwright Java - HTTP CRUD Methods",
+    uk: "Розділ 7: API-автоматизація з Playwright Java - HTTP CRUD методи",
+  },
+  "cc.cert-13.m6.l0.title": { en: "7 lectures · 1hr 10min", uk: "7 лекцій · 1 год 10 хв" },
+  "cc.cert-13.m6.l0.t0": { en: "39. Important Info", uk: "39. Важлива інформація" },
+  "cc.cert-13.m6.l0.t1": { en: "40. Getting started with API Testing using Playwright - Understand request context", uk: "40. Початок API-тестування з Playwright - розуміння request context" },
+  "cc.cert-13.m6.l0.t2": { en: "41. Build APIRequest context object to make HTTP methods using Playwright methods", uk: "41. Об'єкт APIRequest context для HTTP-запитів методами Playwright" },
+  "cc.cert-13.m6.l0.t3": { en: "42. Make Login Post call and Parse Json to extract the token using Playwright method", uk: "42. Login POST-запит та парсинг Json для отримання токена методом Playwright" },
+  "cc.cert-13.m6.l0.t4": { en: "43. Get HTTP API call to get the events - Implement using Playwright Java methods", uk: "43. GET-запит для отримання подій - реалізація методами Playwright Java" },
+  "cc.cert-13.m6.l0.t5": { en: "44. HTTP Delete API method implementation & understand Path - Query Params - Example", uk: "44. Реалізація HTTP Delete методу та розуміння Path та Query Params - приклад" },
+  "cc.cert-13.m6.l0.t6": { en: "45. Validate whether CRUD operations performed yield success with Get API call check", uk: "45. Перевірка успішності CRUD-операцій за допомогою GET-запиту" },
+
+  "cc.cert-13.m7.name": {
+    en: "Section 8: Understand Browser Network Interception with Playwright to mock Request/Response",
+    uk: "Розділ 8: Перехоплення мережевих запитів у Playwright для мокування Request/Response",
+  },
+  "cc.cert-13.m7.l0.title": { en: "4 lectures · 42min", uk: "4 лекції · 42 хв" },
+  "cc.cert-13.m7.l0.t0": { en: "46. Understand how to intercept Network responses and test edge case scenarios", uk: "46. Перехоплення мережевих відповідей та тестування граничних сценаріїв" },
+  "cc.cert-13.m7.l0.t1": { en: "47. Apply assertions and validate edge case tests with Json mock response injection", uk: "47. Assertions та валідація граничних сценаріїв з ін'єкцією Json mock-відповідей" },
+  "cc.cert-13.m7.l0.t2": { en: "48. Understand how to mock request calls using Playwright before hitting API server", uk: "48. Мокування запитів у Playwright до звернення до API-сервера" },
+  "cc.cert-13.m7.l0.t3": { en: "Quiz 2: Check your knowledge - Quiz time", uk: "Тест 2: Перевірте свої знання" },
+
+  "cc.cert-13.m8.name": {
+    en: "Section 9: Apply Java Object Oriented Principles & keep Tests isolated from Reusable code",
+    uk: "Розділ 9: Принципи ООП Java та ізоляція тестів від багаторазового коду",
+  },
+  "cc.cert-13.m8.l0.title": { en: "6 lectures · 57min", uk: "6 лекцій · 57 хв" },
+  "cc.cert-13.m8.l0.t0": { en: "49. Framework Design Plan - What we are going to cover", uk: "49. План дизайну фреймворку - що ми розглянемо" },
+  "cc.cert-13.m8.l0.t1": { en: "50. How TestNG Annotations help with Inheritance to remove boilerPlate code in Test", uk: "50. Анотації TestNG та успадкування для видалення зайвого коду в тестах" },
+  "cc.cert-13.m8.l0.t2": { en: "51. How to pass values from test through Parameterized Constructor & this keyword", uk: "51. Передача значень через параметризований конструктор та ключове слово this" },
+  "cc.cert-13.m8.l0.t3": { en: "52. Usage of Super keyword in the Constructor to pass values to Parent Class", uk: "52. Ключове слово super у конструкторі для передачі значень батьківському класу" },
+  "cc.cert-13.m8.l0.t4": { en: "53. Implement Inheritance to move all browser invocation code to the Parent class", uk: "53. Успадкування для перенесення коду запуску браузера в батьківський клас" },
+  "cc.cert-13.m8.l0.t5": { en: "54. Configure Global Properties in Java using Properties class - Example demo", uk: "54. Глобальні властивості в Java за допомогою класу Properties - приклад" },
+
+  "cc.cert-13.m9.name": {
+    en: "Section 10: Implement Page Object Design Pattern to Playwright Java Tests - Demo examples",
+    uk: "Розділ 10: Паттерн Page Object у Playwright Java тестах - приклади",
+  },
+  "cc.cert-13.m9.l0.title": { en: "6 lectures · 1hr 5min", uk: "6 лекцій · 1 год 5 хв" },
+  "cc.cert-13.m9.l0.t0": { en: "55. What is Page object model? Advantages of its implementation", uk: "55. Що таке Page Object Model? Переваги його впровадження" },
+  "cc.cert-13.m9.l0.t1": { en: "56. Understand how to get started to refactor tests as per PageObject standards", uk: "56. Початок рефакторингу тестів за стандартами PageObject" },
+  "cc.cert-13.m9.l0.t2": { en: "57. Optimize the Page object file with centralized locator storing & object creation", uk: "57. Оптимізація Page Object файлу з централізованим зберіганням локаторів" },
+  "cc.cert-13.m9.l0.t3": { en: "58. Code download for assignment", uk: "58. Завантаження коду для завдання" },
+  "cc.cert-13.m9.l0.t4": { en: "59. Part 1 - Wrap up Page object pattern implementation into Playwright Framework", uk: "59. Частина 1 - Інтеграція паттерну Page Object у Playwright Framework" },
+  "cc.cert-13.m9.l0.t5": { en: "60. Part 2 - Wrap up Page object pattern implementation into Playwright Framework", uk: "60. Частина 2 - Інтеграція паттерну Page Object у Playwright Framework" },
+
+  "cc.cert-13.m10.name": {
+    en: "Section 11: Implement Data Driven & Parameterization to the Tests from External Json files",
+    uk: "Розділ 11: Data Driven та параметризація тестів із зовнішніх Json файлів",
+  },
+  "cc.cert-13.m10.l0.title": { en: "4 lectures · 40min", uk: "4 лекції · 40 хв" },
+  "cc.cert-13.m10.l0.t0": { en: "61. Understand how to parameterize test data using TestNG Data provider - Demo", uk: "61. Параметризація тестових даних за допомогою TestNG Data Provider - демо" },
+  "cc.cert-13.m10.l0.t1": { en: "62. Understand how to map object multiDimensional array to HashMap object - example", uk: "62. Мапінг багатовимірного масиву об'єктів у HashMap - приклад" },
+  "cc.cert-13.m10.l0.t2": { en: "63. Build a solution to drive data from Json file to HashMap -> TestNG Data provider", uk: "63. Передача даних з Json файлу в HashMap -> TestNG Data Provider" },
+  "cc.cert-13.m10.l0.t3": { en: "64. Integrate the utils of Data driven & parameterization into Playwright Framework", uk: "64. Інтеграція утиліт Data Driven та параметризації у Playwright Framework" },
+
+  "cc.cert-13.m11.name": {
+    en: "Section 12: Learn how to drive test execution in Series & Parallel & Grouped using TestNG",
+    uk: "Розділ 12: Послідовне, паралельне та групове виконання тестів з TestNG",
+  },
+  "cc.cert-13.m11.l0.title": { en: "3 lectures · 23min", uk: "3 лекції · 23 хв" },
+  "cc.cert-13.m11.l0.t0": { en: "65. What is TestNG.xml file? How to run all the tests in framework with one click", uk: "65. Що таке TestNG.xml? Запуск усіх тестів фреймворку одним кліком" },
+  "cc.cert-13.m11.l0.t1": { en: "66. How to run Playwright tests in parallel mode in Framework using TestNG.xml", uk: "66. Паралельний запуск Playwright тестів у фреймворку через TestNG.xml" },
+  "cc.cert-13.m11.l0.t2": { en: "67. How to run only selected tests in the Framework - TestNG Group tagging concept", uk: "67. Запуск лише вибраних тестів - концепція групування TestNG" },
+
+  "cc.cert-13.m12.name": {
+    en: "Section 13: Drive test execution through Maven POM.xml - Commands /Profiles/ env variables",
+    uk: "Розділ 13: Керування запуском тестів через Maven POM.xml - команди/profiles/env змінні",
+  },
+  "cc.cert-13.m12.l0.title": { en: "4 lectures · 38min", uk: "4 лекції · 38 хв" },
+  "cc.cert-13.m12.l0.t0": { en: "68. Importance of Maven sure fire plugin to run tests through Maven commands", uk: "68. Важливість Maven Surefire плагіна для запуску тестів командами Maven" },
+  "cc.cert-13.m12.l0.t1": { en: "69. What is Maven Profiles? how to use them to switch test execution context smartly", uk: "69. Що таке Maven Profiles та розумне перемикання контексту тестів" },
+  "cc.cert-13.m12.l0.t2": { en: "70. How to control env variables from Maven commands into Framework to test files", uk: "70. Керування env змінними з команд Maven для тестових файлів фреймворку" },
+  "cc.cert-13.m12.l0.t3": { en: "71. Implement logic to decide which env variables to pick at run time - Maven/Config", uk: "71. Логіка вибору env змінних під час запуску - Maven/Config" },
+
+  "cc.cert-13.m13.name": {
+    en: "Section 14: Integrate AI Agents into Playwright Java Framework & Intro to MCP Server",
+    uk: "Розділ 14: Інтеграція AI-агентів у Playwright Java фреймворк та вступ до MCP Server",
+  },
+  "cc.cert-13.m13.l0.title": { en: "3 lectures · 24min", uk: "3 лекції · 24 хв" },
+  "cc.cert-13.m13.l0.t0": { en: "72. How to Use GitHub Copilot and Bring Its AI Power to Your Automation Framework", uk: "72. GitHub Copilot та його AI-можливості у фреймворку автоматизації" },
+  "cc.cert-13.m13.l0.t1": { en: "73. Introduction to Playwright MCP Server and how it works behind scenes with Agents", uk: "73. Вступ до Playwright MCP Server та робота з агентами" },
+  "cc.cert-13.m13.l0.t2": { en: "74. Integrate Playwright MCP into Copilot Agent and build tests through AI Prompts", uk: "74. Інтеграція Playwright MCP у Copilot Agent та створення тестів через AI-промпти" },
+
+  "cc.cert-13.m14.name": {
+    en: "Section 15: Generate Allure Report & Implement CI/CD for Test execution using GitHub Actions",
+    uk: "Розділ 15: Allure звіти та реалізація CI/CD для запуску тестів з GitHub Actions",
+  },
+  "cc.cert-13.m14.l0.title": { en: "8 lectures · 1hr 1min", uk: "8 лекцій · 1 год 1 хв" },
+  "cc.cert-13.m14.l0.t0": { en: "75. Generate HTML reports using Allure reporting for Playwright Java framework", uk: "75. Генерація HTML-звітів Allure для Playwright Java фреймворку" },
+  "cc.cert-13.m14.l0.t1": { en: "76. Configure Allure reporting into Maven and run tests to see the HTML test results", uk: "76. Налаштування Allure у Maven та перегляд HTML-результатів тестів" },
+  "cc.cert-13.m14.l0.t2": { en: "77. Introduction to GIT & getting started to push code to remote repo", uk: "77. Вступ до GIT та завантаження коду у віддалений репозиторій" },
+  "cc.cert-13.m14.l0.t3": { en: "78. What are GitHub Actions and the concept of CI/CD implementation in framework", uk: "78. Що таке GitHub Actions та концепція CI/CD у фреймворку" },
+  "cc.cert-13.m14.l0.t4": { en: "79. Understand the .yml which can implement CI/CD and run Playwright framework tests", uk: "79. Розуміння .yml для CI/CD та запуску Playwright тестів фреймворку" },
+  "cc.cert-13.m14.l0.t5": { en: "80. Build the Choice Params & see the Demo of CI/CD implementation live for Tests", uk: "80. Choice Params та жива демонстрація CI/CD для тестів" },
+  "cc.cert-13.m14.l0.t6": { en: "81. Wrap up - What have we implemented in designing Industry standard Framework", uk: "81. Підсумки - Що ми створили в індустріальному фреймворку" },
+  "cc.cert-13.m14.l0.t7": { en: "Quiz 3: Framework Quiz", uk: "Тест 3: Тест по фреймворку" },
+
+  "cc.cert-13.m15.name": { en: "Section 16: Course Code download", uk: "Розділ 16: Завантаження коду курсу" },
+  "cc.cert-13.m15.l0.title": { en: "1 lecture · 1min", uk: "1 лекція · 1 хв" },
+  "cc.cert-13.m15.l0.t0": { en: "82. Code download", uk: "82. Завантаження коду" },
+
+  "cc.cert-13.m16.name": {
+    en: "Section 17: Explore & Learn Java In depth from the given video tutorials",
+    uk: "Розділ 17: Поглиблене вивчення Java з відеоуроків",
+  },
+  "cc.cert-13.m16.l0.title": { en: "1 lecture · 1min", uk: "1 лекція · 1 хв" },
+  "cc.cert-13.m16.l0.t0": { en: "83. Bonus Lecture", uk: "83. Бонусна лекція" },
+
+  // cert-13 project names & descriptions
+  "cc.cert-13.m14.p0.name": { en: "JavaPlaywrightFramework", uk: "JavaPlaywrightFramework" },
+  "cc.cert-13.m14.p0.desc": {
+    en: "Industry-standard Playwright Java framework built during the course: Page Object Model, TestNG data-driven testing, Maven profiles, Allure reporting, and CI/CD with GitHub Actions.",
+    uk: "Індустріальний Playwright Java фреймворк, створений під час курсу: Page Object Model, data-driven тестування з TestNG, Maven profiles, Allure звіти та CI/CD з GitHub Actions.",
+  },
 };
 
 export function getCertContentKey(certId: string, field: string): string | undefined {

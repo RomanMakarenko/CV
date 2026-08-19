@@ -28,6 +28,282 @@ export interface Certification {
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    id: "cert-13",
+    name: "Playwright JAVA Automation Testing — From Basics to Framework",
+    issuer: "Udemy",
+    date: "Aug 2026",
+    image: "/certificates/playwright-java.jpg",
+    description:
+      "A comprehensive hands-on course on building an industry-standard Playwright automation framework in Java — from Playwright setup and browser engines, through resilient locators, auto-waits, browser contexts, and Trace Viewer, to API testing with Playwright, network interception and mocking, Page Object Model, TestNG data-driven testing, Maven profiles, Allure reporting, and CI/CD with GitHub Actions.",
+    modules: [
+      {
+        name: "Section 1: Introduction to Playwright Java Tutorial",
+        levels: [
+          {
+            title: "2 lectures · 20min",
+            topics: [
+              "1. Introduction to the course - What this course covers?",
+              "2. Download Java & set in System variables in both windows & MAC",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 2: Brush up Java fundamentals for Playwright Automation",
+        levels: [
+          {
+            title: "9 lectures · 1hr 30min",
+            topics: [
+              "3. Course Strategy to learn Java basics for Selenium Automation",
+              "4. Introduction to Java variables and Data types with examples",
+              "5. What are Arrays in Java? How to initialize and retrieve the values of array",
+              "6. Introduction to For loop to iterate over array of Strings and Integers",
+              "7. Enhanced for loop declaration & using Conditional statements inside the loops",
+              "8. What is Arraylist and differences between Arraylist and Arrays",
+              "9. Iterating over Arrays and Arraylists and its related methods",
+              "10. Strings in Java - How to declare Strings & Important String methods",
+              "11. How to create methods and access methods using Java class object",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 3: Getting Started with Playwright UI Automation & Browser Engines",
+        levels: [
+          {
+            title: "6 lectures · 55min",
+            topics: [
+              "12. Create Playwright Maven Project and understand the POM.xml dependencies",
+              "13. What is TestNG & Get this library Plugged to run Playwright tests",
+              "14. Invoking the Chromium Browser with Playwright & Browser Instance",
+              "15. Introduction to Playwright Assertions and verify page navigation with title",
+              "16. What are Playwright Browsers and running tests in different browser engines",
+              "17. Download complete Codebase discussed in this course",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 4: Deep dive into Playwright UI Automation with Assertions & Locator filters",
+        levels: [
+          {
+            title: "6 lectures · 1hr 24min",
+            topics: [
+              "18. Understand the locators in Playwright and how they help in identifying elements",
+              "19. Automate the Login Forms using Playwright resilient Locators - Demo Example",
+              "20. Apply Playwright Assertions to validate & use CSS Locators to identify elements",
+              "21. Handling Dropdowns in a form using SelectOption method in Playwright",
+              "22. How visible Assertions work in Playwright & importance of getByTestID locator",
+              "23. Understand the concept of Filter and how to apply it on list of locators level",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 5: Understand AutoWait Strategy - Setting Custom waits & complete E2E flows",
+        levels: [
+          {
+            title: "6 lectures · 58min",
+            topics: [
+              "24. Understand how Wait Mechanisms work in Playwright for Assertions level",
+              "25. Understand the concept of Auto Wait and how we can customize waits in Playwright",
+              "26. Ways to extract text from the browser using Playwright API Methods",
+              "27. End to end flow of completing Booking using all possible Playwright locators",
+              "28. Apply Filter on booking cards with smart Locator Strategy to find unique card",
+              "29. Wrapping up end to end flow with Assertions with demo of String to Int Parsing",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 6: Understand Browser Context, Child windows & Trace Viewer features of Playwright",
+        levels: [
+          {
+            title: "10 lectures · 1hr 38min",
+            topics: [
+              "30. Understand the difference between Browser & context & page in Playwright world",
+              "31. Have a design plan of handling child windows using Playwright in context level",
+              "32. Switch to Child window to automate & flip back to Parent with Playwright methods",
+              "33. Understand the Trace viewer in Playwright & how it helps to debug the tests",
+              "34. Handling Radio Buttons, Checkboxes with assertions using Playwright Java - Demo",
+              "35. How to verify if element is visible or hidden with assertions in Playwright",
+              "36. Understand handling Popup & Alert boxes using Playwright - Example",
+              "37. What are Frames? How to handle Frames using Playwright with context switch",
+              "38. How to take screenshots on page level & locator level in Playwright",
+              "Quiz 1: Check your Knowledge - Quiz Time",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 7: Learn API Automation Testing with Playwright Java - HTTP CRUD Methods",
+        levels: [
+          {
+            title: "7 lectures · 1hr 10min",
+            topics: [
+              "39. Important Info",
+              "40. Getting started with API Testing using Playwright - Understand request context",
+              "41. Build APIRequest context object to make HTTP methods using Playwright methods",
+              "42. Make Login Post call and Parse Json to extract the token using Playwright method",
+              "43. Get HTTP API call to get the events - Implement using Playwright Java methods",
+              "44. HTTP Delete API method implementation & understand Path - Query Params - Example",
+              "45. Validate whether CRUD operations performed yield success with Get API call check",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 8: Understand Browser Network Interception with Playwright to mock Request/Response",
+        levels: [
+          {
+            title: "4 lectures · 42min",
+            topics: [
+              "46. Understand how to intercept Network responses and test edge case scenarios",
+              "47. Apply assertions and validate edge case tests with Json mock response injection",
+              "48. Understand how to mock request calls using Playwright before hitting API server",
+              "Quiz 2: Check your knowledge - Quiz time",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 9: Apply Java Object Oriented Principles & keep Tests isolated from Reusable code",
+        levels: [
+          {
+            title: "6 lectures · 57min",
+            topics: [
+              "49. Framework Design Plan - What we are going to cover",
+              "50. How TestNG Annotations help with Inheritance to remove boilerPlate code in Test",
+              "51. How to pass values from test through Parameterized Constructor & this keyword",
+              "52. Usage of Super keyword in the Constructor to pass values to Parent Class",
+              "53. Implement Inheritance to move all browser invocation code to the Parent class",
+              "54. Configure Global Properties in Java using Properties class - Example demo",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 10: Implement Page Object Design Pattern to Playwright Java Tests - Demo examples",
+        levels: [
+          {
+            title: "6 lectures · 1hr 5min",
+            topics: [
+              "55. What is Page object model? Advantages of its implementation",
+              "56. Understand how to get started to refactor tests as per PageObject standards",
+              "57. Optimize the Page object file with centralized locator storing & object creation",
+              "58. Code download for assignment",
+              "59. Part 1 - Wrap up Page object pattern implementation into Playwright Framework",
+              "60. Part 2 - Wrap up Page object pattern implementation into Playwright Framework",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 11: Implement Data Driven & Parameterization to the Tests from External Json files",
+        levels: [
+          {
+            title: "4 lectures · 40min",
+            topics: [
+              "61. Understand how to parameterize test data using TestNG Data provider - Demo",
+              "62. Understand how to map object multiDimensional array to HashMap object - example",
+              "63. Build a solution to drive data from Json file to HashMap -> TestNG Data provider",
+              "64. Integrate the utils of Data driven & parameterization into Playwright Framework",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 12: Learn how to drive test execution in Series & Parallel & Grouped using TestNG",
+        levels: [
+          {
+            title: "3 lectures · 23min",
+            topics: [
+              "65. What is TestNG.xml file? How to run all the tests in framework with one click",
+              "66. How to run Playwright tests in parallel mode in Framework using TestNG.xml",
+              "67. How to run only selected tests in the Framework - TestNG Group tagging concept",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 13: Drive test execution through Maven POM.xml - Commands /Profiles/ env variables",
+        levels: [
+          {
+            title: "4 lectures · 38min",
+            topics: [
+              "68. Importance of Maven sure fire plugin to run tests through Maven commands",
+              "69. What is Maven Profiles? how to use them to switch test execution context smartly",
+              "70. How to control env variables from Maven commands into Framework to test files",
+              "71. Implement logic to decide which env variables to pick at run time - Maven/Config",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 14: Integrate AI Agents into Playwright Java Framework & Intro to MCP Server",
+        levels: [
+          {
+            title: "3 lectures · 24min",
+            topics: [
+              "72. How to Use GitHub Copilot and Bring Its AI Power to Your Automation Framework",
+              "73. Introduction to Playwright MCP Server and how it works behind scenes with Agents",
+              "74. Integrate Playwright MCP into Copilot Agent and build tests through AI Prompts",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 15: Generate Allure Report & Implement CI/CD for Test execution using GitHub Actions",
+        levels: [
+          {
+            title: "8 lectures · 1hr 1min",
+            topics: [
+              "75. Generate HTML reports using Allure reporting for Playwright Java framework",
+              "76. Configure Allure reporting into Maven and run tests to see the HTML test results",
+              "77. Introduction to GIT & getting started to push code to remote repo",
+              "78. What are GitHub Actions and the concept of CI/CD implementation in framework",
+              "79. Understand the .yml which can implement CI/CD and run Playwright framework tests",
+              "80. Build the Choice Params & see the Demo of CI/CD implementation live for Tests",
+              "81. Wrap up - What have we implemented in designing Industry standard Framework",
+              "Quiz 3: Framework Quiz",
+            ],
+            isProject: true,
+          },
+        ],
+        projects: [
+          {
+            name: "JavaPlaywrightFramework",
+            url: "https://github.com/RomanMakarenko/JavaPlaywrightFramework",
+            description:
+              "Industry-standard Playwright Java framework built during the course: Page Object Model, TestNG data-driven testing, Maven profiles, Allure reporting, and CI/CD with GitHub Actions.",
+          },
+        ],
+      },
+      {
+        name: "Section 16: Course Code download",
+        levels: [
+          {
+            title: "1 lecture · 1min",
+            topics: [
+              "82. Code download",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Section 17: Explore & Learn Java In depth from the given video tutorials",
+        levels: [
+          {
+            title: "1 lecture · 1min",
+            topics: [
+              "83. Bonus Lecture",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: "cert-12",
     name: "Rest API Testing (Automation) from Scratch — Rest Assured Java",
     issuer: "Udemy",

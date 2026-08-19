@@ -133,6 +133,10 @@ export const TRANSLATIONS: TranslationMap = {
     en: "A comprehensive end-to-end course on REST API testing and automation with Rest Assured in Java — from API fundamentals and Postman, through response validation with JsonPath, dynamic JSON payloads, OAuth 2.0, and POJO serialization/deserialization, to building a Cucumber BDD API framework from scratch, GraphQL testing, and CI/CD integration with Jenkins.",
     uk: "Комплексний наскрізний курс з тестування та автоматизації REST API за допомогою Rest Assured на Java — від основ API та Postman, через валідацію відповідей з JsonPath, динамічні JSON-дані, OAuth 2.0 та серіалізацію/десеріалізацію POJO, до створення Cucumber BDD API фреймворку з нуля, тестування GraphQL та інтеграції CI/CD з Jenkins.",
   },
+  "cert.desc.playwright": {
+    en: "A comprehensive hands-on course on building an industry-standard Playwright automation framework in Java — from Playwright setup and browser engines, through resilient locators, auto-waits, browser contexts, and Trace Viewer, to API testing with Playwright, network interception and mocking, Page Object Model, TestNG data-driven testing, Maven profiles, Allure reporting, and CI/CD with GitHub Actions.",
+    uk: "Комплексний практичний курс зі створення індустріального фреймворку автоматизації Playwright на Java — від налаштування Playwright та браузерних движків, через надійні локатори, auto-waits, браузерні контексти та Trace Viewer, до API-тестування з Playwright, перехоплення та мокування мережевих запитів, Page Object Model, data-driven тестування з TestNG, Maven profiles, Allure звітів та CI/CD з GitHub Actions.",
+  },
 
   // Certificate names
   "cert.name.genai": {
@@ -182,6 +186,10 @@ export const TRANSLATIONS: TranslationMap = {
   "cert.name.restassured": {
     en: "Rest API Testing (Automation) from Scratch — Rest Assured Java",
     uk: "Тестування REST API (Автоматизація) з нуля — Rest Assured Java",
+  },
+  "cert.name.playwright": {
+    en: "Playwright JAVA Automation Testing - From Basics to Framework",
+    uk: "Playwright JAVA автоматизація тестування - від основ до фреймворку",
   },
 
   // Month translations for dates
