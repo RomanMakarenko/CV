@@ -103,8 +103,24 @@ function LevelList({ course }: { course: CourseInProgress }) {
                         key={pIdx}
                         className="overflow-hidden rounded-xl border border-border/20 bg-card transition-all hover:border-accent/30 hover:shadow-md"
                       >
-                        {/* Screenshot */}
-                        {project.image && (
+                        {/* Screenshot(s) */}
+                        {project.images && project.images.length > 0 ? (
+                          <div className="grid grid-cols-2 gap-1.5">
+                            {project.images.map((img, i) => (
+                              <div
+                                key={i}
+                                className="aspect-video w-full overflow-hidden bg-muted"
+                              >
+                                <img
+                                  src={img}
+                                  alt={`${project.name} ${i + 1}`}
+                                  className="h-full w-full object-cover transition-transform hover:scale-105"
+                                  loading="lazy"
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        ) : project.image ? (
                           <div className="aspect-video w-full overflow-hidden bg-muted">
                             <img
                               src={project.image}
@@ -113,7 +129,7 @@ function LevelList({ course }: { course: CourseInProgress }) {
                               loading="lazy"
                             />
                           </div>
-                        )}
+                        ) : null}
                         {/* Info */}
                         <div className="p-3">
                           <h4 className="text-sm font-semibold leading-snug">
@@ -133,15 +149,17 @@ function LevelList({ course }: { course: CourseInProgress }) {
                               <ExternalLink className="h-3 w-3" />
                               Play
                             </a>
-                            <a
-                              href={project.sourceUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1 rounded-lg bg-muted/30 px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
-                            >
-                              <Github className="h-3 w-3" />
-                              Code
-                            </a>
+                            {project.sourceUrl && (
+                              <a
+                                href={project.sourceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 rounded-lg bg-muted/30 px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
+                              >
+                                <Github className="h-3 w-3" />
+                                Code
+                              </a>
+                            )}
                           </div>
                         </div>
                       </div>

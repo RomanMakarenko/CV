@@ -2,8 +2,9 @@ export interface ProjectLink {
   name: string;
   description: string;
   image?: string;
+  images?: string[];
   url: string;
-  sourceUrl: string;
+  sourceUrl?: string;
 }
 
 export interface CourseInProgress {
@@ -32,7 +33,7 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
     startDate: "Jun 2026",
     endDate: "Sep 2026",
     totalLevels: 34,
-    completedLevels: 18,
+    completedLevels: 21,
     description:
       "Курс з Claude Code для розробників, які хочуть працювати швидше — без втрати контролю над кодом. Навчіться ставити завдання інженерно, керувати контекстом, будувати агентні пайплайни, підключати зовнішні інструменти через MCP і автоматизувати CI/CD. Жодної магії, лише інженерний підхід до розробки з AI-підтримкою.",
     levels: [
@@ -193,6 +194,18 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 17,
         title: "Issue-to-PR workflow: аналіз задачі, planning і decomposition",
+        projects: [
+          {
+            name: "AleksSamArt",
+            description:
+              "Багатомовне портфоліо художниці-портретистки (олівцеві портрети знаменитостей та портрети на замовлення). Сайт із формою замовлення власного портрета — вибір формату, тарифу та завантаження фото, 10 мов, посилання на соцмережі. Побудовано на Astro.",
+            images: [
+              "/certificates/alekssamart-1.png",
+              "/certificates/alekssamart-2.png",
+            ],
+            url: "https://alekssamart.netlify.app/",
+          },
+        ],
       },
       {
         number: 18,

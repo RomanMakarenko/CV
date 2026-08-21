@@ -177,6 +177,11 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Issue-to-PR workflow: task analysis, planning, and decomposition",
     uk: "Issue-to-PR workflow: аналіз задачі, planning і decomposition",
   },
+  "cc.course-ai-university.l17.p0.name": { en: "AleksSamArt", uk: "AleksSamArt" },
+  "cc.course-ai-university.l17.p0.desc": {
+    en: "Multilingual portfolio for a pencil-portrait artist (celebrity portraits and custom commissions). Features an order form for a custom portrait — choosing format, price tier, and photo upload — 10 languages, and links to social media. Built with Astro.",
+    uk: "Багатомовне портфоліо художниці-портретистки (олівцеві портрети знаменитостей та портрети на замовлення). Сайт із формою замовлення власного портрета — вибір формату, тарифу та завантаження фото, 10 мов, посилання на соцмережі. Побудовано на Astro.",
+  },
   // Level 18
   "cc.course-ai-university.l18.title": {
     en: "Controlled implementation, debugging, commits, PR, and code review",
