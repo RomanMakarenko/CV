@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/constants";
+
+// Fixed header offset — matches `scroll-padding-top: 5rem` in src/index.css
+const NAV_OFFSET = 80;
 import { useLanguage } from "@/lib/i18n";
 import ThemeToggle from "./ThemeToggle";
 import LanguageToggle from "./LanguageToggle";
@@ -12,6 +15,29 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const { t } = useLanguage();
+
+  const handleMobileNavClick = (
+    e: MouseEvent<HTMLAnchorElement>,
+    link: string
+  ) => {
+    e.preventDefault();
+    setIsOpen(false);
+    history.pushState(null, "", link);
+    const el = document.querySelector(link);
+    if (!el) return;
+    const targetTop =
+      el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+    // Defer to the next frame (same as the working reload path in App.tsx) and
+    // force an instant, un-interruptible jump: some mobile/emulated browsers
+    // swallow smooth scrolls that start while the menu's exit animation runs.
+    requestAnimationFrame(() => {
+      const html = document.documentElement;
+      const prev = html.style.scrollBehavior;
+      html.style.scrollBehavior = "auto";
+      window.scrollTo(0, targetTop);
+      html.style.scrollBehavior = prev;
+    });
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -141,7 +167,7 @@ export default function Navbar() {
                 <a
                   key={item.link}
                   href={item.link}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleMobileNavClick(e, item.link)}
                   className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
                     activeSection === item.link
                       ? "bg-accent/10 text-accent"

@@ -1,2 +1,10 @@
-додай в верхній блок Playwright про який блок йдеться вказано на скріншоті /Users/romanmakarenko/Documents/code/CV/Screenshot 2026-08-19 at 18.13.36.png
-додай Playwright в блок Фреймворки автоматизації /Users/romanmakarenko/Documents/code/CV/Screenshot 2026-08-19 at 18.19.34.pn
+потрібно виправити багу
+опис - на мобільних пристроях є бургер меню з навігацію яка не працює
+STEPS TO REPRODUCE:
+open on mobile view
+click on burger menu icon
+select any menu item
+Actual result:
+menu just closed
+Expected result:
+menu closed but content scrolled to the choosen section
