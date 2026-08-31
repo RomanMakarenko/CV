@@ -28,6 +28,7 @@ const CERT_NAME_KEYS: Record<string, string> = {
   "cert-11": "cert.name.seleniumCucumber",
   "cert-12": "cert.name.restassured",
   "cert-13": "cert.name.playwright",
+  "cert-14": "cert.name.qaFromScratch2026",
 };
 
 export function getCertNameKey(certId: string): string | undefined {

@@ -191,6 +191,17 @@ export const TRANSLATIONS: TranslationMap = {
     en: "Playwright JAVA Automation Testing - From Basics to Framework",
     uk: "Playwright JAVA автоматизація тестування - від основ до фреймворку",
   },
+  "cert.name.qaFromScratch2026": {
+    en: "QA Tester from Scratch 2026 with AI. Web/Mobile, API, Postman, SQL",
+    uk: "Тестувальник з нуля 2026 з AI. Web/Mobile, API, Postman, SQL",
+  },
+
+  "cert.desc.qaFromScratch2026": {
+    en: "A 41-hour practical QA course covering web and mobile testing, API testing with Postman, SQL, test documentation, traffic analysis, CI/CD, and AI-assisted testing.",
+    uk: "Практичний 41-годинний курс з QA, що охоплює тестування веб- і мобільних застосунків, API-тестування з Postman, SQL, тестову документацію, аналіз трафіку, CI/CD та тестування з AI.",
+  },
+
+  // Course curriculum translations live in certTranslations.ts
 
   // Month translations for dates
   "month.Jan": { en: "Jan", uk: "Січ" },

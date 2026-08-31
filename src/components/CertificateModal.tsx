@@ -147,6 +147,7 @@ const CERT_DESC_KEYS: Record<string, string> = {
   "cert-11": "cert.desc.seleniumCucumber",
   "cert-12": "cert.desc.restassured",
   "cert-13": "cert.desc.playwright",
+  "cert-14": "cert.desc.qaFromScratch2026",
 };
 
 export default function CertificateModal({ cert, onClose }: CertificateModalProps) {

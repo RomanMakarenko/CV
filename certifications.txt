@@ -9,3 +9,4 @@
 • License/Certificate: Learn Selenium with Java, Cucumber & Frameworks. Issued By: udemy. Issue Date: 17.03.2025
 • License/Certificate: Playwright JAVA Automation Testing -From Basics to Framework. Issued By: udemy. Issue Date: 19.08.2026
 • License/Certificate: Rest API Testing (Automation) from Scratch - Rest Assured Java. Issued By: udemy. Issue Date: 10.08.2026
+• License/Certificate: Тестировщик с нуля 2026 с ИИ. Web/Mobile, API, Postman, SQL. Issued By: udemy. Issue Date: 31.08.2026
