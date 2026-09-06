@@ -100,7 +100,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const cct = (key: string, fallback?: string): string => {
     const entry = COURSE_CONTENT[key];
     if (!entry) return fallback ?? key;
-    return entry[lang];
+    return entry[lang] ?? entry.en ?? fallback ?? key;
   };
 
   return (

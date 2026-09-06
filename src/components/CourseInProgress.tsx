@@ -8,7 +8,7 @@ import CourseModal from "./CourseModal";
 
 export default function CourseInProgress() {
   const [selectedCourse, setSelectedCourse] = useState<CourseInProgress | null>(null);
-  const { t, tDate } = useLanguage();
+  const { t, cct, tDate } = useLanguage();
 
   return (
     <section id="in-progress" className="section-container">
@@ -48,7 +48,7 @@ export default function CourseInProgress() {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-start justify-between gap-2">
                     <h3 className="text-sm font-medium leading-snug">
-                      {course.name}
+                      {course.nameKey ? cct(course.nameKey, course.name) : course.name}
                     </h3>
                     <ChevronRight className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground/40 transition-colors group-hover:text-accent" />
                   </div>
@@ -68,7 +68,6 @@ export default function CourseInProgress() {
                       {t("inProgress.viewCurriculum")}
                     </span>
                   </div>
-                  {/* Progress bar */}
                   <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-muted">
                     <motion.div
                       initial={{ width: 0 }}
@@ -88,7 +87,6 @@ export default function CourseInProgress() {
         })}
       </div>
 
-      {/* Modal */}
       <AnimatePresence>
         {selectedCourse && (
           <CourseModal

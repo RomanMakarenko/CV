@@ -10,10 +10,12 @@ export interface ProjectLink {
 export interface CourseInProgress {
   id: string;
   name: string;
+  nameKey?: string;
   startDate: string;
   endDate: string;
   totalLevels: number;
   completedLevels: number;
+  completedLevelNumbers?: number[];
   description: string;
   levels: CourseLevel[];
 }
@@ -27,6 +29,74 @@ export interface CourseLevel {
 
 // AI UNIVERSITY — Claude Code intensive course
 export const COURSES_IN_PROGRESS: CourseInProgress[] = [
+  {
+    id: "course-ai-academy",
+    name: "Ciklum AI Academy",
+    nameKey: "cc.course-ai-academy.name",
+    startDate: "Sep 2026",
+    endDate: "Dec 2025",
+    totalLevels: 15,
+    completedLevels: 2,
+    description:
+      "AI Academy is a mentor-led learning program covering AI fundamentals, practical GenAI tools, responsible AI, and hands-on assignments for applying AI at work.",
+    levels: [
+      {
+        number: 1,
+        title: "Basics",
+        topics: [
+          "Intro to AI world: Data Science, ML, DL and GenAI",
+          "Key Concepts in Data Science & ML",
+          "Core Concepts & Terminology in GenAI",
+          "AI Tools & Productivity",
+          "GenAI in the SDLC",
+          "Enterprise Data Privacy",
+        ],
+        projects: [
+          {
+            name: "Step 1: Local AI setup",
+            description:
+              "Set up LM Studio locally with Llama 3.2 3B Instruct and verify prompts with images and files.",
+            image: "/homework/ai-academy-step-1.png",
+            url: "/homework/ai-academy-step-1.png",
+          },
+          {
+            name: "Step 2: Custom Assistant",
+            description:
+              "Create a CustomGPT or Gemini Gem, upload a document, configure instructions, and test questions about its content.",
+            image: "/homework/ai-academy-step-2.png",
+            url: "/homework/ai-academy-step-2.png",
+          },
+        ],
+      },
+      {
+        number: 2,
+        title: "No/Low Code for GenAI",
+        topics: ["Vibe Coding platforms: Lovable, Lyzr, n8n, Firebase, Bolt"],
+        projects: [
+          {
+            name: "Bonus: Vibe Coding with Lovable",
+            description:
+              "Build and publish QA Career Development Tracker with Lovable — an interactive roadmap from Beginner QA to Senior/Expert, with paths into Manual QA, Automation, API, SDET, Mobile, Performance, QA Lead, Test Architect, and QA Manager.",
+            image: "/homework/ai-academy-bonus.png",
+            url: "https://evolve-qa.lovable.app/",
+          },
+        ],
+      },
+      { number: 3, title: "Neural Networks", topics: ["Intro: neurons, neural networks, learning in machines, use cases", "Architecture: activations, weights, bias, quantization, training, testing, inference, and visualizations"] },
+      { number: 4, title: "LLMs & LMMs", topics: ["LLM overview and use cases", "How LLMs are built: transformers, attention, and the mathematics behind LLMs", "Architecture, fine-tuning, inference, operations, context windows, and token budgets", "Models and services overview: text, reasoning, and multimodal models"] },
+      { number: 5, title: "RAG", topics: ["RAG fundamentals, use cases, and limitations", "Embeddings, semantic distance, vector databases, and graph databases", "Data chunking, advanced retrieval, tool use, reasoning, context awareness, history management, and token budgets", "Productized and enterprise RAG: repositories, products, limitations, and considerations"] },
+      { number: 6, title: "Agentic AI", topics: ["Agentic AI definition and landscape", "Agentic workflow orchestration platforms and use cases", "Agentic architecture: design patterns, perception, reasoning, actions, interfaces, protocols, scalability, security, performance, observability, MCP, and A2A"] },
+      { number: 7, title: "Coding with AI", topics: ["GenAI tools for developers: Copilot, Sourcegraph, CustomGPT, Cursor, and Vibe Coding"] },
+      { number: 8, title: "No/Low Code for GenAI: Conversational Agents", topics: ["Kore.ai, Boost.ai, and challenges in conversational AI"] },
+      { number: 9, title: "Cloud", topics: ["Azure AI Services", "AWS AI Services", "Google AI Services"] },
+      { number: 10, title: "Responsible AI and privacy", topics: ["Data privacy in GenAI", "Responsible AI", "Ethical considerations"] },
+      { number: 11, title: "AI in software delivery", topics: ["Modern approaches to working with documentation, backlogs, and code"] },
+      { number: 12, title: "Advanced AI systems", topics: ["Deep learning, LLM operations, RAG architecture, and agent design patterns"] },
+      { number: 13, title: "AI services and integration", topics: ["Practical use of AI services and integration patterns for engineering teams"] },
+      { number: 14, title: "Practical application", topics: ["Apply AI tools to real-world work scenarios and document the takeaways"] },
+      { number: 15, title: "Final learning journey", topics: ["Consolidate learning, practical assignments, and next steps for continued AI adoption"] },
+    ],
+  },
   {
     id: "course-ai-university",
     name: "AI UNIVERSITY",
