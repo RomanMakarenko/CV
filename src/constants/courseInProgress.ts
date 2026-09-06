@@ -5,6 +5,8 @@ export interface ProjectLink {
   images?: string[];
   url: string;
   sourceUrl?: string;
+  isDocument?: boolean;
+  urlUk?: string;
 }
 
 export interface CourseInProgress {
@@ -36,7 +38,8 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
     startDate: "Sep 2026",
     endDate: "Dec 2025",
     totalLevels: 15,
-    completedLevels: 2,
+    completedLevels: 3,
+    completedLevelNumbers: [1, 2, 3],
     description:
       "AI Academy is a mentor-led learning program covering AI fundamentals, practical GenAI tools, responsible AI, and hands-on assignments for applying AI at work.",
     levels: [
@@ -82,7 +85,29 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
           },
         ],
       },
-      { number: 3, title: "Neural Networks", topics: ["Intro: neurons, neural networks, learning in machines, use cases", "Architecture: activations, weights, bias, quantization, training, testing, inference, and visualizations"] },
+      {
+        number: 3,
+        title: "Neural Networks",
+        topics: [
+          "Intro: neurons, neural networks, learning in machines, use cases",
+          "Architecture: activations, weights, bias, quantization, training, testing, inference, and visualizations",
+        ],
+        projects: [
+          {
+            name: "Module 2: Neural Networks",
+            description:
+              "Explore TensorFlow Neural Network Playground with Spiral classification. Compare 1×4 ReLU, 3×8 ReLU, and 3×8 Sigmoid networks, then interpret training and test loss to observe the impact of architecture and activation functions.",
+            images: [
+              "/homework/neural-network-1.png",
+              "/homework/neural-network-2.png",
+              "/homework/neural-network-3.png",
+            ],
+            url: "/homework/neural-network-playground-en.md",
+            urlUk: "/homework/neural-network-playground.md",
+            isDocument: true,
+          },
+        ],
+      },
       { number: 4, title: "LLMs & LMMs", topics: ["LLM overview and use cases", "How LLMs are built: transformers, attention, and the mathematics behind LLMs", "Architecture, fine-tuning, inference, operations, context windows, and token budgets", "Models and services overview: text, reasoning, and multimodal models"] },
       { number: 5, title: "RAG", topics: ["RAG fundamentals, use cases, and limitations", "Embeddings, semantic distance, vector databases, and graph databases", "Data chunking, advanced retrieval, tool use, reasoning, context awareness, history management, and token budgets", "Productized and enterprise RAG: repositories, products, limitations, and considerations"] },
       { number: 6, title: "Agentic AI", topics: ["Agentic AI definition and landscape", "Agentic workflow orchestration platforms and use cases", "Agentic architecture: design patterns, perception, reasoning, actions, interfaces, protocols, scalability, security, performance, observability, MCP, and A2A"] },
