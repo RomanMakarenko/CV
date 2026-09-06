@@ -73,6 +73,8 @@ export const TRANSLATIONS: TranslationMap = {
   "inProgress.viewCurriculum": { en: "View curriculum", uk: "Програма" },
   "inProgress.curriculum": { en: "Curriculum", uk: "Програма навчання" },
   "inProgress.level": { en: "Level", uk: "Рівень" },
+  "inProgress.play": { en: "Play", uk: "Відкрити" },
+  "inProgress.viewWork": { en: "View work", uk: "Переглянути роботу" },
 
   // Certifications
   "certifications.title": { en: "Certifications", uk: "Сертифікації" },

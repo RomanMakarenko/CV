@@ -18,7 +18,7 @@ interface CourseModalProps {
 }
 
 function LevelList({ course }: { course: CourseInProgress }) {
-  const { t, cct } = useLanguage();
+  const { lang, t, cct } = useLanguage();
 
   return (
     <div className="space-y-1">
@@ -108,12 +108,22 @@ function LevelList({ course }: { course: CourseInProgress }) {
                           </div>
                         ) : null}
                         <div className="p-3">
-                          <h4 className="text-sm font-semibold leading-snug">{project.name}</h4>
-                          <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground/80">{project.description}</p>
+                          <h4 className="text-sm font-semibold leading-snug">
+                            {cct(
+                              `cc.${course.id}.l${level.number}.p${pIdx}.name`,
+                              project.name,
+                            )}
+                          </h4>
+                          <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground/80">
+                            {cct(
+                              `cc.${course.id}.l${level.number}.p${pIdx}.desc`,
+                              project.description,
+                            )}
+                          </p>
                           <div className="mt-2.5 flex items-center gap-2.5">
-                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-lg bg-accent/10 px-2.5 py-1 text-[11px] font-medium text-accent transition-colors hover:bg-accent/20">
+                            <a href={lang === "uk" && project.urlUk ? project.urlUk : project.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-lg bg-accent/10 px-2.5 py-1 text-[11px] font-medium text-accent transition-colors hover:bg-accent/20">
                               <ExternalLink className="h-3 w-3" />
-                              Play
+                              {project.isDocument ? t("inProgress.viewWork") : t("inProgress.play")}
                             </a>
                             {project.sourceUrl && (
                               <a href={project.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-lg bg-muted/30 px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground">

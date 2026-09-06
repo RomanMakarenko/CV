@@ -287,6 +287,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
   "cc.course-ai-academy.l3.title": { en: "Neural Networks", uk: "Нейронні мережі" },
   "cc.course-ai-academy.l3.t0": { en: "Intro: neurons, neural networks, learning in machines, use cases", uk: "Вступ: нейрони, нейронні мережі, навчання машин і приклади застосування" },
   "cc.course-ai-academy.l3.t1": { en: "Architecture: activations, weights, bias, quantization, training, testing, inference, and visualizations", uk: "Архітектура: функції активації, ваги, зміщення, квантування, навчання, тестування, інференс і візуалізації" },
+  "cc.course-ai-academy.l3.p0.name": {
+    en: "Module 2: Neural Networks",
+    uk: "Модуль 2: Нейронні мережі",
+  },
+  "cc.course-ai-academy.l3.p0.desc": {
+    en: "Explore TensorFlow Neural Network Playground with Spiral classification. Compare 1×4 ReLU, 3×8 ReLU, and 3×8 Sigmoid networks, and interpret training and test loss to observe the impact of network architecture and activation functions.",
+    uk: "Дослідження TensorFlow Neural Network Playground із класифікацією Spiral. Порівняння мереж 1×4 ReLU, 3×8 ReLU та 3×8 Sigmoid і аналіз training та test loss, щоб спостерігати вплив архітектури мережі й функцій активації.",
+  },
   "cc.course-ai-academy.l4.title": { en: "LLMs & LMMs", uk: "LLM та LMM" },
   "cc.course-ai-academy.l4.t0": { en: "LLM overview and use cases", uk: "Огляд LLM і приклади їх застосування" },
   "cc.course-ai-academy.l4.t1": { en: "How LLMs are built: transformers, attention, and the mathematics behind LLMs", uk: "Як створюються LLM: трансформери, механізм уваги та математика, що лежить в основі LLM" },
