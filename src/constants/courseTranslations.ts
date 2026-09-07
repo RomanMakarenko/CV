@@ -295,6 +295,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Explore TensorFlow Neural Network Playground with Spiral classification. Compare 1×4 ReLU, 3×8 ReLU, and 3×8 Sigmoid networks, and interpret training and test loss to observe the impact of network architecture and activation functions.",
     uk: "Дослідження TensorFlow Neural Network Playground із класифікацією Spiral. Порівняння мереж 1×4 ReLU, 3×8 ReLU та 3×8 Sigmoid і аналіз training та test loss, щоб спостерігати вплив архітектури мережі й функцій активації.",
   },
+  "cc.course-ai-academy.l3.p1.name": {
+    en: "Practical Work 2: PyTorch Neural Network",
+    uk: "Практична робота №2: нейронна мережа на PyTorch",
+  },
+  "cc.course-ai-academy.l3.p1.desc": {
+    en: "Build and train a feedforward PyTorch classifier on a synthetic Two Moons dataset. Document preprocessing, the 2 → 16 → 8 → 1 MLP architecture, evaluation, sample inference, and reflection.",
+    uk: "Створення та навчання feedforward-класифікатора на PyTorch для синтетичного датасету Two Moons із документацією підготовки даних, архітектури MLP 2 → 16 → 8 → 1, оцінювання, інференсу та рефлексії.",
+  },
   "cc.course-ai-academy.l4.title": { en: "LLMs & LMMs", uk: "LLM та LMM" },
   "cc.course-ai-academy.l4.t0": { en: "LLM overview and use cases", uk: "Огляд LLM і приклади їх застосування" },
   "cc.course-ai-academy.l4.t1": { en: "How LLMs are built: transformers, attention, and the mathematics behind LLMs", uk: "Як створюються LLM: трансформери, механізм уваги та математика, що лежить в основі LLM" },
