@@ -28,6 +28,166 @@ export interface Certification {
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    id: "cert-15",
+    name: "Test AI Agents, Chatbots & RAG Apps with DeepEval using Metrics, Tracing, Goldens, Safety Evals & G-Eval Custom Metrics",
+    issuer: "Udemy",
+    date: "Sep 2026",
+    image: "/certificates/UC-06558bba-1045-43e3-a829-9807f8c336ae.jpg",
+    description:
+      "An 8-hour practical course on testing AI agents, chatbots, and RAG applications with DeepEval metrics, tracing, golden datasets, safety evaluations, and custom G-Eval metrics.",
+    modules: [
+      {
+        name: "Section 1: AI Testing Fundamentals: Thinking Beyond Traditional QA",
+        levels: [{
+          title: "5 lectures · 24 min",
+          topics: [
+            "1. Welcome to the Course - What this course is about?",
+            "2. What exactly is Testing AI? How different it is from Traditional testing",
+            "3. How to validate non Deterministic output AI Systems - Shift in testing mindset",
+            "4. Introduction to DeepEval and its core capabilities for evaluating AI Systems",
+            "Quiz 1: Quiz - Test your knowledge",
+          ],
+        }],
+      },
+      {
+        name: "Section 2: DeepEval Setup & Building Your First AI Testing Project",
+        levels: [{
+          title: "4 lectures · 30 min",
+          topics: [
+            "5. Download Dev and Testing Project codebase discussed in this course",
+            "6. Install PyCharm and configure AI Agents Project with necessary packages install",
+            "7. Understand the Demo of one of the AI Agents Project used for Testing",
+            "8. Setup the LLM Keys to make Agents work - Claude & OpenAI",
+          ],
+          isProject: true,
+        }],
+        projects: [{
+          name: "DeepEval Agent Demo",
+          url: "https://github.com/RomanMakarenko/deepeval-agent-demo",
+          description: "DeepEval project for testing AI agents, chatbots, and RAG applications with metrics, tracing, goldens, safety evaluations, and custom G-Eval metrics.",
+        }],
+      },
+      {
+        name: "Section 3: Evaluating AI Agents with DeepEval Metrics & Golden Datasets",
+        levels: [{
+          title: "6 lectures · 1 hr 7 min",
+          topics: [
+            "9. DeepEvals TaskCompletion Metric to evaluate the AI Agent - Blackbox Testing",
+            "10. Understand reading the result reports from Confident AI - Deep evals Integration",
+            "11. Important Notes",
+            "12. Agents Component Testing overview - Understand internal workflow",
+            "13. Goldens - Data sets to evaluate AI Systems and Importance to evals_Iterator",
+            "14. Implement Tracing with in Test file for smart Agent calling & track workflow",
+          ],
+        }],
+      },
+      {
+        name: "Section 4: Testing AI Agent Internals: Traces, Components & Root Cause Analysis",
+        levels: [{
+          title: "3 lectures · 42 min",
+          topics: [
+            "15. When to use Component test Tracing type ? & When to go for LLMTestCase style",
+            "16. Understand how DeepEvals reports fail reason if AI Agents are not up to quality",
+            "17. Another Metric example in Component/Trace level to test AI Agents internal flow",
+          ],
+        }],
+      },
+      {
+        name: "Section 5: ⚙️ Building Custom AI Evaluation Metrics with G-Eval",
+        levels: [{
+          title: "4 lectures · 30 min",
+          topics: [
+            "18. How to build Custom Metrics with DeepEvals - Intro to GEval Class",
+            "19. Merge multiple Metrics into Single Test file with end to end Agent Testing",
+            "20. Demo of building custom Faithfulness Metric using Geval to evaluate the Agents",
+            "Quiz 2: Quiz - Check your knowledge",
+          ],
+        }],
+      },
+      {
+        name: "Section 6: Testing Multi-Turn Chatbots & Conversational AI Systems",
+        levels: [{
+          title: "6 lectures · 43 min",
+          topics: [
+            "21. How to validate Multi Turn AI conversations such as Chatbot etc? - Overview",
+            "22. Build Turns list object to track conversations and evaluate the Chatbot Metrics",
+            "23. End to end demo of Multi conversational Agents validation with Deep evals",
+            "24. Explore other Standard Deep evals Metrics to test Chatbot similar AI Apps",
+            "25. Build Custom Metrics to validate Chatbot AI Systems using GEval - Example demo",
+            "Quiz 3: Quiz - Test your knowledge",
+          ],
+        }],
+      },
+      {
+        name: "Section 7: Testing RAG Applications: Retrieval Quality & Response Accuracy",
+        levels: [{
+          title: "6 lectures · 1 hr 10 min",
+          topics: [
+            "26. What are RAG Agents? How different they are from Traditional AI Agents?",
+            "27. Get demo of RAG App used for testing & compare it with AI Agent demo app",
+            "28. RAG Metrics - Contextual Precision Metric to validate RAG Agent output quality",
+            "29. Demo example of validating RAG Agents with standard Deep eval Metric methods",
+            "30. RAG Metrics - Contextual Recall Metric to validate RAG Agent retrieval quality",
+            "Quiz 4: Quiz - Test your knowledge",
+          ],
+        }],
+      },
+      {
+        name: "Section 8: Synthetic Data Generation & AI Safety Testing",
+        levels: [{
+          title: "5 lectures · 33 min",
+          topics: [
+            "31. What is Synthetic Data Generation and how it helps to generate goldens",
+            "32. Demo example of Data Generation technique implementation in Deep Evals Tests",
+            "33. Deep Evals Safety Metrics demonstration with data generation capability",
+            "34. Wrap up - What did we learn from this course? Next steps",
+            "35. Resume skills what you can add from from this course",
+          ],
+        }],
+      },
+      {
+        name: "Section 9: Final Exam - Assess your knowledge",
+        levels: [{
+          title: "2 lectures · 1 min",
+          topics: [
+            "Quiz 5: Quiz - MCQ's",
+            "36. AI Testing Interview Questions download",
+          ],
+        }],
+      },
+      {
+        name: "Section 10: Optional - Learn Python Fundamentals with examples",
+        levels: [{
+          title: "14 lectures · 2 hr 4 min",
+          topics: [
+            "37. Python hello world Program with Basics",
+            "38. Datatypes in python and how to get the Type at run time",
+            "39. List Datatype and its operations to manipulate",
+            "40. Tuple and Dictionary Data types in Python with examples",
+            "41. If else condition in python with working examples",
+            "42. How to Create Dictionaries at run time and add data into it",
+            "43. How loops work in Python and importance of code idendation",
+            "44. Programming examples using for loop - 1",
+            "45. Programming examples using While loop - 2",
+            "46. What are functions? How to use them in Python",
+            "47. OOPS Principles : Classes and objects in Python",
+            "48. What is Constructor and its role in Object oriented programming",
+            "49. Inheritance concepts with examples in Python",
+            "50. Strings and its functions in python",
+          ],
+        }],
+      },
+      {
+        name: "Section 11: Bonus Lecture",
+        levels: [{
+          title: "1 lecture · 1 min",
+          topics: [
+            "51. Bonus Lecture",
+          ],
+        }],
+      },    ],
+  },
+  {
     id: "cert-14",
     name: "Тестировщик с нуля 2026 с ИИ. Web/Mobile, API, Postman, SQL",
     issuer: "Udemy",

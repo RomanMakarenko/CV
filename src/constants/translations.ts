@@ -197,10 +197,18 @@ export const TRANSLATIONS: TranslationMap = {
     en: "QA Tester from Scratch 2026 with AI. Web/Mobile, API, Postman, SQL",
     uk: "Тестувальник з нуля 2026 з AI. Web/Mobile, API, Postman, SQL",
   },
+  "cert.name.deepEval": {
+    en: "Test AI Agents, Chatbots & RAG Apps with DeepEval",
+    uk: "Тестування AI-агентів, чатботів і RAG-застосунків з DeepEval",
+  },
 
   "cert.desc.qaFromScratch2026": {
     en: "A 41-hour practical QA course covering web and mobile testing, API testing with Postman, SQL, test documentation, traffic analysis, CI/CD, and AI-assisted testing.",
     uk: "Практичний 41-годинний курс з QA, що охоплює тестування веб- і мобільних застосунків, API-тестування з Postman, SQL, тестову документацію, аналіз трафіку, CI/CD та тестування з AI.",
+  },
+  "cert.desc.deepEval": {
+    en: "An 8-hour practical course on testing AI agents, chatbots, and RAG applications with DeepEval metrics, tracing, golden datasets, safety evaluations, and custom G-Eval metrics.",
+    uk: "Практичний 8-годинний курс із тестування AI-агентів, чатботів і RAG-застосунків за допомогою метрик DeepEval, трасування, golden datasets, перевірок безпеки та власних G-Eval метрик.",
   },
 
   // Course curriculum translations live in certTranslations.ts
