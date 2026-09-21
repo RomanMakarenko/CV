@@ -138,7 +138,7 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
     startDate: "Jun 2026",
     endDate: "Sep 2026",
     totalLevels: 34,
-    completedLevels: 21,
+    completedLevels: 34,
     description:
       "Курс з Claude Code для розробників, які хочуть працювати швидше — без втрати контролю над кодом. Навчіться ставити завдання інженерно, керувати контекстом, будувати агентні пайплайни, підключати зовнішні інструменти через MCP і автоматизувати CI/CD. Жодної магії, лише інженерний підхід до розробки з AI-підтримкою.",
     levels: [
@@ -209,16 +209,6 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 4,
         title: "Критерії приймання, verification plan та анти-патерни prompting",
-        projects: [
-          {
-            name: "Haiku 50",
-            description:
-              "Мінімалістичний веб-застосунок для створення японських трирядкових віршів — хайку — через OpenAI API. Користувач вводить ключові слова, обирає мову (12 мов), регулює рівень «гостроти» (50 Васабі) та отримує унікальну хайку. Японська естетика, історія останніх 100 хайку, трирівневий захист контенту.",
-            image: "/certificates/haiku-50.png",
-            url: "https://haiku-50.onrender.com",
-            sourceUrl: "https://github.com/RomanMakarenko/haiku-50",
-          },
-        ],
       },
       {
         number: 5,
@@ -235,6 +225,16 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 8,
         title: "Інтеграції, документація та investigation через subagents",
+        projects: [
+          {
+            name: "Haiku 50",
+            description:
+              "Мінімалістичний веб-застосунок для створення японських трирядкових віршів — хайку — через OpenAI API. Користувач вводить ключові слова, обирає мову (12 мов), регулює рівень «гостроти» (50 Васабі) та отримує унікальну хайку. Японська естетика, історія останніх 100 хайку, трирівневий захист контенту.",
+            image: "/certificates/haiku-50.png",
+            url: "https://haiku-50.onrender.com",
+            sourceUrl: "https://github.com/RomanMakarenko/haiku-50",
+          },
+        ],
       },
       {
         number: 9,
@@ -293,6 +293,13 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
               "Локальний агентний пайплайн для перетворення сирцевого матеріалу на соціальний допис із людським контролем якості: специфікація → генерація чернетки → ручна перевірка та публікація. Автоматично генерується лише draft.md, публікація відбувається за явним людським схваленням, з логуванням причин відхилення.",
             url: "#",
             sourceUrl: "https://github.com/RomanMakarenko/ContentFactory",
+          },
+          {
+            name: "QA Helper Pipeline",
+            description:
+              "Доказовий напівавтоматизований процес, який перетворює тикети та затверджені вимоги на структурований пакет проєктування тестів із трасуванням. Формує сценарії для основного шляху, бізнес-правил, безпеки, негативних і граничних випадків та UI-станів, обирає техніки чорної скриньки й визначає найнижчий придатний рівень тестування — unit, API/integration, component або E2E.",
+            url: "#",
+            sourceUrl: "https://github.com/RomanMakarenko/QAHelperPipeline",
           },
         ],
       },
@@ -363,6 +370,16 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 30,
         title: "AI-native MVP: ідея, користувач, scope і специфікація",
+        projects: [
+          {
+            name: "Claude Code Guide",
+            description:
+              "Статичний двомовний навчальний сайт про професійне використання Claude Code як інженерного робочого середовища. Містить 34 рівні навчання, каталог задач і артефактів, пошук, українську та англійську локалізацію і структуровану навігацію.",
+            image: "/certificates/ccg.png",
+            url: "https://claudecodegide.pages.dev/",
+            sourceUrl: "https://github.com/RomanMakarenko/ClaudeCodeGide",
+          },
+        ],
       },
       {
         number: 31,

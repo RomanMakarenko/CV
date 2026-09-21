@@ -76,14 +76,6 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Acceptance criteria, verification plan, and anti-patterns of prompting",
     uk: "Критерії приймання, verification plan та анти-патерни prompting",
   },
-  "cc.course-ai-university.l4.p0.name": {
-    en: "Haiku 50",
-    uk: "Haiku 50",
-  },
-  "cc.course-ai-university.l4.p0.desc": {
-    en: "A minimalist web application for generating Japanese three-line poems — haiku — via the OpenAI API. The user enters keywords, selects a language (12 languages), adjusts the spice level (50 Wasabi), and gets a unique haiku. Japanese aesthetics, history of the last 100 haiku, three-tier content protection.",
-    uk: "Мінімалістичний веб-застосунок для створення японських трирядкових віршів — хайку — через OpenAI API. Користувач вводить ключові слова, обирає мову (12 мов), регулює рівень «гостроти» (50 Васабі) та отримує унікальну хайку. Японська естетика, історія останніх 100 хайку, трирівневий захист контенту.",
-  },
   // Level 5
   "cc.course-ai-university.l5.title": {
     en: "Context operational model: what Claude knows and how to manage it",
@@ -103,6 +95,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
   "cc.course-ai-university.l8.title": {
     en: "Integrations, documentation, and investigation via subagents",
     uk: "Інтеграції, документація та investigation через subagents",
+  },
+  "cc.course-ai-university.l8.p0.name": {
+    en: "Haiku 50",
+    uk: "Haiku 50",
+  },
+  "cc.course-ai-university.l8.p0.desc": {
+    en: "A minimalist web application for generating Japanese three-line poems — haiku — via the OpenAI API. The user enters keywords, selects a language (12 languages), adjusts the spice level (50 Wasabi), and gets a unique haiku. Japanese aesthetics, history of the last 100 haiku, three-tier content protection.",
+    uk: "Мінімалістичний веб-застосунок для створення японських трирядкових віршів — хайку — через OpenAI API. Користувач вводить ключові слова, обирає мову (12 мов), регулює рівень «гостроти» (50 Васабі) та отримує унікальну хайку. Японська естетика, історія останніх 100 хайку, трирівневий захист контенту.",
   },
   // Level 9
   "cc.course-ai-university.l9.title": {
@@ -180,6 +180,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "A local agent pipeline for transforming raw material into a social media post with human quality control: specification → draft generation → manual review and publication. Only draft.md is generated automatically; publication takes place only after explicit human approval, with the reasons for rejection logged.",
     uk: "Локальний агентний пайплайн для перетворення сирцевого матеріалу на соціальний допис із людським контролем якості: специфікація → генерація чернетки → ручна перевірка та публікація. Автоматично генерується лише draft.md, публікація відбувається за явним людським схваленням, з логуванням причин відхилення.",
   },
+  "cc.course-ai-university.l16.p1.name": {
+    en: "QA Helper Pipeline",
+    uk: "QA Helper Pipeline",
+  },
+  "cc.course-ai-university.l16.p1.desc": {
+    en: "An evidence-driven semi-automated workflow that transforms tickets and approved requirements into traceable test-design packages. It generates scenarios for happy paths, business rules, security, negative and edge cases, and UI states, selects black-box techniques, and identifies the lowest suitable test layer — unit, API/integration, component, or E2E.",
+    uk: "Доказовий напівавтоматизований процес, який перетворює тикети та затверджені вимоги на структурований пакет проєктування тестів із трасуванням. Формує сценарії для основного шляху, бізнес-правил, безпеки, негативних і граничних випадків та UI-станів, обирає техніки чорної скриньки й визначає найнижчий придатний рівень тестування — unit, API/integration, component або E2E.",
+  },
   // Level 17
   "cc.course-ai-university.l17.title": {
     en: "Issue-to-PR workflow: task analysis, planning, and decomposition",
@@ -254,6 +262,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
   "cc.course-ai-university.l30.title": {
     en: "AI-native MVP: idea, user, scope, and specification",
     uk: "AI-native MVP: ідея, користувач, scope і специфікація",
+  },
+  "cc.course-ai-university.l30.p0.name": {
+    en: "Claude Code Guide",
+    uk: "Claude Code Guide",
+  },
+  "cc.course-ai-university.l30.p0.desc": {
+    en: "A bilingual static learning website about using Claude Code as a disciplined engineering workspace. It includes 34 learning levels, task and artifact catalogs, search, Ukrainian and English localization, and structured navigation.",
+    uk: "Статичний двомовний навчальний сайт про професійне використання Claude Code як інженерного робочого середовища. Містить 34 рівні навчання, каталог задач і артефактів, пошук, українську та англійську локалізацію і структуровану навігацію.",
   },
   // Level 31
   "cc.course-ai-university.l31.title": {
