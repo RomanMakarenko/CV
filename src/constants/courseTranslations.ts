@@ -172,6 +172,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Parallel work, agent pipelines, checkpoints, and metrics",
     uk: "Паралельна робота, agent pipelines, checkpoints і метрики",
   },
+  "cc.course-ai-university.l16.p0.name": {
+    en: "Content Factory",
+    uk: "Content Factory",
+  },
+  "cc.course-ai-university.l16.p0.desc": {
+    en: "A local agent pipeline for transforming raw material into a social media post with human quality control: specification → draft generation → manual review and publication. Only draft.md is generated automatically; publication takes place only after explicit human approval, with the reasons for rejection logged.",
+    uk: "Локальний агентний пайплайн для перетворення сирцевого матеріалу на соціальний допис із людським контролем якості: специфікація → генерація чернетки → ручна перевірка та публікація. Автоматично генерується лише draft.md, публікація відбувається за явним людським схваленням, з логуванням причин відхилення.",
+  },
   // Level 17
   "cc.course-ai-university.l17.title": {
     en: "Issue-to-PR workflow: task analysis, planning, and decomposition",
