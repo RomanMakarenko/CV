@@ -28,6 +28,147 @@ export interface Certification {
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    id: "cert-16",
+    name: "Learn Playwright with TypeScript (Web & API Testing)",
+    issuer: "Udemy",
+    date: "Sep 2026",
+    description:
+      "A comprehensive Playwright course with TypeScript covering web and API automation, advanced browser testing, AI-powered agents, accessibility, visual and database testing, framework development, Docker, and Jenkins CI/CD.",
+    modules: [
+      {
+        name: "Section 1: Introduction to Playwright and TypeScript",
+        levels: [{
+          title: "1 lecture · 1 hr 4 min",
+          topics: ["1. Introduction (1 hr 4 min)"],
+        }],
+      },
+      {
+        name: "Section 2: TypeScript Programming",
+        levels: [{
+          title: "16 lectures · 20 hr 25 min",
+          topics: [
+            "2. Introduction to TypeScript & Setup Environment (53 min)",
+            "3. TypeScript Variables (1 hr 21 min)",
+            "4. Data Types in TypeScript (1 hr 18 min)",
+            "5. Operators in TypeScript (1 hr 3 min)",
+            "6. Conditional Statements (55 min)",
+            "7. Loops in TypeScript (1 hr 17 min)",
+            "8. Functions - Part1 (1 hr 25 min)",
+            "9. Functions - Part 2 (1 hr 28 min)",
+            "10. Arrays in TypeScript (1 hr 29 min)",
+            "11. Array Methods- Part1 (1 hr 3 min)",
+            "12. Array Methods-Part2 (1 hr 24 min)",
+            "13. Strings (58 min)",
+            "14. Objects (1 hr 43 min)",
+            "15. Read Only, Optional Properties & Overloading (1 hr 12 min)",
+            "16. Inheritance (1 hr 36 min)",
+            "17. Interface and Modules (1 hr 19 min)",
+          ],
+        }],
+      },
+      {
+        name: "Section 3: Playwright using TypeScript (End-To-End Web Automation Testing)",
+        levels: [{
+          title: "19 lectures · 31 hr 37 min",
+          topics: [
+            "18. Playwright Kick Start (2 hr 11 min)",
+            "19. Playwright locators (1 hr 52 min)",
+            "20. Filtering locators (1 hr 51 min)",
+            "21. Locating Elements using CSS Locators (1 hr 13 min)",
+            "22. Locating Elements using XPath, Operators and functions in XPath (1 hr 34 min)",
+            "23. Playwright Actions-Input Box & Radio buttons (1 hr)",
+            "24. Handle checkboxes & Form validations (1 hr 30 min)",
+            "25. Handle Dropdowns -Part 1 (1 hr 40 min)",
+            "26. Handle Dropdowns- Part 2 (1 hr 52 min)",
+            "27. Handle Web table-Part1 (1 hr 34 min)",
+            "28. Handle Web table-2 Dynamic & Pagination Tables (1 hr 51 min)",
+            "29. Handling Date Pickers (Customized Elements) (1 hr 56 min)",
+            "30. Handling Dialogs (1 hr 19 min)",
+            "31. Browser context,Fixtures & Emulation (1 hr 56 min)",
+            "32. Handle multiple tabs, File upload and download (1 hr 53 min)",
+            "33. Handling Mouse and Keyboard actions (1 hr 57 min)",
+            "34. Scrolling techniques (1 hr 39 min)",
+            "35. Handle Shadow DOM & SVG Elements (1 hr 23 min)",
+            "36. Handle frames (1 hr 27 min)",
+          ],
+        }],
+      },
+      {
+        name: "Section 4: Playwright Advanced Features",
+        levels: [{
+          title: "8 lectures · 13 hr 24 min",
+          topics: [
+            "37. Assertions and Autowaiting (1 hr 49 min)",
+            "38. Cookies Storage (1 hr 22 min)",
+            "39. Local & session Storage (1 hr 43 min)",
+            "40. Parameterization (Data Driven Testing with JSON, CSV & Excel Files) (1 hr 20 min)",
+            "41. Grouping Tests, Hooks, Annotations & Tagging Tests (2 hr 2 min)",
+            "42. Capture screenshots, videos, trace files and handle flaky tests (2 hr 11 min)",
+            "43. Playwright Reports & Allure Reports (1 hr 29 min)",
+            "44. Page Object Model (1 hr 28 min)",
+          ],
+        }],
+      },
+      {
+        name: "Section 5: Playwright AI Features (MCP & Test Agents - Planner, Generator & Healer)",
+        levels: [{
+          title: "2 lectures · 2 hr 40 min",
+          topics: [
+            "45. Working with Playwright MCP (Model Context Protocol) - Mini Project (1 hr 41 min)",
+            "46. Working with Playwright Agents (Planner, Generator & Healer) - Mini Project (1 hr)",
+          ],
+        }],
+      },
+      {
+        name: "Section 6: API Testing with Playwright",
+        levels: [{
+          title: "6 lectures · 9 hr 23 min",
+          topics: [
+            "47. API Testing basics (1 hr 38 min)",
+            "48. Working with Post and Get Http requests (1 hr 27 min)",
+            "49. Working with Patch, Put & Delete requests (1 hr 17 min)",
+            "50. Schema testing, File upload & Download (1 hr 5 min)",
+            "51. Mocking and Network interception (1 hr 39 min)",
+            "52. API Authentications (2 hr 18 min)",
+          ],
+        }],
+      },
+      {
+        name: "Section 7: Miscellaneous - Accessibility, Visual & Database Testing",
+        levels: [{
+          title: "3 lectures · 4 hr 45 min",
+          topics: [
+            "53. Accessibility Testing & Visual Testing Playwright (1 hr 34 min)",
+            "54. Database Testing (Validating backend Database) (1 hr 48 min)",
+            "55. Playwright Custom Fixtures (1 hr 23 min)",
+          ],
+        }],
+      },
+      {
+        name: "Section 8: AI-Powered Automation Framework Design & Development (E-Commerce Project)",
+        levels: [{
+          title: "4 lectures · 6 hr 54 min",
+          topics: [
+            "56. Exploring AI Agents & Getting started with framework (1 hr 44 min)",
+            "57. Framework Powered by AI - Part 1 (Introduction and framework components) (1 hr 47 min)",
+            "58. Framework Powered by AI - Part 2 (Generating Automation tests) (1 hr 36 min)",
+            "59. Framework Powered by AI - Part 3 (Git, GitHub & GitHub Actions) (1 hr 47 min)",
+          ],
+        }],
+      },
+      {
+        name: "Section 9: Docker Integration & Jenkins Pipeline Creation",
+        levels: [{
+          title: "2 lectures · 3 hr 11 min",
+          topics: [
+            "60. Docker Integration (1 hr 30 min)",
+            "61. Jenkins-CI-CD-Creating Pipeline (1 hr 41 min)",
+          ],
+        }],
+      },
+    ],
+  },
+  {
     id: "cert-15",
     name: "Test AI Agents, Chatbots & RAG Apps with DeepEval using Metrics, Tracing, Goldens, Safety Evals & G-Eval Custom Metrics",
     issuer: "Udemy",

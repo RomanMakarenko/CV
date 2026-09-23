@@ -1,6 +1,141 @@
 import type { Lang } from "./translations";
 
+type CertificationTranslation = { en: string; uk: string };
+type CourseSectionTranslation = {
+  name: CertificationTranslation;
+  title: CertificationTranslation;
+  topics: CertificationTranslation[];
+};
+
+const CERT16_SECTIONS: CourseSectionTranslation[] = [
+  {
+    name: { en: "Section 1: Introduction to Playwright and TypeScript", uk: "Розділ 1: Вступ до Playwright та TypeScript" },
+    title: { en: "1 lecture · 1 hr 4 min", uk: "1 лекція · 1 год 4 хв" },
+    topics: [{ en: "1. Introduction (1 hr 4 min)", uk: "1. Вступ (1 год 4 хв)" }],
+  },
+  {
+    name: { en: "Section 2: TypeScript Programming", uk: "Розділ 2: Програмування на TypeScript" },
+    title: { en: "16 lectures · 20 hr 25 min", uk: "16 лекцій · 20 год 25 хв" },
+    topics: [
+      { en: "2. Introduction to TypeScript & Setup Environment (53 min)", uk: "2. Вступ до TypeScript та налаштування середовища (53 хв)" },
+      { en: "3. TypeScript Variables (1 hr 21 min)", uk: "3. Змінні в TypeScript (1 год 21 хв)" },
+      { en: "4. Data Types in TypeScript (1 hr 18 min)", uk: "4. Типи даних у TypeScript (1 год 18 хв)" },
+      { en: "5. Operators in TypeScript (1 hr 3 min)", uk: "5. Оператори в TypeScript (1 год 3 хв)" },
+      { en: "6. Conditional Statements (55 min)", uk: "6. Умовні оператори (55 хв)" },
+      { en: "7. Loops in TypeScript (1 hr 17 min)", uk: "7. Цикли в TypeScript (1 год 17 хв)" },
+      { en: "8. Functions - Part 1 (1 hr 25 min)", uk: "8. Функції — частина 1 (1 год 25 хв)" },
+      { en: "9. Functions - Part 2 (1 hr 28 min)", uk: "9. Функції — частина 2 (1 год 28 хв)" },
+      { en: "10. Arrays in TypeScript (1 hr 29 min)", uk: "10. Масиви в TypeScript (1 год 29 хв)" },
+      { en: "11. Array Methods - Part 1 (1 hr 3 min)", uk: "11. Методи масивів — частина 1 (1 год 3 хв)" },
+      { en: "12. Array Methods - Part 2 (1 hr 24 min)", uk: "12. Методи масивів — частина 2 (1 год 24 хв)" },
+      { en: "13. Strings (58 min)", uk: "13. Рядки (58 хв)" },
+      { en: "14. Objects (1 hr 43 min)", uk: "14. Об'єкти (1 год 43 хв)" },
+      { en: "15. Read Only, Optional Properties & Overloading (1 hr 12 min)", uk: "15. Read Only, необов'язкові властивості та перевантаження (1 год 12 хв)" },
+      { en: "16. Inheritance (1 hr 36 min)", uk: "16. Наслідування (1 год 36 хв)" },
+      { en: "17. Interface and Modules (1 hr 19 min)", uk: "17. Інтерфейси та модулі (1 год 19 хв)" },
+    ],
+  },
+  {
+    name: { en: "Section 3: Playwright using TypeScript (End-To-End Web Automation Testing)", uk: "Розділ 3: Playwright із TypeScript (наскрізна автоматизація вебтестування)" },
+    title: { en: "19 lectures · 31 hr 37 min", uk: "19 лекцій · 31 год 37 хв" },
+    topics: [
+      { en: "18. Playwright Kick Start (2 hr 11 min)", uk: "18. Початок роботи з Playwright (2 год 11 хв)" },
+      { en: "19. Playwright locators (1 hr 52 min)", uk: "19. Локатори Playwright (1 год 52 хв)" },
+      { en: "20. Filtering locators (1 hr 51 min)", uk: "20. Фільтрування локаторів (1 год 51 хв)" },
+      { en: "21. Locating Elements using CSS Locators (1 hr 13 min)", uk: "21. Пошук елементів за допомогою CSS-локаторів (1 год 13 хв)" },
+      { en: "22. Locating Elements using XPath, Operators and functions in XPath (1 hr 34 min)", uk: "22. Пошук елементів за допомогою XPath, операторів і функцій XPath (1 год 34 хв)" },
+      { en: "23. Playwright Actions - Input Box & Radio Buttons (1 hr)", uk: "23. Дії Playwright: поля введення та перемикачі (1 год)" },
+      { en: "24. Handle Checkboxes & Form Validations (1 hr 30 min)", uk: "24. Робота з прапорцями та перевірка форм (1 год 30 хв)" },
+      { en: "25. Handle Dropdowns - Part 1 (1 hr 40 min)", uk: "25. Робота зі списками, що розкриваються — частина 1 (1 год 40 хв)" },
+      { en: "26. Handle Dropdowns - Part 2 (1 hr 52 min)", uk: "26. Робота зі списками, що розкриваються — частина 2 (1 год 52 хв)" },
+      { en: "27. Handle Web Table - Part 1 (1 hr 34 min)", uk: "27. Робота з вебтаблицями — частина 1 (1 год 34 хв)" },
+      { en: "28. Handle Web Table - Dynamic & Pagination Tables (1 hr 51 min)", uk: "28. Динамічні таблиці та таблиці з пагінацією (1 год 51 хв)" },
+      { en: "29. Handling Date Pickers (Customized Elements) (1 hr 56 min)", uk: "29. Робота з календарями вибору дати (кастомні елементи) (1 год 56 хв)" },
+      { en: "30. Handling Dialogs (1 hr 19 min)", uk: "30. Робота з діалоговими вікнами (1 год 19 хв)" },
+      { en: "31. Browser Context, Fixtures & Emulation (1 hr 56 min)", uk: "31. Контекст браузера, фікстури та емуляція (1 год 56 хв)" },
+      { en: "32. Handle Multiple Tabs, File Upload and Download (1 hr 53 min)", uk: "32. Робота з кількома вкладками, завантаження файлів (1 год 53 хв)" },
+      { en: "33. Handling Mouse and Keyboard Actions (1 hr 57 min)", uk: "33. Дії миші та клавіатури (1 год 57 хв)" },
+      { en: "34. Scrolling Techniques (1 hr 39 min)", uk: "34. Техніки прокручування сторінок (1 год 39 хв)" },
+      { en: "35. Handle Shadow DOM & SVG Elements (1 hr 23 min)", uk: "35. Робота з Shadow DOM та SVG-елементами (1 год 23 хв)" },
+      { en: "36. Handle Frames (1 hr 27 min)", uk: "36. Робота з фреймами (1 год 27 хв)" },
+    ],
+  },
+  {
+    name: { en: "Section 4: Playwright Advanced Features", uk: "Розділ 4: Розширені можливості Playwright" },
+    title: { en: "8 lectures · 13 hr 24 min", uk: "8 лекцій · 13 год 24 хв" },
+    topics: [
+      { en: "37. Assertions and Autowaiting (1 hr 49 min)", uk: "37. Перевірки та автоматичне очікування (1 год 49 хв)" },
+      { en: "38. Cookies Storage (1 hr 22 min)", uk: "38. Збереження cookies (1 год 22 хв)" },
+      { en: "39. Local & Session Storage (1 hr 43 min)", uk: "39. Local Storage та Session Storage (1 год 43 хв)" },
+      { en: "40. Parameterization (Data Driven Testing with JSON, CSV & Excel Files) (1 hr 20 min)", uk: "40. Параметризація та тестування на даних із JSON, CSV й Excel (1 год 20 хв)" },
+      { en: "41. Grouping Tests, Hooks, Annotations & Tagging Tests (2 hr 2 min)", uk: "41. Групування тестів, хуки, анотації та теги (2 год 2 хв)" },
+      { en: "42. Capture Screenshots, Videos, Trace Files and Handle Flaky Tests (2 hr 11 min)", uk: "42. Знімки екрана, відео, трасування та нестабільні тести (2 год 11 хв)" },
+      { en: "43. Playwright Reports & Allure Reports (1 hr 29 min)", uk: "43. Звіти Playwright та Allure (1 год 29 хв)" },
+      { en: "44. Page Object Model (1 hr 28 min)", uk: "44. Патерн Page Object Model (1 год 28 хв)" },
+    ],
+  },
+  {
+    name: { en: "Section 5: Playwright AI Features (MCP & Test Agents - Planner, Generator & Healer)", uk: "Розділ 5: AI-функції Playwright (MCP та агенти Planner, Generator і Healer)" },
+    title: { en: "2 lectures · 2 hr 40 min", uk: "2 лекції · 2 год 40 хв" },
+    topics: [
+      { en: "45. Working with Playwright MCP (Model Context Protocol) - Mini Project (1 hr 41 min)", uk: "45. Робота з Playwright MCP (Model Context Protocol) — мініпроєкт (1 год 41 хв)" },
+      { en: "46. Working with Playwright Agents (Planner, Generator & Healer) - Mini Project (1 hr)", uk: "46. Робота з агентами Playwright (Planner, Generator та Healer) — мініпроєкт (1 год)" },
+    ],
+  },
+  {
+    name: { en: "Section 6: API Testing with Playwright", uk: "Розділ 6: API-тестування з Playwright" },
+    title: { en: "6 lectures · 9 hr 23 min", uk: "6 лекцій · 9 год 23 хв" },
+    topics: [
+      { en: "47. API Testing Basics (1 hr 38 min)", uk: "47. Основи API-тестування (1 год 38 хв)" },
+      { en: "48. Working with POST and GET HTTP Requests (1 hr 27 min)", uk: "48. Робота з HTTP-запитами POST і GET (1 год 27 хв)" },
+      { en: "49. Working with PATCH, PUT & DELETE Requests (1 hr 17 min)", uk: "49. Робота із запитами PATCH, PUT та DELETE (1 год 17 хв)" },
+      { en: "50. Schema Testing, File Upload & Download (1 hr 5 min)", uk: "50. Перевірка схем, завантаження та вивантаження файлів (1 год 5 хв)" },
+      { en: "51. Mocking and Network Interception (1 hr 39 min)", uk: "51. Мокування та перехоплення мережевих запитів (1 год 39 хв)" },
+      { en: "52. API Authentications (2 hr 18 min)", uk: "52. Автентифікація в API (2 год 18 хв)" },
+    ],
+  },
+  {
+    name: { en: "Section 7: Miscellaneous - Accessibility, Visual & Database Testing", uk: "Розділ 7: Додатково — тестування доступності, візуальне тестування та бази даних" },
+    title: { en: "3 lectures · 4 hr 45 min", uk: "3 лекції · 4 год 45 хв" },
+    topics: [
+      { en: "53. Accessibility Testing & Visual Testing with Playwright (1 hr 34 min)", uk: "53. Тестування доступності та візуальне тестування з Playwright (1 год 34 хв)" },
+      { en: "54. Database Testing (Validating Backend Database) (1 hr 48 min)", uk: "54. Тестування баз даних (перевірка серверної бази даних) (1 год 48 хв)" },
+      { en: "55. Playwright Custom Fixtures (1 hr 23 min)", uk: "55. Власні фікстури Playwright (1 год 23 хв)" },
+    ],
+  },
+  {
+    name: { en: "Section 8: AI-Powered Automation Framework Design & Development (E-Commerce Project)", uk: "Розділ 8: Проєктування та розробка фреймворку автоматизації з AI (проєкт електронної комерції)" },
+    title: { en: "4 lectures · 6 hr 54 min", uk: "4 лекції · 6 год 54 хв" },
+    topics: [
+      { en: "56. Exploring AI Agents & Getting Started with Framework (1 hr 44 min)", uk: "56. Знайомство з AI-агентами та початок роботи з фреймворком (1 год 44 хв)" },
+      { en: "57. Framework Powered by AI - Part 1 (Introduction and Framework Components) (1 hr 47 min)", uk: "57. Фреймворк на базі AI — частина 1 (вступ і компоненти фреймворку) (1 год 47 хв)" },
+      { en: "58. Framework Powered by AI - Part 2 (Generating Automation Tests) (1 hr 36 min)", uk: "58. Фреймворк на базі AI — частина 2 (генерація автоматизованих тестів) (1 год 36 хв)" },
+      { en: "59. Framework Powered by AI - Part 3 (Git, GitHub & GitHub Actions) (1 hr 47 min)", uk: "59. Фреймворк на базі AI — частина 3 (Git, GitHub та GitHub Actions) (1 год 47 хв)" },
+    ],
+  },
+  {
+    name: { en: "Section 9: Docker Integration & Jenkins Pipeline Creation", uk: "Розділ 9: Інтеграція Docker та створення конвеєра Jenkins" },
+    title: { en: "2 lectures · 3 hr 11 min", uk: "2 лекції · 3 год 11 хв" },
+    topics: [
+      { en: "60. Docker Integration (1 hr 30 min)", uk: "60. Інтеграція Docker (1 год 30 хв)" },
+      { en: "61. Jenkins CI/CD - Creating a Pipeline (1 hr 41 min)", uk: "61. Jenkins CI/CD — створення конвеєра (1 год 41 хв)" },
+    ],
+  },
+];
+
+const CERT16_CONTENT = Object.fromEntries(
+  CERT16_SECTIONS.flatMap((section, moduleIndex) => [
+    [`cc.cert-16.m${moduleIndex}.name`, section.name],
+    [`cc.cert-16.m${moduleIndex}.l0.title`, section.title],
+    ...section.topics.map((topic, topicIndex) => [
+      `cc.cert-16.m${moduleIndex}.l0.t${topicIndex}`,
+      topic,
+    ]),
+  ]),
+) as Record<string, CertificationTranslation>;
+
 export const CERT_CONTENT: Record<string, { en: string; uk: string }> = {
+  ...CERT16_CONTENT,
   // ======== cert-1: GenAI & AI Agents for QA Automation ========
   "cc.cert-1.m0.name": {
     en: "Section 1: Introduction to AI Testing Terminologies",

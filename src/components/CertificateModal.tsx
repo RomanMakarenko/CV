@@ -149,6 +149,7 @@ const CERT_DESC_KEYS: Record<string, string> = {
   "cert-13": "cert.desc.playwright",
   "cert-14": "cert.desc.qaFromScratch2026",
   "cert-15": "cert.desc.deepEval",
+  "cert-16": "cert.desc.playwrightTypeScript",
 };
 
 export default function CertificateModal({ cert, onClose }: CertificateModalProps) {

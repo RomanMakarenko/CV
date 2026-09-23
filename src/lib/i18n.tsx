@@ -30,6 +30,7 @@ const CERT_NAME_KEYS: Record<string, string> = {
   "cert-13": "cert.name.playwright",
   "cert-14": "cert.name.qaFromScratch2026",
   "cert-15": "cert.name.deepEval",
+  "cert-16": "cert.name.playwrightTypeScript",
 };
 
 export function getCertNameKey(certId: string): string | undefined {

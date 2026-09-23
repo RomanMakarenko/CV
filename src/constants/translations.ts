@@ -201,6 +201,10 @@ export const TRANSLATIONS: TranslationMap = {
     en: "Test AI Agents, Chatbots & RAG Apps with DeepEval",
     uk: "Тестування AI-агентів, чатботів і RAG-застосунків з DeepEval",
   },
+  "cert.name.playwrightTypeScript": {
+    en: "Learn Playwright with TypeScript (Web & API Testing)",
+    uk: "Playwright з TypeScript (тестування Web та API)",
+  },
 
   "cert.desc.qaFromScratch2026": {
     en: "A 41-hour practical QA course covering web and mobile testing, API testing with Postman, SQL, test documentation, traffic analysis, CI/CD, and AI-assisted testing.",
@@ -209,6 +213,10 @@ export const TRANSLATIONS: TranslationMap = {
   "cert.desc.deepEval": {
     en: "An 8-hour practical course on testing AI agents, chatbots, and RAG applications with DeepEval metrics, tracing, golden datasets, safety evaluations, and custom G-Eval metrics.",
     uk: "Практичний 8-годинний курс із тестування AI-агентів, чатботів і RAG-застосунків за допомогою метрик DeepEval, трасування, golden datasets, перевірок безпеки та власних G-Eval метрик.",
+  },
+  "cert.desc.playwrightTypeScript": {
+    en: "A 93-hour course on Playwright and TypeScript, covering end-to-end web automation, API testing, AI-powered agents, accessibility, visual and database testing, framework development, Docker, and Jenkins CI/CD.",
+    uk: "93-годинний курс із Playwright та TypeScript: наскрізна автоматизація вебтестування, API-тестування, AI-агенти, тестування доступності, візуальне й баз даних, розробка фреймворків, Docker та Jenkins CI/CD.",
   },
 
   // Course curriculum translations live in certTranslations.ts
