@@ -29,6 +29,15 @@ export const TRANSLATIONS: TranslationMap = {
   "hero.letsConnect": { en: "Let's Connect", uk: "Давайте знайомитись" },
   "hero.emailMe": { en: "Email Me", uk: "Написати" },
 
+  // Interactive code showcase
+  "showcase.label": { en: "Automation stack code showcase", uk: "Демонстрація стеку автоматизації" },
+  "showcase.showSnippet": { en: "Show snippet for", uk: "Показати приклад для" },
+  "showcase.pass": { en: "Pass", uk: "Пройдено" },
+  "showcase.matched": { en: "Requirements matched", uk: "Вимоги відповідають" },
+  "showcase.contact": { en: "Contact me", uk: "Зв’язатися зі мною" },
+  "showcase.pause": { en: "Pause snippet rotation", uk: "Призупинити зміну прикладів" },
+  "showcase.resume": { en: "Resume snippet rotation", uk: "Відновити зміну прикладів" },
+
   // Experience
   "experience.title": { en: "Experience", uk: "Досвід" },
   "experience.subtitle": {

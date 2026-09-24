@@ -4,6 +4,7 @@ import { ABOUT_ME, SOCIAL_MEDIA } from "@/constants";
 import { useLanguage } from "@/lib/i18n";
 import Magnetic from "./Magnetic";
 import ResumeExport from "./ResumeExport";
+import CodeShowcase from "./CodeShowcase";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -129,54 +130,16 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right — decorative QA-themed visual */}
+          {/* Right — interactive automation stack showcase */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 30 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="hidden md:col-span-2 md:flex md:items-center md:justify-center"
+            className="mt-8 flex min-w-0 items-center justify-center md:col-span-2 md:mt-0"
           >
-            <div className="relative">
+            <div className="relative w-full min-w-0">
               <div className="cyan__gradient absolute -right-10 -top-10 h-48 w-48 rounded-full opacity-25 dark:opacity-10" />
-              <div className="relative flex flex-col items-center gap-3 rounded-2xl border border-border/40 bg-card/30 p-8 backdrop-blur-sm">
-                {/* QA-themed code block decoration */}
-                <div className="w-full space-y-1.5 font-mono text-xs">
-                  <div className="flex items-center gap-1.5 text-muted-foreground">
-                    <span className="h-2.5 w-2.5 rounded-full bg-red-400/60" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/60" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-green-400/60" />
-                  </div>
-                  <div className="mt-3 space-y-1">
-                    <div className="text-blue-400">
-                      <span className="text-muted-foreground">describe</span>{" "}
-                      <span className="text-accent">('Login Flow', ()</span>{" "}
-                      {"{"}
-                    </div>
-                    <div className="pl-3 text-muted-foreground/80">
-                      it (<span className="text-green-400/80">'should authenticate'</span>,{" "}
-                      {"{"}
-                    </div>
-                    <div className="pl-6 text-muted-foreground/60">
-                      expect(<span className="text-accent/80">result</span>).to.be.
-                      <span className="text-yellow-400/80">ok</span>;
-                    </div>
-                    <div className="pl-3 text-muted-foreground/80">{"}"});</div>
-                    <div className="text-muted-foreground">{"}"});</div>
-                  </div>
-                </div>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {["Selenium", "Appium", "Node.js", "Java", "WDIO", "Playwright", "REST Assured", "Docker"].map(
-                    (tag) => (
-                      <span
-                        key={tag}
-                        className="pill text-[11px]"
-                      >
-                        {tag}
-                      </span>
-                    )
-                  )}
-                </div>
-              </div>
+              <CodeShowcase />
             </div>
           </motion.div>
         </div>
