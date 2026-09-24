@@ -184,7 +184,7 @@ export default function CodeShowcase() {
   return (
     <div
       role="region"
-      className="relative z-10 w-full min-w-0 rounded-2xl border border-border/50 bg-card/80 p-3 shadow-2xl shadow-black/10 backdrop-blur-xl sm:p-4"
+      className="relative z-10 w-full min-w-0 rounded-2xl border border-border/50 bg-card/80 p-3 shadow-2xl shadow-black/10 backdrop-blur-xl sm:p-4 lg:flex lg:h-[510px] lg:flex-col"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onFocusCapture={() => setIsFocused(true)}
@@ -221,7 +221,7 @@ export default function CodeShowcase() {
         </span>
       </div>
 
-      <div className="overflow-hidden rounded-lg border border-border/40 bg-background/80">
+      <div className="overflow-hidden rounded-lg border border-border/40 bg-background/80 lg:min-h-0 lg:flex-1">
         <AnimatePresence mode="wait" initial={false}>
           <motion.pre
             key={activeSnippet.id}
@@ -229,7 +229,7 @@ export default function CodeShowcase() {
             animate={{ opacity: 1, y: 0 }}
             exit={prefersReducedMotion ? undefined : { opacity: 0, y: -5 }}
             transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
-            className="h-[300px] overflow-auto p-3 font-mono text-[9px] leading-[1.65] sm:h-[320px] sm:p-4 sm:text-[10px]"
+            className="h-[300px] overflow-auto p-3 font-mono text-[9px] leading-[1.65] sm:h-[320px] sm:p-4 sm:text-[10px] lg:h-full"
             aria-label={`${activeSnippet.label} code`}
           >
             <code>
