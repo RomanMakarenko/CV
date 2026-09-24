@@ -136,6 +136,11 @@ const CERT16_CONTENT = Object.fromEntries(
 
 export const CERT_CONTENT: Record<string, { en: string; uk: string }> = {
   ...CERT16_CONTENT,
+  "cc.cert-16.m1.p0.name": { en: "TSPLayground", uk: "TSPLayground" },
+  "cc.cert-16.m1.p0.desc": {
+    en: "TypeScript playground with examples and practice exercises.",
+    uk: "Майданчик TypeScript із прикладами та практичними вправами.",
+  },
   // ======== cert-1: GenAI & AI Agents for QA Automation ========
   "cc.cert-1.m0.name": {
     en: "Section 1: Introduction to AI Testing Terminologies",

@@ -65,6 +65,11 @@ export const CERTIFICATIONS: Certification[] = [
             "17. Interface and Modules (1 hr 19 min)",
           ],
         }],
+        projects: [{
+          name: "TSPLayground",
+          url: "https://github.com/RomanMakarenko/TSPLayground",
+          description: "TypeScript playground with examples and practice exercises.",
+        }],
       },
       {
         name: "Section 3: Playwright using TypeScript (End-To-End Web Automation Testing)",

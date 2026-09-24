@@ -217,6 +217,13 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 6,
         title: "Довгі задачі, checkpoints, Git recovery та паралельні сесії",
+        projects: [
+          {
+            name: "JavaPlaywrightAIFramework",
+            description: "Репозиторій JavaPlaywrightAIFramework.",
+            url: "https://github.com/RomanMakarenko/JavaPlaywrightAIFramework",
+          },
+        ],
       },
       {
         number: 7,
