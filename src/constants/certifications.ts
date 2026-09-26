@@ -97,6 +97,11 @@ export const CERTIFICATIONS: Certification[] = [
             "36. Handle frames (1 hr 27 min)",
           ],
         }],
+        projects: [{
+          name: "TSPlaywright",
+          url: "https://github.com/RomanMakarenko/TSPlaywright",
+          description: "Playwright with TypeScript web and API testing examples.",
+        }],
       },
       {
         name: "Section 4: Playwright Advanced Features",
