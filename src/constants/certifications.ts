@@ -32,6 +32,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Learn Playwright with TypeScript (Web & API Testing)",
     issuer: "Udemy",
     date: "Sep 2026",
+    image: "/certificates/UC-4bb546fe-88f5-46d8-95f9-34b5078361a0.jpg",
     description:
       "A comprehensive Playwright course with TypeScript covering web and API automation, advanced browser testing, AI-powered agents, accessibility, visual and database testing, framework development, Docker, and Jenkins CI/CD.",
     modules: [
