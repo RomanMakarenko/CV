@@ -1431,6 +1431,11 @@ export const CERTIFICATIONS: Certification[] = [
             ],
           },
         ],
+        projects: [{
+          name: "GenAIEventHub",
+          url: "https://github.com/RomanMakarenko/GenAIEventHub",
+          description: "EventHub application project for the GenAI and AI Agents QA Automation course.",
+        }],
       },
       {
         name: "Section 7: Design GitHub Copilot Custom Agents & Cloud Agents for Automation Repositories",
