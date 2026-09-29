@@ -1,130 +1,66 @@
-Name of Employer: Playtika
-Job Title: Middle QA Engineer
-Date of Employment: 21.02.2013- 21.08.2013
-Project Description and
+Name of Employer: Playtika - Infra
+Job Title: Senior QA Automation Engineer
+Date of Employment: Aug 2016 – Jun 2017
+Project Description:
+The project was based on a microservices architecture and focused on backend services.
 Responsibilities:
-Project Description
-Social slot game on the Facebook platform.
-Responsibilities
-- Tested web applications (Flash applications testing);
-- Tested websites (Game portals testing, Web administration panel testing);
-- Tested mobile applications (HTML 5 applications testing, Native applications
-testing for Android and iOS);
-- Prepared test documentation (Test Cases, Checklists, Test Plans);
-- Reported defects.
-Achievements
-The game was delivered to production.
-Worked with high load.
-Tools and Technologies: Test strategy, Test Reporting, Test Plannin
+- Created and maintained test documentation, including test cases, checklists, and test plans.
+- Tested backend microservices, APIs, integrations, and supporting infrastructure using Kafka, Elasticsearch, Couchbase, Logstash, Swagger, and Eureka.
+- Developed and maintained automated tests.
+- Performed integration testing of microservices owned by the Scrum team.
+- Identified, documented, and tracked defects throughout the testing lifecycle.
+Achievements:
+- Developed and maintained integration test suites for backend microservices.
+- Improved release stability through increased integration test coverage.
+Tools and Technologies:
+Java, Spring, Groovy, MySQL, Kafka, Elasticsearch, Couchbase, Logstash, GraphQL, Swagger, Eureka, TeamCity, Bitbucket, BDD, Database Testing, Integration Testing, Microservices
 
-
-Name of Employer: Playtika
-Job Title: QA Automation Engineer - Senior QA Engineer
-Date of Employment: 21.08.2013- 21.10.2015
-Project Description and
-Responsibilities:
-Web applications and games. | - Prepared test documentation (Test Cases,
-Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects. Web applications and games. | - Prepared test
-documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Selenium-WebDriver, FlashDriver - internal Playtika
-software solution for interacting with flash elements, Java);
-- Analysed scenario coverage with autotests;
-- Reported defects.
-Tools and Technologies: Web Testing – QA Skills – QA Skills – Testing; Selenium – Test Frameworks –
-Test Frameworks – Testing; Bitbucket – Build automation tools – CI/CD –
-CI/CD; TeamCity – Build automation tools – CI/CD – CI/CD; Java – Languages
-– Languages – Programming / Software Development; Mobile Testing – QA
-Skills – QA Skills – Testing; Test Planning – Test Management – Test
-Management – Testing; Test Reporting – Test Management – Test
-Management – Testing; Test strategy – Test Management – Test Management
-– Testing; Test Design – Test Management – Test Management – Testing;
-TestNG – Test Frameworks – Test Frameworks – Testing
-
-Name of Employer: Playtika
+Name of Employer: Playtika - Mobile Automation
 Job Title: QA Automation Engineer / Senior QA Engineer
-Date of Employment: 21.10.2015- 21.08.2016
-Project Description and Project Description
-Responsibilities: Games
-Responsibilities
-- Prepared test documentation (Test Cases, Checklists, Test Plans);
-- Wrote autotests - UI (Java, Appium, ADB, MonosynDriver - internal Playtika
-software solution);
-- Ran test builds (TeamCity);
-- Analysed scenario coverage with autotests;
-- Reported defects.
-Achievements
-Created the first mobile automation framework.
-Tools and Technologies: Java, Mobile Testing, Test Planning, Test Reporting, Test strategy, Test Design,
-TestNG, Web Testing, Selenium, Bitbucket, TeamCity
-
-Name of Employer: Playtika
-Job Title: Senior QA Automation Engineer /Senior QA Engineer
-Date of Employment: 21.08.2016- 21.06.2017
-Project Description and
+Date of Employment: Oct 2015 – Aug 2016
+Project Description:
+Test automation for mobile games.
 Responsibilities:
-Project Description
-The project is related to backend microservices.
-Responsibilities
-- Prepared test documentation (Test Cases, Checklists, Test Plans);
-- Tested microservices (DB, Kafka; ES, Couchbase, logstash, Swagger,
-Eureka);
-- Created new automated tests;
-- Maintained existing automated tests;
-- Covered microservices which was in responsibility of the SCRUM team by
-integration testing;
+- Created and maintained test documentation, including test cases, checklists, and test plans.
+- Developed UI automated tests using Java, Appium, ADB, and MonosynDriver, an internal Playtika software solution.
+- Executed test builds and automated test runs through TeamCity.
+- Analyzed test coverage and identified gaps in automated test scenarios.
+- Identified, documented, and tracked defects throughout the testing lifecycle.
+Achievements:
+- Developed the first mobile test automation framework for the project.
+Tools and Technologies:
+Java, Appium, ADB, MonosynDriver, Selenium, TestNG, TeamCity, Bitbucket, Mobile Testing, Web Testing, Test Design, Test Planning, Test Strategy, Test Reporting
+
+Name of Employer: Playtika - QA Automation
+Job Title: QA Automation Engineer → Senior QA Engineer
+Date of Employment: Aug 2013 – Oct 2015
+Project Description:
+Test automation for web-based Flash (ActionScript) games.
+Responsibilities:
+- Created and maintained test documentation, including test cases, checklists, and test plans.
+- Developed UI automated tests using Java, Selenium WebDriver, and FlashDriver, an internal Playtika solution for interacting with Flash elements.
+- Analyzed test coverage and identified gaps in automated test scenarios.
+- Identified, documented, and tracked defects throughout the testing lifecycle.
+Achievements:
+- Developed the first End-to-End (E2E) test automation framework for the project.
+- Developed an automated health-check script for NOC engineers that monitored critical services every five minutes, enabling proactive detection of service issues.
+- Achieved automated test coverage across all games available in the portfolio at the time.
+Tools and Technologies:
+Java, Selenium WebDriver, FlashDriver, TestNG, TeamCity, Bitbucket, UI Testing
+
+Name of Employer: Playtika - Slotomania Adventure
+Job Title: Middle QA Engineer
+Date of Employment: Feb 2013 – Aug 2013
+Project Description:
+Social slot game developed for Facebook.
+Responsibilities:
+- Tested web applications, including Flash-based applications.
+- Tested game portals and web-based administration panels.
+- Tested mobile applications, including HTML5 and native applications for Android and iOS.
+- Created test documentation, including test cases, checklists, and test plans.
 - Reported defects.
-Achievements
-Wrote new and maintained existing integration tests.
-Increased the count of successful Sprints and Releases.
-Tools and Technologies: Java, Spring, Test Reporting, Web Testing, TeamCity, Bitbucket, Database
-Testing, Elasticsearch, GraphQL, Groovy, Integration testing, Microservices
-Architecture, MySQL, Kafka, BDD
+Achievements:
+- Supported the successful delivery of the game to production.
+- Tested the application under high-load conditions.
+Tools and Technologies:
+Test Strategy, Test Reporting, Test Planning, Test Design, Performance Testing, Web Testing, Mobile Testing, API Testing, DevTools, Charles

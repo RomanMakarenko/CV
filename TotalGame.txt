@@ -1,36 +1,34 @@
-Name of Employer: TotalGame
-Job Title: QA Engineer
-Date of Employment: 21.05.2012- 21.11.2012
-Project Description and
-Responsibilities:
-Project Description
-Developed and integrated online games (casino)
-Responsibilities
-- Tested web applications (Flash applications testing);
-- Tested websites (Game portals testing, Web administration panel testing);
-- Tested desktop applications (Download Client for games, Administration
-panels testing);
-- Tested mobile applications (Flash games for mobile devices);
-- Prepared test documentation (Test Cases, Checklists);
-- Reported defects.
-Achievements
-Ensured high product quality, no comments from customers
-
-Name of Employer: TotalGame
+Name of Employer: TotalGame - Online casino game
 Job Title: QA Lead
-Date of Employment: 21.11.2012- 21.02.2013
-Project Description and Project Description
-Responsibilities: Tools and Technologies: Developed and integrated online games (casino)
-Responsibilities
-- Tested web applications (Flash applications testing);
-- Tested websites (Game portals testing, Web administration panel testing);
-- Tested desktop applications (Download Client for games, Administration
-panels testing);
-- Tested mobile applications (Flash games for mobile devices);
-- Prepared test documentation (Test Cases, Checklists);
+Date of Employment: Nov 2012 – Feb 2013
+Project Description:
+Online casino game development and integration.
+Responsibilities:
+- Led a team of four QA engineers.
+- Tested web applications, including Flash-based applications.
+- Tested game portals and web-based administration panels.
+- Tested desktop applications, including game download clients and administration panels.
+- Tested Flash-based games on mobile devices.
+- Created test documentation, including test cases and checklists.
 - Reported defects.
-- Led a small team composed of 4 QA engineers;
-Achievements
-Ensured high product quality, no comments from customers
-Test Design, Test Planning, Test Reporting, Test strategy, API testing, Web
-Testing, Mobile Testing
+Achievements:
+- Maintained high product quality and received positive customer feedback.
+Tools and Technologies:
+Test Design, Test Planning, Test Reporting, Test Strategy, API Testing, Web Testing, Mobile Testing
+
+Name of Employer: TotalGame - Online casino game
+Job Title: QA Engineer
+Date of Employment: May 2012 – Nov 2012
+Project Description:
+Online casino game development and integration.
+Responsibilities:
+- Tested web applications, including Flash-based applications.
+- Tested game portals and web-based administration panels.
+- Tested desktop applications, including game download clients and administration panels.
+- Tested Flash-based games on mobile devices.
+- Created test documentation, including test cases and checklists.
+- Reported defects.
+Achievements:
+- Supported the successful delivery of online games to production.
+Tools and Technologies:
+Test Reporting, Test Planning, Test Design, Test Strategy, DevTools, Fiddler
