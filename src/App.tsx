@@ -14,6 +14,7 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
+import { SHOW_COURSES_IN_PROGRESS } from "@/constants";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -48,7 +49,7 @@ export default function App() {
           <main>
             <Hero />
             <MarqueeStrip />
-            <CourseInProgress />
+            {SHOW_COURSES_IN_PROGRESS && <CourseInProgress />}
             <Experience />
             <Skills />
             <Education />

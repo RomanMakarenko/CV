@@ -1,18 +1,33 @@
+import { AI_UNIVERSITY_COURSE } from "./courseInProgress";
+import { AI_UNIVERSITY_LESSONS, AI_UNIVERSITY_LEVEL_TITLES } from "./aiUniversityCurriculum";
+
 export interface GitHubProject {
   name: string;
   url: string;
   description: string;
+  image?: string;
+  images?: string[];
+  sourceUrl?: string;
+  urlUk?: string;
+  isDocument?: boolean;
 }
 
 export interface CurriculumLevel {
   title: string;
   topics: string[];
   isProject?: boolean;
+  projects?: GitHubProject[];
 }
 
 export interface CurriculumModule {
   name: string;
   levels: CurriculumLevel[];
+  topics?: string[];
+  courseLevelNumber?: number;
+  nameUk?: string;
+  nameEn?: string;
+  courseTitle?: string;
+  lessons?: { uk: string; en: string }[];
   projects?: GitHubProject[];
 }
 
@@ -27,6 +42,27 @@ export interface Certification {
 }
 
 export const CERTIFICATIONS: Certification[] = [
+  {
+    id: "cert-17",
+    name: "AI UNIVERSITY",
+    issuer: "AI University",
+    date: "Oct 2026",
+    description:
+      "Completed a 34-level intensive course on using Claude Code as an engineering workspace, including context management, agentic workflows, MCP integrations, CI/CD automation, and an AI-native capstone project.",
+    modules: [
+      ...AI_UNIVERSITY_COURSE.levels.map((level) => ({
+        name: level.title,
+        nameUk: AI_UNIVERSITY_LEVEL_TITLES[level.number].uk,
+        nameEn: AI_UNIVERSITY_LEVEL_TITLES[level.number].en,
+        courseTitle: level.title,
+        levels: [],
+        topics: level.topics ?? [],
+        courseLevelNumber: level.number,
+        lessons: AI_UNIVERSITY_LESSONS[level.number],
+        projects: level.projects,
+      })),
+    ],
+  },
   {
     id: "cert-16",
     name: "Learn Playwright with TypeScript (Web & API Testing)",
