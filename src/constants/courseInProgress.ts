@@ -395,6 +395,16 @@ export const COURSES_IN_PROGRESS: CourseInProgress[] = [
       {
         number: 32,
         title: "Capstone demo: захист проєкту, критерії оцінювання та portfolio packaging",
+        projects: [
+          {
+            name: "SeaRadar",
+            description:
+              "Interactive maritime tracking map that visualizes AIS vessel positions and selected vessel details, including name, coordinates, speed, course, and report time.",
+            image: "/homework/searadar.webp",
+            url: "https://github.com/RomanMakarenko/SeaRadar",
+            isDocument: true,
+          },
+        ],
       },
       {
         number: 33,

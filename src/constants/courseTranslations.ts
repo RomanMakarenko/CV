@@ -281,6 +281,14 @@ export const COURSE_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "Capstone demo: project defense, evaluation criteria, and portfolio packaging",
     uk: "Capstone demo: захист проєкту, критерії оцінювання та portfolio packaging",
   },
+  "cc.course-ai-university.l32.p0.name": {
+    en: "SeaRadar",
+    uk: "SeaRadar",
+  },
+  "cc.course-ai-university.l32.p0.desc": {
+    en: "An interactive maritime tracking map that visualizes AIS vessel positions and selected vessel details, including name, coordinates, speed, course, and report time.",
+    uk: "Інтерактивна карта морського руху, що відображає позиції суден AIS і дані вибраного судна: назву, координати, швидкість, курс і час повідомлення.",
+  },
   // Level 33
   "cc.course-ai-university.l33.title": {
     en: "Career Launch: AI-native proof-of-work, professional story, and credible resume",
