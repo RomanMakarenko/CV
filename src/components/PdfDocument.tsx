@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
   },
   name: {
     fontSize: 22,
+    lineHeight: 1.2,
     fontWeight: 700,
     color: COLORS.heading,
     letterSpacing: 1.2,
@@ -40,8 +41,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 10,
+    lineHeight: 1.4,
     color: COLORS.accent,
-    marginTop: 3,
+    marginTop: 5,
     fontWeight: 500,
   },
   contactRow: {
@@ -206,7 +208,7 @@ export default function PdfDocument({ data }: PdfDocumentProps) {
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Experience</Text>
           {experience.map((company, ci) => (
-            <View key={ci} wrap={false}>
+            <View key={ci}>
               <Text style={styles.company}>{company.company}</Text>
               {company.positions.map((pos, pi) => (
                 <View key={pi}>
