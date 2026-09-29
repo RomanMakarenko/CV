@@ -166,6 +166,11 @@ export const CERTIFICATIONS: Certification[] = [
             "59. Framework Powered by AI - Part 3 (Git, GitHub & GitHub Actions) (1 hr 47 min)",
           ],
         }],
+        projects: [{
+          name: "AIAutomationFramework",
+          url: "https://github.com/RomanMakarenko/AIAutomationFramework",
+          description: "Playwright TypeScript automation framework for the course e-commerce project.",
+        }],
       },
       {
         name: "Section 9: Docker Integration & Jenkins Pipeline Creation",

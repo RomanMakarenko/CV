@@ -141,6 +141,14 @@ export const CERT_CONTENT: Record<string, { en: string; uk: string }> = {
     en: "TypeScript playground with examples and practice exercises.",
     uk: "Майданчик TypeScript із прикладами та практичними вправами.",
   },
+  "cc.cert-16.m7.p0.name": {
+    en: "AIAutomationFramework",
+    uk: "AIAutomationFramework",
+  },
+  "cc.cert-16.m7.p0.desc": {
+    en: "Playwright TypeScript automation framework for the course e-commerce project.",
+    uk: "Фреймворк автоматизації на Playwright і TypeScript для навчального e-commerce проєкту.",
+  },
   // ======== cert-1: GenAI & AI Agents for QA Automation ========
   "cc.cert-1.m0.name": {
     en: "Section 1: Introduction to AI Testing Terminologies",
