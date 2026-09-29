@@ -31,7 +31,7 @@ import restAssuredLogo from "@/assets/rest-assured.png";
 import seleniumLogo from "@/assets/selenium-logo.png";
 import testngLogo from "@/assets/testng-logo.webp";
 import playwrightLogo from "@/assets/playwright-logo.svg";
-import javaSpringLogo from "../../javaSpring.png";
+import javaSpringLogo from "@/assets/javaSpring.png";
 import appiumLogo from "@/assets/appium-logo.png";
 import wdioLogo from "@/assets/wdio-logo.png";
 import dockerLogo from "@/assets/docker-logo.webp";
@@ -40,8 +40,8 @@ import jenkinsLogo from "@/assets/jenkins-logo.svg";
 import teamcityLogo from "@/assets/teamcity-logo.webp";
 import cucumberLogo from "@/assets/cucumber-logo.png";
 import agenticAiLogo from "@/assets/agentic-ai-logo.webp";
-import javascriptLogo from "../../js.webp";
-import typescriptLogo from "../../ts.webp";
+import javascriptLogo from "@/assets/js.webp";
+import typescriptLogo from "@/assets/ts.webp";
 
 export interface Skill {
   id: string;
