@@ -7,15 +7,14 @@ Developed, wrote and maintained autotests:
 - Node.js, mocha, chai, wdio (End-to-end, API).
 - TypeScript, Playwright (End-to-end);
 - Java, REST Assured (API);
-- Agentic AI, Claude code
-Artificial Intelligence: Prompt Engineering, MCP, AI Agents, Skills, Plugins, Hooks, LLM-assisted Development
-Skills Database Management: MySQL
-DevOps, Cloud & Infrastructure: Docker, Jenkins
-Professional / General Skills: B2B, B2C, Elasticsearch, Kafka, Kanban, Mobile,
-Mockito, Redis, Scrum, TeamCity, Web / Desktop, mocha
-Software Development: Java, Node.js, Spring
-Testing & QA: End-to-end testing, Mobile Testing, Performance Testing,
-Selenium, Test Design, Test Planning, Test Reporting, Test strategy, TestNG,
-Web Testing
+- Agentic AI, Claude Code
+Programming & Frameworks: Java, Node.js, Spring, Groovy, JavaScript, TypeScript, Gradle
+Test Automation: Selenium, Playwright, WebdriverIO (WDIO), Appium, REST Assured, Cucumber, TestNG, Mockito, Mocha, Chai.js, Spock
+Testing: Web Testing, Mobile Testing, API Testing, End-to-End Testing, Integration Testing, Performance Testing, System Testing, UI Testing, Pixel-Perfect Testing, Database Testing
+QA Practices: Test Design, Test Planning, Test Strategy, Test Reporting, Defect Tracking, Mentoring, Team Leadership, Documentation
+Data & Infrastructure: MySQL, SQL, Redis, Elasticsearch, GraphQL, Kafka
+CI/CD & Collaboration: Docker, Jenkins, TeamCity, Travis CI, GitHub Actions, Bitbucket
+Methodologies & Domains: Scrum, Kanban, B2B, B2C
+AI & LLM: Claude Code, Prompt Engineering, MCP, AI Agents, Skills, Plugins, Hooks, LLM-assisted Development
 Foreign language levels: • English- Upper-intermediate
 • Ukrainian- Fluent

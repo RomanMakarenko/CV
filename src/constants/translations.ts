@@ -48,12 +48,14 @@ export const TRANSLATIONS: TranslationMap = {
   // Skills
   "skills.title": { en: "Skills", uk: "Навички" },
   "skills.subtitle": { en: "Technologies and tools I work with", uk: "Технології та інструменти, з якими працюю" },
-  "skills.group.Testing & QA": { en: "Testing & QA", uk: "Тестування та QA" },
-  "skills.group.Automation Frameworks": { en: "Automation Frameworks", uk: "Фреймворки автоматизації" },
-  "skills.group.Languages & Frameworks": { en: "Languages & Frameworks", uk: "Мови та фреймворки" },
-  "skills.group.DevOps & Infrastructure": { en: "DevOps & Infrastructure", uk: "DevOps та інфраструктура" },
-  "skills.group.Artificial Intelligence": { en: "Artificial Intelligence", uk: "Штучний інтелект" },
-  "skills.group.Methodologies": { en: "Methodologies", uk: "Методології" },
+  "skills.group.Programming & Frameworks": { en: "Programming & Frameworks", uk: "Програмування та фреймворки" },
+  "skills.group.Test Automation": { en: "Test Automation", uk: "Автоматизація тестування" },
+  "skills.group.Testing": { en: "Testing", uk: "Тестування" },
+  "skills.group.QA Practices": { en: "QA Practices", uk: "Практики QA" },
+  "skills.group.Data & Infrastructure": { en: "Data & Infrastructure", uk: "Дані та інфраструктура" },
+  "skills.group.CI/CD & Collaboration": { en: "CI/CD & Collaboration", uk: "CI/CD та співпраця" },
+  "skills.group.Methodologies & Domains": { en: "Methodologies & Domains", uk: "Методології та домени" },
+  "skills.group.AI & LLM": { en: "AI & LLM", uk: "ШІ та великі мовні моделі" },
 
   // Education
   "education.title": { en: "Education", uk: "Освіта" },
