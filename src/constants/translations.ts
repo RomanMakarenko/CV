@@ -285,7 +285,7 @@ export const EXPERIENCE_TRANSLATIONS: Record<string, { en: string; uk: string }>
 
   // Ciklum / NZZ - Position titles
   "pos.ciklum-0.title": { en: "Senior Automation QA Engineer", uk: "Senior Automation QA Engineer" },
-  "pos.ciklum-0.duration": { en: "Jan 2023 — Present", uk: "Січ 2023 — Тепер" },
+  "pos.ciklum-0.duration": { en: "Jan 2023 — Sep 2026", uk: "Січ 2023 — Вер 2026" },
   "pos.ciklum-0.desc": {
     en: "Project 3 · Outsourcing engagement. The client is a Zurich-based media company operating across newspaper, magazine and television broadcasting.",
     uk: "Проєкт 3 · Аутсорсингова співпраця. Клієнт — медіакомпанія з Цюриха, що працює у сферах газет, журналів і телевізійного мовлення.",

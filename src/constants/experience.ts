@@ -22,7 +22,7 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         title: "Senior Automation QA Engineer",
-        duration: "Jan 2023 — Present",
+        duration: "Jan 2023 — Sep 2026",
         description:
           "Project 3 · Outsourcing engagement. The client is a Zurich-based media company operating across newspaper, magazine and television broadcasting.",
         responsibilities: [
